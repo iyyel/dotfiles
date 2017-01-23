@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+#
+# ~/.config/yabar/mpd
+#
+# Authors:
+#   Iyyel <github.com/iyyel>
+#
+
+echo "$(basename "$(mpc current -f "%artist% - %title%")" | cut -c1-41 )"

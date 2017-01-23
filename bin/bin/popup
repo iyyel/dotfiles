@@ -1,0 +1,35 @@
+#!/bin/sh
+#
+# File        : /home/wildefyr/scripts/popup
+# Maintainer  : Wildefyr | http://wildefyr.net
+# Copyright   : Wildefyr | Licensed under the WTFPL license.
+# Inspired by : http://blog.z3bra.org/2014/04/pop-it-up.html
+# Depends on  : lemonbar (although xft patch is needed for some fonts); txtw
+# Example CMD : pop "text" 2    ($1 = text $2 = duration"
+
+
+SW=3440
+bary=1390
+barh=30
+
+txtw -s 10 "$1" > /tmp/.popup
+barw=$(cat /tmp/.popup | awk '{for (i=1;i<=NF;++i) total += $i; print total}')
+barw=$((barw + 80))
+
+SW=$((SW/2))
+barx=$((SW - barw / 2))
+
+
+bar_bg='#f43a3a'
+bar_fg='#ffffff'
+
+bar_font='terminusmod-8'
+
+baropt="-g ${barw}x${barh}+${barx}+${bary} -B${bar_bg} -F${bar_fg} -f ${bar_font}"
+
+duration=$2
+
+#if [ -z $(ps ux | grep -v grep | grep victory) ]; then
+#    play -q /media/storage/music/Loner\ Tracks/victory.mp3 &
+#fi
+(echo "%{c}$1"; sleep ${duration}) | lemonbar -d ${baropt}

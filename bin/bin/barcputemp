@@ -1,0 +1,4 @@
+#!/bin/bash
+temp=$((`sensors | grep "Physical id 0" | cut -d'+' -f2 | head -c2`))
+output=": $temp°"
+echo $output

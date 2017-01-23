@@ -1,0 +1,191 @@
+#
+# ~/.config/sxhkd/sxhkdrc
+#
+# Authors:
+#   Iyyel <github.com/iyyel>
+#
+
+#
+# Window manager independent keys
+#
+
+# Terminal
+super + Return
+	urxvt
+
+# Program launcher
+super + space
+	rofi -show run
+
+# Reload sxhkd
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+# i3lock
+super + ctrl + x
+    ${HOME}/.scripts/lock
+
+# qutebrowser
+super + shift + y
+    qutebrowser --backend webengine -r default
+
+# steam
+super + shift + u
+    steam-native
+
+# keepassx2
+super + shift + i
+    keepassx2
+
+# another one
+# super + shift + o/p
+
+# weechat
+super + shift + z
+    urxvt -name "weechat" -e zsh -c "weechat"
+
+# ncmpcpp
+super + shift + x
+    urxvt -name "ncmpcpp" -e zsh -c "ncmpcpp"
+
+# htop
+super + shift + v
+    urxvt -name "htop" -e zsh -c "htop"
+
+# openvpn
+super + shift + b
+    urxvt -name "vpn" -e zsh -c "sudo openvpn ${HOME}/personal/openvpn/server.ovpn"
+
+# mutt
+super + shift + n
+    urxvt -name "mutt" -e zsh -c "mutt"
+
+#
+# bspwm hotkeys
+#
+
+# Quit bspwm normally
+super + alt + Escape
+	pkill -x yabar; bspc quit
+
+# Close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# Alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# If the current node is automatic, send it to the last manual, otherwise pull the last leaf
+super + y
+	bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
+
+# Swap the current node and the biggest node
+super + g
+	bspc node -s biggest
+
+#
+# State/flags
+#
+
+# Set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Set the node flags
+super + ctrl + {x,y,z}
+	bspc node -g {locked,sticky,private}
+
+#
+# Focus/swap
+#
+
+# Focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# Focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# Focus the next/previous node
+super + {_,shift + }c
+	bspc node -f {next,prev}
+
+# Focus the next/previous desktop
+super + bracket{left,right}
+	bspc desktop -f {prev,next}
+
+# Focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# Focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# Focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# Preselect
+#
+
+# Preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# Preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# Cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# Cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+# Change window_gaps
+alt + {minus,plus}
+    bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 2 ))
+
+#
+# Move/resize
+#
+
+# Expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Change screen backlight
+XF86MonBrightness{Up,Down}
+	xbacklight {+5,-5}
+
+# Change master volume
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	amixer sset Master {2%+,2%-,toggle}
+
+# Take a screenshot
+Print
+	scrot -e 'mv $f ~/personal/media/pictures/screenshots'
+
+# mpc/mpd controls
+XF86Audio{Next,Play,Prev}
+	mpc {next,toggle,prev}
+
+# Reset window_gap value to default
+XF86Search
+    bspc config -d focused window_gap 30

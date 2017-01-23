@@ -1,0 +1,9 @@
+"resource/layout/changecontactemailwizard.layout"
+{
+	layout
+	{
+		//Footer
+		region { name=bottom align=bottom height=44 margin=8 }
+		place { control="PrevButton,NextButton,CancelButton,FinishButton" region=bottom align=right height=28 width=84 spacing=8 }
+	}
+}

@@ -1,0 +1,9 @@
+#
+# /etc/rc.local
+#
+# Authors:
+#    Iyyel <github.com/iyyel>
+#
+
+# Fix dell touch keys
+/lib/udev/keymap input/event0 /opt/dell_touchkeys_keymap

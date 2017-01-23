@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# ------------------------------------------------------
+# Update website
+# ------------------------------------------------------
+#
+
+green=`tput setaf 2`
+magenta=`tput setaf 5`
+white=`tput setaf 7`
+blue=`tput setaf 4`
+reset=`tput sgr0`
+sourcedir="/home/whoami/gits/fsociety.info/fsociety.info"
+
+echo 
+echo "${white}:: ${magenta}Uploading site to /var/www/html ${white}::"
+cd $sourcedir
+echo "${blue}"
+lftp -u {username},{password} sftp://{url} << EOF
+cd /var/www
+mirror -R --only-newer --ignore-time "html/"
+bye
+EOF
+
+echo 
+echo "${white}:: ${magenta}done ${white}::${reset}"
+echo
+

@@ -1,0 +1,125 @@
+;=====================================================
+;
+;   To learn more about how to configure Lemonbuddy
+;   go to https://github.com/jaagr/lemonbuddy
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[settings]
+; Limit the amount of events sent to lemonbar within a set timeframe:
+; - "Allow <throttle_limit> updates within <throttle_ms> of time"
+; Default values:
+;throttle_limit = 5
+;throttle_ms = 50
+
+[bar/top]
+wm-name = mybar
+bottom = true
+override-redirect = true
+width = 100%
+height = 25
+#offset_x = 3440
+offset-y = 9
+background = #00312e39
+foreground = #e5cec2
+underline-color = #a45476
+
+spacing = 1
+underline-size = 3
+;separator = |
+locale = en_US.UTF-8
+padding-left = 0
+padding-right = 0
+module-margin-left = 1
+module-margin-right = 0
+
+font-0 = Envy Code R:size=8;0
+font-1 = FontAwesome:size=7;-1
+
+modules-center = bspwm cputemp cpu memory pacman checkvpn clock
+
+[module/cpu]
+type = internal/cpu
+label = : %percentage%
+format-background = #783e57
+format-underline = #a45476
+format-padding = 2
+
+[module/cputemp]
+type = custom/script
+exec = ~/bin/barcputemp
+interval = 2
+format-background = #783e57
+format-underline = #a45476
+format-padding = 2
+
+[module/memory]
+type = internal/memory
+interval = 3
+format-background = #783e57
+format-underline = #a45476
+format-padding = 2
+label = ": %gb_used%"
+
+[module/pacman]
+type = custom/script
+exec = ~/bin/pkg
+exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
+format-background = #783e57
+format-underline = #a45476
+format-padding = 2
+interval = 60
+click-left = urxvt -name "updates" --geometry 94x50 -e zsh -c "$HOME/bin/upg"
+click-right = urxvt -name "updates" --geometry 100x70 -e zsh -c "$HOME/bin/listupg"
+
+[module/checkvpn]
+type = custom/script
+format-padding = 2
+exec = pgrep openvpn
+interval = 5
+label = " vpn"
+format-background = #783e57
+format-underline = #a45476
+
+[module/clock]
+type = internal/date
+date = %d-%m-%Y %H:%M
+format-background = #783e57
+format-underline = #a45476
+format-padding = 2
+
+[module/bspwm]
+type = internal/bspwm
+
+ws-icon-0 = ;
+ws-icon-1 = ;
+ws-icon-2 = ;
+ws-icon-3 = ;
+ws-icon-4 = ;
+
+label-focused = %icon%
+label-focused-underline = #a45476
+label-focused-background = #783e57
+
+label-focused-padding = 2
+label-occupied-padding = 2
+label-empty-padding = 2
+
+label-occupied = %icon%
+label-occupied-underline = #8a4763
+label-occupied-background = #783e57
+
+label-urgent = %icon%
+label-urgent-underline = #e85b97
+label-urgent-background = #783e57
+
+label-empty = %icon%
+label-empty-background = #783e57
+
+wm-restack = bspwm
+throttle-ms = 10
+throttle-limit = 5
+
+; vim:ft=dosini

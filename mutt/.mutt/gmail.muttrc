@@ -1,0 +1,19 @@
+###
+# gmail specific options
+###
+
+set from      = "deanthomson50@gmail.com"
+set sendmail  = "/usr/bin/msmtp -a gmail"
+set mbox      = "+gmail/INBOX"
+unset record
+set postponed = "+gmail/Drafts"
+color status green default
+
+macro index ,w "<change-folder>+work/INBOX<return>" "change to cca email"
+macro index ,v "<change-folder>+virtua/INBOX<return>" "change to virtua email"
+macro index ,r "<change-folder>+mrrobot/INBOX<return>" "change to mrrobot email"
+macro index ,l "<change-folder>+lechuck/INBOX<return>" "change to lechuck email"
+macro index ,p "<change-folder>+personal/INBOX<return>" "change to personal email"
+
+macro index D "<save-message>+gmail/Trash<enter>" "move message to the trash"
+macro index S "<save-message>+gmail/Spam<enter>"  "mark message as spam"

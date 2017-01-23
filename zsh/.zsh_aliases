@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+#
+# ~/.alias
+#
+# Authors:
+#   Iyyel <github.com/iyyel>
+#
+
+alias nf='neofetch'
+alias vim='nvim'
+alias remove='rm -irv'
+alias weather='wego'
+alias weather-cph='wego -l 55.669534,12.518740'
+alias weather-izm='wego -l 38.472882,27.109437'

@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+#
+# ~/.config/yabar/updates
+#
+# Authors:
+#   Iyyel <github.com/iyyel>
+#
+
+echo "UPD: $(pacman -Qu | wc -l)"

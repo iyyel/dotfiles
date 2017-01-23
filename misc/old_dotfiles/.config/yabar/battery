@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+#
+# ~/.config/yabar/battery
+#
+# Authors:
+#    Iyyel <github.com/iyyel>
+#
+
+battery() {
+    batc=/sys/class/power_supply/BAT0/capacity
+
+    if [[ -f $batc ]]; then
+        echo "BTR: `cat $batc`%"
+    else
+        echo 'BTR: Failure'
+    fi
+}
+
+battery

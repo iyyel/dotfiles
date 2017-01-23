@@ -1,0 +1,56 @@
+#!/bin/bash
+#
+# --
+# Virtua Email Server Upgrade and Custom Mods Script
+# --
+#
+
+# Virtua Changes Variables
+export TERM="xterm"
+src=$HOME
+arc=".virtua-changes-0.20.tar.xz"
+sshport=500
+
+# colours
+green=`tput setaf 2`
+magenta=`tput setaf 5`
+white=`tput setaf 7`
+blue=`tput setaf 4`
+reset=`tput sgr0`
+
+# run mail-in-a-box upgrade script on server
+echo
+echo "${white}:: ${magenta}Logging onto Virtua Server and uploading appropriate scripts ${white}::"
+echo "${blue}"
+scp -P $sshport $HOME/$arc {user}@{address}:/home/user-data
+
+echo "${white}:: ${magenta}Extracting scripts, applying permission and executing upgrade ${white}::"
+echo "${blue}"
+
+ssh -t -p $sshport {user}@{address} << EOF
+cd /home/user-data/
+tar xvfJ $arc
+cd virtua-changes
+chmod +x runscript.sh
+EOF
+
+ssh -t -p $sshport {user}@{address} "/home/user-data/virtua-changes/runscript.sh"
+
+# copy mods to appropriate directories
+echo
+echo "${white}:: ${magenta}Extracting custom configs and skins to appropriate directories ${white}::"
+echo "${blue}"
+
+ssh -t -p $sshport {user}@{address} << EOT
+cd /home/user-data/virtua-changes
+cp -Rv chameleon-blue /usr/local/lib/roundcubemail/skins
+cp -Rv usr/ /
+cd /home/user-data
+rm -rf virtua-changes
+rm $arc
+EOT
+
+echo
+echo "${white}:: ${green}UPGRADED ${white}::${reset}"
+export TERM="rxvt-256color"
+

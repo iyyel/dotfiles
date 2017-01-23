@@ -1,0 +1,15 @@
+###
+# gmail specific options
+###
+
+set from      = "deanthomson50@gmail.com"
+set sendmail  = "/usr/bin/msmtp -a gmail"
+set mbox      = "+GMail/[Gmail].All Mail"
+unset record
+set postponed = "+GMail/[Gmail].Drafts"
+set signature="fortune|" 
+color status green default
+
+macro index ,c "<change-folder>+CCA/INBOX<return>" "change accounts"
+macro index D "<save-message>+Gmail/[Gmail].Trash<enter>" "move message to the trash"
+macro index S "<save-message>+Gmail/[Gmail].Spam<enter>"  "mark message as spam"

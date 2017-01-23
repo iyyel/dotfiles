@@ -1,0 +1,62 @@
+#                                  __                    __                  
+#                                 /\ \                  /\ \__               
+#    ___      __  __  __  __   ___\ \ \____    __  __  _\ \ ,_\    __  _ __  
+#  /' _ `\  /'__`/\ \/\ \/\ \ /',__\ \ '__`\ /'__`/\ \/\ \ \ \/  /'__`/\`'__\
+#  /\ \/\ \/\  __\ \ \_/ \_/ /\__, `\ \ \L\ /\  __\ \ \_\ \ \ \_/\  __\ \ \/ 
+#  \ \_\ \_\ \____\ \___x___/\/\____/\ \_,__\ \____\ \____/\ \__\ \____\ \_\ 
+#  \/_/\/_/\/____/\/__//__/  \/___/  \/___/ \/____/\/___/  \/__/\/____/\/_/ 
+
+# /--------------------------\
+# | Newsbeuter Configuration |
+# | 2016 fs0ciety            |
+# | https://fsociety.info    |
+# \--------------------------/                                                                         
+
+urls-source     "ttrss"
+ttrss-url       ""
+ttrss-login     ""
+ttrss-password  ""
+
+auto-reload "yes"
+browser "[[ -n \"$( pgrep qutebrowser )\"  ]] && qutebrowser %u || w3m -M %u &> /dev/null "
+html-renderer "w3m -dump -T text/html"
+player "mpv"
+feed-sort-order name
+
+# <element>                 <fg>        <bg>         <attr>
+color info                  white       magenta       bold
+color listnormal_unread     magenta     default
+color listfocus_unread      color255    green
+color listfocus             color255    green
+color listnormal            cyan        default
+color article               white       default
+
+# highlight feedlist    "^  *[0-9]+  *N  .*"    red    default
+# highlight articlelist "^  *[0-9]+  *N  .*"    red    default
+
+highlight article "(^Feed:|^Title:|^Author:|^Link:|^Date:|^Podcast Download URL:)"    red default
+
+# Blacklist articles
+# ----------------------------------------------------------
+
+ignore-article "http://lwn.net/headlines/rss" "title =~ \"[$]\""
+
+# Keybindings
+# ----------------------------------------------------------
+
+bind-key j next
+bind-key k prev
+bind-key J next-feed
+bind-key K prev-feed
+bind-key j down article
+bind-key k up article
+bind-key J next article
+bind-key K prev article
+
+macro o set browser open-in-browser
+
+notify-format "%d %n %f"
+notify-program "~/.newsbeuter/newsbeuter-notify"
+
+# vim: set ft=config
+

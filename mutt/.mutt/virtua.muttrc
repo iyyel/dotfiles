@@ -1,0 +1,21 @@
+###
+# personal
+###
+
+
+set from      = "admin@virtua.online"
+set sendmail  = "/usr/bin/msmtp -a virtua"
+set mbox      = "+virtua/INBOX"
+set record    = "+virtua/Sent"
+set postponed = "+virtua/Draft"
+set signature = "~/.mutt/virtua.sig"
+color status cyan default
+
+macro index ,w "<change-folder>+work/INBOX<return>" "change to cca email"
+macro index ,p "<change-folder>+personal/INBOX<return>" "change to teknik email"
+macro index ,r "<change-folder>+mrrobot/INBOX<return>" "change to mrrobot email"
+macro index ,l "<change-folder>+lechuck/INBOX<return>" "change to lechuck email"
+macro index ,g "<change-folder>+gmail/INBOX<return>" "change to gmail mail"
+
+macro index D "<save-message>+virtua/Trash<enter>" "move message to the trash"
+macro index S "<save-message>+virtua/Spam<enter>"  "mark message as spam"

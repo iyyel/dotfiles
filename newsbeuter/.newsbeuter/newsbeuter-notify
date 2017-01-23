@@ -1,0 +1,126 @@
+#!/usr/bin/env perl
+#    */
+#    Copyright 2010 Mikael Fridh
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# */
+
+use strict;
+use warnings;
+
+use DBI qw(:sql_types);
+
+# defaults
+my $new_articles = 0;
+my $unread_articles = 0;
+my $unread_feeds = 0;
+my $notify_format = "%d new articles (%d unread, %d unread feeds)";
+my $notify_string;
+my $cache_file = $ENV{HOME} . "/.newsbeuter/cache.db";
+
+if (defined ($ARGV[0])) {
+    ($new_articles, $unread_articles, $unread_feeds) = split(/\s+/, $ARGV[0]);
+}
+
+if ($new_articles == 0) {
+    if ($unread_articles+$unread_feeds == 0) {
+        # All values are zero, notification pointless
+        exit(0);
+    } else {
+        $notify_string = sprintf($notify_format, $new_articles, $unread_articles,
+        $unread_feeds);
+    }
+} elsif ($new_articles > 0) {
+    $notify_string = newsbeuter_cache_fetch($new_articles);
+}
+
+print $notify_string . "\n";
+
+exec("notify-send", "newsbeuter", $notify_string);
+exit(0);
+
+sub newsbeuter_cache_fetch {
+    my $limit = shift;
+    my $more = 0;
+
+    if ($limit > 5) { 
+        $more = $limit - 5;
+        $limit = 5;
+    }
+
+    my $dbh = DBI->connect("dbi:SQLite:dbname=$cache_file","","");
+    my $sth = $dbh->prepare("select i.id, i.title, i.author, i.url, \
+                            f.title as feed_url \
+                            from rss_item as i \
+                            join rss_feed as f \
+                            on (i.feedurl = f.rssurl)
+                            where i.unread=1 \
+                            order by i.pubDate desc limit ?");
+    $sth->bind_param(1, $limit, SQL_INTEGER);
+    $sth->execute();
+
+    my @posts;
+    # id, author, url is unused, but I keep it here for reference.
+    # Extending or changing the output format is easy.
+    while (my ($id, $title, $author, $url, $ftitle) = $sth->fetchrow_array) {
+        push(@posts, sprintf("<b>%s</b>: %s", $ftitle, $title) );
+    }
+
+    if ($more) {
+        push(@posts, sprintf("... %d more articles", $more));
+    }
+
+    $sth->finish();
+    $dbh->disconnect();
+
+    my $notify_string = join("\n", @posts);
+    return $notify_string;
+}
+
+=head1 NAME
+
+newsbeuter-notify - Newsbeuter Notify
+
+=head1 SYNOPSIS
+
+=over 4
+
+=item * Copy this script to F<~/.newsbeuter/newsbeuter-notify>.
+
+=item * Add the following to your F<~/.newsbeuter/config>:
+
+    notify-format "%d %n %f"
+    notify-program "~/.newsbeuter/newsbeuter-notify"
+
+=back
+
+=head1 REQUIREMENTS
+
+This version of newsbeuter-notify requires B<libnotify-bin>, B<libdbd-sqlite3-perl>
+
+=head1 BUGS
+
+None if set up correctly ;-).
+
+=head1 TODO
+
+Make it more generic, support more notification frameworks.
+
+=head1 AUTHOR
+
+Mikael Fridh 
+
+=cut
+

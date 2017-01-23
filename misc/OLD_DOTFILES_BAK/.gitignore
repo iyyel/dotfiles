@@ -1,0 +1,13 @@
+#
+# ~/dotfiles/.gitignore
+#
+# Authors:
+#   Iyyel <github.com/iyyel>
+# 
+
+.config/ncmpcpp/lyrics
+.config/ncmpcpp/error.log
+.config/nvim/.netrwhist
+.config/mpd/log
+.weechat/logs
+.weechat/weechat.log

@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+#
+# ~/.alias
+#
+# Authors:
+#   Iyyel <github.com/iyyel>
+#
+
+alias nf='neofetch'
+alias v='nvim'
+alias remove='rm -irv'

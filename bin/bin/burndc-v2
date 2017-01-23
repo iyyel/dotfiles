@@ -1,0 +1,54 @@
+#!/bin/bash
+#
+# -----------------------------------
+# updated script to burn DC cdi games
+# -----------------------------------
+green=`tput setaf 2`
+magenta=`tput setaf 5`
+white=`tput setaf 7`
+blue=`tput setaf 4`
+reset=`tput sgr0`
+
+CDIIMG="$1"
+
+clear
+echo
+echo "${white}:: ${magenta}BurnDC-CDI v2016 - Updated by Dean Thomson ${white}::"
+echo "${white}:: ${magenta}https://fsociety.info ${white}::"
+echo
+echo "${white}:: ${magenta}Extracting CDI image ${white}::"
+echo
+cdirip "${CDIIMG}" -full
+COUNTER="0"
+MORE=true
+
+while $MORE
+do
+    COUNTER=`expr $COUNTER + 1`
+    NUMBER=`printf %02u $COUNTER`
+    ISOFILE=tdata${NUMBER}.iso
+    WAVFILE=taudio${NUMBER}.wav
+
+    if [ -f $WAVEFILE  ]
+    then
+            echo
+            echo "${white}:: ${magenta}Burning Audio Tracks (CDDA/Boot) ${white}::"
+            cdrecord dev=/dev/sr0 -speed=16 -dao -v -multi -audio $WAVFILE
+            rm $WAVFILE
+    
+    elif [ -f $ISOFILE ]
+    then
+            echo
+            echo "${white}:: ${magenta}Burning Data Tracks ${white}::"
+            cdrecord dev=/dev/sr0 -speed=16 -tao -v -xa $ISOFILE
+            rm $WAVFILE
+
+    else
+            MORE=false
+    fi
+
+done
+eject
+echo "${reset}"
+        
+

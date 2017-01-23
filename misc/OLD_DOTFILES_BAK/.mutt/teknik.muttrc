@@ -1,0 +1,15 @@
+###
+# personal
+###
+
+
+set from      = "dividebyzero@teknik.io"
+set sendmail  = "/usr/bin/msmtp -a teknik"
+set mbox      = "+personal/INBOX"
+set record    = "+personal/Sent"
+set postponed = "+personal/Draft"
+color status cyan default
+
+macro index ,c "<change-folder>+work/INBOX<return>" "change accounts"
+macro index D "<save-message>+work/Trash<enter>" "move message to the trash"
+macro index S "<save-message>+work/Spam<enter>"  "mark message as spam"

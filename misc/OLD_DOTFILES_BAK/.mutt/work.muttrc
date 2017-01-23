@@ -1,0 +1,16 @@
+###
+# work specific options
+###
+
+
+set from      = "deant@ccasoftware.com.au"
+set sendmail  = "/usr/bin/msmtp -a ccasoftware"
+set mbox      = "+work/INBOX"
+set record    = "+work/INBOX.Sent"
+set postponed = "+work/INBOX.Draft"
+set signature = "/home/dean/.mutt/work.sig"
+color status cyan default
+
+macro index ,c "<change-folder>+personal/INBOX<return>" "change accounts"
+macro index D "<save-message>+work/INBOX.Trash<enter>" "move message to the trash"
+macro index S "<save-message>+work/INBOX.Spam<enter>"  "mark message as spam"
