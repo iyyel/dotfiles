@@ -1,9 +1,14 @@
 #!/usr/bin/env zsh
-
-# install script
+#
+# ~/dotfiles/install.sh
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 stow bin
 stow bspwm
+stow compton
 stow dircolors
 stow dunst
 stow fonts
