@@ -26,7 +26,7 @@ stow qutebrowser
 stow ranger
 #stow steamskins
 stow sxhkd
-stow stow termcolors
+stow termcolors
 stow themes
 stow tmux
 stow weechat

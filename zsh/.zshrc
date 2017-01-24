@@ -10,25 +10,25 @@ export QT_STYLE_OVERRIDE='gtk2'
 export QT_QPA_PLATFORMTHEME='gtk2'
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/bin/ruby:$(ruby -rubygems -e "puts Gem.user_dir")/bin"
 
-# Source
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZSH/oh-my-zsh.sh
-source ~/.zsh_aliases
+# Uncomment the following line to change how often to auto-update (in days).
+export UPDATE_ZSH_DAYS=2
 
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux history-subsearch-string zsh-navigation-tools colorize screen)
-
-# Vi bindings 
+# Vi bindings
 bindkey -v
-
-# Colors
-eval $(dircolors ~/.dircolors)
 
 # Theme
 ZSH_THEME="classyTouch"
 
-# Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=2
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git archlinux history-subsearch-string zsh-navigation-tools colorize screen)
+
+# Source
+source $ZSH/oh-my-zsh.sh
+source ~/.zsh_aliases
+
+# Colors
+eval $(dircolors ~/.dircolors)
+
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"

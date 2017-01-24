@@ -10,7 +10,7 @@ xsetroot -name background
 xsetroot -xcf /usr/share/icons/Adwaita/cursors/left_ptr 16
 
 # Key repeat rate
-xset r 200 50
+xset r rate 200 50
 
 # Switch capslock/escape key (vim/nvim)
 setxkbmap -option caps:escape

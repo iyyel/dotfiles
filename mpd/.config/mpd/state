@@ -1,0 +1,57 @@
+sw_volume: 100
+audio_device_state:1:PCH
+audio_device_state:1:my_fifo
+state: pause
+current: 0
+time: 0.557000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 3
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Dance with the Dead - Discography/Into the Abyss/05 - Odyssey.mp3
+1:Dance with the Dead - Discography/The Shape/01 There's a storm coming.flac
+2:Dance with the Dead - Discography/Near Dark/09. Graveyard Shift.mp3
+3:Dance with the Dead - Discography/Near Dark/04. Midnight Never Ends.mp3
+4:Dance with the Dead - Discography/Out of Body/14 - Stitch.mp3
+5:Dance with the Dead - Discography/Out of Body/13 - Zombie Night.mp3
+6:Dance with the Dead - Discography/Into the Abyss/06 - Suede.mp3
+7:Dance with the Dead - Discography/Near Dark/08. The Pitt.mp3
+8:Dance with the Dead - Discography/Out of Body/08 - Dancing on Air.mp3
+9:Dance with the Dead - Discography/Into the Abyss/04 - Mask.mp3
+10:Dance with the Dead - Discography/Near Dark/07. Near Dark.mp3
+11:Dance with the Dead - Discography/Near Dark/02. Dressed to Kill.mp3
+12:Dance with the Dead - Discography/Out of Body/04 - Fracture.mp3
+13:Dance with the Dead - Discography/Into the Abyss/07 - No Survivors.mp3
+14:Dance with the Dead - Discography/The Shape/07 Horizon.flac
+15:Dance with the Dead - Discography/Near Dark/10. Riser.mp3
+16:Dance with the Dead - Discography/Out of Body/01 - Intro.mp3
+17:Dance with the Dead - Discography/Near Dark/01. Invader.mp3
+18:Dance with the Dead - Discography/The Shape/05 Adrift.flac
+19:Dance with the Dead - Discography/The Shape/02 Eyes of Madness.flac
+20:Dance with the Dead - Discography/Out of Body/12 - Mr. Terror.mp3
+21:Dance with the Dead - Discography/Out of Body/15 - Sunset.mp3
+22:Dance with the Dead - Discography/The Shape/10 Quietly into the night.flac
+23:Dance with the Dead - Discography/Out of Body/03 - Blind.mp3
+24:Dance with the Dead - Discography/Into the Abyss/02 - Battle.mp3
+25:Dance with the Dead - Discography/Near Dark/05. Andromeda.mp3
+26:Dance with the Dead - Discography/Out of Body/09 - Only a Dream.mp3
+27:Dance with the Dead - Discography/Out of Body/11 - Cobra.mp3
+28:Dance with the Dead - Discography/Into the Abyss/01 - The Descent (Intro).mp3
+29:Dance with the Dead - Discography/The Shape/09 Watching You.flac
+30:Dance with the Dead - Discography/Out of Body/05 - Thrasher.mp3
+31:Dance with the Dead - Discography/Out of Body/07 - The Deep.mp3
+32:Dance with the Dead - Discography/The Shape/04 Scream and Whispers.flac
+33:Dance with the Dead - Discography/Out of Body/10 - Hell Ride.mp3
+34:Dance with the Dead - Discography/The Shape/06 Riot.flac
+35:Dance with the Dead - Discography/The Shape/08 Diabolic.flac
+36:Dance with the Dead - Discography/The Shape/03 Her Ghost.flac
+37:Dance with the Dead - Discography/Out of Body/06 - Out of Body.mp3
+38:Dance with the Dead - Discography/Out of Body/02 - Robeast.mp3
+39:Dance with the Dead - Discography/Near Dark/06. Eye of the Storm.mp3
+40:Dance with the Dead - Discography/Into the Abyss/03 - Moon Runner.mp3
+41:Dance with the Dead - Discography/Near Dark/03. Waves.mp3
+playlist_end

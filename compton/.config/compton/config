@@ -18,6 +18,12 @@ no-dock-shadow = false;
 no-dnd-shadow = true;
 clear-shadow = true;
 
+# ADDED SELF! (confirmed fix for polybar shadows.)
+shadow-exclude = [
+    "name = 'polybar'"
+    ,"name ='mybar'"
+];
+
 ## backend
 ## Note: changed beckend server to xrender as compton doesnt do vsync anymore.
 

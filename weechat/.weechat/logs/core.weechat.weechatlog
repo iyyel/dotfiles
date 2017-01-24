@@ -1,0 +1,26 @@
+2017-01-24 21:10:33		New key binding (context "mouse"): @chat:button1* => hsignal:coords
+2017-01-24 21:10:33		New key binding (context "mouse"): @chat:button1-event-* => hsignal:coords
+2017-01-24 21:10:33		New key binding (context "mouse"): @chat(perl.[*):button1 => hsignal:coords
+2017-01-24 21:10:33	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-01-24 21:10:33		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-01-24 21:10:33		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-01-24 21:10:33		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-01-24 21:10:33		BEINC is now disabled
+2017-01-24 21:10:33		beinc initiated!
+2017-01-24 21:10:33		python: stdout/stderr: Traceback (most recent call last):
+2017-01-24 21:10:33		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-01-24 21:10:33		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-01-24 21:10:33		python: stdout/stderr: ImportError: No module named mpd
+2017-01-24 21:10:33	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-01-24 21:10:33		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-01-24 21:10:33		script: downloading list of scripts...
+2017-01-24 21:10:33		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-24 21:10:33		script: 330 scripts for WeeChat 1.7
+2017-01-24 21:10:42	 !!! 	You can not write text in this buffer
+2017-01-24 21:10:52	 !!! 	You can not write text in this buffer
+2017-01-24 21:10:52	 !!! 	You can not write text in this buffer
+2017-01-24 21:10:54	 !!! 	You can not write text in this buffer
+2017-01-24 21:10:57	 !!! 	You can not write text in this buffer
+2017-01-24 21:10:59	 !!! 	You can not write text in this buffer
+2017-01-24 21:11:00		python: scripts unloaded
+2017-01-24 21:11:00		perl: scripts unloaded

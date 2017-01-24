@@ -3,7 +3,7 @@
 CMPFILE=${CMPFILE:-/tmp/cmpFile}
 
 if [ -e $CMPFILE ]; then
-    compton --config ~/bin/compton.conf &
+    compton --config ~/.config/compton/config &
     popup ":: compton enabled ::" 2 &
     rm $CMPFILE
 else
