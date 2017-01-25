@@ -1,8 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
-# ANSI color scheme script by pfh
+# ~/bin/dna
 #
-# Initializing mod by lolilolicon from Archlinux
+# Authors:
+#  InAbsentia <github.com/inabsencia>
 #
 
 f=3 b=4
@@ -22,7 +23,7 @@ cat << EOF
   ${f1}  █-${bld}█${rst}     ${f2}  █-${bld}█${rst}     ${f3}  █-${bld}█${rst}     ${f4}  █-${bld}█${rst}     ${f5}  █-${bld}█${rst}     ${f6}  █-${bld}█${rst}
     ${f1} █${rst}        ${f2} █${rst}        ${f3} █${rst}        ${f4} █${rst}        ${f5} █${rst}        ${f6} █${rst}
    ${f1}${bld} █-${rst}${f1}█${rst}      ${f2}${bld} █_${rst}${f2}█${rst}      ${f3}${bld} █-${rst}${f3}█${rst}      ${f4}${bld} █-${rst}${f4}█${rst}      ${f5}${bld} █-${rst}${f5}█${rst}      ${f6}${bld} █-${rst}${f6}█${rst}
-  ${f1}${bld} █---${rst}${f1}█${rst}    ${f2}${bld} █---${rst}${f2}█${rst}    ${f3}${bld} █---${rst}${f3}█${rst}    ${f4}${bld} █---${rst}${f4}█${rst}    ${f5}${bld} █---${rst}${f5}█${rst}    ${f6}${bld} █---${rst}${f6}█${rst} 
+  ${f1}${bld} █---${rst}${f1}█${rst}    ${f2}${bld} █---${rst}${f2}█${rst}    ${f3}${bld} █---${rst}${f3}█${rst}    ${f4}${bld} █---${rst}${f4}█${rst}    ${f5}${bld} █---${rst}${f5}█${rst}    ${f6}${bld} █---${rst}${f6}█${rst}
  ${f1}${bld} █-----${rst}${f1}█${rst}  ${f2}${bld} █-----${rst}${f2}█${rst}  ${f3}${bld} █-----${rst}${f3}█${rst}  ${f4}${bld} █-----${rst}${f4}█${rst}  ${f5}${bld} █-----${rst}${f5}█${rst}  ${f6}${bld} █-----${rst}${f6}█${rst}
   ${f1}${bld} █---${rst}${f1}█${rst}    ${f2}${bld} █---${rst}${f2}█${rst}    ${f3}${bld} █---${rst}${f3}█${rst}    ${f4}${bld} █---${rst}${f4}█${rst}    ${f5}${bld} █---${rst}${f5}█${rst}    ${f6}${bld} █---${rst}${f6}█${rst}
    ${f1}${bld} █-${rst}${f1}█${rst}      ${f2}${bld} █-${rst}${f2}█${rst}      ${f3}${bld} █-${rst}${f3}█${rst}      ${f4}${bld} █-${rst}${f4}█${rst}      ${f5}${bld} █-${rst}${f5}█${rst}      ${f6}${bld} █-${rst}${f6}█${rst}
@@ -34,7 +35,7 @@ cat << EOF
   ${f1}  █-${bld}█${rst}     ${f2}  █-${bld}█${rst}     ${f3}  █-${bld}█${rst}     ${f4}  █-${bld}█${rst}     ${f5}  █-${bld}█${rst}     ${f6}  █-${bld}█${rst}
     ${f1} █${rst}         ${f2}█${rst}        ${f3} █${rst}        ${f4} █${rst}        ${f5} █${rst}        ${f6} █${rst}
    ${f1}${bld} █-${rst}${f1}█${rst}      ${f2}${bld} █_${rst}${f2}█${rst}      ${f3}${bld} █-${rst}${f3}█${rst}      ${f4}${bld} █-${rst}${f4}█${rst}      ${f5}${bld} █-${rst}${f5}█${rst}      ${f6}${bld} █-${rst}${f6}█${rst}
-  ${f1}${bld} █---${rst}${f1}█${rst}    ${f2}${bld} █---${rst}${f2}█${rst}    ${f3}${bld} █---${rst}${f3}█${rst}    ${f4}${bld} █---${rst}${f4}█${rst}    ${f5}${bld} █---${rst}${f5}█${rst}    ${f6}${bld} █---${rst}${f6}█${rst} 
+  ${f1}${bld} █---${rst}${f1}█${rst}    ${f2}${bld} █---${rst}${f2}█${rst}    ${f3}${bld} █---${rst}${f3}█${rst}    ${f4}${bld} █---${rst}${f4}█${rst}    ${f5}${bld} █---${rst}${f5}█${rst}    ${f6}${bld} █---${rst}${f6}█${rst}
  ${f1}${bld} █-----${rst}${f1}█${rst}  ${f2}${bld} █-----${rst}${f2}█${rst}  ${f3}${bld} █-----${rst}${f3}█${rst}  ${f4}${bld} █-----${rst}${f4}█${rst}  ${f5}${bld} █-----${rst}${f5}█${rst}  ${f6}${bld} █-----${rst}${f6}█${rst}
   ${f1}${bld} █---${rst}${f1}█${rst}    ${f2}${bld} █---${rst}${f2}█${rst}    ${f3}${bld} █---${rst}${f3}█${rst}    ${f4}${bld} █---${rst}${f4}█${rst}    ${f5}${bld} █---${rst}${f5}█${rst}    ${f6}${bld} █---${rst}${f6}█${rst}
    ${f1}${bld} █-${rst}${f1}█${rst}      ${f2}${bld} █-${rst}${f2}█${rst}      ${f3}${bld} █-${rst}${f3}█${rst}      ${f4}${bld} █-${rst}${f4}█${rst}      ${f5}${bld} █-${rst}${f5}█${rst}      ${f6}${bld} █-${rst}${f6}█${rst}

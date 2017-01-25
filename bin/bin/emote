@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env sh
 #
-# created from https://redd.it/2skqh9
-# in case kori REALLY registered the "emote" name... DID YOU DO THAT ?
-# emoth - 2015 (c) wtfpl z3bra.org
+# ~/bin/emote
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 usage() {
     echo "$(basename $0) <name>"
@@ -72,7 +74,7 @@ case $1 in
     ;;
     flex)
       printf "ᕙ(⇀‸↼‶)ᕗ"
-    ;;     
+    ;;
     trip)
       printf "｡.*:・’ﾟ:。'(((＋_＋)))｡.*:ﾟ･’ﾟﾟ:。’･ﾟ"
     ;;
@@ -93,7 +95,7 @@ case $1 in
     ;;
     nes)
       printf "[+=••]"
-    ;;     
+    ;;
     sad)
       printf "(╥﹏╥)"
     ;;

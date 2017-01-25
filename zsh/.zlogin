@@ -3,7 +3,7 @@
 # ~/.zlogin
 #
 # Authors:
-#   Iyyel <github.com/iyyel>
+#  InAbsentia <github.com/inabsencia>
 #
 
 # Start xorg-server

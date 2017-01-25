@@ -1,16 +1,9 @@
-#                                  __                    __                  
-#                                 /\ \                  /\ \__               
-#    ___      __  __  __  __   ___\ \ \____    __  __  _\ \ ,_\    __  _ __  
-#  /' _ `\  /'__`/\ \/\ \/\ \ /',__\ \ '__`\ /'__`/\ \/\ \ \ \/  /'__`/\`'__\
-#  /\ \/\ \/\  __\ \ \_/ \_/ /\__, `\ \ \L\ /\  __\ \ \_\ \ \ \_/\  __\ \ \/ 
-#  \ \_\ \_\ \____\ \___x___/\/\____/\ \_,__\ \____\ \____/\ \__\ \____\ \_\ 
-#  \/_/\/_/\/____/\/__//__/  \/___/  \/___/ \/____/\/___/  \/__/\/____/\/_/ 
-
-# /--------------------------\
-# | Newsbeuter Configuration |
-# | 2016 fs0ciety            |
-# | https://fsociety.info    |
-# \--------------------------/                                                                         
+#
+# ~/.config/newsbeuter/config
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 urls-source     "ttrss"
 ttrss-url       ""
@@ -59,4 +52,3 @@ notify-format "%d %n %f"
 notify-program "~/.newsbeuter/newsbeuter-notify"
 
 # vim: set ft=config
-

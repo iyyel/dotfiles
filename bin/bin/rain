@@ -1,7 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# ~/bin/rain
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
+
 RAINS=("|" "│" "┃" "┆" "┇" "┊" "┋" "╽" "╿")
 COLORS=("\e[37m" "\e[37;1m")
-# More from 256 color mode
+
 for i in {244..255}; do
   COLORS=("${COLORS[@]}" "\e[38;5;${i}m")
 done

@@ -1,3 +1,10 @@
+#
+# ~/.config/compton/config
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
+
 shadow-opacity = 0.7;
 frame-opacity = 0.5;
 opacity-exclude = [
@@ -18,15 +25,13 @@ no-dock-shadow = false;
 no-dnd-shadow = true;
 clear-shadow = true;
 
-# ADDED SELF! (confirmed fix for polybar shadows.)
+# Remove leftover shadows from polybar
 shadow-exclude = [
     "name = 'polybar'"
-    ,"name ='mybar'"
 ];
 
-## backend
-## Note: changed beckend server to xrender as compton doesnt do vsync anymore.
-
+# backend
+# Note: changed beckend server to xrender as compton doesnt do vsync anymore.
 backend               = "xrender"
 glx-swap-method       = "buffer-age"
 glx-no-rebind-pixmap  = true
@@ -39,8 +44,3 @@ detect-transient = true;
 detect-client-leader = true;
 shadow-ignore-shaped = true;
 detect-rounded-corners = true;
-
-
-
-
-

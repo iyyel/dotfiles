@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #
-# ~/.scripts/lock
+# ~/bin/lock
 #
 # Authors:
-#   Iyyel <github.com/iyyel>
+#  InAbsentia <github.com/inabsencia>
 #
 
-icon="$HOME/personal/media/pictures/wallpapers/04.jpg"
+icon="~/personal/wallpapers/02.jpg"
 tmpbg='/tmp/screenlock.png'
 
 (( $# )) && { icon=$1; }

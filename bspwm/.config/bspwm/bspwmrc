@@ -1,9 +1,15 @@
 #!/usr/bin/env zsh
+#
+# ~/.config/bspwm/bspwmrc
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
-# Set display resolution (GENERATE NEW!)
+# Set display resolution
 xrandr --output VIRTUAL1 --off --output eDP1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP1 --off --output HDMI2 --off --output HDMI1 --off --output DP2 --off &
 
-# Wallpaper
+# Set wallpaper
 hsetroot -fill ~/personal/wallpapers/01.png &
 
 # Start compton
@@ -15,8 +21,8 @@ compton --config ~/.config/compton/config &
 # Start dunst
 dunst &
 
-# load polybar
-~/bin/launch &
+# Start polybar
+~/bin/launch-polybar &
 
 # bspwm configuration
 bspc config border_width                1
@@ -42,14 +48,16 @@ bspc config presel_feedback_color       "#783E57"
 
 bspc monitor -d    
 
-bspc rule -a Steam desktop=^3 follow=on split_dir=right
+bspc rule -a qutebrowser desktop=^4 follow=on
+bspc rule -a Steam desktop=^3 follow=on
+bspc rule -a Keepassx2 desktop=^3 follow=on
+bspc rule -a URxvt:ncmpcpp desktop=^1 follow=on
+bspc rule -a URxvt:htop desktop=^1 follow=on
+bspc rule -a URxvt:weechat desktop=^1 follow=on
+bspc rule -a URxvt:vpn desktop=^1 follow=on
+
 bspc rule -a URxvt:updates state=floating
-bspc rule -a URxvt:pulsemixer state=floating
-bspc rule -a URxvt:mutt desktop=^2 follow=on
-bspc rule -a URxvt:weechat desktop=^2 follow=on
-bspc rule -a Gimp desktop=^4 follow=on
-bspc rule -a URxvt:vpn desktop=^5 follow=on state=floating
-bspc rule -a URxvt:upass state=floating
+bspc rule -a URxvt:listupg state=floating
 
 # Start xautolock (This requires xautolock and i3lock packages)
 xautolock -time 15 -locker '~/bin/lock'

@@ -1,24 +1,10 @@
-#!/bin/bash
-#      s y n t a x . s a m u r a i
-#            p r e s e n t s
+#!/usr/bin/env bash
 #
-#      ███████   ██    ██ ██     ██
-#     ░██░░░░██ ░░██  ██ ░██    ░██
-#     ░██   ░██  ░░████  ░██    ░██
-#     ░███████    ░░██   ░██    ░██
-#     ░██░░░██     ░██   ░██    ░██
-#     ░██  ░░██    ░██   ░██    ░██
-#     ░██   ░░██   ░██   ░░███████
-#     ░░     ░░    ░░     ░░░░░░░
+# ~/bin/ryu
 #
-# ansi art of ryu hayabusa from ninja gaiden
-# 
-#  ▓▓▓▓▓▓▓▓▓▓
-# ░▓ author ▓ xero <x@xero.nu>
-# ░▓ code   ▓ http://code.xero.nu/ryu
-# ░▓ mirror ▓ http://git.io/ryu
-# ░▓▓▓▓▓▓▓▓▓▓
-# ░░░░░░░░░░
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 cols=`tput cols`
 pad () {

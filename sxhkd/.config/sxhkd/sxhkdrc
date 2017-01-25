@@ -28,13 +28,49 @@ super + Escape
 # terminal launchers
 #
 
+# weechat
+super + shift + z
+    urxvt -name "weechat" -e zsh -c "weechat"
+
+# ncmpcpp
+super + shift + x
+    urxvt -name "ncmpcpp" -e zsh -c "ncmpcpp"
+
+# htop
+super + shift + c
+    urxvt -name "htop" -e zsh -c "htop"
+
+# vpn
+super + shift + v
+    urxvt -name "vpn" -e zsh -c "~/bin/inabsentiavpn"
+
+# updates
+super + shift + b
+    urxvt -name "updates" --geometry 93x50 -e zsh -c "~/bin/upg"
+
+# updatelist
+super + shift + n
+    urxvt -name "listupg" --geometry 93x50 -e zsh -c "~/bin/listupg"
+
 #
 # program launchers
 #
 
+# i3lock
+super + ctrl + x
+    ~/bin/lock
+
 # qutebrowser
 super + shift + y
 	qutebrowser --backend webengine -r default
+
+# steam-native
+super + shift + u
+    steam-native
+
+# keepassx2
+super + shift + i
+    keepassx2
 
 #
 # bspwm hotkeys
@@ -89,7 +125,7 @@ super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node
-super + {_,shift + }c
+super + {_,shift + }g
 	bspc node -f {next,prev}
 
 # focus the next/previous desktop

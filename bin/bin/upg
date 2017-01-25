@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# ~/bin/upg
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 green=`tput setaf 2`
 magenta=`tput setaf 5`
@@ -8,10 +14,10 @@ reset=`tput sgr0`
 
 clear
 echo && echo
-toilet -f sblood --gay "   updates"
+toilet --gay "   updates"
 echo && echo
 pacaur -Su
-echo && echo 
+echo && echo
 
 columns=$(tput cols)
 text="Press [Enter]"
@@ -22,7 +28,7 @@ continuedevel ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay "   devpkgs"
+    toilet --gay "   devpkgs"
     echo && echo
     pacaur --noconfirm --needed --update --devel
     echo && echo
@@ -37,7 +43,7 @@ rundevel ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay "   devpkgs"
+    toiletxx --gay "   devpkgs"
     echo & echo
     columns=$(tput cols)
     text=">> Upgrade git/development packages? <<"
@@ -55,7 +61,7 @@ rungems ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay " rubygems"
+    toilet --gay " rubygems"
     echo && echo
     columns=$(tput cols)
     text=">> Upgrade Ruby GEM packages? <<"
@@ -73,7 +79,7 @@ continuegem ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay " rubygems"
+    toilet --gay " rubygems"
     echo && echo
     echo "${white}:: ${magenta}local gems ${white}:: ${green} "
     gem update
@@ -81,11 +87,8 @@ continuegem ()
     sudo gem update
     echo && read -p "Press [Enter]"
     echo "${reset}"
-    exit 
+    exit
 }
 clear
 rundevel
 echo $yn
-
-
-

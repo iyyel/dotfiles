@@ -5,7 +5,7 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
-[bar/top]
+[bar/bottom]
 wm-name = mybar
 bottom = true
 override-redirect = true
@@ -64,7 +64,6 @@ format-padding = 2
 [module/pacman]
 type = custom/script
 exec = ~/bin/pkg
-exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
 interval = 60
 
 format-background = #783E57

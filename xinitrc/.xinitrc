@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
+#
+# ~/.xinitrc
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 # Screen calibration
 xcalib -gc 1.08 -co 97 ~/x230.icm &
@@ -7,7 +13,7 @@ xcalib -gc 1.08 -co 97 ~/x230.icm &
 xsetroot -name background
 
 # Cursor (stop X11 default 'X' cursor.)
-xsetroot -xcf /usr/share/icons/Adwaita/cursors/left_ptr 16
+xsetroot -xcf /usr/share/icons/pixelfun3/cursors/left_ptr 16
 
 # Key repeat rate
 xset r rate 200 50
@@ -21,7 +27,7 @@ setxkbmap dk
 # set font path (WHAT IS -DPMS?)
 xset +fp ~/.fonts
 xset fp rehash
-xset -dpms
+xset +dpms
 
 # Load ~/.Xresources
 [[ -f ~/.Xresources ]] && xrdb -load ~/.Xresources

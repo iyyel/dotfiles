@@ -1,8 +1,0 @@
-#!/bin/bash
-clear                                                                                                                                        
-echo && echo
-toilet -f sblood --gay "   cca vpn"
-echo && echo
-cd /usr/local/bin && sudo openvpn client.ovpn
-cd ~/
-

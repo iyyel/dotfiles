@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# pipes.sh: Animated pipes terminal screensaver.
 #
-# This modified version is maintained at:
+# ~/bin/pipes
 #
-#   https://github.com/livibetter/pipes.sh
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 # options:
 # s = straight [5-15]

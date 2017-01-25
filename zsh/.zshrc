@@ -1,3 +1,9 @@
+#
+# ~/.zshrc
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 # Export
 export TERM=rxvt-unicode-256color

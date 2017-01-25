@@ -6200,3 +6200,148 @@ Jan 24 23:51 : client: [20] opened from [::1]:50336
 Jan 24 23:51 : client: [20] closed
 Jan 24 23:51 : client: [21] opened from [::1]:50338
 Jan 24 23:51 : client: [21] closed
+Jan 25 00:04 : client: [22] opened from [::1]:51060
+Jan 25 00:04 : client: [22] closed
+Jan 25 00:04 : client: [23] opened from [::1]:51062
+Jan 25 00:04 : client: [23] closed
+Jan 25 00:04 : client: [24] opened from [::1]:51064
+Jan 25 00:04 : client: [24] closed
+Jan 25 00:04 : client: [25] opened from [::1]:51066
+Jan 25 00:04 : client: [25] closed
+Jan 25 00:04 : client: [26] opened from [::1]:51068
+Jan 25 00:04 : client: [26] closed
+Jan 25 00:04 : client: [27] opened from [::1]:51070
+Jan 25 00:04 : client: [27] closed
+Jan 25 00:04 : client: [28] opened from [::1]:51072
+Jan 25 00:04 : client: [28] closed
+Jan 25 00:04 : client: [29] opened from [::1]:51074
+Jan 25 00:04 : client: [29] closed
+Jan 25 00:04 : client: [30] opened from [::1]:51076
+Jan 25 00:04 : client: [30] closed
+Jan 25 00:04 : client: [31] opened from [::1]:51078
+Jan 25 00:04 : client: [31] closed
+Jan 25 00:04 : client: [32] opened from [::1]:51080
+Jan 25 00:04 : client: [32] closed
+Jan 25 00:04 : client: [33] opened from [::1]:51082
+Jan 25 00:04 : client: [33] closed
+Jan 25 00:04 : client: [34] opened from [::1]:51084
+Jan 25 00:04 : client: [34] closed
+Jan 25 00:04 : client: [35] opened from [::1]:51086
+Jan 25 00:04 : client: [35] closed
+Jan 25 00:04 : client: [36] opened from [::1]:51088
+Jan 25 00:04 : client: [36] closed
+Jan 25 00:05 : client: [37] opened from [::1]:51148
+Jan 25 00:05 : client: [37] closed
+Jan 25 00:05 : client: [38] opened from [::1]:51150
+Jan 25 00:05 : client: [38] closed
+Jan 25 00:09 : client: [39] opened from [::1]:51276
+Jan 25 00:09 : client: [39] closed
+Jan 25 01:05 : player: played "Dance with the Dead - Discography/Into the Abyss/05 - Odyssey.mp3"
+Jan 25 15:24 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 25 15:34 : client: [0] opened from [::1]:36666
+Jan 25 15:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 25 15:34 : client: [0] closed
+Jan 25 15:34 : player: played "Dance with the Dead - Discography/Into the Abyss/05 - Odyssey.mp3"
+Jan 25 15:36 : client: [1] opened from [::1]:36760
+Jan 25 15:36 : client: [1] closed
+Jan 25 15:36 : client: [2] opened from [::1]:36766
+Jan 25 15:36 : client: [2] closed
+Jan 25 15:36 : client: [3] opened from [::1]:36768
+Jan 25 15:36 : client: [3] closed
+Jan 25 16:01 : client: [4] opened from [::1]:38152
+Jan 25 16:01 : player: played "Dance with the Dead - Discography/Into the Abyss/05 - Odyssey.mp3"
+Jan 25 16:06 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/01 Implicit Demand For Proof.mp3"
+Jan 25 16:09 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/02 Fall Away.mp3"
+Jan 25 16:13 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/03 The Pantaloon.mp3"
+Jan 25 16:16 : client: [5] opened from [::1]:38572
+Jan 25 16:16 : client: [5] closed
+Jan 25 16:16 : client: [6] opened from [::1]:38574
+Jan 25 16:16 : client: [6] closed
+Jan 25 16:16 : client: [4] closed
+Jan 25 16:17 : client: [7] opened from [::1]:38694
+Jan 25 16:17 : client: [8] opened from [::1]:38696
+Jan 25 16:17 : client: [8] closed
+Jan 25 16:21 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/05 Friend, Please.mp3"
+Jan 25 16:26 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/06 March To The Sea.mp3"
+Jan 25 16:29 : client: [9] opened from [::1]:39052
+Jan 25 16:29 : client: [9] closed
+Jan 25 16:29 : client: [7] closed
+Jan 25 16:29 : client: [10] opened from [::1]:39054
+Jan 25 16:29 : client: [10] closed
+Jan 25 16:30 : client: [11] opened from [::1]:39080
+Jan 25 16:30 : client: [11] closed
+Jan 25 16:30 : client: [12] opened from [::1]:39082
+Jan 25 16:31 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/07 Johnny Boy.mp3"
+Jan 25 16:35 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/08 Oh Ms Believer.mp3"
+Jan 25 16:35 : client: [12] closed
+Jan 25 16:36 : client: [13] opened from [::1]:39312
+Jan 25 16:36 : client: [13] closed
+Jan 25 16:37 : client: [14] opened from [::1]:39340
+Jan 25 16:37 : client: [14] closed
+Jan 25 16:37 : client: [15] opened from [::1]:39342
+Jan 25 16:37 : client: [15] closed
+Jan 25 16:37 : client: [16] opened from [::1]:39344
+Jan 25 16:37 : client: [16] closed
+Jan 25 16:37 : client: [17] opened from [::1]:39346
+Jan 25 16:37 : client: [17] closed
+Jan 25 16:37 : client: [18] opened from [::1]:39348
+Jan 25 16:37 : client: [18] closed
+Jan 25 16:37 : client: [19] opened from [::1]:39350
+Jan 25 16:37 : client: [19] closed
+Jan 25 16:39 : client: [20] opened from [::1]:39406
+Jan 25 16:39 : client: [21] opened from [::1]:39408
+Jan 25 16:39 : client: [21] closed
+Jan 25 16:39 : client: [20] closed
+Jan 25 16:39 : client: [22] opened from [::1]:39410
+Jan 25 16:40 : client: [22] closed
+Jan 25 16:42 : client: [23] opened from [::1]:39512
+Jan 25 16:42 : client: [23] closed
+Jan 25 16:44 : client: [24] opened from [::1]:39760
+Jan 25 16:44 : client: [24] closed
+Jan 25 16:45 : client: [25] opened from [::1]:39798
+Jan 25 16:45 : client: [25] closed
+Jan 25 16:45 : client: [26] opened from [::1]:39800
+Jan 25 16:46 : client: [26] closed
+Jan 25 16:46 : client: [27] opened from [::1]:39874
+Jan 25 16:46 : client: [27] closed
+Jan 25 16:51 : client: [28] opened from [::1]:40188
+Jan 25 16:51 : client: [28] closed
+Jan 25 16:51 : client: [29] opened from [::1]:40190
+Jan 25 16:51 : client: [29] closed
+Jan 25 16:51 : client: [30] opened from [::1]:40194
+Jan 25 16:51 : client: [30] closed
+Jan 25 16:51 : client: [31] opened from [::1]:40210
+Jan 25 16:51 : client: [31] closed
+Jan 25 16:51 : client: [32] opened from [::1]:40212
+Jan 25 16:51 : client: [32] closed
+Jan 25 16:54 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/09 Air Catcher.mp3"
+Jan 25 16:55 : client: [33] opened from [::1]:40388
+Jan 25 16:55 : client: [33] closed
+Jan 25 17:05 : client: [34] opened from [::1]:41000
+Jan 25 17:05 : client: [34] closed
+Jan 25 17:05 : client: [35] opened from [::1]:41002
+Jan 25 17:05 : client: [35] closed
+Jan 25 17:05 : client: [36] opened from [::1]:41004
+Jan 25 17:05 : client: [36] closed
+Jan 25 17:05 : client: [37] opened from [::1]:41006
+Jan 25 17:05 : client: [37] closed
+Jan 25 17:05 : client: [38] opened from [::1]:41008
+Jan 25 17:05 : client: [38] closed
+Jan 25 17:09 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/11 A Car, a Torch, a Death.mp3"
+Jan 25 17:12 : client: [39] opened from [::1]:41498
+Jan 25 17:12 : player: played "Twenty One Pilots - Discography/[2009] Twenty One Pilots/12 Taxi Cab.mp3"
+Jan 25 17:12 : client: [39] closed
+Jan 25 17:13 : client: [40] opened from [::1]:41600
+Jan 25 17:13 : client: [40] closed
+Jan 25 17:13 : client: [41] opened from [::1]:41602
+Jan 25 17:13 : client: [41] closed
+Jan 25 17:13 : client: [42] opened from [::1]:41604
+Jan 25 17:13 : client: [42] closed
+Jan 25 17:35 : client: [43] opened from [::1]:42426
+Jan 25 17:35 : client: [43] closed
+Jan 25 17:35 : client: [44] opened from [::1]:42428
+Jan 25 17:35 : client: [44] closed
+Jan 25 17:35 : client: [45] opened from [::1]:42430
+Jan 25 17:35 : client: [45] closed
+Jan 25 17:35 : client: [46] opened from [::1]:42432
+Jan 25 17:35 : client: [46] closed

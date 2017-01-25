@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# ~/bin/barcputemp
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
+
 temp=$((`sensors | grep "Physical id 0" | cut -d'+' -f2 | head -c2`))
 output=": $temp°"
 echo $output

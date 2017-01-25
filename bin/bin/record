@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env sh
 #
-# wildefyr - 2016 (c) wtfpl
-# record x11 desktop using ffmpeg
-# altered by fs0ciety for pulseaudio support
+# ~/bin/record
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 ARGS="$@"
 

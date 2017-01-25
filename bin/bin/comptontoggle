@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# ~/bin/comptontoggle
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
 CMPFILE=${CMPFILE:-/tmp/cmpFile}
 
@@ -11,5 +17,3 @@ else
     ps -ef | grep "compton --config" | grep -v grep | awk '{print $2}' | xargs kill
     popup ":: compton disabled ::" 2 &
 fi
-
-

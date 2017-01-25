@@ -1,17 +1,18 @@
-! /----------------------------------\
-! | synthwave                        |
-! | originally based on dkegs urban  |
-! | https://fsociety.info 2016       |
-! \----------------------------------/
+#
+# ~/.termcolors/synthwave
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
 
-#define bg    [97]#312e39
-#define blk   #33303b
-#define fg    #c0a79a
-#define bblk  #4f4b58
-#define red   #87404f
-#define grn   #4c9882
-#define ylw   #71949a
+#define bg    [97]#312E39
+#define blk   #33303B
+#define fg    #C0A79A
+#define bblk  #4F4B58
+#define red   #87404F
+#define grn   #4C9882
+#define ylw   #71949A
 #define blu   #615772
-#define mag   #783e57
+#define mag   #783E57
 #define cyn   #554757
-#define wht   #c0a79a
+#define wht   #C0A79A

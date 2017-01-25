@@ -6,6 +6,7 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
+# stow all directories into ~/ directory.
 stow bin
 stow bspwm
 stow compton
