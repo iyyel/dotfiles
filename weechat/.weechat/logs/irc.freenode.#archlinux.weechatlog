@@ -1,0 +1,1343 @@
+2017-01-27 19:19:01	 >>> 	inabsentia (~inabsenti@x1-6-2c-56-dc-4f-ff-a8.cpe.webspeed.dk) has joined #archlinux
+2017-01-27 19:19:01	 - 	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> harfbuzz errors? Switch back to the official freetype2 packages: https://git.io/vMWsq <+> Arch Linux is phasing out i686 support. Read the news."
+2017-01-27 19:19:01	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-01-27 19:19:01	 - 	Channel #archlinux: 1754 nicks (1 op, 0 voices, 1753 normals)
+2017-01-27 19:19:03	 - 	Channel created on  
+2017-01-27 19:19:03	grawity	including two in CMD.EXE
+2017-01-27 19:19:33	earnestly	grawity: wow
+2017-01-27 19:19:43	grawity	looks like I saved a few example inputs
+2017-01-27 19:19:45	grawity	see if you can awk it
+2017-01-27 19:20:09	earnestly	grawity: the python one is obfuscation :D
+2017-01-27 19:20:15	grawity	huh?
+2017-01-27 19:20:18	 >>> 	omongo (~omongo@node-8kk.pool-101-51.dynamic.totbb.net) has joined #archlinux
+2017-01-27 19:20:24	earnestly	https://ptpb.pw/DunP/py
+2017-01-27 19:20:25	phrik	Title: pb (at ptpb.pw)
+2017-01-27 19:20:31	 >>> 	kiao2938 (~mj@89-66-0-189.dynamic.chello.pl) has joined #archlinux
+2017-01-27 19:20:32	earnestly	grawity: Single line
+2017-01-27 19:20:40	grawity	oh, the *other* python one
+2017-01-27 19:21:03	grawity	I wanted to see if oneliners were supported in python
+2017-01-27 19:21:06	 >>> 	hecal3 (~al@178.62.232.58) has joined #archlinux
+2017-01-27 19:21:16	 >>> 	HyperBaton (~HyperBato@78-22-136-231.access.telenet.be) has joined #archlinux
+2017-01-27 19:21:25	earnestly	 verify nonsense 2> nul :D
+2017-01-27 19:21:36	 >>> 	Franciman (~francesco@95.235.33.79) has joined #archlinux
+2017-01-27 19:21:37	Franciman	Hi
+2017-01-27 19:21:39	rnabinger	python -c 'print("hi")'
+2017-01-27 19:21:43	 <<< 	yotux (~yotux@24-177-192-254.dhcp.ftbg.wi.charter.com) has quit (Quit: WeeChat 1.7)
+2017-01-27 19:21:56	grawity	earnestly: oh, turns out subroutine calls in cmd.exe are expensive as fuck
+2017-01-27 19:22:09	 >>> 	bored_gourd (~roman@209.198.66.10) has joined #archlinux
+2017-01-27 19:22:31	 >>> 	BlueRavenGT (~BlueRaven@8-22-13-219.utopiafiber.net) has joined #archlinux
+2017-01-27 19:22:33	grawity	hmm I don't remember what that one does
+2017-01-27 19:22:39	grawity	!g cmd.exe verify
+2017-01-27 19:22:40	earnestly	grawity: http://sprunge.us/NYCY your referenced 'example data' from blubb.ch
+2017-01-27 19:22:41	phrik	grawity: Cmd - TechNet - Microsoft <https://technet.microsoft.com/en-us/library/bb490880.aspx>
+2017-01-27 19:22:43	 >>> 	khjh (~khjh@93-178-164-20-dynamic.dk.customer.tdc.net) has joined #archlinux
+2017-01-27 19:22:46	 >>> 	yabbes (~yabbounic@unaffiliated/yabbounic) has joined #archlinux
+2017-01-27 19:22:52	 <<< 	bbigras (~weechat@159.203.4.160) has quit (Ping timeout: 258 seconds)
+2017-01-27 19:22:53	 >>> 	zaki (~zaki@unaffiliated/zaki) has joined #archlinux
+2017-01-27 19:22:55	grawity	earnestly: wut?
+2017-01-27 19:23:03	earnestly	grawity: It must have been overwritten
+2017-01-27 19:23:08	grawity	oh, probably
+2017-01-27 19:23:11	grawity	sprunge is a ring buffer
+2017-01-27 19:23:12	earnestly	grawity: https://ptpb.pw/39hI
+2017-01-27 19:23:17	grawity	see data/data.[0-9] instead
+2017-01-27 19:23:21	earnestly	grawity: I like: :: Checking the entire file takes about a minute.
+2017-01-27 19:23:33	grawity	right, subroutine calls IIRC
+2017-01-27 19:23:38	grawity	that's why I had two .cmd versions
+2017-01-27 19:23:46	earnestly	grawity: These  >&2 echo (checking line %y%) redirections are freaking me out
+2017-01-27 19:23:54	 >>> 	Phenox_ (~phenox_@195.82.49.140) has joined #archlinux
+2017-01-27 19:23:55	Franciman	http://pastebin.com/gMwgbQ8T I have this file, and I'd like to do $($(< filename)) to pass those flags to my compiler (and execute the pkg-config operations) but it doesn't work, for example if I just do $($(< filename)) I get unknown command "$(pkg-config
+2017-01-27 19:23:56	phrik	Title: [Bash] echo "$(pkg-config --cflags libavformat libavcodec libavfilter libavutil) $(pkg- - Pastebin.com (at pastebin.com)
+2017-01-27 19:23:57	Franciman	why's that?
+2017-01-27 19:24:02	grawity	earnestly: `echo foo >&2` actually prints out "foo "
+2017-01-27 19:24:08	 <<< 	anthropy (~alex@dragonhive.xs4all.nl) has quit (Ping timeout: 240 seconds)
+2017-01-27 19:24:14	grawity	earnestly: the trailing space is invisible so doesn't matter, but ... OCD.
+2017-01-27 19:24:19	earnestly	grawity: I don't mean the order, although that's funny.  But just that it's like bash/sh
+2017-01-27 19:24:25	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 276 seconds)
+2017-01-27 19:24:43	grawity	...I don't remember why I used "goto:foo" instead of the more usual "goto :foo"
+2017-01-27 19:25:07	 <<< 	anthony25 (~anthony25@aruhier.fr) has quit (Read error: Connection reset by peer)
+2017-01-27 19:25:09	earnestly	Franciman: what, stop
+2017-01-27 19:25:22	grawity	Franciman: well, to begin with, the whole idea is stupid from start
+2017-01-27 19:25:32	Franciman	oh, why?
+2017-01-27 19:25:58	grawity	Franciman: but if the $($(...)) is done from bash, it doesn't work because of how word splitting is ordered vs quoting and stuff
+2017-01-27 19:26:10	grawity	at minimum you'd need $(eval "$(< ...)")
+2017-01-27 19:26:18	grawity	which makes it twice as horrible
+2017-01-27 19:26:28	Franciman	what's the best solution, then?
+2017-01-27 19:26:30	grawity	or you could $(sh filename) which is less evil
+2017-01-27 19:26:40	grawity	or uh you could use a makefile
+2017-01-27 19:26:56	Franciman	can makefiles execute pkg-config stuff?
+2017-01-27 19:27:02	earnestly	Franciman: Indeed
+2017-01-27 19:27:08	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 19:27:11	grawity	CFLAGS += $(shell pkg-config --cflags libavformat)
+2017-01-27 19:27:15	earnestly	Franciman: CFLAGS += $(shell pkg-con..
+2017-01-27 19:27:17	grawity	LDLIBS += $(shell pkg-config ...)
+2017-01-27 19:27:23	 <<< 	bradfirj (~bradfier@2a03:b0c0:1:d0::c9:c001) has quit (Remote host closed the connection)
+2017-01-27 19:27:23	 >>> 	concast (~utkastare@utkastare.com) has joined #archlinux
+2017-01-27 19:27:26	earnestly	Franciman: Also don't confuse LDLIBS and LDFLAGS
+2017-01-27 19:27:28	Franciman	oh, also make can execute that?
+2017-01-27 19:27:28	 <<< 	rnabinger (~rnabinger@c-50-136-255-37.hsd1.ca.comcast.net) has quit (Quit: leaving)
+2017-01-27 19:27:29	earnestly	libs go in LDLIBS
+2017-01-27 19:27:30	Franciman	cool!
+2017-01-27 19:27:35	 <<< 	bonefly19 (~bonefly_@ipb21b92c0.dynamic.kabel-deutschland.de) has quit (Quit: bonefly19)
+2017-01-27 19:27:35	 >>> 	ShapeShifter499 (~ShapeShif@unaffiliated/shapeshifter499) has joined #archlinux
+2017-01-27 19:27:47	earnestly	LDFLAGS must be ordered before LDLIBS, as the normal rules already do
+2017-01-27 19:28:00	 >>> 	bradfier (~bradfier@2a03:b0c0:1:d0::c9:c001) has joined #archlinux
+2017-01-27 19:28:01	earnestly	pkg-config does this resolving and ordering for you
+2017-01-27 19:28:34	earnestly	But if you're using LDLIBS, use $(shell pkg-config --libs-only-l ...)
+2017-01-27 19:28:43	 >>> 	anthony25 (~anthony25@aruhier.fr) has joined #archlinux
+2017-01-27 19:28:48	earnestly	Franciman: And LDFLAGS, use $(shell pkg-config --libs-only-L --libs-only-other ...)
+2017-01-27 19:28:52	demonicmaniac3	pkg-config for me is the reason why i can't ever use an ide without an embedded "shell"
+2017-01-27 19:28:55	grawity	ah, right
+2017-01-27 19:29:03	 <<< 	autofsckk (~autofsckk@unaffiliated/autofsckk) has quit (Ping timeout: 240 seconds)
+2017-01-27 19:29:06	demonicmaniac3	where i can just specify the pkg-config line in the linker options
+2017-01-27 19:29:12	earnestly	Franciman: e.g. https://ptpb.pw/kESG/make
+2017-01-27 19:29:13	grawity	I used `verify [garbage] 2> nul` as a rough equivalent of `false`
+2017-01-27 19:29:13	phrik	Title: pb (at ptpb.pw)
+2017-01-27 19:29:23	earnestly	grawity: Howdoesthateven
+2017-01-27 19:29:23	 <<< 	Lowl3v3l (~Lowl3v3l@ipservice-092-208-082-211.092.208.pools.vodafone-ip.de) has quit (Ping timeout: 258 seconds)
+2017-01-27 19:29:32	grawity	or no, as an equivalent of `true`
+2017-01-27 19:29:36	grawity	because it's a noop on cmd.exe
+2017-01-27 19:29:37	 <<< 	beatleboy07 (~beatleboy@2601:602:9901:89c0:ae2b:6eff:fe85:d022) has quit (Ping timeout: 276 seconds)
+2017-01-27 19:29:50	grawity	well
+2017-01-27 19:29:58	grawity	tl;dr cmd.exe is shit
+2017-01-27 19:30:01	 >>> 	the_alchemist (~the_alche@177-248-205-24-cable.cybercable.net.mx) has joined #archlinux
+2017-01-27 19:30:02	earnestly	(The next question would be "why?")
+2017-01-27 19:30:04	earnestly	heh
+2017-01-27 19:30:05	Franciman	thanks guys
+2017-01-27 19:30:11	hexa-	grawity: hear hear
+2017-01-27 19:30:15	Franciman	and gals
+2017-01-27 19:30:19	grawity	earnestly: I'd written a lot of cmd.exe scripts back then
+2017-01-27 19:30:43	 <<< 	bored_gourd (~roman@209.198.66.10) has quit (Quit: Leaving.)
+2017-01-27 19:30:50	hexa-	grawity: you're doing heterogenous system administration afair, right?
+2017-01-27 19:30:54	 <<< 	snyp (~Snyp@103.56.236.70) has quit (Read error: Connection reset by peer)
+2017-01-27 19:31:05	grawity	kiiinda
+2017-01-27 19:31:09	alad	I like how there's still forums like dostips out there for cmd
+2017-01-27 19:31:21	 <<< 	rogorido (~rogorido@eduroam13213.uni-trier.de) has quit (Ping timeout: 264 seconds)
+2017-01-27 19:31:28	alad	much hilarity there on broken cmd stuff
+2017-01-27 19:31:31	 >>> 	snyp (~Snyp@103.56.236.4) has joined #archlinux
+2017-01-27 19:31:36	 >>> 	Valicek1 (~Thunderbi@51-125-149-46.synanet.cz) has joined #archlinux
+2017-01-27 19:31:38	 >>> 	Lowl3v3l (~Lowl3v3l@dslb-088-075-091-242.088.075.pools.vodafone-ip.de) has joined #archlinux
+2017-01-27 19:31:46	earnestly	grawity: It's scary to think you could do this blubb.ch in just m4
+2017-01-27 19:31:57	 >>> 	nando293921 (~Nando15@173.224.88.2) has joined #archlinux
+2017-01-27 19:31:59	grawity	earnestly: have you done it
+2017-01-27 19:32:02	earnestly	Because of course it's a full programming language
+2017-01-27 19:32:06	 <<< 	Phenox_ (~phenox_@195.82.49.140) has quit (Ping timeout: 240 seconds)
+2017-01-27 19:32:07	earnestly	grawity: Nope
+2017-01-27 19:32:19	 <<< 	darkrow (~D4rKr0W@unaffiliated/d4rkr0w) has quit (Remote host closed the connection)
+2017-01-27 19:32:33	earnestly	It's a little like those sed-as-a-programming-language things, it's a bit scary
+2017-01-27 19:32:46	 >>> 	darkrow (~D4rKr0W@unaffiliated/d4rkr0w) has joined #archlinux
+2017-01-27 19:32:47	 >>> 	cottoneyejim (~cottoneye@85.94.109.71) has joined #archlinux
+2017-01-27 19:33:33	 <<< 	kaictl (~kaictl@unaffiliated/kaisforza) has quit (Ping timeout: 240 seconds)
+2017-01-27 19:33:43	earnestly	grawity: But m4 has your usual arithmetic, functions, variables, and so on
+2017-01-27 19:33:47	 >>> 	whaletechno (~whaletech@unaffiliated/whaletechno) has joined #archlinux
+2017-01-27 19:34:00	earnestly	With an emphasis on macros obviously
+2017-01-27 19:34:03	 <<< 	beardedeagle (~beardedea@64.202.161.57) has quit
+2017-01-27 19:34:11	 <<< 	alad (~alad@unaffiliated/alad) has quit (Quit: wörk wörk)
+2017-01-27 19:34:19	earnestly	grawity: By the time I realised this, I had already started m0 :p
+2017-01-27 19:34:21	 <<< 	cottoneyejim (~cottoneye@85.94.109.71) has quit (Client Quit)
+2017-01-27 19:34:51	 >>> 	duelle (~duelle@unaffiliated/duelle) has joined #archlinux
+2017-01-27 19:35:09	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 256 seconds)
+2017-01-27 19:35:11	 >>> 	unare (~unare@213.152.161.74) has joined #archlinux
+2017-01-27 19:36:25	duelle	Hi,  I updated to kernel 4.9 today but after rebooting twice xserver did not come up anymore. The error emssage was: "waiting for xserver to accept connections". After downgrading linux and linux-headers to 4.8 everything is working again. Are there related issues or even known fixes?
+2017-01-27 19:36:54	grawity	duelle: what's the error message from the xserver itself?
+2017-01-27 19:36:59	 >>> 	cottoneyejim (~cottoneye@85.94.109.71) has joined #archlinux
+2017-01-27 19:37:15	d_garbage	duelle, did you -Syu?
+2017-01-27 19:37:24	duelle	d_garbage: yes
+2017-01-27 19:37:27	d_garbage	ok
+2017-01-27 19:37:43	d_garbage	duelle, does xorg log anything?
+2017-01-27 19:37:52	d_garbage	did*
+2017-01-27 19:37:52	 >>> 	kugelwolke (~kugelwolk@gateway/tor-sasl/kugelwolke) has joined #archlinux
+2017-01-27 19:37:53	earnestly	grawity: Oh hey, top is xdg now
+2017-01-27 19:37:59	earnestly	grawity: Last dotfile I had
+2017-01-27 19:38:04	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 19:38:20	earnestly	grawity: procps-ng is a pretty nice upstream
+2017-01-27 19:38:45	duelle	d_garbage: Trying to find the right ones..
+2017-01-27 19:38:52	d_garbage	duelle, also how do you start the graphical environment?
+2017-01-27 19:39:07	duelle	d_garbage: I start it with startx (afterwards starting i3)
+2017-01-27 19:39:32	 <<< 	darkrow (~D4rKr0W@unaffiliated/d4rkr0w) has quit (Remote host closed the connection)
+2017-01-27 19:39:43	 >>> 	boojinks (~ben@94.2.90.222) has joined #archlinux
+2017-01-27 19:39:54	 <<< 	DoctorJellyface_ (~DoctorJel@ip167.213-181-152.pegonet.sk) has quit (Quit: DoctorJellyface_)
+2017-01-27 19:40:08	 >>> 	the_alchemist_ (~the_alche@177-248-205-24-cable.cybercable.net.mx) has joined #archlinux
+2017-01-27 19:40:16	 >>> 	chillysurf (~chillysur@cpe-71-74-25-225.ec.res.rr.com) has joined #archlinux
+2017-01-27 19:40:16	citazen	!i3
+2017-01-27 19:40:18	phrik	The i3 Window Manager: <http://i3wm.org/> i3 User Guide: <http://i3wm.org/docs/userguide.html>
+2017-01-27 19:40:20	 >>> 	Lowl3v3l_ (~Lowl3v3l@dslb-088-074-146-005.088.074.pools.vodafone-ip.de) has joined #archlinux
+2017-01-27 19:40:21	 <<< 	Lowl3v3l (~Lowl3v3l@dslb-088-075-091-242.088.075.pools.vodafone-ip.de) has quit (Ping timeout: 264 seconds)
+2017-01-27 19:40:23	citazen	ah k
+2017-01-27 19:40:36	 >>> 	ravior (~crapitea@86.127.73.212) has joined #archlinux
+2017-01-27 19:41:12	 <<< 	yohnnyjoe (~yohnnyjoe@2601:143:8203:bfa0:f110:7294:2fb0:2727) has quit (Ping timeout: 240 seconds)
+2017-01-27 19:42:22	duelle	d_garbage: Is there a header with a date in the log files? I only find old logs..
+2017-01-27 19:42:37	 <<< 	matoro (~matoro@129.62.68.138) has quit (Ping timeout: 276 seconds)
+2017-01-27 19:42:40	 <<< 	the_alchemist (~the_alche@177-248-205-24-cable.cybercable.net.mx) has quit (Ping timeout: 252 seconds)
+2017-01-27 19:42:54	grawity	duelle: ~/.local/share/xorg/
+2017-01-27 19:45:39	boojinks	hey all, bit of a long shot but does anyone know the font being used in this screenshot? :x
+2017-01-27 19:45:42	boojinks	http://dwm.suckless.org/screenshots/dwm-20120806.png
+2017-01-27 19:46:02	 >>> 	nielsdg (~nielsdg@78-23-19-156.access.telenet.be) has joined #archlinux
+2017-01-27 19:46:29	 <<< 	cottoneyejim (~cottoneye@85.94.109.71) has quit (Quit: WeeChat 1.7)
+2017-01-27 19:46:32	 <<< 	losingkeys (~losingkey@166.175.184.131) has quit (Quit: losingkeys)
+2017-01-27 19:46:44	 >>> 	cottoneyejim (~cottoneye@85.94.109.71) has joined #archlinux
+2017-01-27 19:47:12	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Read error: Connection reset by peer)
+2017-01-27 19:47:13	 >>> 	segurb (~segurb@unaffiliated/segurb) has joined #archlinux
+2017-01-27 19:47:29	earnestly	grawity: https://ptpb.pw/8Na_/pl
+2017-01-27 19:47:30	phrik	Title: pb (at ptpb.pw)
+2017-01-27 19:47:42	grawity	boojinks: probably proggy
+2017-01-27 19:47:57	grawity	well no
+2017-01-27 19:48:00	grawity	not quite proggy
+2017-01-27 19:48:09	grawity	does look similar though.
+2017-01-27 19:48:09	 >>> 	matoro (~matoro@129.62.119.133) has joined #archlinux
+2017-01-27 19:48:19	 <<< 	cottoneyejim (~cottoneye@85.94.109.71) has quit (Client Quit)
+2017-01-27 19:48:23	earnestly	That '4' should give it away
+2017-01-27 19:48:26	duelle	grawity: d_garbage: I searched for entries containing "EE" in the logs. The only errors that seem to have happened short after the start of xorg (low numbers in front of the line) seem to be "Failed to load module 'nv' (module does not exist,0)" and "open /dev/fb0: Permission denied". While the last one occured also once long after startup. Probably in a previous working X run..
+2017-01-27 19:48:33	earnestly	That 'w' is weird though
+2017-01-27 19:48:34	 >>> 	cottoneyejim (~cottoneye@85.94.109.71) has joined #archlinux
+2017-01-27 19:48:39	 >>> 	frvr (~florea@94.176.110.206) has joined #archlinux
+2017-01-27 19:49:07	 <<< 	chepaz (~chepaz@dsl60b7235.sdtnet.de) has quit (Ping timeout: 276 seconds)
+2017-01-27 19:49:08	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 19:49:26	grawity	earnestly: you'll probably want the full loop version though 158.129.232.61
+2017-01-27 19:49:27	grawity	er.
+2017-01-27 19:49:35	grawity	http://sprunge.us/cRJb
+2017-01-27 19:50:02	d_garbage	duelle, sorry, can you pastebin the log? ptpb or similar if from the cli
+2017-01-27 19:50:03	earnestly	grawity: You said about order, but why do I care about the order of the keys?  
+2017-01-27 19:50:09	 >>> 	irreleph4nt (~irreleph4@b2b-78-94-14-198.unitymedia.biz) has joined #archlinux
+2017-01-27 19:50:10	d_garbage	!ptpb
+2017-01-27 19:50:11	phrik	“<command> | curl -F c=@- https://ptpb.pw” OR “curl -F c=@path/to/a/file https://ptpb.pw” OR install community/pbpst
+2017-01-27 19:50:16	boojinks	grawity: thanks, that's close enough.
+2017-01-27 19:50:19	earnestly	grawity: If some subsitution overlaps, I don't support that
+2017-01-27 19:50:29	grawity	earnestly: how do you know it doesn't overlap?
+2017-01-27 19:50:37	irreleph4nt	Hi all. I have aquestion regarding DNS. Is this the right place to ask or should I go to archlinux-offtopic instead?
+2017-01-27 19:50:42	earnestly	grawity: Prior knowledge basically
+2017-01-27 19:50:51	irreleph4nt	As in my question is not arch-specific
+2017-01-27 19:51:00	thurstylark	irreleph4nt: ask first, then we'll triage :P
+2017-01-27 19:51:01	 <<< 	Lowl3v3l_ (~Lowl3v3l@dslb-088-074-146-005.088.074.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2017-01-27 19:51:04	 >>> 	C67 (~user@c-73-239-34-100.hsd1.wa.comcast.net) has joined #archlinux
+2017-01-27 19:51:06	earnestly	grawity: Although, I can't help but agree
+2017-01-27 19:51:14	 <<< 	drag0nius (~drag0nius@agow68.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 258 seconds)
+2017-01-27 19:51:44	citazen	!welocme irreleph4nt
+2017-01-27 19:51:45	phrik	citazen: The answer is 42.
+2017-01-27 19:51:54	citazen	!welcome irreleph4nt
+2017-01-27 19:51:54	phrik	citazen: Say what?
+2017-01-27 19:51:55	irreleph4nt	thurstylark: I have a Samba Domain Controller (active directory), a firewall / router and a client PC in my network ... which PC would be wisest to use as a DNS server and why?
+2017-01-27 19:52:08	citazen	!welcome
+2017-01-27 19:52:10	phrik	Welcome to #archlinux, tell us how you fucked up.
+2017-01-27 19:52:14	citazen	kk
+2017-01-27 19:52:18	duelle	d_garbage: https://ptpb.pw/URpX
+2017-01-27 19:52:19	grawity	depends on whether your AD domain is delegated globally
+2017-01-27 19:52:20	unare	Hi! Anyone interested in hardening arch buildflags please help testing patches and provide buildlogs here goo.gl/ZgjkZ6
+2017-01-27 19:52:20	 <<< 	tdy (~tdy@unaffiliated/tdy) has quit (Quit: WeeChat 1.7)
+2017-01-27 19:52:28	grawity	because client PCs need to be able to resolve AD DNS
+2017-01-27 19:52:31	 >>> 	mbtamuli12 (~mbtamuli@67.205.169.254) has joined #archlinux
+2017-01-27 19:52:51	earnestly	grawity: Thanks
+2017-01-27 19:52:59	 <<< 	wmunny (~user@82.78.89.92.rev.sfr.net) has quit (Remote host closed the connection)
+2017-01-27 19:53:08	 >>> 	drag0nius (~drag0nius@cmu157.neoplus.adsl.tpnet.pl) has joined #archlinux
+2017-01-27 19:53:18	grawity	so you could install bind9 on the AD DC, and use it as a frontend on top of samba (probably using dlz), as well as a generic caching resolver
+2017-01-27 19:53:42	unare	sorry I meant here goo.gl/z3lSxu
+2017-01-27 19:53:54	 >>> 	frankdrey (~textual@2601:601:c700:7c2e:cd7f:66f:3bab:e6c8) has joined #archlinux
+2017-01-27 19:53:57	 >>> 	tdy (~tdy@unaffiliated/tdy) has joined #archlinux
+2017-01-27 19:54:16	thurstylark	irreleph4nt: I believe that the DC is usually the DNS server. It really just depends on which one gives you the capabilities you need. 
+2017-01-27 19:54:27	thurstylark	everything else is more or less configuration
+2017-01-27 19:54:28	unare	forum discussion https://bbs.archlinux.org/viewtopic.php?pid=1682854
+2017-01-27 19:54:28	phrik	Title: GCC 6.3.1: PIE + isl / [testing] Repo Forum / Arch Linux Forums (at bbs.archlinux.org)
+2017-01-27 19:54:32	Gaffel	Unbound for caching, very nice and fast caching resolver. :)
+2017-01-27 19:54:38	irreleph4nt	grawity: I don't quite follow on the delegation piece. My domain only consits of a single AD server (PDC = only DC)
+2017-01-27 19:55:02	grawity	but the client doesn't magically know which server is the DC
+2017-01-27 19:55:09	grawity	(also, AD doesn't have "PDC"s)
+2017-01-27 19:55:28	grawity	it can use NetBIOS to find the DC, but that enables NT4 compatibility mode
+2017-01-27 19:55:34	grawity	which is horrible for both security and functionality
+2017-01-27 19:55:47	 >>> 	chevy (~yourname@d93-243.icpnet.pl) has joined #archlinux
+2017-01-27 19:55:49	grawity	it *needs* to be able to resolve the AD domain and subdomains via regular DNS
+2017-01-27 19:55:49	irreleph4nt	Currently the Firewall hands out 2 DNS servers, itself (first) and then the DC (second).
+2017-01-27 19:55:52	 >>> 	bbigras (~weechat@159.203.4.160) has joined #archlinux
+2017-01-27 19:56:00	grawity	that's where the delegation comes in
+2017-01-27 19:56:08	grawity	I mean the term as used in DNS, nothing to do with AD
+2017-01-27 19:56:13	d_garbage	duelle, can't see anything personally, what was the problem again? do you have optimus?
+2017-01-27 19:56:26	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-27 19:56:32	evil-god	!hrnz10
+2017-01-27 19:56:32	phrik	http://www.abload.de/img/5846_a0dcalscc.jpeg
+2017-01-27 19:56:45	 <<< 	bootkiller (~bootkille@a89-154-162-166.cpe.netcabo.pt) has quit (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+2017-01-27 19:56:54	Namarrgon	duelle: uname -r; pacman -Q linux
+2017-01-27 19:57:17	irreleph4nt	grawity: I am just wondering whether my setup can be improved. I sometimes get errors when trying to access some pages on the internet
+2017-01-27 19:57:29	duelle	d_garbage: When doing startx it takes some time until messages like: "Waiting for xserver to accept connections.." appear. That then continues forever
+2017-01-27 19:57:31	irreleph4nt	The DNS does not resolve fast enough on first try, basically
+2017-01-27 19:57:45	 <<< 	frankdrey (~textual@2601:601:c700:7c2e:cd7f:66f:3bab:e6c8) has quit (Client Quit)
+2017-01-27 19:58:06	d_garbage	duelle, talk to Namarrgon 
+2017-01-27 19:58:27	duelle	Namarrgon: I downgraded to the latest 4.8 kernel to be able to start X again. Therefor I am now on 4.8 again
+2017-01-27 19:58:36	Namarrgon	then your log is useless
+2017-01-27 19:58:39	 >>> 	bootkiller (~bootkille@a89-154-162-166.cpe.netcabo.pt) has joined #archlinux
+2017-01-27 19:58:56	duelle	Namarrgon: Shouldn't the logs contain the previous boots?
+2017-01-27 19:58:58	irreleph4nt	Does handing the DC's IP out as the only DNS server (to clients) make any sense? I'd be setting up the FW as a forwarder then for DNS resolution over the internet.
+2017-01-27 19:59:08	Namarrgon	duelle: yes but you posted the wrong one
+2017-01-27 19:59:33	grawity	irreleph4nt: first things first, all DNS servers that you hand out must be able to resolve the same domains
+2017-01-27 19:59:37	 >>> 	gschanuel (~gschanuel@177.52.102.120) has joined #archlinux
+2017-01-27 19:59:41	grawity	irreleph4nt: e.g. if your AD domain is "whatever.home"
+2017-01-27 19:59:43	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 19:59:43	 <<< 	rzwz (~raz@unaffiliated/rzwz) has quit (Ping timeout: 252 seconds)
+2017-01-27 19:59:47	earnestly	boojinks: It's a custom terminus
+2017-01-27 19:59:55	grawity	irreleph4nt: and you serve [firewall_ip, addc_ip] as the DNS servers
+2017-01-27 19:59:57	earnestly	boojinks: https://github.com/w0ng/dwm/blob/master/terminus2.bdf
+2017-01-27 19:59:58	phrik	Title: dwm/terminus2.bdf at master · w0ng/dwm · GitHub (at github.com)
+2017-01-27 20:00:09	Namarrgon	duelle: "Current Operating System: Linux dmobile 4.8.13-1-ARCH" won't help debug kernel 4.9
+2017-01-27 20:00:22	grawity	irreleph4nt: a client will try firewall_ip first, get a "no such domain" back, and *won't* try the second IP; it'll just think your AD domain doesn't exist
+2017-01-27 20:00:26	evil-god	please give us(#archlinux.de) phrik back, we miss him :-(
+2017-01-27 20:00:29	duelle	Namarrgon: I'll give it a try upgrading again and executing startx to get the correct logs. brb
+2017-01-27 20:00:30	 <<< 	duelle (~duelle@unaffiliated/duelle) has quit (Quit: leaving)
+2017-01-27 20:00:38	grawity	irreleph4nt: so the firewall must be configured to forward that specific domain to the DC
+2017-01-27 20:00:47	grawity	irreleph4nt: unless the domain is globally delegated
+2017-01-27 20:01:03	citazen	!give evil-god phrik
+2017-01-27 20:01:05	phrik	evil-god: Forever broken, but I'm still not your butler.
+2017-01-27 20:01:14	Namarrgon	evil-god: you can have citazen instead
+2017-01-27 20:01:20	 <<< 	ayekat (~ayekat@waltz.ayekat.ch) has quit (Quit: watching this channel in stealth mode now)
+2017-01-27 20:01:31	grawity	irreleph4nt: second, Samba's built-in DNS server is a bit poor
+2017-01-27 20:01:33	 >>> 	rzwz (~raz@unaffiliated/rzwz) has joined #archlinux
+2017-01-27 20:01:35	citazen	1BTC and im all yours =)
+2017-01-27 20:01:43	evil-god	Namarrgon: he is a bot too?
+2017-01-27 20:01:45	irreleph4nt	grawity: I am quite sure I am currently not forwarding that domain piece via the FW :/
+2017-01-27 20:01:58	Namarrgon	evil-god: no but he has too much time
+2017-01-27 20:02:02	grawity	irreleph4nt: well why not?
+2017-01-27 20:02:22	irreleph4nt	grawity: because I wasn't aware that I had to
+2017-01-27 20:02:24	 >>> 	przemkovv-bis (~przemkovv@d208-222.icpnet.pl) has joined #archlinux
+2017-01-27 20:02:36	 <<< 	Ace0r (~aceor@184.68.170.134) has quit (Remote host closed the connection)
+2017-01-27 20:02:42	irreleph4nt	or rather was unaware of "first DNS says no such domain so will not try second DNS"
+2017-01-27 20:02:48	 >>> 	Grapes (~greatgrap@46.166.188.246) has joined #archlinux
+2017-01-27 20:02:57	 >>> 	frankyboy_ (~franky@ppp109-252-155-222.pppoe.spdop.ru) has joined #archlinux
+2017-01-27 20:03:03	 >>> 	Son_Goku (~King_InuY@fedora/ngompa) has joined #archlinux
+2017-01-27 20:03:22	grawity	"no such domain" is a definite answer
+2017-01-27 20:03:35	 >>> 	duelle (~duelle@unaffiliated/duelle) has joined #archlinux
+2017-01-27 20:03:43	 <<< 	bocard (~bocard@185.118.250.45) has quit (Ping timeout: 255 seconds)
+2017-01-27 20:03:58	grawity	because DNS clients mostly assume DNS is the same everywhere: if one server can't see the domain, why would another one?
+2017-01-27 20:04:11	grawity	they'd retry if they got a timeout or 'SERVFAIL' though
+2017-01-27 20:04:16	grawity	...probably
+2017-01-27 20:04:20	 >>> 	inflames (~syg@47.148.210.171) has joined #archlinux
+2017-01-27 20:04:40	irreleph4nt	I feel stupid for not knowing that ...
+2017-01-27 20:04:42	irreleph4nt	thank you
+2017-01-27 20:05:00	earnestly	Overand: Did you get an answer about idle programs?
+2017-01-27 20:05:08	 >>> 	badet0s (~fredrik@2a01:79d:7377:5b3c:d94f:373d:e59:2ceb) has joined #archlinux
+2017-01-27 20:05:29	grawity	so the other thing is, Samba's builtin DNS server isn't very good – you can use it for serving AD's own domain, but at the moment you shouldn't use it directly for providing *all* DNS to clients
+2017-01-27 20:05:30	d_garbage	irreleph4nt, don't feel stupid
+2017-01-27 20:05:39	duelle	Namarrgon: I just executed 'startx' but I cannot find any log files in ~/local/share/xorg
+2017-01-27 20:05:46	 <<< 	dhil (~dhil@dhcp-90-078.inf.ed.ac.uk) has quit (Ping timeout: 256 seconds)
+2017-01-27 20:05:51	d_garbage	irreleph4nt, feel like you just learned something 
+2017-01-27 20:06:00	grawity	if you want to use the DC as the LAN's DNS server, really should use bind9 with samba's dlz module
+2017-01-27 20:06:05	d_garbage	irreleph4nt, it's a much nicer feeling
+2017-01-27 20:06:10	grawity	or at least something like unbound/dnsmasq in front of samba
+2017-01-27 20:06:12	Namarrgon	duelle: which gpu and driver are you using?
+2017-01-27 20:06:15	irreleph4nt	grawity: how do I make sure I am only using it for the AD stuff?
+2017-01-27 20:06:30	irreleph4nt	d_garbage: thank you, I feel much better now :)
+2017-01-27 20:06:59	 >>> 	sedrosken (~sedrosken@64.189.41.175) has joined #archlinux
+2017-01-27 20:07:25	duelle	Namarrgon: Normally I use the default xf86 driver for intel and to be able to use multiple screen I use reverse prime with the nouveau driver.
+2017-01-27 20:07:36	earnestly	grawity: Though with ordering, I can do this: https://ptpb.pw/aBlO which is nice :D
+2017-01-27 20:07:36	duelle	Namarrgon: GPU is HD4000 and Nvidia NVS 5400M
+2017-01-27 20:07:46	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 255 seconds)
+2017-01-27 20:08:11	Namarrgon	duelle: move all your gpu related xorg configs out of the way
+2017-01-27 20:08:15	grawity	heh, life with centos https://superuser.com/q/1172346/1686
+2017-01-27 20:08:16	phrik	Title: linux - CentOS5 kernel = 2.6.18 is needed by elrepo - Super User (at superuser.com)
+2017-01-27 20:08:41	 >>> 	arch-nemesis (~arch-neme@cpe-70-121-152-74.satx.res.rr.com) has joined #archlinux
+2017-01-27 20:09:08	duelle	Namarrgon: There are no specific configs. The only thing I do (after having started X and triggered manually) is doing this reverse prime command with xorg.
+2017-01-27 20:09:59	earnestly	grawity: "help us"
+2017-01-27 20:10:19	duelle	Namarrgon: Now xinit says it gave up connecting: connection refused
+2017-01-27 20:10:38	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 20:10:43	earnestly	duelle: "Permission Denied"
+2017-01-27 20:11:04	dandels	I've an i5-6200U CPU yet my laptop becomes very unresponsive during heavy load. Would changing the scheduler help this noticably (and is the tradeoff worth it?)
+2017-01-27 20:11:35	 >>> 	bocard (~bocard@185.118.250.45) has joined #archlinux
+2017-01-27 20:11:43	 >>> 	NolanSyKinsley (~NolanSyKi@2606:6000:5112:df00:77f3:1947:810a:5711) has joined #archlinux
+2017-01-27 20:11:53	 <<< 	beest (~bem@unaffiliated/gnubeest) has quit (Read error: Connection reset by peer)
+2017-01-27 20:11:56	duelle	earnestly: Sorry? What do you mean?
+2017-01-27 20:12:05	Namarrgon	dandels: and there was no new xorg log in /var/log or ~/.local/share/xorg after that?
+2017-01-27 20:12:07	earnestly	duelle: That's what that error message is basically saying
+2017-01-27 20:12:12	grawity	actually
+2017-01-27 20:12:15	dandels	Namarrgon: tab fail :P
+2017-01-27 20:12:19	Namarrgon	argh
+2017-01-27 20:12:23	grawity	maybe "Permission Denied" is exactly why you don't have log messages?
+2017-01-27 20:12:25	Namarrgon	duelle: and there was no new xorg log in /var/log or ~/.local/share/xorg after that?
+2017-01-27 20:12:51	duelle	Namarrgon: not in ~.local/share/xorg I'll recheck the var/log
+2017-01-27 20:13:03	 >>> 	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #archlinux
+2017-01-27 20:13:04	 <<< 	Schorfi (~schorfi@unaffiliated/schorfi) has quit (Quit: gna)
+2017-01-27 20:13:05	Namarrgon	duelle: are you on 4.9 now?
+2017-01-27 20:13:06	 <<< 	phasedetect (~phasedete@2601:483:8002:9e1e:f06e:f5c:5ec9:f2d5) has quit (Quit: phasedetect)
+2017-01-27 20:13:14	 >>> 	dacoit (~dacoit@unaffiliated/dacoit) has joined #archlinux
+2017-01-27 20:13:17	earnestly	grawity: apparently with nvidia you can set xorgwrapper to need_root_rights = no, and it'll work
+2017-01-27 20:13:18	gebruiker	I want to downgrade gnupg what is the best way to do this? Downgrade because of gpg: keyserver refresh failed: No keyserver available
+2017-01-27 20:13:25	 >>> 	roomcayz___ (~roomcayz@109.231.60.5) has joined #archlinux
+2017-01-27 20:13:32	gebruiker	because none of the sollutions on the forum helped
+2017-01-27 20:13:41	 <<< 	SopaXorzTaker (~SopaXorzT@unaffiliated/sopaxorztaker) has quit (Quit: Leaving)
+2017-01-27 20:13:47	 >>> 	ayekat (~ayekat@waltz.ayekat.ch) has joined #archlinux
+2017-01-27 20:13:55	grawity	have you tried *upgrading* gnupg first
+2017-01-27 20:14:07	earnestly	grawity: The detection is apparently a little wonky, much like UID checks in scripts, it may not be needed, and apparently just forcing it to be rootless makes it so, even on blob nvidia
+2017-01-27 20:14:14	 >>> 	Lowl3v3l (~Lowl3v3l@ip-90-186-3-129.web.vodafone.de) has joined #archlinux
+2017-01-27 20:14:31	duelle	Namarrgon: Yes, I am on 4.9 now
+2017-01-27 20:14:31	Scimmia	gebruiker: stock nsswitch.conf?
+2017-01-27 20:14:43	gebruiker	grawity: i am running gnupg from testing
+2017-01-27 20:14:45	earnestly	Which means, I can package that as a Xwrapper and make sx simple again \o/
+2017-01-27 20:14:55	Scimmia	gebruiker: ie, have you merged any pacnew files?
+2017-01-27 20:15:04	grawity	gpg-connect-agent --dirmngr "getinfo version" /bye
+2017-01-27 20:15:04	duelle	Namarrgon: I cannot find logs with new dates in /var/log/Xorg.*
+2017-01-27 20:15:11	earnestly	--cyclomatic_complexity
+2017-01-27 20:15:45	gebruiker	Scimmia: i have not edited nsswitch
+2017-01-27 20:16:09	 <<< 	LanDi (~landi@179.178.140.136) has quit (Remote host closed the connection)
+2017-01-27 20:16:12	 <<< 	Valicek1 (~Thunderbi@51-125-149-46.synanet.cz) has quit (Ping timeout: 240 seconds)
+2017-01-27 20:16:13	Scimmia	gebruiker: then 2.18 should work
+2017-01-27 20:16:20	 >>> 	irco (~irco@HSI-KBW-091-089-039-076.hsi2.kabelbw.de) has joined #archlinux
+2017-01-27 20:16:32	Scimmia	er, 2,1,18
+2017-01-27 20:16:36	 <<< 	alexjj (~alexjj@unaffiliated/alexjj) has quit (Quit: WeeChat 1.6)
+2017-01-27 20:16:45	 <<< 	bushidoboy (~dbishop@192.229.234.2) has quit (Quit: WeeChat 1.7)
+2017-01-27 20:16:49	gebruiker	Scimmia: i am lost ... it doesn't work i saw reports on the forum too, there no solution was found
+2017-01-27 20:16:51	Namarrgon	duelle: post dmesg
+2017-01-27 20:16:54	 <<< 	boojinks (~ben@94.2.90.222) has quit (Remote host closed the connection)
+2017-01-27 20:17:01	grawity	gebruiker: gpg-connect-agent --dirmngr <<< "getinfo version"
+2017-01-27 20:17:26	gebruiker	grawity: D 2.1.18
+2017-01-27 20:17:26	 <<< 	davorb (~irc@hd5b91c76.k9211.dyn.perspektivbredband.net) has quit (Read error: Connection reset by peer)
+2017-01-27 20:17:32	duelle	Namarrgon: can you post me the command for pasting it again please? am on terminal only now.
+2017-01-27 20:17:33	gebruiker	OK
+2017-01-27 20:17:40	Namarrgon	!give duelle ptpb2
+2017-01-27 20:17:41	phrik	duelle: File: `curl https://ptpb.pw -F c=@PATH_TO_FILE`. Output: `COMMAND | curl https://ptpb.pw -F c=@-`.
+2017-01-27 20:17:50	 >>> 	chepaz (~chepaz@dsl60b7235.sdtnet.de) has joined #archlinux
+2017-01-27 20:18:07	 >>> 	patrick85 (~patrick@ipservice-092-218-202-235.092.218.pools.vodafone-ip.de) has joined #archlinux
+2017-01-27 20:18:22	 >>> 	dhil (~dhil@dhcp-90-078.inf.ed.ac.uk) has joined #archlinux
+2017-01-27 20:18:23	 >>> 	davorb (~irc@hd5b91c76.k9211.dyn.perspektivbredband.net) has joined #archlinux
+2017-01-27 20:18:32	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-27 20:19:09	duelle	Namarrgon: https://ptpb.pw/FAPG
+2017-01-27 20:19:12	 <<< 	bocaneri (~bocaneri@about/linux/staff/sauvin) has quit (Read error: Connection reset by peer)
+2017-01-27 20:19:30	 <<< 	Son_Goku (~King_InuY@fedora/ngompa) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-01-27 20:19:46	Scimmia	gebruiker: just tested, wfm
+2017-01-27 20:20:06	Namarrgon	duelle: "tree /etc/X11"
+2017-01-27 20:20:21	gebruiker	Scimmia: when did you install arch? I installed 2 days ago.
+2017-01-27 20:20:39	Scimmia	gebruiker: this install? I don't know, year and a half?
+2017-01-27 20:20:45	Scimmia	maybe 2
+2017-01-27 20:20:57	 >>> 	SamSagaZ (~SamSagaZ@190.247.52.2) has joined #archlinux
+2017-01-27 20:21:03	*	SysGh0st wonder what method one can use to "date" the installation.
+2017-01-27 20:21:09	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 20:21:11	 >>> 	tschan (~tschan@p4FC53B03.dip0.t-ipconnect.de) has joined #archlinux
+2017-01-27 20:21:17	Scimmia	SysGh0st: pacman's log may work if you don't clear it
+2017-01-27 20:21:45	Scimmia	yep, 2015-03-30
+2017-01-27 20:22:16	duelle	Namarrgon: https://ptpb.pw/M3Pr
+2017-01-27 20:22:19	*	SysGh0st 's installation on his other laptop is since 2008-2009
+2017-01-27 20:22:40	 <<< 	chepaz (~chepaz@dsl60b7235.sdtnet.de) has quit (Ping timeout: 258 seconds)
+2017-01-27 20:22:45	gebruiker	no distro hopping?
+2017-01-27 20:22:47	gebruiker	wow
+2017-01-27 20:22:51	ntldr	is it better to use "xrender" or opengl 3.1 in desktop?
+2017-01-27 20:22:55	Namarrgon	duelle: wrong link
+2017-01-27 20:23:04	 <<< 	chevy (~yourname@d93-243.icpnet.pl) has quit (Quit: leaving)
+2017-01-27 20:23:11	Scimmia	gebruiker: I did my distro hopping 15-20 years ago
+2017-01-27 20:23:20	earnestly	SysGh0st: Yeah, sed 1p /var/log/pacman.log
+2017-01-27 20:23:24	SysGh0st	gebruiker: more like parallell distro usage. Been pending between Gentoo and Arch. Last few years is almost arch only.
+2017-01-27 20:23:31	 <<< 	xaturn (~nigel@wnpgmb1154w-ds01-230-66.static.mtsallstream.net) has quit (Ping timeout: 260 seconds)
+2017-01-27 20:23:32	duelle	Namarrgon: sorry, https://ptpb.pw/M3pr
+2017-01-27 20:24:02	earnestly	I guess -n, meh
+2017-01-27 20:24:13	earnestly	head -n1
+2017-01-27 20:24:30	 >>> 	Pie-jacker875 (~Pie-jacke@c-24-62-41-71.hsd1.ma.comcast.net) has joined #archlinux
+2017-01-27 20:25:28	SysGh0st	earnestly: right. Had to clear logs some time ago. Some of them had grown quite large. Was wondering where all disk space went.
+2017-01-27 20:25:31	 <<< 	kadfak (~x@campus26.campus.ttu.ee) has quit (Quit: Lost terminal)
+2017-01-27 20:25:35	 <<< 	HyperBaton (~HyperBato@78-22-136-231.access.telenet.be) has quit (Ping timeout: 256 seconds)
+2017-01-27 20:25:52	 <<< 	nando293921 (~Nando15@173.224.88.2) has quit (Ping timeout: 240 seconds)
+2017-01-27 20:25:58	earnestly	SysGh0st: Ah, then you can't date it
+2017-01-27 20:26:07	citazen	Check the date of the root filesystem with dumpe2fs.
+2017-01-27 20:26:14	Namarrgon	duelle: do you have xf86-video-nouveau installed?
+2017-01-27 20:26:15	 >>> 	Badger468 (~Badger467@85-76-67-234-nat.elisa-mobile.fi) has joined #archlinux
+2017-01-27 20:26:18	SysGh0st	citazen: good one
+2017-01-27 20:26:30	 <<< 	Badger467 (~Badger467@85-76-151-141-nat.elisa-mobile.fi) has quit (Ping timeout: 258 seconds)
+2017-01-27 20:26:37	citazen	hey noob is good for something lol
+2017-01-27 20:26:38	earnestly	SysGh0st: I wonder if pacman can be convinced to log to another fd (maybe 4) and piped into svlogd
+2017-01-27 20:26:48	earnestly	SysGh0st: Just so you get rotation, but controlled logging
+2017-01-27 20:26:59	duelle	Namarrgon: Yes.
+2017-01-27 20:27:19	earnestly	SysGh0st: Then again, it could compress too I guess
+2017-01-27 20:27:51	 >>> 	revoltingPeasant (~joe@unaffiliated/th3-g0d5) has joined #archlinux
+2017-01-27 20:28:01	 <<< 	sadmansk (~Thunderbi@2607:fea8:1c80:c5c::3) has quit (Ping timeout: 255 seconds)
+2017-01-27 20:28:23	earnestly	SysGh0st: https://ptpb.pw/jxU0 heh
+2017-01-27 20:48:02	 >>> 	inabsentia (~inabsenti@x1-6-2c-56-dc-4f-ff-a8.cpe.webspeed.dk) has joined #archlinux
+2017-01-27 20:48:02	 - 	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> harfbuzz errors? Switch back to the official freetype2 packages: https://git.io/vMWsq <+> Arch Linux is phasing out i686 support. Read the news."
+2017-01-27 20:48:02	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-01-27 20:48:02	 - 	Channel #archlinux: 1767 nicks (1 op, 0 voices, 1766 normals)
+2017-01-27 20:48:04	 - 	Channel created on  
+2017-01-27 20:48:04	earnestly	beest: Can you still interact with the system?
+2017-01-27 20:48:13	beest	earnestly: yep
+2017-01-27 20:48:32	earnestly	beest: Try blind writing dmesg somewhere, and or journalctl -k
+2017-01-27 20:48:33	 <<< 	yabbes (~yabbounic@unaffiliated/yabbounic) has quit (Ping timeout: 245 seconds)
+2017-01-27 20:48:36	beest	all i've done to troubleshoot so far is turn off early kms
+2017-01-27 20:49:03	earnestly	So you can review it
+2017-01-27 20:49:21	earnestly	That said, shutting down should preserve journalctl -kb -1 #I think...
+2017-01-27 20:49:21	 <<< 	semyon (~semyon@unaffiliated/semyon) has quit (Remote host closed the connection)
+2017-01-27 20:49:26	earnestly	I don't know how -k works
+2017-01-27 20:49:43	 >>> 	duelle (~duelle@unaffiliated/duelle) has joined #archlinux
+2017-01-27 20:49:43	SysGh0st	C67: Ah, right. The trickiest part would be the boot manager, depending on which one you choose.
+2017-01-27 20:50:02	earnestly	beest: Otherwise #radeon might be more helpful, or have better suggestions
+2017-01-27 20:50:04	duelle	Namarrgon: Ok, blacklisting nouveau let me start up the xserver again. 
+2017-01-27 20:51:33	beest	earnestly: yeah, i was on my way there after laundry duties :P
+2017-01-27 20:51:34	 >>> 	thansen (~thansen@67.214.230.7) has joined #archlinux
+2017-01-27 20:51:41	Namarrgon	!give duelle bug 52238
+2017-01-27 20:51:41	phrik	duelle: http://bugs.archlinux.org/task/52238
+2017-01-27 20:52:07	Namarrgon	duelle: heftig patched it in -zen but the 'linux' kernel wasn't
+2017-01-27 20:52:49	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 276 seconds)
+2017-01-27 20:53:28	earnestly	grawity: What's this secretsd thing?
+2017-01-27 20:53:40	 <<< 	beest (~bem@unaffiliated/gnubeest) has quit (Quit: WeeChat 1.7)
+2017-01-27 20:54:01	 <<< 	yousuc (~yousuc@173-19-63-177.client.mchsi.com) has quit (Quit: BitchX: now with flavor crystals!)
+2017-01-27 20:54:03	earnestly	grawity: I guess the commit message sort of explains it
+2017-01-27 20:54:34	 >>> 	aajjbb1 (~aajjbb@186.223.195.141) has joined #archlinux
+2017-01-27 20:54:46	 <<< 	aajjbb (~aajjbb@186.223.195.141) has quit (Ping timeout: 276 seconds)
+2017-01-27 20:54:53	 <<< 	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has quit (Quit: WeeChat 1.7)
+2017-01-27 20:54:58	duelle	Namarrgon: Thank you very much for your help and this hint! So I guess I will downgrade until that issue is fixed for the 4.9 kernel. 
+2017-01-27 20:55:11	nshp	is that the super secure infallible networked RESTful systemd cloud password manager daemon?
+2017-01-27 20:55:28	 <<< 	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has quit (Ping timeout: 240 seconds)
+2017-01-27 20:55:29	 >>> 	Black_Prince (~Black_Pri@unaffiliated/blackprince) has joined #archlinux
+2017-01-27 20:55:37	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 20:56:01	dandels	!grap nshp
+2017-01-27 20:56:01	phrik	One does not simply grap nshp.
+2017-01-27 20:56:03	 >>> 	ZetsubouDev (~ZetsubouD@50-79-88-218-static.hfc.comcastbusiness.net) has joined #archlinux
+2017-01-27 20:56:03	 <<< 	for{} (~gangalo@unaffiliated/gangalo) has quit (Quit: In the end, it doesn't even matter.)
+2017-01-27 20:56:07	earnestly	nshp: https://www.freedesktop.org/wiki/Specifications/secret-storage-spec/secrets-api-0.1.html
+2017-01-27 20:56:08	phrik	Title: Secrets API Specification (at www.freedesktop.org)
+2017-01-27 20:56:12	earnestly	I think
+2017-01-27 20:56:23	 >>> 	for{} (~gangalo@unaffiliated/gangalo) has joined #archlinux
+2017-01-27 20:56:25	 >>> 	rooferdave (~rooferdav@66-87-137-125.pools.spcsdns.net) has joined #archlinux
+2017-01-27 20:56:27	 <<< 	RickDeckard (~tburringt@cpe-68-174-144-3.nyc.res.rr.com) has quit (Quit: later)
+2017-01-27 20:56:34	earnestly	nshp: Sort of like factotum, in some ways
+2017-01-27 20:56:45	Namarrgon	duelle: install -zen and see if that is indeed the issue you are having
+2017-01-27 20:56:46	 >>> 	hotaronohanako (~user@unaffiliated/hotaronohanako) has joined #archlinux
+2017-01-27 20:56:49	dandels	phrik, grab harder
+2017-01-27 20:56:49	phrik	dandels: Error: I couldn't find a proper message to grab.
+2017-01-27 20:57:01	dandels	Yes you can you phrik :(
+2017-01-27 20:57:43	esph	!grab nshp
+2017-01-27 20:57:43	phrik	esph: Tada!
+2017-01-27 20:57:43	 <<< 	chandan (~chandan@122.167.9.92) has quit (Ping timeout: 245 seconds)
+2017-01-27 20:57:57	 >>> 	SpinTronix (~SpinTroni@HSI-KBW-46-223-148-88.hsi.kabel-badenwuerttemberg.de) has joined #archlinux
+2017-01-27 20:57:59	dandels	Oh, I just realized I wrote "grap" and not "grab"
+2017-01-27 20:58:04	dandels	phrik tricked me
+2017-01-27 20:58:06	phrik	dandels: Say what?
+2017-01-27 20:58:06	esph	dandels: :P
+2017-01-27 20:58:08	 >>> 	somis (~somis@149.56.153.180) has joined #archlinux
+2017-01-27 20:58:19	duelle	Namarrgon: What is the difference between the 'normal' and the 'zen' kernel?
+2017-01-27 20:58:22	 >>> 	karmahac_ (~karmahack@unaffiliated/karmahacker) has joined #archlinux
+2017-01-27 20:58:32	 <<< 	rooferdave (~rooferdav@66-87-137-125.pools.spcsdns.net) has quit (Max SendQ exceeded)
+2017-01-27 20:58:41	BrainDamage	spiritual illumination
+2017-01-27 20:58:41	 >>> 	rooferdave (~rooferdav@66-87-137-125.pools.spcsdns.net) has joined #archlinux
+2017-01-27 20:58:44	duelle	Namarrgon: extra still contains zen 4.8*
+2017-01-27 20:58:58	Black_Prince	since lcarlier isn't around, does anyone know how frequently his mesa git packages are updated?
+2017-01-27 20:58:58	 <<< 	roomcayz___ (~roomcayz@109.231.60.5) has quit (Ping timeout: 245 seconds)
+2017-01-27 20:59:03	Namarrgon	duelle: ah, indeed, sorry
+2017-01-27 20:59:21	 >>> 	SteveDeFacto (~SteveDeFa@185.9.19.107) has joined #archlinux
+2017-01-27 20:59:27	 <<< 	pks (~pks@x55b3aa69.dyn.telefonica.de) has quit (Quit: quit)
+2017-01-27 20:59:39	 <<< 	opalepatrick (~opalepatr@31.185.222.154) has quit (Remote host closed the connection)
+2017-01-27 20:59:42	Namarrgon	duelle: anyway, file a bugreport and link to the closed bugreport
+2017-01-27 20:59:45	C67	SysGh0st: had to stop and choose i686 over x64, cuase i have only 4G of real ram on the host.
+2017-01-27 21:00:43	 <<< 	rzwz (~raz@unaffiliated/rzwz) has quit (Ping timeout: 256 seconds)
+2017-01-27 21:00:46	Black_Prince	... real RAM, is there like imaginary one? (no, swap isn't ram :P)
+2017-01-27 21:00:54	duelle	Namarrgon: Ok, will do. Thanks again for your support! As I know how to kind of disable the issue I can easily try whether the issue was resolved in case there are new upcoming versions.
+2017-01-27 21:01:26	 <<< 	karmahacker (~karmahack@unaffiliated/karmahacker) has quit (Ping timeout: 240 seconds)
+2017-01-27 21:01:29	 >>> 	sshow (~sshow@185.35.202.198) has joined #archlinux
+2017-01-27 21:01:39	 >>> 	pks (~pks@x55b3aa69.dyn.telefonica.de) has joined #archlinux
+2017-01-27 21:01:50	citazen	oh wait yeah the zen kernel is collaboration from kernel hackers
+2017-01-27 21:02:07	 >>> 	rzwz (~raz@unaffiliated/rzwz) has joined #archlinux
+2017-01-27 21:02:18	 >>> 	blueness (~blueness@gentoo/developer/blueness) has joined #archlinux
+2017-01-27 21:02:18	 >>> 	beest (~bem@unaffiliated/gnubeest) has joined #archlinux
+2017-01-27 21:02:27	 >>> 	yabbes (~yabbounic@unaffiliated/yabbounic) has joined #archlinux
+2017-01-27 21:02:55	 <<< 	xoan (d4333f10@gateway/web/freenode/ip.212.51.63.16) has quit
+2017-01-27 21:03:59	 <<< 	rooferdave (~rooferdav@66-87-137-125.pools.spcsdns.net) has quit (Ping timeout: 245 seconds)
+2017-01-27 21:04:17	 <<< 	duelle (~duelle@unaffiliated/duelle) has quit (Quit: leaving)
+2017-01-27 21:04:50	 >>> 	deezed (~deezed@187.101.111.105) has joined #archlinux
+2017-01-27 21:04:51	 >>> 	rooferdave (~rooferdav@66-87-137-125.pools.spcsdns.net) has joined #archlinux
+2017-01-27 21:05:08	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-27 21:05:30	 <<< 	JeanCarloMachado (~jean@187.107.120.133) has quit (Ping timeout: 260 seconds)
+2017-01-27 21:05:57	 <<< 	SysGh0st (~sysghost@217.21.233.245) has quit (Read error: Connection reset by peer)
+2017-01-27 21:06:10	 >>> 	SysGh0st (~sysghost@217.21.233.245) has joined #archlinux
+2017-01-27 21:06:31	 >>> 	MrcRjs (b1e2f743@gateway/web/freenode/ip.177.226.247.67) has joined #archlinux
+2017-01-27 21:07:04	 <<< 	calincru (8d55d804@gateway/web/cgi-irc/kiwiirc.com/ip.141.85.216.4) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2017-01-27 21:07:18	 >>> 	el_bamba (~roberto@24.196.94.90.dynamic.jazztel.es) has joined #archlinux
+2017-01-27 21:07:34	 <<< 	unare (~unare@213.152.161.74) has quit
+2017-01-27 21:07:39	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 21:08:14	grawity	earnestly: libsecrets backend
+2017-01-27 21:08:26	 <<< 	def_jam (~eblip@unaffiliated/eblip) has quit (Quit: WeeChat 1.4)
+2017-01-27 21:08:53	grawity	earnestly: because the only other ones were a) gnome-keyring (a bit difficult without GNOME or at least some X11), or b) another python script from libsecret's tests/ folder which only does hardcoded data
+2017-01-27 21:09:09	 >>> 	boojinks (~ben@94.2.90.222) has joined #archlinux
+2017-01-27 21:09:36	 >>> 	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has joined #archlinux
+2017-01-27 21:09:47	 <<< 	paraxor (~a@unaffiliated/prazial) has left #archlinux
+2017-01-27 21:09:57	boojinks	found the font by the way, it's 10px terminus :p
+2017-01-27 21:10:02	 >>> 	SysGhost (~sysghost@217.21.233.245) has joined #archlinux
+2017-01-27 21:10:06	citazen	10pt
+2017-01-27 21:11:46	 <<< 	rooferdave (~rooferdav@66-87-137-125.pools.spcsdns.net) has quit (Ping timeout: 240 seconds)
+2017-01-27 21:12:04	 >>> 	Lokke (~Thunderbi@ip5f5ad30c.dynamic.kabel-deutschland.de) has joined #archlinux
+2017-01-27 21:12:14	 >>> 	rooferdave (~rooferdav@66-87-137-125.pools.spcsdns.net) has joined #archlinux
+2017-01-27 21:12:22	 <<< 	choru (~choru@78.56.154.238) has quit (Quit: WeeChat 1.7)
+2017-01-27 21:13:22	 <<< 	MrcRjs (b1e2f743@gateway/web/freenode/ip.177.226.247.67) has quit (Ping timeout: 260 seconds)
+2017-01-27 21:13:27	 >>> 	aaro (~aaro@unaffiliated/xyox/x-040147) has joined #archlinux
+2017-01-27 21:13:42	 >>> 	MrcRjs (b1e2f743@gateway/web/freenode/ip.177.226.247.67) has joined #archlinux
+2017-01-27 21:13:47	 <<< 	C67 (~user@c-73-239-34-100.hsd1.wa.comcast.net) has quit (Read error: No route to host)
+2017-01-27 21:13:55	 <<< 	SysGh0st (~sysghost@217.21.233.245) has quit (Ping timeout: 255 seconds)
+2017-01-27 21:14:08	 >>> 	Odyseus (~Odyseus@138.117.129.193) has joined #archlinux
+2017-01-27 21:14:15	 <<< 	kunev (~kunev@78-83-71-166.spectrumnet.bg) has quit (Quit: е те!)
+2017-01-27 21:14:17	 >>> 	Florck (~Thunderbi@static-5-51-59-153.ftth.abo.bbox.fr) has joined #archlinux
+2017-01-27 21:14:17	d_garbage	Friday :)
+2017-01-27 21:15:01	teraflops	!TGIF 
+2017-01-27 21:15:02	phrik	Thank God it's Friday!
+2017-01-27 21:15:02	citazen	if (friday == saturday){$$$}else(!$$$)
+2017-01-27 21:15:02	d_garbage	well, probably Saturday in Australia by now but *shrug* they're all asleep :P
+2017-01-27 21:15:06	MrcRjs	Hey guys is there a way to load automatically a module(b43)? this is my broadcoms card firmware, but every boot i have to unload it an load it again with modprobe
+2017-01-27 21:15:08	 <<< 	cotko (~ahmed@89-212-138-82.static.t-2.net) has quit (Quit: Konversation terminated!)
+2017-01-27 21:15:32	BrainDamage	dumb question, is there a way to lock a file so it can only be read/written by the process that it created it?
+2017-01-27 21:15:52	BrainDamage	( the file would live only during the process's timeline )
+2017-01-27 21:16:09	d_garbage	s/dumb question/a question/
+2017-01-27 21:16:11	d_garbage	g
+2017-01-27 21:16:43	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Read error: Connection reset by peer)
+2017-01-27 21:17:08	 <<< 	miruoy (~miruoy@unaffiliated/miruoy) has quit (Ping timeout: 240 seconds)
+2017-01-27 21:17:18	 >>> 	n-iCe (~nice@Aircrack-NG/User/n-iCe) has joined #archlinux
+2017-01-27 21:19:16	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 21:20:31	 <<< 	dandels (~dandels@unaffiliated/dandels) has quit (Quit: WeeChat 1.7)
+2017-01-27 21:20:39	 >>> 	msrd0 (~msrd0@dslb-178-010-123-252.178.010.pools.vodafone-ip.de) has joined #archlinux
+2017-01-27 21:21:06	 <<< 	koan (~koan@unaffiliated/koan) has quit (Ping timeout: 255 seconds)
+2017-01-27 21:21:19	*	citazen catologin all my dumb questions by Namarrgon DAQ Rating
+2017-01-27 21:21:41	citazen	!ud DAQ
+2017-01-27 21:21:43	phrik	citazen: Urban Dictionary: DAQ <http://www.urbandictionary.com/define.php?term=DAQ>
+2017-01-27 21:21:52	 >>> 	C67 (~user@c-73-239-34-100.hsd1.wa.comcast.net) has joined #archlinux
+2017-01-27 21:22:01	 >>> 	miruoy (~miruoy@unaffiliated/miruoy) has joined #archlinux
+2017-01-27 21:22:07	 <<< 	MrcRjs (b1e2f743@gateway/web/freenode/ip.177.226.247.67) has quit (Ping timeout: 260 seconds)
+2017-01-27 21:22:10	 <<< 	ImQ009 (~ImQ009@unaffiliated/imq009) has quit (Quit: Leaving)
+2017-01-27 21:22:12	citazen	hahahha nono
+2017-01-27 21:22:33	C67	if i crash one more time today...
+2017-01-27 21:22:46	 >>> 	ImQ009 (~ImQ009@unaffiliated/imq009) has joined #archlinux
+2017-01-27 21:22:47	citazen	graphic card
+2017-01-27 21:22:48	 >>> 	MrcRjs (b1e2f743@gateway/web/freenode/ip.177.226.247.67) has joined #archlinux
+2017-01-27 21:23:35	Namarrgon	sandwich
+2017-01-27 21:23:50	 >>> 	tuelz (~tuelz@c-68-35-98-252.hsd1.al.comcast.net) has joined #archlinux
+2017-01-27 21:23:57	 <<< 	eper3z (~edward@unaffiliated/eper3z) has quit (Quit: WeeChat 1.7)
+2017-01-27 21:24:22	tuelz	I'm doing a decent amount of remapping with xmodmap and xcape in my xinit...if things get wonky is there a better way to reset all the things than restarting X?
+2017-01-27 21:24:57	tuelz	getting wonky example includes something my usb keyboard stops getting recognized so I plug/unplug and then all the hotkeys start doubling up whenever I press them
+2017-01-27 21:25:05	 <<< 	khjh (~khjh@93-178-164-20-dynamic.dk.customer.tdc.net) has quit (Ping timeout: 256 seconds)
+2017-01-27 21:25:08	tuelz	s/something/sometimes/
+2017-01-27 21:25:39	 >>> 	byteframe (~byteframe@unaffiliated/byteframe) has joined #archlinux
+2017-01-27 21:25:43	tuelz	killing and restarting X works, but it's a bit of a hassle...I've tried sourcing .xinit and then running setxkbmap with no luck
+2017-01-27 21:27:07	irreleph4nt	grawity: if you are still around: I followed your recommendation and tried BIND as DNS server instead of samba_internal ... I followed the wiki article on how to set it up ...
+2017-01-27 21:27:18	 >>> 	carabia (~carabia@unaffiliated/carabia) has joined #archlinux
+2017-01-27 21:27:29	irreleph4nt	This article to be precise: https://wiki.archlinux.org/index.php/Samba/Active_Directory_domain_controller
+2017-01-27 21:27:29	phrik	Title: Samba/Active Directory domain controller - ArchWiki (at wiki.archlinux.org)
+2017-01-27 21:27:33	 >>> 	roomcayz___ (~roomcayz@109.231.60.5) has joined #archlinux
+2017-01-27 21:27:36	 >>> 	||arifaX (~Commodore@unaffiliated/arifax/x-427475) has joined #archlinux
+2017-01-27 21:28:01	irreleph4nt	When I enter the first host -t SRV command however, the connection to BIND times out
+2017-01-27 21:28:10	irreleph4nt	with samba_internal there are no such issues
+2017-01-27 21:28:14	 >>> 	archlovertelis (~archlover@adsl-77.109.242.100.tellas.gr) has joined #archlinux
+2017-01-27 21:28:20	archlovertelis	hi
+2017-01-27 21:28:24	archlovertelis	anyone playing dota 2?
+2017-01-27 21:28:33	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Read error: Connection reset by peer)
+2017-01-27 21:28:41	grawity	irreleph4nt: what's in BIND's logs?
+2017-01-27 21:28:49	 >>> 	Phenox_ (~phenox_@195.82.49.140) has joined #archlinux
+2017-01-27 21:29:06	 <<< 	n-iCe (~nice@Aircrack-NG/User/n-iCe) has quit (Quit: Lost terminal)
+2017-01-27 21:29:13	 >>> 	duelle (~duelle@unaffiliated/duelle) has joined #archlinux
+2017-01-27 21:29:16	irreleph4nt	grawity: nuffin
+2017-01-27 21:29:25	grawity	then maybe BIND isn't running
+2017-01-27 21:29:26	 >>> 	datamoshr_ (~john@unaffiliated/datamoshr) has joined #archlinux
+2017-01-27 21:29:38	grawity	because usually it's quite chatty about starting up, loading the samba dlz, and stuff
+2017-01-27 21:29:51	archlovertelis	where can i find some help for dota 2 plz? :D :P
+2017-01-27 21:29:59	grawity	if it is in fact running, enable `rndc querylog` and check logs again
+2017-01-27 21:30:08	 <<< 	roomcayz___ (~roomcayz@109.231.60.5) has quit (Read error: Connection reset by peer)
+2017-01-27 21:30:36	 >>> 	roomcayz___ (~roomcayz@109.231.60.5) has joined #archlinux
+2017-01-27 21:30:43	 - 	Soni is now known as CTCP-S
+2017-01-27 21:30:45	 <<< 	aajjbb1 (~aajjbb@186.223.195.141) has quit (Ping timeout: 264 seconds)
+2017-01-27 21:31:04	dmc	absolutely no explanation.. https://git.archlinux.org/svntogit/community.git/commit/trunk?h=packages/dokuwiki&id=2b3993c694ba3684f38956c3d04ef8f7225ac7f0
+2017-01-27 21:31:04	irreleph4nt	grawity: where's the default location for bind logs? the wiki has you change the log location so I'd like to check the default as well
+2017-01-27 21:31:04	phrik	Title: svntogit/community.git - Git clone of the 'community' repository (at git.archlinux.org)
+2017-01-27 21:31:13	 >>> 	absolutejam (~absolutej@185.4.24.24) has joined #archlinux
+2017-01-27 21:31:25	thurstylark	!give archlovertelis ask
+2017-01-27 21:31:25	phrik	archlovertelis: Don't ask to ask, if anyone is here or alive, or uses something. Just ask, and we'll get moving along. Thanks.
+2017-01-27 21:31:29	thurstylark	!give archlovertelis howtoreport
+2017-01-27 21:31:31	phrik	archlovertelis: http://www.co.kerr.tx.us/it/howtoreport.html
+2017-01-27 21:31:33	duelle	Namarrgon: I am currently creating the bug report, but could not find the URL for the paste to the dmesg output (as I was on the console only at that point). Do you happen to still have it somewhere in your history?
+2017-01-27 21:31:34	 <<< 	przemkovv-bis (~przemkovv@d208-222.icpnet.pl) has quit (Ping timeout: 252 seconds)
+2017-01-27 21:31:37	 <<< 	frankyboy_ (~franky@ppp109-252-155-222.pppoe.spdop.ru) has quit (Remote host closed the connection)
+2017-01-27 21:31:41	 - 	CTCP-S is now known as Go-Away-OC
+2017-01-27 21:31:45	 >>> 	quasarj (~quasar@144.30.108.62) has joined #archlinux
+2017-01-27 21:31:55	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-27 21:32:12	 <<< 	unknwn (~nezinau@unaffiliated/unknwn) has quit (Read error: Connection reset by peer)
+2017-01-28 13:03:43	 >>> 	inabsentia (~inabsenti@x1-6-2c-56-dc-4f-ff-a8.cpe.webspeed.dk) has joined #archlinux
+2017-01-28 13:03:43	 - 	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> harfbuzz errors? Switch back to the official freetype2 packages: https://git.io/vMWsq <+> Arch Linux is phasing out i686 support. Read the news."
+2017-01-28 13:03:43	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-01-28 13:03:44	 - 	Channel #archlinux: 1718 nicks (1 op, 0 voices, 1717 normals)
+2017-01-28 13:03:45	 - 	Channel created on  
+2017-01-28 13:04:05	iceflower	anonzadas: i dont know :D the think is i booted this system the last time 3-4 month ago, but now it does not boot, i use the Asus H170M-Plus with the newest uefi version, is this the problem maybe?
+2017-01-28 13:04:12	 >>> 	tschan (~tschan@p4FC53B12.dip0.t-ipconnect.de) has joined #archlinux
+2017-01-28 13:04:21	 <<< 	thinkpadnewbee (~Thunderbi@ipservice-092-217-209-019.092.217.pools.vodafone-ip.de) has quit (Ping timeout: 264 seconds)
+2017-01-28 13:04:28	frenata	Seems that the 4.9.6-1 kernel was definitely my issue, since I can boot from the day before the kernel upgrade but not the day of. Still not entirely sure what the issue was, not very experienced at trawling through journalctl.
+2017-01-28 13:04:28	 >>> 	jvb (~jvb@37.205.11.245) has joined #archlinux
+2017-01-28 13:04:50	zerorax	some Asus UEFI firmwares are 64 bit, but only configured to boot 32 bit OS, this requires a modded grub to load a 64 bit os
+2017-01-28 13:04:51	anonzadas	are you on linux or windows right now
+2017-01-28 13:05:11	 <<< 	JeanCarloMachado (~jean@177.79.70.110) has quit (Ping timeout: 255 seconds)
+2017-01-28 13:05:18	iceflower	i write from another arch os right now
+2017-01-28 13:05:27	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-28 13:05:53	 <<< 	libastral (~mluts@134.249.141.74) has quit (Quit: ZNC - http://znc.in)
+2017-01-28 13:05:56	anonzadas	zerorax: whats the point of having a new bios like EFI if you disable it? EFI is not that hard
+2017-01-28 13:06:23	zerorax	anonzadas, I don't want EFI, pretty simple
+2017-01-28 13:06:31	zerorax	I prefer the simplicity of MBR
+2017-01-28 13:06:37	zerorax	err
+2017-01-28 13:06:42	zerorax	that was the wrong acronym
+2017-01-28 13:06:44	frenata	Some MOBOs still support it weirdly or poorly, too.
+2017-01-28 13:06:57	 >>> 	prohobo (~prohobo@095160157038.dynamic-ra-10.vectranet.pl) has joined #archlinux
+2017-01-28 13:06:57	 <<< 	prohobo (~prohobo@095160157038.dynamic-ra-10.vectranet.pl) has quit (Client Quit)
+2017-01-28 13:07:06	anonzadas	iceflower: check this guide https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface#efibootmgr
+2017-01-28 13:07:06	phrik	Title: Unified Extensible Firmware Interface - ArchWiki (at wiki.archlinux.org)
+2017-01-28 13:07:38	 <<< 	codfection (~codfectio@unaffiliated/codfection) has quit (Remote host closed the connection)
+2017-01-28 13:07:48	 >>> 	troulouliou_dev (~troulouli@unaffiliated/troulouliou-dev/x-4757952) has joined #archlinux
+2017-01-28 13:07:52	zerorax	UEFI sets very strict standard for booting from, and while it is kinda something I was asking for as an OS developer(not booting in 16 bit mode), I don't like the way you program and interface with it
+2017-01-28 13:08:04	 <<< 	Det87 (~Det87@unaffiliated/det87) has quit (Ping timeout: 240 seconds)
+2017-01-28 13:08:13	 >>> 	Phenox_ (~phenox_@195.82.49.140) has joined #archlinux
+2017-01-28 13:08:27	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 13:09:00	iceflower	anonzadas: i will check it
+2017-01-28 13:09:29	 <<< 	frenata (~frenata@111.94.127.217) has quit (Remote host closed the connection)
+2017-01-28 13:09:34	 >>> 	zerorax2 (~zerorax@tnhlon4048w-lp130-05-65-95-220-41.dsl.bell.ca) has joined #archlinux
+2017-01-28 13:09:38	zerorax2	as i was saying before i disconnected... There is nothing about UEFI that i feel i need, it requires a special partition on your disk, many UEFI firmwares you can't disable secure boot, many UEFI firmwares are proprietary systems that don't act like normal x86 computers
+2017-01-28 13:09:39	 <<< 	voxadam (~adam@fedora/voxadam) has quit (Remote host closed the connection)
+2017-01-28 13:09:45	 <<< 	panostimos (ptim@athedsl-4437050.home.otenet.gr) has quit (Ping timeout: 260 seconds)
+2017-01-28 13:10:03	zerorax2	I just don't like it, I have reasons why i don't use it, and no reason to use it
+2017-01-28 13:10:04	anonzadas	zerorax: its true it is a bit more strict, but it has some improvements on booting and interfacing OS and hardware
+2017-01-28 13:10:53	 <<< 	sim590 (~sim590@cable-192.222.205.239.electronicbox.net) has quit (Ping timeout: 256 seconds)
+2017-01-28 13:11:00	zerorax2	yeah, the 16 bit 512 byte bootloader restriction made parsing filesystems to find your stage 2 bootloader really hard, and you need to know assembly to do it, but i wish we had something else to replace 16 bit boot mode instead of UEFI
+2017-01-28 13:11:17	 >>> 	frenata (~frenata@111.94.127.217) has joined #archlinux
+2017-01-28 13:11:26	iceflower	anonzadas: i if do efibootmgr the arch_grub is on first position
+2017-01-28 13:11:29	 <<< 	cdown (~cdown@213.205.251.165) has quit (Ping timeout: 245 seconds)
+2017-01-28 13:11:32	zerorax2	it's not that the old stuff didn't need to be replaced, i just don't like working with UEFI personally
+2017-01-28 13:11:43	zerorax2	I wish we had a different replacement instead
+2017-01-28 13:12:15	zerorax2	coreboot is a thing, but hardware support is super limited
+2017-01-28 13:12:26	anonzadas	what restrictions is that? i boot my kernel directly fron EFI with no bootloader
+2017-01-28 13:12:35	 <<< 	zerorax (~zerorax@tnhlon4048w-lp130-05-65-95-220-41.dsl.bell.ca) has quit (Ping timeout: 256 seconds)
+2017-01-28 13:12:41	zerorax2	ananzadas, restrictions on how you program your OS to load
+2017-01-28 13:12:59	zerorax2	it's a pain in the ass to developers who are forced to work with it
+2017-01-28 13:13:50	zerorax2	especially since so many of them are non-standard proprietary modifications of the original specification
+2017-01-28 13:13:53	 >>> 	grayjoc (~textual@2a02:c7d:b927:8900:3526:2feb:c421:92e8) has joined #archlinux
+2017-01-28 13:14:13	zerorax2	just because it works for you with no problem, doesn't mean it's the best solution to the problem
+2017-01-28 13:14:15	 <<< 	Phenox_ (~phenox_@195.82.49.140) has quit (Ping timeout: 258 seconds)
+2017-01-28 13:14:21	 >>> 	sim590 (~sim590@cable-192.222.205.239.electronicbox.net) has joined #archlinux
+2017-01-28 13:14:23	 <<< 	[Author] (~Author]@2401:a400:3200:5600:bad:d09:15:90d) has quit (Read error: Connection reset by peer)
+2017-01-28 13:14:56	anonzadas	at least you can develop for EFI, there is some intel documentation for it...its more open than bios, since you can add modules to EFI
+2017-01-28 13:15:29	 <<< 	mastizada (~Thunderbi@37.154.230.53) has quit (Ping timeout: 240 seconds)
+2017-01-28 13:15:39	zerorax2	yeah, there's really no need for that though
+2017-01-28 13:15:47	 <<< 	MrGarlic (uid11626@gateway/web/irccloud.com/x-nzvqtntuivkmomzz) has quit (Quit: Connection closed for inactivity)
+2017-01-28 13:15:48	 >>> 	JeanCarloMachado (~jean@177.79.70.242) has joined #archlinux
+2017-01-28 13:16:08	 <<< 	foxxx0 (~fox@unaffiliated/foxxx0) has quit (Quit: WeeChat 1.6)
+2017-01-28 13:16:30	bookworm	There's no need for you... It is useful for someone
+2017-01-28 13:16:49	anonzadas	at same point, there is. 
+2017-01-28 13:17:01	zerorax2	bookworm, what does it do that you can't do without it just as efficiently?
+2017-01-28 13:17:17	zerorax2	other than parse complex filesystems without being an assembly wizard
+2017-01-28 13:17:31	 >>> 	sshow (~sshow@185.35.202.198) has joined #archlinux
+2017-01-28 13:17:39	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Read error: Connection reset by peer)
+2017-01-28 13:17:41	bookworm	That's not enough?
+2017-01-28 13:17:47	anonzadas	first you dont need assembly, there is a intel SDK, C.
+2017-01-28 13:17:50	 <<< 	peaveyman (~gary@unaffiliated/peaveyman) has quit (Quit: WeeChat 1.7)
+2017-01-28 13:18:08	 - 	foutrelis_ is now known as foutrelis
+2017-01-28 13:18:10	zerorax2	You can't write a 512 byte 16 bit bootsector in C
+2017-01-28 13:18:10	 <<< 	malfunc (~dane@178.33.73.220) has quit (Ping timeout: 255 seconds)
+2017-01-28 13:18:16	zerorax2	no one has a compiler that can do that
+2017-01-28 13:18:33	Gaffel	GPT is great.
+2017-01-28 13:18:44	 >>> 	noxi_ (~noxi@178.167.254.127.threembb.ie) has joined #archlinux
+2017-01-28 13:18:50	zerorax2	GPT is the partiton table system right?
+2017-01-28 13:18:53	Gaffel	Yes
+2017-01-28 13:19:00	zerorax2	yeah, I have no problems with that
+2017-01-28 13:19:04	Gaffel	It has no CHS addressing, it's pure LBA out of the box, unlike MBR.
+2017-01-28 13:19:09	zerorax2	I have used it before when i needed lots of partitions
+2017-01-28 13:19:15	anonzadas	you can do a module to disable hardware as example.
+2017-01-28 13:19:43	anonzadas	or you can do a module to disable your disk, and net interface if you do not trust the OS
+2017-01-28 13:19:48	Gaffel	The MBR had LBA support added once CHS wasn't enough.
+2017-01-28 13:19:52	zerorax2	ok, but you could disable hardware without the module in your old BIOS based machine
+2017-01-28 13:19:53	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 13:20:09	zerorax2	or you could disable it at boot time with a boot loader
+2017-01-28 13:20:23	anonzadas	just in some bios, some bios are really limited
+2017-01-28 13:20:36	Gaffel	BIOS are hacks
+2017-01-28 13:20:37	zerorax2	yeah, if you buy low end hardware you don't get the good features
+2017-01-28 13:20:46	zerorax2	hacks?
+2017-01-28 13:20:49	zerorax2	what do you mean?
+2017-01-28 13:21:08	Gaffel	Just de facto standard, nothing on paper.
+2017-01-28 13:21:10	 >>> 	absolutejam (~absolutej@185.4.24.24) has joined #archlinux
+2017-01-28 13:21:17	Gaffel	Everyone went their own way of doing thigs.
+2017-01-28 13:21:23	 >>> 	somis (~somis@149.56.153.180) has joined #archlinux
+2017-01-28 13:21:33	zerorax2	yeah, BIOS doesn't have a standard, but high end motherboards come with feature rich BIOS firmwares
+2017-01-28 13:21:41	 >>> 	libastral (~mluts@134.249.141.74) has joined #archlinux
+2017-01-28 13:21:42	zerorax2	well, bios does have a standard
+2017-01-28 13:21:46	zerorax2	but it's not very strict
+2017-01-28 13:21:54	 <<< 	noxi (~noxi@178.167.254.116.threembb.ie) has quit (Ping timeout: 245 seconds)
+2017-01-28 13:21:54	 >>> 	foxxx0 (~fox@unaffiliated/foxxx0) has joined #archlinux
+2017-01-28 13:21:57	anonzadas	but at EFI point you can have all the features, on high price computers or low price computers, there is no EFI destinction
+2017-01-28 13:22:07	 <<< 	robotroll (~robotroll@unaffiliated/robotroll) has quit (Remote host closed the connection)
+2017-01-28 13:22:10	zerorax2	yes there is anonzadas 
+2017-01-28 13:22:18	zerorax2	my EFI is crippled by design
+2017-01-28 13:22:32	Gaffel	I've seen feature rich and crippled UEFIs.
+2017-01-28 13:22:38	zerorax2	I can't do anything with it other than load a special version of windows 8.1
+2017-01-28 13:22:39	Gaffel	It's all up to the board manufacturer.
+2017-01-28 13:22:49	anonzadas	I know that feeling, my old asus was bad too :(
+2017-01-28 13:23:11	zerorax2	I like asus
+2017-01-28 13:23:21	 >>> 	noxi__ (~noxi@178.167.254.232.threembb.ie) has joined #archlinux
+2017-01-28 13:23:23	zerorax2	I've never had a problem with an asus product and I've been buying them for 20 years
+2017-01-28 13:23:37	zerorax2	I've owned like 6 or 7 asus laptops, and bought at least 15 asus motherboards
+2017-01-28 13:24:14	zerorax2	Asus is my go-to brand for motherboards, laptops I trust them less, but still better than many manufactures
+2017-01-28 13:24:14	anonzadas	hardware/price are not bad, quality construction is bad, I have seen a lot loosing bolts and paint
+2017-01-28 13:24:40	zerorax2	I have no problems with the asus products I have bought
+2017-01-28 13:24:52	revoltingPeasant	I've been using pacman to install my python libs but I've come across one that isn't in the repos. Is it safe to use pip in this case or will this cause conflicts?
+2017-01-28 13:25:10	anonzadas	search on yaourt first
+2017-01-28 13:25:28	 >>> 	noxi (~noxi@178.167.255.237.threembb.ie) has joined #archlinux
+2017-01-28 13:25:30	anonzadas	than if you cant find do pip install PACKAGES --user     its safer
+2017-01-28 13:25:42	 <<< 	grayjoc (~textual@2a02:c7d:b927:8900:3526:2feb:c421:92e8) has quit (Quit: Computer has gone to sleep.)
+2017-01-28 13:25:44	zerorax2	I've had one problem with Asus, but it wasn't a problem caused by asus, it was a bad CPU that needed a microcode patch, and asus didn't properly document all the required steps to flash the bios when the patch was available
+2017-01-28 13:25:53	revoltingPeasant	anonzadas: ty
+2017-01-28 13:26:44	 <<< 	iceflower (584ef92d@gateway/web/freenode/ip.88.78.249.45) has quit (Quit: Page closed)
+2017-01-28 13:26:46	zerorax2	there was some really specific things you had to do to flash the bios, like you needed to do it from a usb drive in a specific port on the back of the computer, you needed to do it from a fat32 filesystem, and a couple more i forget
+2017-01-28 13:27:07	zerorax2	and those details weren't in the docs on their site
+2017-01-28 13:27:13	zerorax2	so I had to call them
+2017-01-28 13:27:19	 <<< 	noxi_ (~noxi@178.167.254.127.threembb.ie) has quit (Ping timeout: 276 seconds)
+2017-01-28 13:27:39	zerorax2	the first guy I talked to was an idiot... wasted an hour of my time, then I got mad and told him to get someone who wasn't a moron and it was fixed in 3 minutes
+2017-01-28 13:28:04	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-28 13:28:22	anonzadas	never had that kind of problems, the i7 3rd gen that I had was really stable
+2017-01-28 13:28:25	 <<< 	noxi__ (~noxi@178.167.254.232.threembb.ie) has quit (Ping timeout: 258 seconds)
+2017-01-28 13:28:55	 <<< 	noxi (~noxi@178.167.255.237.threembb.ie) has quit (Client Quit)
+2017-01-28 13:29:02	 >>> 	mastizada (~Thunderbi@37.154.230.53) has joined #archlinux
+2017-01-28 13:29:15	 >>> 	noxi (~noxi@178.167.255.237.threembb.ie) has joined #archlinux
+2017-01-28 13:29:21	 >>> 	BoBeR182 (~BoBeR182@gateway/tor-sasl/bober182) has joined #archlinux
+2017-01-28 13:29:32	zerorax2	I have bad luck with hardware
+2017-01-28 13:29:47	zerorax2	pretty much every cpu has known bugs that they never plan to fix, but I seem to always buy hardware with serious ones
+2017-01-28 13:29:58	 <<< 	noxi (~noxi@178.167.255.237.threembb.ie) has quit (Remote host closed the connection)
+2017-01-28 13:30:02	 <<< 	MisterMustafa (~MisterMus@28.51.70.115.static.exetel.com.au) has quit (Read error: Connection reset by peer)
+2017-01-28 13:30:09	 <<< 	awidegreen (~awidegree@2001:16d8:ff00:860c:383a:a379:c21b:e0cb) has quit (Ping timeout: 256 seconds)
+2017-01-28 13:30:43	zerorax2	It's scary how bug-ridden the average desktop CPU is
+2017-01-28 13:30:53	 >>> 	timahvo1 (~rogue@197.156.133.81) has joined #archlinux
+2017-01-28 13:31:19	 >>> 	SopaXorzTaker (~SopaXorzT@unaffiliated/sopaxorztaker) has joined #archlinux
+2017-01-28 13:31:44	 <<< 	libastral (~mluts@134.249.141.74) has quit (Quit: ZNC - http://znc.in)
+2017-01-28 13:31:53	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 13:31:58	 <<< 	SopaXorzTaker (~SopaXorzT@unaffiliated/sopaxorztaker) has quit (Client Quit)
+2017-01-28 13:32:07	 <<< 	manuelschneid3r (~manuelsch@p20030072AF05A10036DD071CAE956793.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-01-28 13:32:16	 >>> 	kadfak (~x@campus26.campus.ttu.ee) has joined #archlinux
+2017-01-28 13:32:22	 >>> 	Cyljus (~androirc@p5B2E94A2.dip0.t-ipconnect.de) has joined #archlinux
+2017-01-28 13:33:25	 >>> 	panostimos (ptim@athedsl-4437050.home.otenet.gr) has joined #archlinux
+2017-01-28 13:33:30	 >>> 	brogon (~brogon@unaffiliated/brogon) has joined #archlinux
+2017-01-28 13:34:00	cobalt-red	zerorax2: um...
+2017-01-28 13:34:06	cobalt-red	what's wrong with your CPU?
+2017-01-28 13:34:19	zerorax2	which one LOL?
+2017-01-28 13:34:29	 <<< 	rzwz (~raz@unaffiliated/rzwz) has quit (Ping timeout: 276 seconds)
+2017-01-28 13:34:34	 <<< 	infides_afk (~infides@p5B1677CC.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-01-28 13:34:42	 >>> 	JCaesar (~julius@liftm.de) has joined #archlinux
+2017-01-28 13:34:46	cobalt-red	zerorax2: what's the worst?
+2017-01-28 13:34:53	 >>> 	earnestly (~Earnestly@unaffiliated/earnestly) has joined #archlinux
+2017-01-28 13:35:04	JCaesar	Hm, how much entropy does pacman-key --init need?
+2017-01-28 13:35:05	zerorax2	one of them, crashes infrequently causing lockups when running hardware accelerated VM's, one of them had a task scheduling bug that took a year for a patch to come out... those are the 2 worst
+2017-01-28 13:35:06	cerion	I installed rtlwifi_new but the blacklisted rtl8723be module is still loaded. how to blacklist it really ?
+2017-01-28 13:35:27	 <<< 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has quit (Quit: This computer has gone to sleep)
+2017-01-28 13:35:31	 <<< 	ntldr (~Dorkbot@linux-netherlands.cryptostorm.net) has quit (Quit: G⃒j⃒o⃒r⃒e⃒ E⃒n⃒ E⃒n⃒d⃒r⃒i⃒n⃒g⃒... D⃒r⃒e⃒p⃒e⃒ D⃒e⃒g⃒ S⃒e⃒l⃒v⃒)
+2017-01-28 13:35:34	zerorax2	basically I bought 2 $1500 computers and both of them were seriously borked
+2017-01-28 13:35:41	 >>> 	peaveyman (~gary@unaffiliated/peaveyman) has joined #archlinux
+2017-01-28 13:35:43	 >>> 	rzwz (~raz@unaffiliated/rzwz) has joined #archlinux
+2017-01-28 13:35:44	zerorax2	now I don't spend much money on hardware since that happened
+2017-01-28 13:35:51	zerorax2	I'm on a $200 netbook right now
+2017-01-28 13:36:02	zerorax2	because I can't be bothered to buy new hardware after those experiences
+2017-01-28 13:36:09	zerorax2	*new expensive hardware
+2017-01-28 13:36:22	anonzadas	cerion: delete it from the system, rm module_file.ko
+2017-01-28 13:36:23	 <<< 	apollo11w (~apollo11w@unaffiliated/apollo11w) has quit (Read error: Connection reset by peer)
+2017-01-28 13:36:23	 >>> 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has joined #archlinux
+2017-01-28 13:36:25	 >>> 	libastral (~mluts@134.249.141.74) has joined #archlinux
+2017-01-28 13:36:43	cerion	anonzadas: yes
+2017-01-28 13:37:09	zerorax2	Most cpu bugs are less significant than those 2, but I don't think there has ever been a desktop cpu that didn't have a bug in it
+2017-01-28 13:37:29	zerorax2	the average cpu, has about 30 known bugs by the time it reaches 2 years after it's release date
+2017-01-28 13:37:51	 >>> 	t-ask (~t-ask@ks3100825.kimsufi.com) has joined #archlinux
+2017-01-28 13:37:52	 <<< 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has quit (Client Quit)
+2017-01-28 13:38:25	Gaffel	i've tried to update the UEFI on my laptop but it won't work. The flashing process freezes. :/
+2017-01-28 13:38:33	Gaffel	I have to turn off system.
+2017-01-28 13:38:58	 >>> 	boombanana (~jorick@178-117-179-127.access.telenet.be) has joined #archlinux
+2017-01-28 13:39:02	Gaffel	It's supposed to fix some security issues and update microcode.
+2017-01-28 13:39:06	 >>> 	apollo11w (~apollo11w@unaffiliated/apollo11w) has joined #archlinux
+2017-01-28 13:39:13	cerion	anonzadas: oh my. now i got unknown symbol in modules when loading the dkms altenate module
+2017-01-28 13:40:05	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 260 seconds)
+2017-01-28 13:40:29	 <<< 	boombanana (~jorick@178-117-179-127.access.telenet.be) has quit (Client Quit)
+2017-01-28 13:41:23	 <<< 	bmhm (~bmhm@unaffiliated/bmhm) has quit (Read error: Connection reset by peer)
+2017-01-28 13:42:19	 >>> 	vxx (~vxx@unaffiliated/vxx) has joined #archlinux
+2017-01-28 13:43:02	 >>> 	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has joined #archlinux
+2017-01-28 13:44:06	 >>> 	malfunc (~dane@178.33.73.220) has joined #archlinux
+2017-01-28 13:44:29	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 13:45:37	 <<< 	j12t (~j12t@c-50-131-55-96.hsd1.ca.comcast.net) has quit (Ping timeout: 252 seconds)
+2017-01-28 13:45:45	 >>> 	Steinberg (~nicolas@2602:306:3007:1a80:b877:a03d:e756:c314) has joined #archlinux
+2017-01-28 13:46:12	 <<< 	lmat (~lmat@c-68-50-32-125.hsd1.in.comcast.net) has quit (Quit: leaving)
+2017-01-28 13:46:19	 <<< 	pavlushka (~pavlushka@ubuntu/member/pavlushka) has quit (Ping timeout: 248 seconds)
+2017-01-28 13:47:42	 >>> 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has joined #archlinux
+2017-01-28 13:47:55	 <<< 	jagobdue (~jacob@d40a9e34.rev.stofanet.dk) has quit (Remote host closed the connection)
+2017-01-28 13:48:09	 >>> 	johnny56 (~johnny56@unaffiliated/johnny56) has joined #archlinux
+2017-01-28 13:48:35	 >>> 	autechy (~autechy@134.249.168.41) has joined #archlinux
+2017-01-28 13:48:42	 >>> 	MrLinuxFish (~mrlinuxfi@71-211-131-199.hlrn.qwest.net) has joined #archlinux
+2017-01-28 13:49:57	 >>> 	[Author] (~Author]@2401:a400:3200:5600:bad:d09:15:90d) has joined #archlinux
+2017-01-28 13:50:16	 >>> 	will (~will@unaffiliated/will-f/x-7960964) has joined #archlinux
+2017-01-28 13:50:28	 <<< 	will (~will@unaffiliated/will-f/x-7960964) has quit (Client Quit)
+2017-01-28 13:50:51	 >>> 	jagobdue (~jacob@d40a9e34.rev.stofanet.dk) has joined #archlinux
+2017-01-28 13:51:21	 >>> 	manuelschneid3r (~manuelsch@p20030072AF05A10036DD071CAE956793.dip0.t-ipconnect.de) has joined #archlinux
+2017-01-28 13:51:41	 <<< 	sigmundv (sigmundv@nat/ibm/x-amaqevdwfgyhhpxt) has quit (Ping timeout: 256 seconds)
+2017-01-28 13:52:48	anonzadas	are you sure you blacklisted right the module?
+2017-01-28 13:53:11	 <<< 	peaveyman (~gary@unaffiliated/peaveyman) has quit (Quit: WeeChat 1.7)
+2017-01-28 13:53:17	anonzadas	maybe there is an unblacklisted module that is loading that one... try to find the loading flow
+2017-01-28 13:53:33	 >>> 	will (~will@unaffiliated/will-f/x-7960964) has joined #archlinux
+2017-01-28 13:53:38	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-28 13:53:45	 <<< 	_ashbreeze_ (~mark@c-73-82-100-21.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2017-01-28 13:54:07	 <<< 	Gi0 (~Gi0@unaffiliated/gi0) has quit (Quit: Cheers)
+2017-01-28 13:54:22	 >>> 	SuperficialyLost (~Superfici@120.18.2.142) has joined #archlinux
+2017-01-28 13:54:35	SuperficialyLost	%
+2017-01-28 13:54:49	 <<< 	svito (~svito@31.148.253.72) has left #archlinux ("Бувай")
+2017-01-28 13:54:59	SuperficialyLost	oops sorry. Ah my installation of (g)as doesn't allow for naked regs, what do I do?
+2017-01-28 13:55:01	 >>> 	pavlushka (~pavlushka@ubuntu/member/pavlushka) has joined #archlinux
+2017-01-28 13:55:09	SuperficialyLost	-_-
+2017-01-28 13:55:34	 <<< 	will (~will@unaffiliated/will-f/x-7960964) has quit (Client Quit)
+2017-01-28 13:56:50	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 13:57:24	 <<< 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has quit (Quit: This computer has gone to sleep)
+2017-01-28 13:57:26	 <<< 	IamTrying (~IamTrying@18.224-136-217.adsl-static.isp.belgacom.be) has quit (Quit: Leaving...)
+2017-01-28 13:58:29	 >>> 	fernie (~fernie@2001:999:42:616e:baab:be34:0:2) has joined #archlinux
+2017-01-28 13:58:33	 >>> 	frvr (~florea@94.176.110.206) has joined #archlinux
+2017-01-28 13:58:36	 <<< 	libastral (~mluts@134.249.141.74) has quit (Quit: ZNC - http://znc.in)
+2017-01-28 13:59:06	 >>> 	undeadleech (~undeadlee@p4FE38599.dip0.t-ipconnect.de) has joined #archlinux
+2017-01-28 13:59:19	 >>> 	sdothum (~sdothum@108.63.177.210) has joined #archlinux
+2017-01-28 14:00:29	 <<< 	dandels (~dandels@unaffiliated/dandels) has quit (Quit: WeeChat 1.7)
+2017-01-28 14:00:29	 <<< 	lumidify (~lumidify@unaffiliated/lumidify) has quit (Quit: leaving)
+2017-01-28 14:00:56	 >>> 	peaveyman (~gary@unaffiliated/peaveyman) has joined #archlinux
+2017-01-28 14:01:30	 >>> 	MisterMustafa (~MisterMus@28.51.70.115.static.exetel.com.au) has joined #archlinux
+2017-01-28 14:01:46	 >>> 	prohobo (~prohobo@095160157038.dynamic-ra-10.vectranet.pl) has joined #archlinux
+2017-01-28 14:01:52	 >>> 	libastral (~mluts@134.249.141.74) has joined #archlinux
+2017-01-28 14:02:36	SuperficialyLost	%%?
+2017-01-28 14:02:49	 <<< 	dibblego (~dibblego@haskell/developer/dibblego) has left #archlinux ("λ")
+2017-01-28 14:04:43	 <<< 	JeanCarloMachado (~jean@177.79.70.242) has quit (Ping timeout: 256 seconds)
+2017-01-28 14:04:46	 <<< 	Pupnik (~Pupnik@2001:44b8:41c4:ba00:de4b:12fa:8add:639a) has quit (Remote host closed the connection)
+2017-01-28 14:05:04	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:05:09	 <<< 	minimalism (~none@unaffiliated/minimalism) has quit (Quit: WeeChat 1.4)
+2017-01-28 14:05:48	 >>> 	GI_Jack (~GI_Jack@pdpc/supporter/active/gi-jack) has joined #archlinux
+2017-01-28 14:06:40	 >>> 	JeanCarloMachado (~jean@177.79.72.135) has joined #archlinux
+2017-01-28 14:06:52	 <<< 	krarkrrrc (~chris@24.115.182.39.res-cmts.gld.ptd.net) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:07:14	 >>> 	trayzer (~kvirc@178.57.1.115) has joined #archlinux
+2017-01-28 14:07:16	 >>> 	indeedwatson (~yama@host231.201-253-41.telecom.net.ar) has joined #archlinux
+2017-01-28 14:07:27	 >>> 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has joined #archlinux
+2017-01-28 14:07:27	 <<< 	pks (~pks@x4e348e5f.dyn.telefonica.de) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:07:55	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 14:08:24	 >>> 	pks (~pks@x4e348e5f.dyn.telefonica.de) has joined #archlinux
+2017-01-28 14:09:05	 >>> 	mSSM (~SuperFluf@unaffiliated/superfluffy) has joined #archlinux
+2017-01-28 14:09:13	 >>> 	Sanderski (~kamil@87-207-166-36.dynamic.chello.pl) has joined #archlinux
+2017-01-28 14:09:47	 >>> 	thrice (~ajb@unaffiliated/thrice/x-000000001) has joined #archlinux
+2017-01-28 14:11:34	 <<< 	SteveDeFacto (~SteveDeFa@185.9.19.107) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:13:10	 >>> 	cmdrsizzlorr (~alan@95.44.64.212) has joined #archlinux
+2017-01-28 14:13:18	 >>> 	snyp (~Snyp@103.56.236.197) has joined #archlinux
+2017-01-28 14:13:34	 <<< 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has quit (Ping timeout: 245 seconds)
+2017-01-28 14:14:36	 >>> 	zerorax (~zerorax@tnhlon4048w-lp130-05-65-95-220-41.dsl.bell.ca) has joined #archlinux
+2017-01-28 14:16:04	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 276 seconds)
+2017-01-28 14:17:15	 <<< 	pavlushka (~pavlushka@ubuntu/member/pavlushka) has quit (Ping timeout: 248 seconds)
+2017-01-28 14:17:27	 <<< 	zerorax2 (~zerorax@tnhlon4048w-lp130-05-65-95-220-41.dsl.bell.ca) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:17:40	 <<< 	frvr (~florea@94.176.110.206) has quit (Remote host closed the connection)
+2017-01-28 14:17:42	 >>> 	johnny56_ (~johnny56@unaffiliated/johnny56) has joined #archlinux
+2017-01-28 14:18:23	 >>> 	gdsouza (~gdsouza@45.127.211.152) has joined #archlinux
+2017-01-28 14:18:23	 <<< 	davorb (~irc@hd5b91c76.k9211.dyn.perspektivbredband.net) has quit (Read error: Connection reset by peer)
+2017-01-28 14:18:32	 >>> 	davorb (~irc@hd5b91c76.k9211.dyn.perspektivbredband.net) has joined #archlinux
+2017-01-28 14:18:39	 <<< 	Omar007 (~Omar007@2001:980:d086:1:21c7:1b8e:1f40:2884) has quit (Quit: Cya!)
+2017-01-28 14:18:45	 <<< 	johnny56 (~johnny56@unaffiliated/johnny56) has quit (Ping timeout: 264 seconds)
+2017-01-28 14:18:48	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 14:19:26	 >>> 	Carbon_Monoxide (~Carbon@119247121106.ctinets.com) has joined #archlinux
+2017-01-28 14:20:17	 <<< 	mohabaks (~mohabaks@41.204.187.12) has quit (Quit: WeeChat 1.7)
+2017-01-28 14:22:03	 <<< 	mSSM (~SuperFluf@unaffiliated/superfluffy) has quit (Quit: WeeChat 1.7)
+2017-01-28 14:22:21	 <<< 	SpaceAce (~SpaceAce@124-150-74-167.dyn.iinet.net.au) has quit (Quit: Leaving)
+2017-01-28 14:23:14	 >>> 	johnny56 (~johnny56@unaffiliated/johnny56) has joined #archlinux
+2017-01-28 14:23:31	JCaesar	I guess my question drowned earlier… how long is a pacman-key --init expected to take? It's been running for around two hours now… I do see the numbers in /proc/sys/kernel/random/entropy_avail rise slowly (around 15/minute) and then drop to 0 again, so I guess it is doing something…
+2017-01-28 14:23:33	 <<< 	BobbyJr (~BobbyJr@robsworld.plus.com) has quit (Ping timeout: 264 seconds)
+2017-01-28 14:23:43	 >>> 	aajjbb1 (~aajjbb@187.107.246.244) has joined #archlinux
+2017-01-28 14:24:01	 >>> 	cgar (~cgar@653263hfc228.tampabay.res.rr.com) has joined #archlinux
+2017-01-28 14:24:45	 <<< 	johnny56_ (~johnny56@unaffiliated/johnny56) has quit (Ping timeout: 264 seconds)
+2017-01-28 14:26:30	 <<< 	SuperficialyLost (~Superfici@120.18.2.142) has quit (Read error: Connection reset by peer)
+2017-01-28 14:26:42	Namarrgon	generate some entropy, start haveged if you have it installed
+2017-01-28 14:26:53	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 252 seconds)
+2017-01-28 14:27:26	 <<< 	raijin (~raijin@unaffiliated/raijin) has quit (Ping timeout: 252 seconds)
+2017-01-28 14:28:21	 <<< 	mastizada (~Thunderbi@37.154.230.53) has quit (Ping timeout: 264 seconds)
+2017-01-28 14:28:40	 <<< 	trayzer (~kvirc@178.57.1.115) has quit (Read error: Connection reset by peer)
+2017-01-28 14:28:45	 >>> 	newcoder (~newcoder@unaffiliated/newcoder) has joined #archlinux
+2017-01-28 14:28:49	 >>> 	SuperficialyLost (~Superfici@120.18.2.142) has joined #archlinux
+2017-01-28 14:28:55	 <<< 	koan (~koan@unaffiliated/koan) has quit (Remote host closed the connection)
+2017-01-28 14:29:00	 <<< 	autechy (~autechy@134.249.168.41) has quit (Quit: WeeChat 1.7)
+2017-01-28 14:29:26	 <<< 	newcoder (~newcoder@unaffiliated/newcoder) has left #archlinux
+2017-01-28 14:29:28	 >>> 	Phr33d0m (~x@gentoo/contributor/phr33d0m) has joined #archlinux
+2017-01-28 14:29:31	grawity	earnestly: https://github.com/mmstick/systemd-manager/blob/master/src/systemd/dbus.rs#L86-L118
+2017-01-28 14:29:32	phrik	Title: systemd-manager/dbus.rs at master · mmstick/systemd-manager · GitHub (at github.com)
+2017-01-28 14:29:37	 <<< 	peaveyman (~gary@unaffiliated/peaveyman) has quit (Quit: WeeChat 1.7)
+2017-01-28 14:29:41	grawity	earnestly: turns out you can write horrible code even in Rust
+2017-01-28 14:29:49	 >>> 	bushidoboy (~dbishop@68.130.128.2) has joined #archlinux
+2017-01-28 14:29:51	 >>> 	koan (~koan@unaffiliated/koan) has joined #archlinux
+2017-01-28 14:29:51	hashworks	Channel erstellt am So, 15 Feb 2004 06:08:31  So, 15 Feb 2004 06:08:31
+2017-01-28 14:29:59	hashworks	hups
+2017-01-28 14:30:01	hashworks	sry
+2017-01-28 14:31:28	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 14:31:45	 <<< 	Sanderski (~kamil@87-207-166-36.dynamic.chello.pl) has quit (Quit: Konversation terminated!)
+2017-01-28 14:31:50	 <<< 	jagobdue (~jacob@d40a9e34.rev.stofanet.dk) has quit (Remote host closed the connection)
+2017-01-28 14:32:11	JCaesar	wooooooh! it finished. :)
+2017-01-28 14:33:04	 >>> 	edh (~edh1@p549914A9.dip0.t-ipconnect.de) has joined #archlinux
+2017-01-28 14:33:15	 >>> 	jagobdue (~jacob@d40a9e34.rev.stofanet.dk) has joined #archlinux
+2017-01-28 14:33:27	 <<< 	brogon (~brogon@unaffiliated/brogon) has quit (Quit: WeeChat 1.7)
+2017-01-28 14:33:35	cobalt-red	hmm... fdisk really doesn't like floppies...
+2017-01-28 14:33:45	 >>> 	brogon (~brogon@unaffiliated/brogon) has joined #archlinux
+2017-01-28 14:34:10	earnestly	grawity: Oh yeah, this is what rust's standard lib looks like
+2017-01-28 14:34:10	grawity	floppies generally aren't partitioned
+2017-01-28 14:34:13	grawity	earnestly: no, I mean
+2017-01-28 14:34:20	earnestly	grawity: The dot chaining?
+2017-01-28 14:34:38	grawity	earnestly: the part where the author converts a DBus message *to a string* and parses the string back into structs
+2017-01-28 14:34:52	 >>> 	nielsdg (~nielsdg@78-23-19-156.access.telenet.be) has joined #archlinux
+2017-01-28 14:35:19	earnestly	grawity: Ah, I thought that's how dbus sort of worked
+2017-01-28 14:35:21	cobalt-red	grawity: they do have a file system...
+2017-01-28 14:35:29	 >>> 	techno_x64 (~techno_x6@unaffiliated/dark-wolf) has joined #archlinux
+2017-01-28 14:35:30	 <<< 	foolaround (~unknown@unaffiliated/foolaround) has quit (Read error: Connection reset by peer)
+2017-01-28 14:35:42	grawity	earnestly: it isn't, you get a binary message like msgpack or whatever
+2017-01-28 14:35:54	 >>> 	SamSagaZ (~SamSagaZ@190.247.52.2) has joined #archlinux
+2017-01-28 14:35:58	grawity	earnestly: and most DBus libs can (semi-)automatically parse it directly into native structures
+2017-01-28 14:35:59	 >>> 	peaveyman (~gary@unaffiliated/peaveyman) has joined #archlinux
+2017-01-28 14:36:03	earnestly	grawity: I remember the type bits, but where does dbus encode length?
+2017-01-28 14:36:13	earnestly	That is, the number of bytes of the blob
+2017-01-28 14:36:44	earnestly	!g dbus wire format header
+2017-01-28 14:36:45	grawity	https://dbus.freedesktop.org/doc/dbus-specification.html#idm558
+2017-01-28 14:36:46	phrik	earnestly: D-Bus Specification - Freedesktop.org <https://dbus.freedesktop.org/doc/dbus-specification.html>
+2017-01-28 14:36:47	phrik	Title: D-Bus Specification (at dbus.freedesktop.org)
+2017-01-28 14:37:07	earnestly	grawity: Oh, well then yeah, :(
+2017-01-28 14:37:12	grawity	in fact even that rust program gets an already-parsed message from the library
+2017-01-28 14:37:19	grawity	because otherwise it wouldn't be able to stringify it
+2017-01-28 14:37:24	 <<< 	peaveyman (~gary@unaffiliated/peaveyman) has quit (Client Quit)
+2017-01-28 14:38:02	 >>> 	dienogest (~dienogest@2a02:8071:2481:a7f0:6d05:c145:c65c:751e) has joined #archlinux
+2017-01-28 14:38:17	 >>> 	pavlushka (~pavlushka@ubuntu/member/pavlushka) has joined #archlinux
+2017-01-28 14:38:42	 >>> 	frvr (~florea@94.176.110.206) has joined #archlinux
+2017-01-28 14:39:45	 <<< 	JeanCarloMachado (~jean@177.79.72.135) has quit (Ping timeout: 264 seconds)
+2017-01-28 14:40:03	cerion	I have installed xf86-input-libinput instead of x86-input-synaptics. But I don't have any tap gesture working like single tap double tap
+2017-01-28 14:40:11	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 248 seconds)
+2017-01-28 14:40:27	earnestly	grawity: If it is pre-parsed, then this might work.  Unless it's possible that a pre-parsed string can be used to subvert their nieve parsing assumptions which wouldn't otherwise be a problem if it was properly marshalled
+2017-01-28 14:40:44	grawity	cerion: that's disabled by default; enable it in your DE, or via `xinput set-prop`, or via xorg.conf (man 4 libinput)
+2017-01-28 14:40:45	 <<< 	andyrtr (~andyrtr@archlinux/developer/andyrtr) has quit (Ping timeout: 260 seconds)
+2017-01-28 14:40:55	cerion	ok
+2017-01-28 14:41:16	 >>> 	modlin (~modlin@93.123.41.167) has joined #archlinux
+2017-01-28 14:41:25	 >>> 	JeanCarloMachado (~jean@177.79.71.89) has joined #archlinux
+2017-01-28 14:41:37	 >>> 	roberto- (~roberto@unaffiliated/roberto-) has joined #archlinux
+2017-01-28 14:42:06	roberto-	Hi. What's wrong with terminus-font? I cannot use it with my .Xresources/.Xdefaults. it doesn't load
+2017-01-28 14:42:21	earnestly	!give roberto- fontname
+2017-01-28 14:42:22	phrik	roberto-: freetype 2.7.1 messed up font names, see https://lists.nongnu.org/archive/html/freetype/2017-01/msg00019.html
+2017-01-28 14:42:39	 <<< 	spider-mario (~spidermar@185.132.73.78) has quit (Quit: WeeChat 1.6)
+2017-01-28 14:42:50	 <<< 	opthomasprime (~thomas@p2003006A620BA763BEEE7BFFFE785E9D.dip0.t-ipconnect.de) has quit (Quit: Leaving.)
+2017-01-28 14:42:57	 >>> 	spider-mario (~spidermar@185.132.73.78) has joined #archlinux
+2017-01-28 14:43:02	 >>> 	Jackneill_ (~Jackneill@unaffiliated/jackneill) has joined #archlinux
+2017-01-28 14:43:11	roberto-	phrik: Thanks!
+2017-01-28 14:43:13	phrik	roberto-: The answer is 42.
+2017-01-28 14:43:20	roberto-	earnestly: thanks!
+2017-01-28 14:43:28	 >>> 	l3lu3 (~l3lu3@unaffiliated/l3lu3) has joined #archlinux
+2017-01-28 14:43:35	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 14:43:35	browndawg	the answer is systemd
+2017-01-28 14:44:13	 >>> 	rogorido (~rogorido@x590e324b.dyn.telefonica.de) has joined #archlinux
+2017-01-28 14:44:45	 >>> 	tinnotl (~tinnotl@unaffiliated/tinnotl) has joined #archlinux
+2017-01-28 14:44:46	earnestly	!give roberto- fixpcf
+2017-01-28 14:44:47	phrik	roberto-: freetype 2.7.1 introduced a change in 3576487ad which broke configurations using PCF font types. It was fixed in 7ccca6aec but until that is available, try the following workaround: <alias><family>The Original Name</family><prefer><family>The New Name</family></prefer></alias> where The New Name can be found using fc-query.
+2017-01-28 14:45:17	 >>> 	vita_cell (~vita@159.85-85-53.dynamic.clientes.euskaltel.es) has joined #archlinux
+2017-01-28 14:45:30	earnestly	Hm
+2017-01-28 14:45:33	vita_cell	hi, what happened to gstreamer?
+2017-01-28 14:45:37	 <<< 	rogorido (~rogorido@x590e324b.dyn.telefonica.de) has quit (Client Quit)
+2017-01-28 14:45:40	earnestly	teraflops: Did you make your example config a factoid?
+2017-01-28 14:46:37	vita_cell	why arch has removed gstreamer0.10-base and gstreamer0.10-base-plugin packages from repositories?
+2017-01-28 14:46:57	 >>> 	modernrio (~modernrio@icet-clan.de) has joined #archlinux
+2017-01-28 14:47:08	vita_cell	arch found updates for those packages, but it can not to download for compile
+2017-01-28 14:47:09	grawity	because arch generally doesn't keep obsolete versions in repos
+2017-01-28 14:47:24	 >>> 	Pie-jacker875 (~Pie-jacke@c-24-62-41-71.hsd1.ma.comcast.net) has joined #archlinux
+2017-01-28 14:47:32	 <<< 	modernrio (~modernrio@icet-clan.de) has quit (Client Quit)
+2017-01-28 14:47:42	earnestly	They're usually pushed to the AUR
+2017-01-28 14:47:42	vita_cell	should I remove those packages and keep only gstreamer 1.10.2-1 ?
+2017-01-28 14:47:55	 <<< 	SuperficialyLost (~Superfici@120.18.2.142) has quit (Quit: WeeChat 1.6)
+2017-01-28 14:47:58	 >>> 	modernrio (~modernrio@icet-clan.de) has joined #archlinux
+2017-01-28 14:48:00	grawity	vita_cell: if you're not using any apps which depend on 0.10, yes
+2017-01-28 14:48:03	earnestly	vita_cell: If you don't need them, yeah.  They should be in -Qm output now
+2017-01-28 14:48:36	 >>> 	andyrtr (~andyrtr@archlinux/developer/andyrtr) has joined #archlinux
+2017-01-28 14:48:36	 >>> 	segurb (~segurb@unaffiliated/segurb) has joined #archlinux
+2017-01-28 14:48:40	vita_cell	I tryed yaourt -Syu --aur and  it fails with compilation
+2017-01-28 14:48:52	vita_cell	fails when download
+2017-01-28 14:48:54	SCHAAP137	yeah, same here, https://aur.archlinux.org/packages/gstreamer0.10-base/
+2017-01-28 14:48:55	phrik	Title: AUR (en) - gstreamer0.10-base (at aur.archlinux.org)
+2017-01-28 14:49:03	SCHAAP137	ppl commenting there say the same thing
+2017-01-28 14:49:08	SCHAAP137	fails on the elements/adder test
+2017-01-28 14:49:18	 >>> 	Avocher (52b58fd2@gateway/web/freenode/ip.82.181.143.210) has joined #archlinux
+2017-01-28 14:49:29	vita_cell	yes, those packages fails when download, so compile fails
+2017-01-28 14:49:39	SCHAAP137	some kind of version mismatch thing
+2017-01-28 14:49:41	SCHAAP137	i think
+2017-01-28 14:49:56	SCHAAP137	someone pushed an older version to AUR than what was currently in the normal repo before
+2017-01-28 14:50:02	SCHAAP137	(or something)
+2017-01-28 14:50:03	vita_cell	so what I supposed to do?
+2017-01-28 14:50:25	 <<< 	nielsdg (~nielsdg@78-23-19-156.access.telenet.be) has quit (Ping timeout: 255 seconds)
+2017-01-28 14:50:36	 >>> 	Omar007 (~Omar007@2001:980:d086:1:21c7:1b8e:1f40:2884) has joined #archlinux
+2017-01-28 14:51:03	SCHAAP137	dunno
+2017-01-28 14:51:08	SCHAAP137	i have the same issue
+2017-01-28 14:51:20	Avocher	Hi, how come chromium on archlinux can only use around 1.6gb per tab before crashing while on windows its about 3gb?
+2017-01-28 14:51:30	SCHAAP137	think it's broken for everyone atm, vita_cell 
+2017-01-28 14:51:39	 >>> 	thinkpadnewbee1 (~Thunderbi@ipservice-092-217-209-019.092.217.pools.vodafone-ip.de) has joined #archlinux
+2017-01-28 14:51:40	SCHAAP137	so not much we can do
+2017-01-28 14:51:53	SCHAAP137	that's how it rolls sometimes
+2017-01-28 14:52:06	revoltingPeasant	is this the correct format for /etc/default/grub? GRUB_CMDLINE_LINUX_DEFAULT="quiet resume=3fd4242d-720e-4f46-8cbb-5f69dfe81a93"
+2017-01-28 14:52:19	vita_cell	guys I have problems with my date (just time) in arch, here is 14:50, and arch always displays 1h less (13:50), I never could to change date time, and if I try, it fails, and my "docky" crashes
+2017-01-28 14:52:28	 >>> 	lounge (~lounge@cpe-92-37-26-34.dynamic.amis.net) has joined #archlinux
+2017-01-28 14:52:32	 >>> 	awidegreen (~awidegree@2001:16d8:ff00:860c:383a:a379:c21b:e0cb) has joined #archlinux
+2017-01-28 14:52:35	revoltingPeasant	I have the two parameters "quiet" and "resume=foo" on the same line seperated by a space
+2017-01-28 14:53:34	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 255 seconds)
+2017-01-28 14:54:58	Gaffel	revoltingPeasant, yes
+2017-01-28 14:55:05	revoltingPeasant	thanks
+2017-01-28 14:55:10	Gaffel	Wait
+2017-01-28 14:55:27	Gaffel	UUID is not correct, revoltingPeasant 
+2017-01-28 14:55:37	 >>> 	Dandels (~dee@unaffiliated/dandels) has joined #archlinux
+2017-01-28 14:55:37	Gaffel	You must use UUID=
+2017-01-28 14:55:45	 - 	Dandels is now known as dandels
+2017-01-28 14:55:49	Gaffel	resume=UUID=xxxxxxx-xxxxxxxxxx-xxxx
+2017-01-28 14:55:56	Gaffel	Just UUID like that won't work
+2017-01-28 14:56:10	revoltingPeasant	ah, ok thanks
+2017-01-28 14:56:15	 <<< 	roberto- (~roberto@unaffiliated/roberto-) has left #archlinux (":)")
+2017-01-28 14:56:22	dandels	Ugh, suddenly my btrfs decided to give a bunch of errors and I rebooted to find that my weechat and firefox settings have reset
+2017-01-28 14:56:22	revoltingPeasant	saved me a headache there
+2017-01-28 14:56:27	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 14:56:34	 <<< 	JeanCarloMachado (~jean@177.79.71.89) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:56:50	vita_cell	how to change time in arch?
+2017-01-28 14:57:00	Gaffel	vita_cell, timedatectl
+2017-01-28 14:57:26	Gaffel	vita_cell, or the date command.
+2017-01-28 14:57:33	revoltingPeasant	vita_cell: https://wiki.archlinux.org/index.php/Time
+2017-01-28 14:57:34	phrik	Title: Time - ArchWiki (at wiki.archlinux.org)
+2017-01-28 14:57:35	vita_cell	date never works
+2017-01-28 14:57:48	Gaffel	revoltingPeasant, check /proc/cmdline to see how root is specified.
+2017-01-28 14:57:53	dandels	Just set the timezone and enable ntp and you won't have to change the time
+2017-01-28 14:57:58	Gaffel	revoltingPeasant, cat /proc/cmdline
+2017-01-28 14:57:59	 >>> 	mmhat (~mmh@2a02:810a:11bf:ad88:ee08:6bff:fe09:5315) has joined #archlinux
+2017-01-28 14:58:03	vita_cell	did it, and nothing
+2017-01-28 14:58:04	 <<< 	yabbes (~yabbounic@unaffiliated/yabbounic) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:58:05	dandels	Although you need to set the hardware clock if you haven't already
+2017-01-28 14:58:12	 <<< 	modlin (~modlin@93.123.41.167) has quit (Quit: modlin)
+2017-01-28 14:58:25	revoltingPeasant	Gaffel: I see, thanks, I'll follow that format
+2017-01-28 14:58:47	vita_cell	http://dpaste.com/1NE07VV
+2017-01-28 14:58:48	phrik	Title: dpaste: 1NE07VV (at dpaste.com)
+2017-01-28 14:58:57	 <<< 	Steinberg (~nicolas@2602:306:3007:1a80:b877:a03d:e756:c314) has quit (Quit: WeeChat 1.7)
+2017-01-28 14:59:59	 <<< 	vn971 (~vasya@ppp91-77-171-136.pppoe.mtu-net.ru) has left #archlinux ("ISON Rogach NickServ ")
+2017-01-28 15:00:43	vita_cell	timedatectl set-time "2017-01-28 15:00:00"
+2017-01-28 15:00:43	vita_cell	Failed to set time: Automatic time synchronization is enabled
+2017-01-28 15:01:11	vita_cell	but automatic time sync is wrong, I don't know why
+2017-01-28 15:01:13	 <<< 	mladoux (~mark@68.47.102.117) has quit (Ping timeout: 255 seconds)
+2017-01-28 15:01:47	 >>> 	mr_sm1th (~Thunderbi@5ED4F634.cm-7-5d.dynamic.ziggo.nl) has joined #archlinux
+2017-01-28 15:02:23	BrainDamage	I wrote a trivial PKGBUILD for a piece of software, but some inane reason when it's running package() it tries to include my whole home dir in /usr/lib, what am I doing wrong? https://ptpb.pw/EUqJ
+2017-01-28 15:02:36	 >>> 	sPJz (~PJosepher@cpc76692-cosh16-2-0-cust323.6-1.cable.virginm.net) has joined #archlinux
+2017-01-28 15:02:48	vita_cell	I also tryed "pacman -Syu ntp -> systemctl enable ntpd.service -> systemctl start ntpd.service"
+2017-01-28 15:03:04	 >>> 	stefanauss (~stefanaus@160.97.54.39) has joined #archlinux
+2017-01-28 15:03:10	 <<< 	frvr (~florea@94.176.110.206) has quit (Quit: Lost terminal)
+2017-01-28 15:03:33	BrainDamage	don't use 2 ntp clients at once
+2017-01-28 15:03:38	BrainDamage	they'll only conflict
+2017-01-28 15:03:48	BrainDamage	use systemd's OR ntpd
+2017-01-28 15:03:48	Gaffel	Also, ntpd won't sync if your clock is waaay off.
+2017-01-28 15:03:54	 >>> 	peaveyman (~gary@unaffiliated/peaveyman) has joined #archlinux
+2017-01-28 15:04:12	 <<< 	prohobo (~prohobo@095160157038.dynamic-ra-10.vectranet.pl) has quit (Quit: WeeChat 1.6)
+2017-01-28 15:04:18	 >>> 	Xorg (~s0x@212.39.106.98) has joined #archlinux
+2017-01-28 15:04:32	BrainDamage	what's the output of timedatectl?
+2017-01-28 15:04:36	Xorg	can you update kdenlive package with icu new icu libaries
+2017-01-28 15:04:48	ishitatsuyuki	can who?
+2017-01-28 15:04:51	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Read error: Connection reset by peer)
+2017-01-28 15:05:03	Xorg	jelle: evilgrawity 
+2017-01-28 15:05:10	Xorg	there are people here from arch community :)
+2017-01-28 15:05:32	 >>> 	twilk (~twilk@global-184-83.nat-1.net.cam.ac.uk) has joined #archlinux
+2017-01-28 15:05:34	ishitatsuyuki	wth are you pinging?
+2017-01-28 15:05:38	grawity	this *is* the arch community
+2017-01-28 15:05:43	ishitatsuyuki	evilgrawity is a moderator bot
+2017-01-28 15:05:47	vita_cell	BrainDamage
+2017-01-28 15:05:48	vita_cell	http://dpaste.com/26EW2H0
+2017-01-28 15:05:49	phrik	Title: dpaste: 26EW2H0 (at dpaste.com)
+2017-01-28 15:05:53	Xorg	ishitatsuyuki: calm down
+2017-01-28 15:05:56	 <<< 	random-nick (~random-ni@unaffiliated/random-nick) has quit (Read error: Connection reset by peer)
+2017-01-28 15:05:58	Xorg	grawity: correct :)
+2017-01-28 15:06:32	ThomW	if you need updated packages you can flag them through the package browser
+2017-01-28 15:06:34	 >>> 	mastizada (~Thunderbi@37.154.230.53) has joined #archlinux
+2017-01-28 15:06:40	ThomW	https://www.archlinux.org/packages/
+2017-01-28 15:06:41	phrik	Title: Arch Linux - Package Search (at www.archlinux.org)
+2017-01-28 15:06:46	 >>> 	random-nick (~random-ni@unaffiliated/random-nick) has joined #archlinux
+2017-01-28 15:06:47	thrice	in this case, file a bug if it's linked to an old library
+2017-01-28 15:06:59	ThomW	pinging people on IRC is entirely unnecessary and quite annoying
+2017-01-28 15:07:04	ThomW	imagine if everyone would do that
+2017-01-28 15:07:12	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 15:07:20	BrainDamage	vita_cell: your UTC seems correct
+2017-01-28 15:07:34	vita_cell	I know, put it always displays 1h less
+2017-01-28 15:07:46	BrainDamage	did you forget to set your time zone?
+2017-01-28 15:07:50	vita_cell	no
+2017-01-28 15:07:58	 >>> 	spyhawk (~spyhawk@unaffiliated/spyhawk) has joined #archlinux
+2017-01-28 15:08:06	vita_cell	it is Spain, I set it up correctly I thing
+2017-01-28 15:08:20	 >>> 	oconnorct1 (~connor@nc-76-4-11-236.dhcp.embarqhsd.net) has joined #archlinux
+2017-01-28 15:08:25	thrice	check (see: /etc/localtime)
+2017-01-28 15:08:37	 >>> 	[0x8b30cc] (~0x8b30cc]@unaffiliated/x8b30cc) has joined #archlinux
+2017-01-28 15:08:44	 <<< 	revoltingPeasant (~joe@unaffiliated/th3-g0d5) has quit (Ping timeout: 276 seconds)
+2017-01-28 15:08:59	[0x8b30cc]	There is a way to encrypt my arch without reinstalling it?
+2017-01-28 15:09:08	 >>> 	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has joined #archlinux
+2017-01-28 15:09:08	grawity	sorta
+2017-01-28 15:09:11	 >>> 	him-cesjf (sanguine@gateway/shell/elitebnc/x-rzndwrjavpcokvlw) has joined #archlinux
+2017-01-28 15:09:13	 <<< 	GI_Jack (~GI_Jack@pdpc/supporter/active/gi-jack) has quit (Quit: Leaving)
+2017-01-28 15:09:32	vita_cell	UTC0 in /etc/localtime
+2017-01-28 15:09:33	grawity	!g luksipc
+2017-01-28 15:09:35	phrik	grawity: LUKS In-Place Conversion Tool - Johannes Bauer <http://www.johannes-bauer.com/linux/luksipc/>
+2017-01-28 15:10:28	BrainDamage	vita_cell: utc0 is wrong, put your country's capital 
+2017-01-28 15:10:30	earnestly	That page does a great job explaining how it works
+2017-01-28 15:10:43	 >>> 	Phenox_ (~phenox_@195.82.49.140) has joined #archlinux
+2017-01-28 15:10:47	earnestly	vita_cell: /etc/localtime should also ideally be a symlink
+2017-01-28 15:10:55	earnestly	To actual TZ data
+2017-01-28 15:10:58	earnestly	Not some plain text
+2017-01-28 15:11:01	[0x8b30cc]	looks like it would be easy to mess up everything
+2017-01-28 15:11:16	earnestly	Some tools, although fixed now iirc, choked on /etc/localtime not being a symlink
+2017-01-28 15:11:20	earnestly	I.e. having the wrong size
+2017-01-28 15:11:28	Namarrgon	[0x8b30cc]: backups are adviced in either case
+2017-01-28 15:11:31	 <<< 	manuelschneid3r (~manuelsch@p20030072AF05A10036DD071CAE956793.dip0.t-ipconnect.de) has quit (Ping timeout: 258 seconds)
+2017-01-28 15:11:34	 <<< 	him-cesjf (sanguine@gateway/shell/elitebnc/x-rzndwrjavpcokvlw) has quit (Excess Flood)
+2017-01-28 15:11:35	BrainDamage	I wrote a trivial PKGBUILD for a piece of software, but some inane reason when it's running package() it tries to include my whole home dir in /usr/lib, what am I doing wrong? https://ptpb.pw/EUqJ
+2017-01-28 15:11:43	Namarrgon	*advised
+2017-01-28 15:12:43	ishitatsuyuki	$pkgdir
+2017-01-28 15:12:48	[0x8b30cc]	Namarrgon, would be simpler if i will encrypt only my home?
+2017-01-28 15:12:50	ishitatsuyuki	$srcdir
+2017-01-28 15:12:53	ishitatsuyuki	be carefl
+2017-01-28 15:13:11	 <<< 	twilk (~twilk@global-184-83.nat-1.net.cam.ac.uk) has left #archlinux ("WeeChat 1.7")
+2017-01-28 15:13:18	 >>> 	yabbes (~yabbounic@unaffiliated/yabbounic) has joined #archlinux
+2017-01-28 15:13:27	BrainDamage	you're not clear
+2017-01-28 15:13:37	 <<< 	hashworks (~hashworks@hashworks.net) has left #archlinux ("WeeChat 1.7")
+2017-01-28 15:13:45	earnestly	BrainDamage: The build system is doing it
+2017-01-28 15:13:55	vita_cell	<earnestly> what should I do?
+2017-01-28 15:13:57	earnestly	BrainDamage: Although note that you don't need the . with cmake
+2017-01-28 15:13:59	Namarrgon	[0x8b30cc]: with dmcrypt? you still would want to make backups
+2017-01-28 15:14:23	earnestly	BrainDamage: Also, some tangental notes on cmake: https://ptpb.pw/vLnD
+2017-01-28 15:14:37	earnestly	BrainDamage: Hm
+2017-01-28 15:15:04	 <<< 	transacid (~transacid@pdpc/supporter/professional/transacid) has quit (Ping timeout: 240 seconds)
+2017-01-28 15:15:31	[0x8b30cc]	Namarrgon, what about ecryptfs-utils?
+2017-01-28 15:15:50	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 252 seconds)
+2017-01-28 15:15:56	earnestly	BrainDamage: Yeah, I don't see anything wrong particularly.  The download link could be better, sourceforge is tricky, but if you're actually getting that directory then it should work
+2017-01-28 15:16:14	 >>> 	transacid (~transacid@pdpc/supporter/professional/transacid) has joined #archlinux
+2017-01-28 15:16:35	 >>> 	sigmundv (sigmundv@nat/ibm/x-ewprzggvdpuohvno) has joined #archlinux
+2017-01-28 15:16:38	 >>> 	_chaky_ (~chaky@gateway/tor-sasl/chaky) has joined #archlinux
+2017-01-28 15:17:05	wyre	hi guys! how could I setup xorg? 
+2017-01-28 15:17:06	 <<< 	ed_t (~ed_t@dsl-66-36-145-182.mtl.aei.ca) has quit (Quit: Leaving)
+2017-01-28 15:17:16	 <<< 	Phenox_ (~phenox_@195.82.49.140) has quit (Ping timeout: 258 seconds)
+2017-01-28 15:17:18	 <<< 	tdy (~tdy@unaffiliated/tdy) has quit (Quit: WeeChat 1.7)
+2017-01-28 15:17:20	wyre	when I do "echo $DISPLAY" the output is blank
+2017-01-28 15:17:21	BrainDamage	it compiles fine, it's the packaging that goes weird, it actually packages the software, and then tries to package the rest of my system
+2017-01-28 15:17:37	BrainDamage	wyre: did you start xorg?
+2017-01-28 15:17:37	wyre	maybe is because my server has not any display connected? 
+2017-01-28 15:17:54	Namarrgon	[0x8b30cc]: that would work "in place" but i'm the wrong person for that, i haven't used i in a long time and found it to be a bit fragile back then
+2017-01-28 15:18:00	wyre	BrainDamage, well, my server is working only with tty
+2017-01-28 15:18:05	wyre	so no, I think
+2017-01-28 15:18:08	earnestly	BrainDamage: Yeah, the build system is doing it.  Your pkgbuild is fine
+2017-01-28 15:18:27	Namarrgon	*wrong person to ask about
+2017-01-28 15:18:41	wyre	BrainDamage, but I would like run a X instance from ssh
+2017-01-28 15:18:42	 >>> 	JeanCarloMachado (~jean@177.79.72.158) has joined #archlinux
+2017-01-28 15:18:46	 <<< 	awidegreen (~awidegree@2001:16d8:ff00:860c:383a:a379:c21b:e0cb) has quit (Ping timeout: 255 seconds)
+2017-01-28 15:18:52	 <<< 	chaky (~chaky@gateway/tor-sasl/chaky) has quit (Remote host closed the connection)
+2017-01-28 15:18:54	BrainDamage	phrik: give wyre xy
+2017-01-28 15:18:55	phrik	wyre: What exactly are you trying to do? http://www.perlmonks.org/index.pl?node_id=542341
+2017-01-28 15:18:56	[0x8b30cc]	Namarrgon, ok thank you anyway 
+2017-01-28 15:19:12	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 15:19:33	wyre	BrainDamage, I would like to run xclock through ssh, for instance
+2017-01-28 15:19:52	 <<< 	vita_cell (~vita@159.85-85-53.dynamic.clientes.euskaltel.es) has quit (Remote host closed the connection)
+2017-01-28 15:20:04	BrainDamage	then say that, don't say you have to configure xorg ...
+2017-01-28 15:20:15	 >>> 	wheelcountry (~wheelcoun@58.7c.5177.ip4.static.sl-reverse.com) has joined #archlinux
+2017-01-28 15:20:26	 <<< 	wheelcountry (~wheelcoun@58.7c.5177.ip4.static.sl-reverse.com) has quit (Remote host closed the connection)
+2017-01-28 15:20:38	wyre	BrainDamage, well, I've got outputs about the display
+2017-01-28 15:21:29	 >>> 	elgatov (~elgatov@224.red-83-35-210.dynamicip.rima-tde.net) has joined #archlinux
+2017-01-28 15:21:32	 >>> 	vita_cell (~vita@159.85-85-53.dynamic.clientes.euskaltel.es) has joined #archlinux
+2017-01-28 15:21:45	 <<< 	yabbes (~yabbounic@unaffiliated/yabbounic) has quit (Ping timeout: 264 seconds)
+2017-01-28 15:21:48	vita_cell	guys "timedatectl set-local-rtc 1" solved the problem with time
+2017-01-28 15:22:12	 >>> 	raijin (~raijin@unaffiliated/raijin) has joined #archlinux
+2017-01-28 15:22:55	 >>> 	tdy (~tdy@unaffiliated/tdy) has joined #archlinux
+2017-01-28 15:23:08	 >>> 	mohabaks (~mohabaks@41.204.187.12) has joined #archlinux
+2017-01-28 15:23:22	 <<< 	AnInstanceOfMe (~AnInstanc@213.152.162.84) has quit (Remote host closed the connection)
+2017-01-28 15:23:53	 >>> 	krarkrrrc (~chris@24.115.182.39.res-cmts.gld.ptd.net) has joined #archlinux
+2017-01-28 15:24:01	Scimmia	vita_cell: that's not really a fix, why is your rtc in localtime?
+2017-01-28 15:24:10	earnestly	BrainDamage: Build instructions mentions a configure, let's see
+2017-01-28 15:24:15	 >>> 	bored_gourd (~roman@209.198.66.10) has joined #archlinux
+2017-01-28 15:24:37	 - 	_chaky_ is now known as chaky
+2017-01-28 15:24:38	earnestly	BrainDamage: 284M, let's not see :D
+2017-01-28 15:25:24	BrainDamage	it's kerbal space program for grownups, without the game part :p
+2017-01-28 15:25:33	BrainDamage	it's an interface for nasa's sim tools
+2017-01-28 15:25:38	vita_cell	Scimmia I don't know, my problem was that I always had 1h less, never could change it
+2017-01-28 15:25:57	Scimmia	vita_cell: because your RTC was wrong
+2017-01-28 15:25:58	earnestly	BrainDamage: I've cleaned it up, got you a better download url: https://ptpb.pw/gyOa/sh and added some comments
+2017-01-28 15:25:59	phrik	Title: pb (at ptpb.pw)
+2017-01-28 15:26:05	 <<< 	segurb (~segurb@unaffiliated/segurb) has quit (Ping timeout: 258 seconds)
+2017-01-28 15:26:21	earnestly	BrainDamage: If it still has issues, can you show the log?  E.g. makepkg --log, with package()'s log
+2017-01-28 15:26:23	vita_cell	hot to change RTC? I did it from MATE gui
+2017-01-28 15:26:28	 <<< 	Cyljus (~androirc@p5B2E94A2.dip0.t-ipconnect.de) has quit (Ping timeout: 258 seconds)
+2017-01-28 15:26:33	 <<< 	Avocher (52b58fd2@gateway/web/freenode/ip.82.181.143.210) has quit (Ping timeout: 260 seconds)
+2017-01-28 15:26:35	BrainDamage	Scimmia: no, his rtc was right, he had the timezone wrong, he set utc0 as timezone instead of symlinking the proper one, we told to fix it and he proceeded toignore
+2017-01-28 15:26:38	 <<< 	sec^nd (~second@unaffiliated/sec0nd) has quit (Quit: WeeChat 1.6)
+2017-01-28 15:26:48	BrainDamage	vita_cell: we told you how to fix it
+2017-01-28 15:27:02	vita_cell	what file to symlink with?
+2017-01-28 15:27:04	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-28 15:27:06	Scimmia	even better, everything is screwed up now
+2017-01-28 15:28:09	 >>> 	AnInstanceOfMe (~AnInstanc@213.152.162.84) has joined #archlinux
+2017-01-28 15:28:10	BrainDamage	earnestly: thanks, sec
+2017-01-28 15:28:29	 <<< 	granitosaurus (~granitosa@62.65.236.134.cable.starman.ee) has quit (Ping timeout: 240 seconds)
+2017-01-28 15:28:40	earnestly	Fucking wiki
+2017-01-28 15:28:52	earnestly	timedatectl bullshit, why is this needlessly complicated
+2017-01-28 15:29:13	earnestly	vita_cell: Either way, https://wiki.archlinux.org/index.php/Time#Time_zone
+2017-01-28 15:29:14	phrik	Title: Time - ArchWiki (at wiki.archlinux.org)
+2017-01-28 15:29:21	Scimmia	timedatectl is nice for displaying the current data, that's about it
+2017-01-28 15:29:45	earnestly	Scimmia: And needs yet another daemon to do so, alas oh well
+2017-01-28 15:29:57	earnestly	Otoh, date(1) just works
+2017-01-28 15:30:23	Scimmia	another daemon?
+2017-01-28 15:30:34	vita_cell	timedatectl set-timezone Europe/Madrid, now it displays 1h more
+2017-01-28 15:31:01	BrainDamage	because you fucekd up when you did (15:21:24) vita_cell: guys "timedatectl set-local-rtc 1" solved the problem with time
+2017-01-28 15:31:13	 <<< 	gebruiker (~gebruiker@77.172.237.233) has quit (Quit: Lost terminal)
+2017-01-28 15:31:18	vita_cell	yeas, I did it wrong
+2017-01-28 15:31:27	 >>> 	Satyam2345 (~satyam@49.202.101.110) has joined #archlinux
+2017-01-28 15:31:29	 <<< 	xerox123 (xerox123@unaffiliated/xerox123) has quit (Quit: ZNC - http://znc.in)
+2017-01-28 15:31:45	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 15:32:14	Scimmia	vita_cell: delete /etc/adjtime
+2017-01-28 15:32:31	 >>> 	walking_cakes (~walking_c@p1153251-ipngn11001hodogaya.kanagawa.ocn.ne.jp) has joined #archlinux
+2017-01-28 15:32:36	vita_cell	deleted
+2017-01-28 15:33:17	walking_cakes	the tool used to check what packages have been updated but are still running old instances - I've forgotten its name.
+2017-01-28 15:33:23	walking_cakes	anyone care to fill me in? 
+2017-01-28 15:33:25	Scimmia	so things should be fine, check timedatectl
+2017-01-28 15:33:34	thrice	hm, I think I am liking plasma 5.9 enough to switch off gnome for a bit.  pretty nice
+2017-01-28 15:34:19	vita_cell	http://dpaste.com/3T0JT1Y
+2017-01-28 15:34:21	phrik	Title: dpaste: 3T0JT1Y (at dpaste.com)
+2017-01-28 15:34:27	BrainDamage	earnestly: I have to manually halt it otherwise it tries to package my whole system, so the output is truncated: https://ptpb.pw/ZanM
+2017-01-28 15:34:49	 >>> 	rogorido (~rogorido@x590e324b.dyn.telefonica.de) has joined #archlinux
+2017-01-28 15:35:12	 <<< 	typh00nz (~typh00nz@pc185-169.solaris.ds.polsl.pl) has quit (Quit: Lost terminal)
+2017-01-28 15:35:20	BrainDamage	everything until "/home/cloud/repositories/pkgbuild/gmat/pkg/gmat/usr/lib//" is fine
+2017-01-28 15:35:29	vita_cell	guys thanks you, I think that problem is solved already
+2017-01-28 15:35:33	BrainDamage	then it decides my whole system should be installed
+2017-01-28 15:35:46	 <<< 	dandels (~dee@unaffiliated/dandels) has quit (Quit: WeeChat 1.7)
+2017-01-28 15:36:19	 >>> 	Pillowcase_ (~makura@unaffiliated/pillowcase/x-5995480) has joined #archlinux
+2017-01-28 15:36:32	 <<< 	[0x8b30cc] (~0x8b30cc]@unaffiliated/x8b30cc) has quit (Quit: Leaving)
+2017-01-28 15:36:57	 <<< 	mohabaks (~mohabaks@41.204.187.12) has quit (Quit: WeeChat 1.7)
+2017-01-28 15:37:35	 >>> 	roomcayz____ (~roomcayz@user-94-254-163-218.play-internet.pl) has joined #archlinux
+2017-01-28 15:37:36	 >>> 	xerox123 (xerox123@unaffiliated/xerox123) has joined #archlinux
+2017-01-28 15:38:41	 >>> 	dandels (~dandels@unaffiliated/dandels) has joined #archlinux
+2017-01-28 15:38:43	 <<< 	Satyam2345 (~satyam@49.202.101.110) has quit (Quit: Konversation terminated!)
+2017-01-28 15:40:28	 >>> 	yabbes (~yabbounic@unaffiliated/yabbounic) has joined #archlinux
+2017-01-28 15:40:34	 <<< 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2017-01-28 15:41:16	 >>> 	whytrytofly (~whytrytof@dslb-094-223-174-105.094.223.pools.vodafone-ip.de) has joined #archlinux
+2017-01-28 15:41:20	 <<< 	roomcayz___ (~roomcayz@83.175.146.185.koba.pl) has quit (Ping timeout: 255 seconds)
+2017-01-28 15:41:25	 <<< 	whytrytofly (~whytrytof@dslb-094-223-174-105.094.223.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2017-01-28 15:42:26	d_garbage	walking_cakes, checkupdates?
+2017-01-28 15:42:31	 >>> 	j12t (~j12t@c-50-131-55-96.hsd1.ca.comcast.net) has joined #archlinux
+2017-01-28 15:43:08	d_garbage	walking_cakes, oh, i see what you're asking now, no never heard of that 
+2017-01-28 15:43:16	 <<< 	spencerb (~quassel@c-98-192-29-75.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2017-01-28 15:43:44	 >>> 	gigetoo (~gigetoo@c83-250-48-251.bredband.comhem.se) has joined #archlinux
+2017-01-28 15:43:45	d_garbage	walking_cakes, well pacman -Qi <kernel> and uname -r for the kernel package at least
+2017-01-28 15:44:37	 <<< 	aaro (~aaro@unaffiliated/xyox/x-040147) has quit (Ping timeout: 240 seconds)
+2017-01-28 15:44:48	 <<< 	nyarlu (~brandon@CPE-121-219-234-30.lnse1.win.bigpond.net.au) has quit (Quit: WeeChat 1.7)
+2017-01-28 15:44:49	 <<< 	walking_cakes (~walking_c@p1153251-ipngn11001hodogaya.kanagawa.ocn.ne.jp) has quit (Ping timeout: 245 seconds)
+2017-01-28 15:44:56	 >>> 	ThePeach (~peach@cpc76566-dals22-2-0-cust243.20-2.cable.virginm.net) has joined #archlinux
+2017-01-28 15:45:46	ThePeach	hi all. I'm having some problems installing a printer with hplip. Suddendly it can't detect the PPD drivers anymore
+2017-01-28 15:46:15	 <<< 	dmartins (~dmartins@d72-39-12-90.home1.cgocable.net) has quit (Quit: Leaving)
+2017-01-28 15:46:16	 >>> 	hrjakobsen (~mathias@kol-nordjysk.cust.fsknet.dk) has joined #archlinux
+2017-01-28 15:46:34	 >>> 	fekzebzak (~fekzebzak@2601:246:8200:2c49:fa32:e4ff:febb:8a7d) has joined #archlinux
+2017-01-28 15:46:37	 >>> 	whytrytofly (~whytrytof@dslb-094-223-174-105.094.223.pools.vodafone-ip.de) has joined #archlinux
+2017-01-28 15:46:40	earnestly	BrainDamage: lib///home  Your bug in inbetween that
+2017-01-28 15:46:59	d_garbage	ThePeach, you could paste (see topic) the output
+2017-01-28 15:47:05	 >>> 	robotroll (~robotroll@unaffiliated/robotroll) has joined #archlinux
+2017-01-28 15:47:20	earnestly	BrainDamage: -- Installing: /home/cloud/repositories/pkgbuild/gmat/pkg/gmat/usr/lib//
+2017-01-28 15:47:30	ThePeach	d_garbage: I just found out, the cups-browserd service should have been started :(((( I feel stupid
+2017-01-28 15:47:30	earnestly	BrainDamage: Some uninitialised variable is hiding there
+2017-01-28 15:47:34	ThePeach	but thanks for the attention
+2017-01-28 15:47:35	James123	Hello, in microsoft ergonomic keyboard 4000, the keycodes for the zoom slider are 418 and 419 (xev does not recognize them). Anyone has a similar problem?
+2017-01-28 15:47:44	 <<< 	j12t (~j12t@c-50-131-55-96.hsd1.ca.comcast.net) has quit (Ping timeout: 276 seconds)
+2017-01-28 15:47:48	 >>> 	grayjoc (~textual@2a02:c7d:b927:8900:1de5:657f:16e2:1c9b) has joined #archlinux
+2017-01-28 15:47:52	d_garbage	ThePeach, why? You fixed it. That's good, isn't it?
+2017-01-28 15:47:54	earnestly	BrainDamage: Like doing cp /foo/bar/"$uninitialised"/baz/qux
+2017-01-28 15:48:01	earnestly	BrainDamage: To some target
+2017-01-28 15:48:11	 >>> 	Diemuzi (~IceChat9@unaffiliated/diemuzi) has joined #archlinux
+2017-01-28 15:48:13	earnestly	BrainDamage: It's definately a bug in their build system
+2017-01-28 15:48:15	ThePeach	d_garbage: sure, just feeling a bit of an idiot
+2017-01-28 15:48:18	earnestly	BrainDamage: Can you paste the Makefile?
+2017-01-28 15:48:40	 <<< 	dannyAAM (~dannyAAM@saru.saru.moe) has quit (Quit: znc.saru.moe : ZNC 1.6.2 - http://znc.in)
+2017-01-28 15:48:49	 - 	UrsaTempest is now known as ImpeccableEyes
+2017-01-28 15:48:52	 >>> 	dannyAAM (~dannyAAM@saru.saru.moe) has joined #archlinux
+2017-01-28 15:48:58	 <<< 	hrjakobsen (~mathias@kol-nordjysk.cust.fsknet.dk) has left #archlinux ("WeeChat 1.7")
+2017-01-28 15:49:05	d_garbage	ThePeach, try imagining that life usually goes wrong by default and be pleased when it doesn't rather than think that life should be perfect and if it isn't you're failing };]
+2017-01-28 15:49:22	BrainDamage	there's 63 makefiles :s
+2017-01-28 15:49:34	earnestly	BrainDamage: The one with the install target
+2017-01-28 15:49:58	*	earnestly hates cmake/autotools so much
+2017-01-28 15:50:14	 <<< 	raijin (~raijin@unaffiliated/raijin) has quit (Read error: Connection reset by peer)
+2017-01-28 15:50:26	 >>> 	raijin (~raijin@unaffiliated/raijin) has joined #archlinux
+2017-01-28 15:50:32	BrainDamage	hope the error isn't from some included stuff tough: https://ptpb.pw/OH5a
+2017-01-28 15:50:35	 >>> 	Chinggis6 (~chinggis@217.168.188.163) has joined #archlinux
+2017-01-28 15:50:39	earnestly	BrainDamage: It may be
+2017-01-28 15:50:53	BrainDamage	let me try to zip them all
+2017-01-28 15:51:38	 <<< 	Miblo (~matt@37.152.223.111) has quit (Ping timeout: 276 seconds)
+2017-01-28 15:51:57	earnestly	BrainDamage: Or tar, we're civilised
+2017-01-28 15:52:07	thrice	.7z
+2017-01-28 15:53:02	 >>> 	ziggys (~ziggys@gateway/tor-sasl/ziggys) has joined #archlinux

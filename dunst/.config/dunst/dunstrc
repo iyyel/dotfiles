@@ -6,7 +6,7 @@
 #
 
 [global]
-    font = Envy Code R 8.5
+    font = Envy Code R 7
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -57,7 +57,6 @@
 
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
-
 
     # The geometry of the window:
     #   [{width}]x{height}[+/-{x}+/-{y}]

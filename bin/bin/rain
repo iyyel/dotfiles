@@ -16,7 +16,6 @@ NRAINS=${#RAINS[@]}
 NCOLORS=${#COLORS[@]}
 NUM_RAIN_METADATA=5
 
-
 sigwinch() {
   TERM_WIDTH=$(tput cols)
   TERM_HEIGHT=$(tput lines)

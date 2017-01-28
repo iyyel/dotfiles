@@ -9,6 +9,7 @@ mpd_host = localhost
 mpd_port = 6600
 mpd_connection_timeout = 5
 mpd_music_dir = ~/personal/music
+lyrics_directory = ~/.ncmpcpp/lyrics
 mpd_crossfade_time = 5
 
 audio_output {
@@ -16,7 +17,7 @@ audio_output {
         name            "Visualizer feed"
         path            "/tmp/mpd.fifo"
         format          "44100:16:2"
- }
+}
 
 song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}

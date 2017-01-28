@@ -17,6 +17,7 @@ pad () {
 		echo "."
 	fi
 }
+
 let half=($cols-100)/2
 half=${half/.*}
 

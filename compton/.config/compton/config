@@ -16,7 +16,7 @@ fade-delta = 10;
 fade-in-step = 0.02;
 fade-out-step = 0.02;
 
-## Keep the shadows tight
+# keep the shadows tight.
 shadow = true;
 shadow-radius = 7;
 shadow-offset-x = -5;
@@ -25,22 +25,23 @@ no-dock-shadow = false;
 no-dnd-shadow = true;
 clear-shadow = true;
 
-# Remove leftover shadows from polybar
+# remove leftover shadows from polybar.
 shadow-exclude = [
     "name = 'polybar'"
+    ,"name ='mybar'"
 ];
 
 # backend
-# Note: changed beckend server to xrender as compton doesnt do vsync anymore.
-backend               = "xrender"
-glx-swap-method       = "buffer-age"
-glx-no-rebind-pixmap  = true
-glx-no-stencil        = true
-paint-no-overlay      = true
-unredir-if-possible   = false
-xrender-sync-fence    = true
+# note: changed beckend server to xrender as compton doesnt do vsync anymore.
+backend                = "xrender"
+glx-swap-method        = "buffer-age"
+glx-no-rebind-pixmap   = true
+glx-no-stencil         = true
+paint-no-overlay       = true
+unredir-if-possible    = false
+xrender-sync-fence     = true
 
-detect-transient = true;
-detect-client-leader = true;
-shadow-ignore-shaped = true;
+detect-transient       = true;
+detect-client-leader   = true;
+shadow-ignore-shaped   = true;
 detect-rounded-corners = true;

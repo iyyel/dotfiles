@@ -16,7 +16,7 @@ clear
 echo && echo
 toilet --gay "   updates"
 echo && echo
-pacaur -Su
+pacaur -Syu
 echo && echo
 
 columns=$(tput cols)
@@ -43,7 +43,7 @@ rundevel ()
 {
     clear
     echo && echo
-    toiletxx --gay "   devpkgs"
+    toilet --gay "   devpkgs"
     echo & echo
     columns=$(tput cols)
     text=">> Upgrade git/development packages? <<"

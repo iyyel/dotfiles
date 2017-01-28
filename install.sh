@@ -6,7 +6,7 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
-# stow all directories into ~/ directory.
+# stow all files into ~/
 stow bin
 stow bspwm
 stow compton
@@ -25,7 +25,6 @@ stow nvim
 stow polybar
 stow qutebrowser
 stow ranger
-#stow steamskins
 stow sxhkd
 stow termcolors
 stow themes
@@ -36,3 +35,5 @@ stow x230
 stow xinitrc
 stow xresources
 stow zsh
+
+# install steam skin too maybe? what about powertop and all the other files in the old_dotfiles?

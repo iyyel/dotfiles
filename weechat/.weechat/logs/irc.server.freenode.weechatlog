@@ -1,0 +1,219 @@
+2017-01-27 19:10:59	 - 	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2017-01-27 19:11:00	 - 	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-01-27 19:11:00	 - 	gnutls: receiving 2 certificates
+2017-01-27 19:11:00	 - 	 - certificate[1] info:
+2017-01-27 19:11:00	 - 	   - subject `CN=barjavel.freenode.net', issuer `CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US', serial 0x0392c74f58d7afeace7536899c06f6a79f05, RSA key 4096 bits, signed using RSA-SHA256, activated `2017-01-07 00:59:00 UTC', expires `2017-04-07 00:59:00 UTC', key-ID `sha256:6c59e3e7cbc831178f507295566ebae37f33760617e6bf7f638a952ca2e22db2'
+2017-01-27 19:11:00	 - 	 - certificate[2] info:
+2017-01-27 19:11:00	 - 	   - subject `CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x0a0141420000015385736a0b85eca708, RSA key 2048 bits, signed using RSA-SHA256, activated `2016-03-17 16:40:46 UTC', expires `2021-03-17 16:40:46 UTC', key-ID `sha256:60b87575447dcba2a36b7d11ac09fb24a9db406fee12d2cc90180517616e8a18'
+2017-01-27 19:11:00	 - 	gnutls: peer's certificate is trusted
+2017-01-27 19:11:00	 - 	irc: connected to chat.freenode.net/7000 (195.154.200.232)
+2017-01-27 19:11:00	 - 	barjavel.freenode.net: *** Looking up your hostname...
+2017-01-27 19:11:00	 - 	barjavel.freenode.net: *** Checking Ident
+2017-01-27 19:11:00	 - 	barjavel.freenode.net: *** Found your hostname
+2017-01-27 19:11:07	 - 	barjavel.freenode.net: *** No Ident response
+2017-01-27 19:11:07	 - 	Welcome to the freenode Internet Relay Chat Network inabsentia
+2017-01-27 19:11:07	 - 	Your host is barjavel.freenode.net[195.154.200.232/7000], running version ircd-seven-1.1.4
+2017-01-27 19:11:08	 - 	This server was created Sat Jan 7 2017 at 03:00:47 CET
+2017-01-27 19:11:08	 - 	barjavel.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-01-27 19:11:08	 - 	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-01-27 19:11:08	 - 	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 SAFELIST ELIST=CTU WHOX :are supported by this server
+2017-01-27 19:11:08	 - 	ETRACE CPRIVMSG CNOTICE KNOCK :are supported by this server
+2017-01-27 19:11:08	 - 	There are 133 users and 87312 invisible on 31 servers
+2017-01-27 19:11:08	 - 	26 :IRC Operators online
+2017-01-27 19:11:08	 - 	10 :unknown connection(s)
+2017-01-27 19:11:08	 - 	56245 :channels formed
+2017-01-27 19:11:08	 - 	I have 4908 clients and 1 servers
+2017-01-27 19:11:08	 - 	4908 5293 :Current local users 4908, max 5293
+2017-01-27 19:11:08	 - 	87445 91092 :Current global users 87445, max 91092
+2017-01-27 19:11:08	 - 	Highest connection count: 5294 (5293 clients) (263983 connections received)
+2017-01-27 19:11:08	 - 	- barjavel.freenode.net Message of the Day -
+2017-01-27 19:11:08	 - 	- Welcome to barjavel.freenode.net in Paris, FR, EU.
+2017-01-27 19:11:08	 - 	- Thanks to Bearstech (www.bearstech.com) for sponsoring
+2017-01-27 19:11:08	 - 	- this server!
+2017-01-27 19:11:08	 - 	-
+2017-01-27 19:11:08	 - 	- BARJAVEL, RENE [1911-1985].  Born in Nyons, he was a
+2017-01-27 19:11:08	 - 	- science-fiction author, a journalist and a critic. He is
+2017-01-27 19:11:08	 - 	- credited with having written the first novel to introduce
+2017-01-27 19:11:08	 - 	- the Grandfather Paradox in time travel, in his 1943 work
+2017-01-27 19:11:08	 - 	- 'Le Voyageur imprudent'.
+2017-01-27 19:11:08	 - 	-
+2017-01-27 19:11:08	 - 	- Welcome to freenode - supporting the free and open source
+2017-01-27 19:11:08	 - 	- software communities since 1998.
+2017-01-27 19:11:08	 - 	-
+2017-01-27 19:11:08	 - 	- By connecting to freenode you indicate that you have read and
+2017-01-27 19:11:08	 - 	- accept our policies as set out on http://www.freenode.net
+2017-01-27 19:11:08	 - 	- freenode runs an open proxy scanner. Please join #freenode for
+2017-01-27 19:11:08	 - 	- any network-related questions or queries, where a number of
+2017-01-27 19:11:08	 - 	- volunteer staff and helpful users will be happy to assist you.
+2017-01-27 19:11:08	 - 	-
+2017-01-27 19:11:08	 - 	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-01-27 19:11:08	 - 	- together with like-minded FOSS enthusiasts for talks and
+2017-01-27 19:11:08	 - 	- real-life collaboration.
+2017-01-27 19:11:08	 - 	-
+2017-01-27 19:11:08	 - 	- We would like to thank Private Internet Access
+2017-01-27 19:11:08	 - 	- (https://www.privateinternetaccess.com/) and the other
+2017-01-27 19:11:08	 - 	- organisations that help keep freenode and our other projects
+2017-01-27 19:11:08	 - 	- running for their sustained support.
+2017-01-27 19:11:08	 - 	-
+2017-01-27 19:11:08	 - 	- In particular we would like to thank the sponsor
+2017-01-27 19:11:08	 - 	- of this server, details of which can be found above.
+2017-01-27 19:11:08	 - 	-
+2017-01-27 19:11:08	 - 	End of /MOTD command.
+2017-01-27 19:11:08	 - 	User mode [+Zi] by inabsentia
+2017-01-27 19:11:30	 - 	#archlinux: #archlinux-unregistered :Forwarding to another channel
+2017-01-27 19:11:30	 - 	CTCP requested by evilgrawity: VERSION
+2017-01-27 19:11:30	 - 	CTCP reply to evilgrawity: VERSION WeeChat 1.7 (Jan 18 2017)
+2017-01-27 19:14:45	 - 	MSG(NickServ): REGISTER ******************************************
+2017-01-27 19:14:45	 - 	NickServ (NickServ@services.): An email containing nickname activation instructions has been sent to absencia@protonmail.ch.
+2017-01-27 19:14:45	 - 	NickServ (NickServ@services.): If you do not complete registration within one day, your nickname will expire.
+2017-01-27 19:14:45	 - 	NickServ (NickServ@services.): inabsentia is now registered to absencia@protonmail.ch, with the password WhatIsAnIRCPassword.
+2017-01-27 19:14:45	 - 	NickServ (NickServ@services.):  
+2017-01-27 19:14:45	 - 	NickServ (NickServ@services.): For frequently-asked questions about the network, please see the
+2017-01-27 19:14:45	 - 	NickServ (NickServ@services.): Knowledge Base page (http://freenode.net/kb/all). Should you need more
+2017-01-27 19:14:45	 - 	NickServ (NickServ@services.): help you can /join #freenode to find network staff.
+2017-01-27 19:16:17	 - 	MSG(NickServ): VERIFY REGISTER ***********************
+2017-01-27 19:16:17	 - 	NickServ (NickServ@services.): inabsentia has now been verified.
+2017-01-27 19:16:17	 - 	NickServ (NickServ@services.): Thank you for verifying your e-mail address! You have taken steps in ensuring that your registrations are not exploited.
+2017-01-27 19:17:11	 - 	You are now known as inabsencia
+2017-01-27 19:18:04	 - 	MSG(NickServ): IDENTIFY ******************************
+2017-01-27 19:18:04	 - 	NickServ (NickServ@services.): You are already logged in as inabsentia.
+2017-01-27 19:18:30	 - 	MSG(NickServ): GROUP
+2017-01-27 19:18:30	 - 	NickServ (NickServ@services.): Nick inabsencia is now registered to your account.
+2017-01-27 19:18:43	 - 	You are now known as inabsentia
+2017-01-27 20:46:38	 - 	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2017-01-27 20:46:38	 - 	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-01-27 20:46:38	 - 	gnutls: receiving 2 certificates
+2017-01-27 20:46:38	 - 	 - certificate[1] info:
+2017-01-27 20:46:38	 - 	   - subject `CN=leguin.freenode.net', issuer `CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US', serial 0x039e1e586941912490e9b90b6e90a39f023c, RSA key 4096 bits, signed using RSA-SHA256, activated `2017-01-12 16:50:00 UTC', expires `2017-04-12 16:50:00 UTC', key-ID `sha256:b575b498f1712f0042577568179b92fc4455ac198bdea6fae7fe3ed25046964e'
+2017-01-27 20:46:38	 - 	 - certificate[2] info:
+2017-01-27 20:46:38	 - 	   - subject `CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x0a0141420000015385736a0b85eca708, RSA key 2048 bits, signed using RSA-SHA256, activated `2016-03-17 16:40:46 UTC', expires `2021-03-17 16:40:46 UTC', key-ID `sha256:60b87575447dcba2a36b7d11ac09fb24a9db406fee12d2cc90180517616e8a18'
+2017-01-27 20:46:38	 - 	gnutls: peer's certificate is trusted
+2017-01-27 20:46:38	 - 	irc: connected to chat.freenode.net/7000 (130.239.18.119)
+2017-01-27 20:46:38	 - 	leguin.freenode.net: *** Looking up your hostname...
+2017-01-27 20:46:38	 - 	leguin.freenode.net: *** Checking Ident
+2017-01-27 20:46:38	 - 	leguin.freenode.net: *** Found your hostname
+2017-01-27 20:46:47	 - 	leguin.freenode.net: *** No Ident response
+2017-01-27 20:46:47	 - 	Welcome to the freenode Internet Relay Chat Network inabsentia
+2017-01-27 20:46:47	 - 	Your host is leguin.freenode.net[130.239.18.119/7000], running version ircd-seven-1.1.4
+2017-01-27 20:46:47	 - 	This server was created Tue Jan 3 2017 at 13:35:13 UTC
+2017-01-27 20:46:47	 - 	leguin.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-01-27 20:46:47	 - 	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-01-27 20:46:47	 - 	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 CPRIVMSG CNOTICE KNOCK :are supported by this server
+2017-01-27 20:46:47	 - 	ETRACE SAFELIST ELIST=CTU WHOX :are supported by this server
+2017-01-27 20:46:47	 - 	There are 132 users and 87154 invisible on 31 servers
+2017-01-27 20:46:47	 - 	26 :IRC Operators online
+2017-01-27 20:46:47	 - 	13 :unknown connection(s)
+2017-01-27 20:46:47	 - 	56225 :channels formed
+2017-01-27 20:46:47	 - 	I have 6688 clients and 1 servers
+2017-01-27 20:46:47	 - 	6688 9080 :Current local users 6688, max 9080
+2017-01-27 20:46:47	 - 	87286 90524 :Current global users 87286, max 90524
+2017-01-27 20:46:47	 - 	Highest connection count: 9081 (9080 clients) (287368 connections received)
+2017-01-27 20:46:47	 - 	- leguin.freenode.net Message of the Day -
+2017-01-27 20:46:47	 - 	- Welcome to leguin.freenode.net in Umeå, Sweden, EU! Thanks to
+2017-01-27 20:46:47	 - 	- the Academic Computer Club at Umeå University for sponsoring
+2017-01-27 20:46:47	 - 	- this server!
+2017-01-27 20:46:47	 - 	-
+2017-01-27 20:46:47	 - 	- LE GUIN, URSULA K. (1929-) Born in Berkeley, California,
+2017-01-27 20:46:47	 - 	- Ursula Le Guin is an american author primarily known for
+2017-01-27 20:46:47	 - 	- her Science Fiction and Fantasy. She has been awarded the
+2017-01-27 20:46:47	 - 	- Hugo and Nebula awards, and is best known for her Earthsea
+2017-01-27 20:46:47	 - 	- and Hainish series.
+2017-01-27 20:46:47	 - 	-
+2017-01-27 20:46:47	 - 	- Welcome to freenode - supporting the free and open source
+2017-01-27 20:46:47	 - 	- software communities since 1998.
+2017-01-27 20:46:47	 - 	-
+2017-01-27 20:46:47	 - 	- By connecting to freenode you indicate that you have read and
+2017-01-27 20:46:47	 - 	- accept our policies as set out on http://www.freenode.net
+2017-01-27 20:46:47	 - 	- freenode runs an open proxy scanner. Please join #freenode for
+2017-01-27 20:46:47	 - 	- any network-related questions or queries, where a number of
+2017-01-27 20:46:47	 - 	- volunteer staff and helpful users will be happy to assist you.
+2017-01-27 20:46:47	 - 	-
+2017-01-27 20:46:47	 - 	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-01-27 20:46:47	 - 	- together with like-minded FOSS enthusiasts for talks and
+2017-01-27 20:46:47	 - 	- real-life collaboration.
+2017-01-27 20:46:47	 - 	-
+2017-01-27 20:46:47	 - 	- We would like to thank Private Internet Access
+2017-01-27 20:46:47	 - 	- (https://www.privateinternetaccess.com/) and the other
+2017-01-27 20:46:47	 - 	- organisations that help keep freenode and our other projects
+2017-01-27 20:46:47	 - 	- running for their sustained support.
+2017-01-27 20:46:47	 - 	-
+2017-01-27 20:46:47	 - 	- In particular we would like to thank the sponsor
+2017-01-27 20:46:47	 - 	- of this server, details of which can be found above.
+2017-01-27 20:46:47	 - 	-
+2017-01-27 20:46:47	 - 	End of /MOTD command.
+2017-01-27 20:46:47	 - 	User mode [+Zi] by inabsentia
+2017-01-27 20:46:47	 - 	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2017-01-27 20:47:38	 - 	MSG(NickServ): IDENTIFY *******************
+2017-01-27 20:47:38	 - 	NickServ (NickServ@services.): Invalid password for inabsentia.
+2017-01-27 20:47:47	 - 	MSG(NickServ): IDENTIFY ********************
+2017-01-27 20:47:47	 - 	NickServ (NickServ@services.): Invalid password for inabsentia.
+2017-01-27 20:47:56	 - 	MSG(NickServ): IDENTIFY *******************
+2017-01-27 20:47:56	 - 	NickServ (NickServ@services.): You are now identified for inabsentia.
+2017-01-27 20:47:56	 - 	NickServ (NickServ@services.): 2 failed logins since last login.
+2017-01-27 20:47:56	 - 	NickServ (NickServ@services.): Last failed attempt from: inabsentia!~inabsenti@x1-6-2c-56-dc-4f-ff-a8.cpe.webspeed.dk on Jan 27 19:47:25 2017.
+2017-01-28 13:03:05	 - 	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2017-01-28 13:03:05	 - 	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-01-28 13:03:05	 - 	gnutls: receiving 2 certificates
+2017-01-28 13:03:05	 - 	 - certificate[1] info:
+2017-01-28 13:03:05	 - 	   - subject `CN=orwell.freenode.net', issuer `CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US', serial 0x039f1e399bafe5cc87ae3134944771be13bd, RSA key 4096 bits, signed using RSA-SHA256, activated `2017-01-12 16:57:00 UTC', expires `2017-04-12 16:57:00 UTC', key-ID `sha256:712d29f7737ff3121232ae41eae8f33b1e8dac46281b5e8913bbd4270c81c19a'
+2017-01-28 13:03:06	 - 	 - certificate[2] info:
+2017-01-28 13:03:06	 - 	   - subject `CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x0a0141420000015385736a0b85eca708, RSA key 2048 bits, signed using RSA-SHA256, activated `2016-03-17 16:40:46 UTC', expires `2021-03-17 16:40:46 UTC', key-ID `sha256:60b87575447dcba2a36b7d11ac09fb24a9db406fee12d2cc90180517616e8a18'
+2017-01-28 13:03:06	 - 	gnutls: peer's certificate is trusted
+2017-01-28 13:03:06	 - 	irc: connected to chat.freenode.net/7000 (185.30.166.38)
+2017-01-28 13:03:06	 - 	orwell.freenode.net: *** Looking up your hostname...
+2017-01-28 13:03:06	 - 	orwell.freenode.net: *** Checking Ident
+2017-01-28 13:03:06	 - 	orwell.freenode.net: *** Found your hostname
+2017-01-28 13:03:12	 - 	orwell.freenode.net: *** No Ident response
+2017-01-28 13:03:12	 - 	Welcome to the freenode Internet Relay Chat Network inabsentia
+2017-01-28 13:03:12	 - 	Your host is orwell.freenode.net[185.30.166.38/7000], running version ircd-seven-1.1.4
+2017-01-28 13:03:12	 - 	This server was created Sat Jan 7 2017 at 12:04:42 EST
+2017-01-28 13:03:12	 - 	orwell.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-01-28 13:03:12	 - 	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-01-28 13:03:12	 - 	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 KNOCK CPRIVMSG CNOTICE :are supported by this server
+2017-01-28 13:03:12	 - 	SAFELIST ELIST=CTU ETRACE WHOX :are supported by this server
+2017-01-28 13:03:12	 - 	There are 131 users and 81045 invisible on 31 servers
+2017-01-28 13:03:12	 - 	26 :IRC Operators online
+2017-01-28 13:03:12	 - 	7 :unknown connection(s)
+2017-01-28 13:03:12	 - 	55760 :channels formed
+2017-01-28 13:03:12	 - 	I have 3961 clients and 1 servers
+2017-01-28 13:03:12	 - 	3961 4715 :Current local users 3961, max 4715
+2017-01-28 13:03:12	 - 	81176 91092 :Current global users 81176, max 91092
+2017-01-28 13:03:12	 - 	Highest connection count: 4716 (4715 clients) (231477 connections received)
+2017-01-28 13:03:12	 - 	- orwell.freenode.net Message of the Day -
+2017-01-28 13:03:12	 - 	- Welcome to orwell.freenode.net in Amsterdam, NL.
+2017-01-28 13:03:12	 - 	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2017-01-28 13:03:12	 - 	- this server!
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	- ORWELL, GEORGE [1903 - 1950] Born in India, his mother
+2017-01-28 13:03:12	 - 	- moved him to England when he was one year old, and it
+2017-01-28 13:03:12	 - 	- was in England where he was educated and spent most of
+2017-01-28 13:03:12	 - 	- his life.  Orwell is perhaps best known for his novels
+2017-01-28 13:03:12	 - 	- Nineteen Eighty-Four and Animal Farm.
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	- Welcome to freenode - supporting the free and open source
+2017-01-28 13:03:12	 - 	- software communities since 1998.
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	- By connecting to freenode you indicate that you have read and
+2017-01-28 13:03:12	 - 	- accept our policies as set out on http://www.freenode.net
+2017-01-28 13:03:12	 - 	- freenode runs an open proxy scanner. Please join #freenode for
+2017-01-28 13:03:12	 - 	- any network-related questions or queries, where a number of
+2017-01-28 13:03:12	 - 	- volunteer staff and helpful users will be happy to assist you.
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-01-28 13:03:12	 - 	- together with like-minded FOSS enthusiasts for talks and
+2017-01-28 13:03:12	 - 	- real-life collaboration.
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	- We would like to thank Private Internet Access
+2017-01-28 13:03:12	 - 	- (https://www.privateinternetaccess.com/) and the other
+2017-01-28 13:03:12	 - 	- organisations that help keep freenode and our other projects
+2017-01-28 13:03:12	 - 	- running for their sustained support.
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	- In particular we would like to thank the sponsor
+2017-01-28 13:03:12	 - 	- of this server, details of which can be found above.
+2017-01-28 13:03:12	 - 	-
+2017-01-28 13:03:12	 - 	End of /MOTD command.
+2017-01-28 13:03:12	 - 	User mode [+Zi] by inabsentia
+2017-01-28 13:03:12	 - 	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2017-01-28 13:03:35	 - 	MSG(NickServ): IDENTIFY *******************
+2017-01-28 13:03:35	 - 	NickServ (NickServ@services.): You are now identified for inabsentia.

@@ -6,7 +6,7 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
-icon="~/personal/wallpapers/02.jpg"
+icon="${HOME}/personal/wallpapers/01.png"
 tmpbg='/tmp/screenlock.png'
 
 (( $# )) && { icon=$1; }

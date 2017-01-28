@@ -16,9 +16,9 @@ super + Return
 super + ctrl + Return
     urxvt
 
-# dmenu (revise this)
+# dmenu(2)?
 super + d
-    dmenu_run -b -q -z -l 1 -fn Envy-7 -x 1530 -o 0.9 -y 7 -w 100 -nb "#783E57" -nf "#FFFFFF" -sb "#4C9882" -sf "#FFFFFF"
+    dmenu_run -b -q -z -l 1 -fn Envy-7 -x 1670 -o 0.9 -y 7 -w 100 -nb "#783E57" -nf "#FFFFFF" -sb "#4C9882" -sf "#FFFFFF"
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -208,7 +208,7 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 
 # screenshot
 Print
-	scrot -e 'mv $f ~/personal/media/pictures/screenshots'
+	scrot -e 'mv $f ~/personal/screenshots'
 
 # mpc/mpd controls
 XF86Audio{Next,Play,Prev}
