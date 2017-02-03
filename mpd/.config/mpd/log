@@ -6881,3 +6881,266 @@ Jan 28 15:51 : client: [19] opened from [::1]:40474
 Jan 28 15:51 : client: [19] closed
 Jan 28 15:51 : client: [20] opened from [::1]:40502
 Jan 28 15:51 : client: [20] closed
+Jan 28 16:20 : client: [21] opened from [::1]:42062
+Jan 28 16:20 : client: [21] closed
+Jan 28 16:20 : client: [22] opened from [::1]:42064
+Jan 28 16:20 : client: [22] closed
+Jan 28 21:12 : client: [0] closed
+Jan 28 21:13 : player: played "Alizee - Discography/Albums/2004 - Alizee En Concert/12. Parler tout bas.mp3"
+Jan 29 17:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 29 17:16 : client: [0] opened from [::1]:52224
+Jan 29 17:17 : player: played "Alizee - Discography/Albums/2004 - Alizee En Concert/12. Parler tout bas.mp3"
+Jan 29 21:49 : client: [0] closed
+Jan 30 10:59 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 30 10:59 : client: [0] opened from [::1]:39836
+Jan 30 16:53 : client: [0] closed
+Jan 30 19:55 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 30 19:55 : client: [0] opened from [::1]:34928
+Jan 30 21:23 : client: [0] closed
+Jan 31 07:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 31 07:54 : client: [0] opened from [::1]:46836
+Jan 31 07:55 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 31 07:55 : client: [1] opened from [::1]:47044
+Jan 31 07:55 : client: [1] closed
+Jan 31 12:52 : player: played "30 Seconds To Mars - Discography/Albums (CD Original)/2002 - 30 Seconds To Mars (CD EU)/01. Capricorn (A Brand New Name).mp3"
+Jan 31 13:54 : client: [2] opened from [::1]:57728
+Jan 31 15:33 : client: [2] closed
+Jan 31 19:59 : client: [0] closed
+Jan 31 20:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 31 20:18 : client: [0] opened from [::1]:40324
+Jan 31 20:28 : client: [0] closed
+Feb 01 13:00 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 01 13:01 : client: [0] opened from [::1]:43024
+Feb 01 13:03 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 01 13:03 : client: [1] opened from [::1]:43052
+Feb 01 13:03 : client: [1] closed
+Feb 01 13:03 : client: [2] opened from [::1]:43054
+Feb 01 13:03 : client: [2] closed
+Feb 01 13:03 : client: [3] opened from [::1]:43056
+Feb 01 13:03 : client: [3] closed
+Feb 01 13:04 : client: [4] opened from [::1]:43084
+Feb 01 13:04 : client: [4] closed
+Feb 01 13:04 : client: [5] opened from [::1]:43086
+Feb 01 13:04 : client: [5] closed
+Feb 01 13:07 : client: [6] opened from [::1]:43444
+Feb 01 13:07 : client: [6] closed
+Feb 01 13:11 : player: played "Dance with the Dead - Discography/Near Dark/06. Eye of the Storm.mp3"
+Feb 01 13:15 : player: played "Dance with the Dead - Discography/Out of Body/02 - Robeast.mp3"
+Feb 01 13:17 : client: [7] opened from [::1]:43862
+Feb 01 13:17 : client: [7] closed
+Feb 01 13:32 : client: [8] opened from [::1]:44478
+Feb 01 13:32 : client: [8] closed
+Feb 01 13:32 : client: [9] opened from [::1]:44480
+Feb 01 13:32 : client: [9] closed
+Feb 01 18:33 : client: [10] opened from [::1]:54558
+Feb 01 18:33 : client: [10] closed
+Feb 01 18:33 : client: [11] opened from [::1]:54560
+Feb 01 18:33 : client: [11] closed
+Feb 01 19:22 : client: [12] opened from [::1]:56170
+Feb 01 19:22 : client: [12] closed
+Feb 01 19:24 : player: played "Dance with the Dead - Discography/Into the Abyss/04 - Mask.mp3"
+Feb 01 19:28 : player: played "Dance with the Dead - Discography/Out of Body/07 - The Deep.mp3"
+Feb 01 19:32 : player: played "Dance with the Dead - Discography/Into the Abyss/05 - Odyssey.mp3"
+Feb 01 19:35 : player: played "Dance with the Dead - Discography/Into the Abyss/03 - Moon Runner.mp3"
+Feb 01 19:38 : player: played "Dance with the Dead - Discography/The Shape/10 Quietly into the night.flac"
+Feb 01 19:43 : player: played "Dance with the Dead - Discography/The Shape/08 Diabolic.flac"
+Feb 01 19:47 : player: played "Dance with the Dead - Discography/Out of Body/09 - Only a Dream.mp3"
+Feb 01 19:51 : player: played "Dance with the Dead - Discography/Out of Body/10 - Hell Ride.mp3"
+Feb 01 19:55 : player: played "Dance with the Dead - Discography/Out of Body/05 - Thrasher.mp3"
+Feb 01 20:00 : player: played "Dance with the Dead - Discography/The Shape/02 Eyes of Madness.flac"
+Feb 01 20:02 : player: played "Dance with the Dead - Discography/Into the Abyss/06 - Suede.mp3"
+Feb 01 20:03 : player: played "Dance with the Dead - Discography/Out of Body/01 - Intro.mp3"
+Feb 01 20:08 : player: played "Dance with the Dead - Discography/The Shape/09 Watching You.flac"
+Feb 01 20:12 : client: [13] opened from [::1]:57608
+Feb 01 20:12 : client: [13] closed
+Feb 01 20:14 : client: [14] opened from [::1]:57644
+Feb 01 20:14 : client: [14] closed
+Feb 01 20:15 : client: [15] opened from [::1]:57674
+Feb 01 20:15 : client: [15] closed
+Feb 01 21:19 : client: [0] closed
+Feb 01 21:20 : player: played "Dance with the Dead - Discography/The Shape/05 Adrift.flac"
+Feb 02 07:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 02 07:53 : client: [0] opened from [::1]:51910
+Feb 02 10:41 : client: [0] closed
+Feb 02 10:41 : player: played "Dance with the Dead - Discography/The Shape/05 Adrift.flac"
+Feb 02 10:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 02 10:43 : client: [0] opened from [::1]:59034
+Feb 02 15:34 : client: [0] closed
+Feb 02 15:34 : avahi: Client Disconnected, will reconnect shortly
+Feb 02 15:34 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 02 15:34 : player: played "Dance with the Dead - Discography/The Shape/05 Adrift.flac"
+Feb 02 15:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 02 15:37 : client: [0] opened from [::1]:38280
+Feb 02 15:37 : client: [1] opened from [::1]:38286
+Feb 02 15:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 02 15:37 : client: [1] closed
+Feb 02 15:37 : player: played "Dance with the Dead - Discography/The Shape/05 Adrift.flac"
+Feb 02 15:37 : client: [2] opened from [::1]:38288
+Feb 02 15:37 : client: [2] closed
+Feb 02 15:38 : client: [3] opened from [::1]:38316
+Feb 02 15:38 : client: [3] closed
+Feb 02 15:38 : client: [4] opened from [::1]:38318
+Feb 02 15:38 : client: [4] closed
+Feb 02 15:43 : client: [5] opened from [::1]:39034
+Feb 02 15:43 : client: [5] closed
+Feb 02 15:43 : client: [6] opened from [::1]:39036
+Feb 02 15:43 : client: [6] closed
+Feb 02 17:42 : client: [7] opened from [::1]:43638
+Feb 02 17:42 : client: [7] closed
+Feb 02 17:42 : client: [8] opened from [::1]:43640
+Feb 02 17:42 : client: [8] closed
+Feb 02 17:56 : client: [9] opened from [::1]:44202
+Feb 02 17:56 : client: [9] closed
+Feb 02 18:01 : player: played "Dance with the Dead - Discography/Near Dark/03. Waves.mp3"
+Feb 02 18:04 : player: played "Dance with the Dead - Discography/Near Dark/04. Midnight Never Ends.mp3"
+Feb 02 18:09 : player: played "Dance with the Dead - Discography/Near Dark/05. Andromeda.mp3"
+Feb 02 18:15 : player: played "Dance with the Dead - Discography/The Shape/07 Horizon.flac"
+Feb 02 18:20 : player: played "Dance with the Dead - Discography/The Shape/04 Scream and Whispers.flac"
+Feb 02 18:23 : player: played "Dance with the Dead - Discography/Out of Body/08 - Dancing on Air.mp3"
+Feb 02 18:28 : player: played "Dance with the Dead - Discography/Near Dark/07. Near Dark.mp3"
+Feb 02 18:32 : player: played "Dance with the Dead - Discography/Into the Abyss/02 - Battle.mp3"
+Feb 02 18:34 : player: played "Dance with the Dead - Discography/The Shape/01 There's a storm coming.flac"
+Feb 02 18:35 : player: played "Dance with the Dead - Discography/Into the Abyss/01 - The Descent (Intro).mp3"
+Feb 02 18:40 : player: played "Dance with the Dead - Discography/The Shape/03 Her Ghost.flac"
+Feb 02 18:45 : player: played "Dance with the Dead - Discography/Near Dark/02. Dressed to Kill.mp3"
+Feb 02 18:49 : player: played "Dance with the Dead - Discography/Out of Body/13 - Zombie Night.mp3"
+Feb 02 18:53 : player: played "Dance with the Dead - Discography/Out of Body/11 - Cobra.mp3"
+Feb 02 18:57 : player: played "Dance with the Dead - Discography/Near Dark/08. The Pitt.mp3"
+Feb 02 19:00 : player: played "Dance with the Dead - Discography/Near Dark/09. Graveyard Shift.mp3"
+Feb 02 19:04 : player: played "Dance with the Dead - Discography/Into the Abyss/07 - No Survivors.mp3"
+Feb 02 19:08 : player: played "Dance with the Dead - Discography/Out of Body/14 - Stitch.mp3"
+Feb 02 19:12 : player: played "Dance with the Dead - Discography/Near Dark/10. Riser.mp3"
+Feb 02 19:16 : player: played "Dance with the Dead - Discography/The Shape/06 Riot.flac"
+Feb 02 19:16 : client: [10] opened from [::1]:46676
+Feb 02 19:16 : client: [10] closed
+Feb 02 19:17 : client: [0] closed
+Feb 02 19:22 : player: played "Dance with the Dead - Discography/Out of Body/04 - Fracture.mp3"
+Feb 03 11:58 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 03 12:08 : avahi: Client Disconnected, will reconnect shortly
+Feb 03 12:08 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 03 12:08 : player: played "Dance with the Dead - Discography/Out of Body/04 - Fracture.mp3"
+Feb 03 12:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 03 12:10 : client: [0] opened from [::1]:34060
+Feb 03 12:13 : client: [1] opened from [::1]:34130
+Feb 03 12:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 03 12:13 : client: [1] closed
+Feb 03 12:13 : client: [2] opened from [::1]:34132
+Feb 03 12:13 : client: [2] closed
+Feb 03 12:13 : client: [3] opened from [::1]:34134
+Feb 03 12:13 : client: [3] closed
+Feb 03 12:13 : client: [4] opened from [::1]:34136
+Feb 03 12:13 : client: [4] closed
+Feb 03 12:13 : client: [5] opened from [::1]:34138
+Feb 03 12:13 : client: [5] closed
+Feb 03 12:13 : client: [6] opened from [::1]:34140
+Feb 03 12:13 : client: [6] closed
+Feb 03 12:13 : client: [7] opened from [::1]:34142
+Feb 03 12:13 : client: [7] closed
+Feb 03 12:13 : client: [8] opened from [::1]:34144
+Feb 03 12:13 : client: [8] closed
+Feb 03 12:13 : client: [9] opened from [::1]:34182
+Feb 03 12:13 : client: [9] closed
+Feb 03 12:13 : client: [10] opened from [::1]:34184
+Feb 03 12:13 : client: [10] closed
+Feb 03 12:14 : client: [11] opened from [::1]:34186
+Feb 03 12:14 : client: [11] closed
+Feb 03 12:14 : client: [12] opened from [::1]:34188
+Feb 03 12:14 : client: [12] closed
+Feb 03 12:15 : client: [13] opened from [::1]:34190
+Feb 03 12:15 : client: [13] closed
+Feb 03 12:15 : client: [14] opened from [::1]:34222
+Feb 03 12:15 : client: [14] closed
+Feb 03 12:16 : client: [15] opened from [::1]:34224
+Feb 03 12:16 : client: [15] closed
+Feb 03 12:16 : client: [16] opened from [::1]:34226
+Feb 03 12:16 : client: [16] closed
+Feb 03 12:16 : client: [17] opened from [::1]:34252
+Feb 03 12:16 : client: [17] closed
+Feb 03 12:16 : client: [18] opened from [::1]:34254
+Feb 03 12:16 : client: [18] closed
+Feb 03 12:50 : client: [19] opened from [::1]:36000
+Feb 03 12:50 : client: [19] closed
+Feb 03 12:52 : client: [20] opened from [::1]:36052
+Feb 03 12:52 : client: [20] closed
+Feb 03 12:53 : client: [21] opened from [::1]:36104
+Feb 03 12:53 : client: [21] closed
+Feb 03 12:54 : player: played "Dance with the Dead - Discography/Out of Body/15 - Sunset.mp3"
+Feb 03 12:57 : client: [22] opened from [::1]:36222
+Feb 03 12:57 : client: [22] closed
+Feb 03 13:52 : client: [23] opened from [::1]:37884
+Feb 03 13:52 : client: [23] closed
+Feb 03 13:52 : client: [24] opened from [::1]:37886
+Feb 03 13:52 : client: [24] closed
+Feb 03 14:02 : client: [25] opened from [::1]:38246
+Feb 03 14:02 : client: [25] closed
+Feb 03 14:02 : client: [26] opened from [::1]:38252
+Feb 03 14:02 : client: [26] closed
+Feb 03 14:02 : client: [27] opened from [::1]:38254
+Feb 03 14:02 : client: [27] closed
+Feb 03 14:02 : client: [28] opened from [::1]:38256
+Feb 03 14:02 : client: [28] closed
+Feb 03 14:02 : client: [29] opened from [::1]:38258
+Feb 03 14:02 : client: [29] closed
+Feb 03 14:02 : client: [30] opened from [::1]:38290
+Feb 03 14:02 : client: [30] closed
+Feb 03 14:13 : client: [31] opened from [::1]:38862
+Feb 03 14:13 : client: [31] closed
+Feb 03 14:13 : client: [32] opened from [::1]:38872
+Feb 03 14:13 : client: [32] closed
+Feb 03 14:53 : client: [33] opened from [::1]:40254
+Feb 03 14:53 : client: [33] closed
+Feb 03 14:53 : client: [34] opened from [::1]:40256
+Feb 03 14:53 : client: [34] closed
+Feb 03 18:34 : client: [35] opened from [::1]:46550
+Feb 03 18:34 : client: [0] closed
+Feb 03 18:35 : client: [35] closed
+Feb 03 18:46 : client: [36] opened from [::1]:47072
+Feb 03 18:46 : client: [37] opened from [::1]:47074
+Feb 03 18:46 : client: [37] closed
+Feb 03 18:46 : client: [38] opened from [::1]:47076
+Feb 03 18:46 : client: [38] closed
+Feb 03 18:46 : client: [39] opened from [::1]:47080
+Feb 03 18:46 : client: [39] closed
+Feb 03 18:46 : client: [40] opened from [::1]:47108
+Feb 03 18:46 : client: [40] closed
+Feb 03 18:46 : client: [41] opened from [::1]:47110
+Feb 03 18:46 : client: [41] closed
+Feb 03 18:46 : client: [42] opened from [::1]:47112
+Feb 03 18:46 : client: [42] closed
+Feb 03 18:46 : client: [43] opened from [::1]:47114
+Feb 03 18:46 : client: [43] closed
+Feb 03 18:46 : client: [44] opened from [::1]:47116
+Feb 03 18:46 : client: [44] closed
+Feb 03 18:49 : client: [45] opened from [::1]:47208
+Feb 03 18:49 : client: [45] closed
+Feb 03 18:53 : client: [46] opened from [::1]:47580
+Feb 03 18:53 : client: [46] closed
+Feb 03 18:55 : player: played "Dance with the Dead - Discography/Near Dark/06. Eye of the Storm.mp3"
+Feb 03 18:56 : client: [47] opened from [::1]:47652
+Feb 03 18:56 : client: [47] closed
+Feb 03 18:56 : client: [48] opened from [::1]:47654
+Feb 03 18:56 : client: [48] closed
+Feb 03 18:57 : client: [49] opened from [::1]:47684
+Feb 03 18:57 : client: [49] closed
+Feb 03 18:57 : client: [50] opened from [::1]:47686
+Feb 03 18:57 : client: [50] closed
+Feb 03 18:59 : player: played "Monstercat 029 - Havoc/Jauz x San Holo - Monstercat 029 - Havoc - 1 OK!.flac"
+Feb 03 19:00 : client: [51] opened from [::1]:47784
+Feb 03 19:00 : client: [51] closed
+Feb 03 19:02 : player: played "Monstercat 029 - Havoc/Seven Lions & Echos - Monstercat 029 - Havoc - 2 Cold Skin.flac"
+Feb 03 19:05 : player: played "Monstercat 029 - Havoc/Nervo - Monstercat 029 - Havoc - 3 Anywhere You Go (feat. Timmy Trumpet).flac"
+Feb 03 19:06 : client: [52] opened from [::1]:48054
+Feb 03 19:06 : client: [52] closed
+Feb 03 19:07 : client: [53] opened from [::1]:48082
+Feb 03 19:07 : client: [53] closed
+Feb 03 19:07 : client: [54] opened from [::1]:48084
+Feb 03 19:07 : client: [54] closed
+Feb 03 19:07 : client: [55] opened from [::1]:48086
+Feb 03 19:07 : client: [55] closed
+Feb 03 19:07 : client: [56] opened from [::1]:48110
+Feb 03 19:07 : client: [56] closed
+Feb 03 19:20 : client: [57] opened from [::1]:48584
+Feb 03 19:20 : client: [57] closed
+Feb 03 19:23 : player: played "Monstercat 029 - Havoc/Koven - Monstercat 029 - Havoc - 4 Breathing Me In.flac"
+Feb 03 19:23 : client: [58] opened from [::1]:48778
+Feb 03 19:23 : client: [58] closed

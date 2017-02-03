@@ -6,13 +6,11 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
-icon="${HOME}/personal/wallpapers/01.png"
 tmpbg='/tmp/screenlock.png'
 
-(( $# )) && { icon=$1; }
+(( $# ))
 
 scrot "$tmpbg"
-mogrify "$tmpbg" -blur 0x6 "$tmpbg"
-convert "$tmpbg" "$icon" -gravity center -composite -matte "$tmpbg"
+mogrify "$tmpbg" -blur 0x7 "$tmpbg"
 i3lock -u -i "$tmpbg"
 rm -f /tmp/screenlock.png

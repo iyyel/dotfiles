@@ -16,9 +16,6 @@ export QT_STYLE_OVERRIDE='gtk2'
 export QT_QPA_PLATFORMTHEME='gtk2'
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/bin/ruby:$(ruby -rubygems -e "puts Gem.user_dir")/bin"
 
-# Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=2
-
 # Vi bindings
 bindkey -v
 

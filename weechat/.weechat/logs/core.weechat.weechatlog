@@ -351,3 +351,216 @@
 2017-01-28 13:03:05		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
 2017-01-28 13:03:05		script: 330 scripts for WeeChat 1.7
 2017-01-28 13:03:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-28 21:12:37		python: scripts unloaded
+2017-01-28 21:12:37		perl: scripts unloaded
+2017-01-29 17:16:31	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-01-29 17:16:31		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-01-29 17:16:31		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-01-29 17:16:31		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-01-29 17:16:31		BEINC is now disabled
+2017-01-29 17:16:31		beinc initiated!
+2017-01-29 17:16:31		python: stdout/stderr: Traceback (most recent call last):
+2017-01-29 17:16:31		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-01-29 17:16:31		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-01-29 17:16:31		python: stdout/stderr: ImportError: No module named mpd
+2017-01-29 17:16:31	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-01-29 17:16:31		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-01-29 17:16:31		script: downloading list of scripts...
+2017-01-29 17:16:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-29 17:16:32		script: 330 scripts for WeeChat 1.7
+2017-01-29 21:49:27		python: scripts unloaded
+2017-01-29 21:49:27		perl: scripts unloaded
+2017-01-30 10:59:56	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-01-30 10:59:56		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-01-30 10:59:56		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-01-30 10:59:56		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-01-30 10:59:56		BEINC is now disabled
+2017-01-30 10:59:56		beinc initiated!
+2017-01-30 10:59:56		python: stdout/stderr: Traceback (most recent call last):
+2017-01-30 10:59:56		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-01-30 10:59:56		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-01-30 10:59:56		python: stdout/stderr: ImportError: No module named mpd
+2017-01-30 10:59:56	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-01-30 10:59:56		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-01-30 10:59:56		script: 330 scripts for WeeChat 1.7
+2017-01-30 10:59:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-30 16:53:33		python: scripts unloaded
+2017-01-30 16:53:33		perl: scripts unloaded
+2017-01-30 19:55:55	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-01-30 19:55:55		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-01-30 19:55:55		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-01-30 19:55:55		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-01-30 19:55:55		BEINC is now disabled
+2017-01-30 19:55:55		beinc initiated!
+2017-01-30 19:55:55		python: stdout/stderr: Traceback (most recent call last):
+2017-01-30 19:55:55		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-01-30 19:55:55		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-01-30 19:55:55		python: stdout/stderr: ImportError: No module named mpd
+2017-01-30 19:55:55	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-01-30 19:55:55		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-01-30 19:55:55		script: downloading list of scripts...
+2017-01-30 19:55:55		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-30 19:55:55		script: 330 scripts for WeeChat 1.7
+2017-01-30 21:23:35		python: scripts unloaded
+2017-01-30 21:23:35		perl: scripts unloaded
+2017-01-31 07:54:18	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-01-31 07:54:18		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-01-31 07:54:18		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-01-31 07:54:18		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-01-31 07:54:18		BEINC is now disabled
+2017-01-31 07:54:18		beinc initiated!
+2017-01-31 07:54:18		python: stdout/stderr: Traceback (most recent call last):
+2017-01-31 07:54:18		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-01-31 07:54:18		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-01-31 07:54:18		python: stdout/stderr: ImportError: No module named mpd
+2017-01-31 07:54:18	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-01-31 07:54:18		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-01-31 07:54:18		script: 330 scripts for WeeChat 1.7
+2017-01-31 07:54:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-31 12:51:20		python: scripts unloaded
+2017-01-31 12:51:20		perl: scripts unloaded
+2017-01-31 12:52:02	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-01-31 12:52:02		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-01-31 12:52:02		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-01-31 12:52:02		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-01-31 12:52:02		BEINC is now disabled
+2017-01-31 12:52:02		beinc initiated!
+2017-01-31 12:52:02		python: stdout/stderr: Traceback (most recent call last):
+2017-01-31 12:52:02		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-01-31 12:52:02		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-01-31 12:52:02		python: stdout/stderr: ImportError: No module named mpd
+2017-01-31 12:52:02	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-01-31 12:52:02		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-01-31 12:52:02		script: 330 scripts for WeeChat 1.7
+2017-01-31 12:52:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-31 19:59:20		python: scripts unloaded
+2017-01-31 19:59:20		perl: scripts unloaded
+2017-01-31 20:18:08	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-01-31 20:18:08		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-01-31 20:18:08		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-01-31 20:18:08		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-01-31 20:18:08		BEINC is now disabled
+2017-01-31 20:18:08		beinc initiated!
+2017-01-31 20:18:08		python: stdout/stderr: Traceback (most recent call last):
+2017-01-31 20:18:08		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-01-31 20:18:08		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-01-31 20:18:08		python: stdout/stderr: ImportError: No module named mpd
+2017-01-31 20:18:08	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-01-31 20:18:08		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-01-31 20:18:08		script: downloading list of scripts...
+2017-01-31 20:18:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-01-31 20:18:09		script: 330 scripts for WeeChat 1.7
+2017-01-31 20:28:49		python: scripts unloaded
+2017-01-31 20:28:49		perl: scripts unloaded
+2017-02-01 13:01:52	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-02-01 13:01:52		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-02-01 13:01:52		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-02-01 13:01:52		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-02-01 13:01:52		BEINC is now disabled
+2017-02-01 13:01:52		beinc initiated!
+2017-02-01 13:01:52		python: stdout/stderr: Traceback (most recent call last):
+2017-02-01 13:01:52		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-02-01 13:01:52		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-02-01 13:01:52		python: stdout/stderr: ImportError: No module named mpd
+2017-02-01 13:01:52	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-02-01 13:01:52		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-02-01 13:01:52		script: 330 scripts for WeeChat 1.7
+2017-02-01 13:01:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-02-01 21:19:45		python: scripts unloaded
+2017-02-01 21:19:45		perl: scripts unloaded
+2017-02-02 07:52:10	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-02-02 07:52:11		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-02-02 07:52:11		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-02-02 07:52:11		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-02-02 07:52:11		BEINC is now disabled
+2017-02-02 07:52:11		beinc initiated!
+2017-02-02 07:52:11		python: stdout/stderr: Traceback (most recent call last):
+2017-02-02 07:52:11		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-02-02 07:52:11		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-02-02 07:52:11		python: stdout/stderr: ImportError: No module named mpd
+2017-02-02 07:52:11	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-02-02 07:52:11		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-02-02 07:52:11		script: downloading list of scripts...
+2017-02-02 07:52:11		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-02-02 07:52:45		python: scripts unloaded
+2017-02-02 07:52:45		perl: scripts unloaded
+2017-02-02 07:53:27	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-02-02 07:53:27		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-02-02 07:53:27		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-02-02 07:53:27		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-02-02 07:53:27		BEINC is now disabled
+2017-02-02 07:53:27		beinc initiated!
+2017-02-02 07:53:27		python: stdout/stderr: Traceback (most recent call last):
+2017-02-02 07:53:27		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-02-02 07:53:27		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-02-02 07:53:27		python: stdout/stderr: ImportError: No module named mpd
+2017-02-02 07:53:27	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-02-02 07:53:27		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-02-02 07:53:27		script: downloading list of scripts...
+2017-02-02 07:53:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-02-02 07:53:27		script: 330 scripts for WeeChat 1.7
+2017-02-02 10:41:51		python: scripts unloaded
+2017-02-02 10:41:51		perl: scripts unloaded
+2017-02-02 10:43:44	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-02-02 10:43:44		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-02-02 10:43:44		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-02-02 10:43:44		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-02-02 10:43:44		BEINC is now disabled
+2017-02-02 10:43:44		beinc initiated!
+2017-02-02 10:43:44		python: stdout/stderr: Traceback (most recent call last):
+2017-02-02 10:43:44		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-02-02 10:43:44		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-02-02 10:43:44		python: stdout/stderr: ImportError: No module named mpd
+2017-02-02 10:43:44	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-02-02 10:43:45		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-02-02 10:43:45		script: 330 scripts for WeeChat 1.7
+2017-02-02 10:43:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-02-02 15:34:39		python: scripts unloaded
+2017-02-02 15:34:39		perl: scripts unloaded
+2017-02-02 15:37:13	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-02-02 15:37:13		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-02-02 15:37:13		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-02-02 15:37:13		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-02-02 15:37:13		BEINC is now disabled
+2017-02-02 15:37:13		beinc initiated!
+2017-02-02 15:37:13		python: stdout/stderr: Traceback (most recent call last):
+2017-02-02 15:37:13		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-02-02 15:37:13		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-02-02 15:37:13		python: stdout/stderr: ImportError: No module named mpd
+2017-02-02 15:37:13	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-02-02 15:37:13		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-02-02 15:37:13		script: 330 scripts for WeeChat 1.7
+2017-02-02 15:37:13		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-02-02 19:17:44		python: scripts unloaded
+2017-02-02 19:17:44		perl: scripts unloaded
+2017-02-03 12:10:47	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-02-03 12:10:47		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-02-03 12:10:47		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-02-03 12:10:47		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-02-03 12:10:47		BEINC is now disabled
+2017-02-03 12:10:47		beinc initiated!
+2017-02-03 12:10:47		python: stdout/stderr: Traceback (most recent call last):
+2017-02-03 12:10:47		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-02-03 12:10:47		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-02-03 12:10:47		python: stdout/stderr: ImportError: No module named mpd
+2017-02-03 12:10:47	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-02-03 12:10:47		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-02-03 12:10:47		script: downloading list of scripts...
+2017-02-03 12:10:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2017-02-03 12:10:48		script: 330 scripts for WeeChat 1.7
+2017-02-03 18:35:48		python: scripts unloaded
+2017-02-03 18:35:48		perl: scripts unloaded
+2017-02-03 18:48:51	 !!! 	Error with command "/alias copywin coords" (help on command: /help alias)
+2017-02-03 18:48:51		perl scripts loaded: beep, buffers, color_popup, colorize_lines, coords, iset, kernel, sort_buffers, sysinfo
+2017-02-03 18:48:51		Parsing /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json...
+2017-02-03 18:48:51		ERROR: unable to parse /home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json: load error - [Errno 2] No such file or directory: '/home/iyyel/dotfiles/weechat/.weechat/beinc_weechat.json'
+2017-02-03 18:48:51		BEINC is now disabled
+2017-02-03 18:48:51		beinc initiated!
+2017-02-03 18:48:51		python: stdout/stderr: Traceback (most recent call last):
+2017-02-03 18:48:51		python: stdout/stderr:   File "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py", line 79, in <module>
+2017-02-03 18:48:51		python: stdout/stderr:     from mpd import MPDClient, CommandError
+2017-02-03 18:48:51		python: stdout/stderr: ImportError: No module named mpd
+2017-02-03 18:48:51	 !!! 	python: unable to parse file "/home/iyyel/dotfiles/weechat/.weechat/python/autoload/mpc.py"
+2017-02-03 18:48:51		python scripts loaded: apply_corrections, autosort, beinc_weechat, bitlbee_completion, bitlbee_typing_notice, colorize_nicks, lnotify
+2017-02-03 18:48:51		script: 330 scripts for WeeChat 1.7
+2017-02-03 18:48:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer

@@ -12,3 +12,392 @@
 2017-01-27 19:17:17	 <<< 	RSttl (~user@169.red-83-60-158.dynamicip.rima-tde.net) has quit (Remote host closed the connection)
 2017-01-27 19:17:29	 >>> 	stardust95 (~antoine@enx52-1-78-210-91-26.fbx.proxad.net) has joined #archlinux-unregistered
 2017-01-27 19:18:43	 - 	You are now known as inabsentia
+2017-01-30 12:46:13	 >>> 	inabsentia (~inabsenti@2001:878:200:1041:9eb6:d0ff:fed3:1095) has joined #archlinux-unregistered
+2017-01-30 12:46:13	 - 	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2017-01-30 12:46:13	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-01-30 12:46:13	 - 	Channel #archlinux-unregistered: 507 nicks (5 ops, 0 voices, 502 normals)
+2017-01-30 12:46:13	 - 	Channel created on  
+2017-01-30 12:49:43	 >>> 	mladoux (~mark@2601:446:8201:1620:4dcb:23fc:55bf:fab1) has joined #archlinux-unregistered
+2017-01-30 12:59:26	 <<< 	blaaa_ (~blaaamobi@84.241.202.12) has quit (Quit: AndroidIrc Disconnecting)
+2017-01-30 13:00:42	 >>> 	jstoone (~jstoone@n9pks9.static.netgroup.dk) has joined #archlinux-unregistered
+2017-01-30 13:02:19	 >>> 	xharx (~xharx@p5B34C72E.dip0.t-ipconnect.de) has joined #archlinux-unregistered
+2017-01-30 13:05:19	 <<< 	apollo11w__ (~apollo11w@99.196.50.113) has quit (Read error: Connection reset by peer)
+2017-01-30 13:05:49	 <<< 	leon1 (~Leon@46.44.189.34) has quit (Ping timeout: 240 seconds)
+2017-01-30 13:07:17	 >>> 	apollo11w__ (~apollo11w@99.196.50.113) has joined #archlinux-unregistered
+2017-01-30 13:08:28	 >>> 	Unb0rn (~unb0rn@88.87.69.78) has joined #archlinux-unregistered
+2017-01-30 13:10:35	 <<< 	bocard_ (~bocard@37.48.80.165) has quit (Ping timeout: 248 seconds)
+2017-01-30 13:12:46	 <<< 	stenrose (~stenrose@martin.ilait.se) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-30 13:16:34	 <<< 	big_t_ (~big_t@c-73-180-18-55.hsd1.or.comcast.net) has quit (Quit: leaving)
+2017-01-30 13:18:25	 >>> 	nighty (~nighty@s229123.ppp.asahi-net.or.jp) has joined #archlinux-unregistered
+2017-01-30 13:23:29	 <<< 	Smither (~Smither@cpc105474-brad21-2-0-cust495.17-1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2017-01-30 13:24:35	 <<< 	iiddnn (~iacopodee@host48-165-dynamic.2-87-r.retail.telecomitalia.it) has quit (Quit: iiddnn)
+2017-01-30 13:25:59	 >>> 	ZerataX (~ZerataX@p57B377BF.dip0.t-ipconnect.de) has joined #archlinux-unregistered
+2017-01-30 13:27:24	 >>> 	Smither (~Smither@cpc105474-brad21-2-0-cust495.17-1.cable.virginm.net) has joined #archlinux-unregistered
+2017-01-30 13:29:43	 >>> 	anarc0der (~dnl@unaffiliated/anarcoder) has joined #archlinux-unregistered
+2017-01-30 13:31:55	 <<< 	anarc0der (~dnl@unaffiliated/anarcoder) has left #archlinux-unregistered
+2017-01-30 13:33:56	 <<< 	vharish (~harish@111.93.158.250) has quit (Ping timeout: 255 seconds)
+2017-01-30 13:39:16	 >>> 	beelzy (~beelzy@DSL01.212.114.252.85.ip-pool.NEFkom.net) has joined #archlinux-unregistered
+2017-01-30 13:40:15	 <<< 	beelzy (~beelzy@DSL01.212.114.252.85.ip-pool.NEFkom.net) has left #archlinux-unregistered
+2017-01-30 13:40:59	 <<< 	t0mmy (~tprrt@217.114.201.133) has quit (Ping timeout: 248 seconds)
+2017-01-30 13:42:21	 >>> 	jsantiagoh (~jsantiago@gateway/shell/xshellz/x-pvhiojbezvzblyzy) has joined #archlinux-unregistered
+2017-01-30 13:43:04	 >>> 	t0mmy (~tprrt@217.114.201.133) has joined #archlinux-unregistered
+2017-01-30 13:45:02	 <<< 	wonderworld (~ww@ip-176-198-197-145.hsi05.unitymediagroup.de) has quit (Remote host closed the connection)
+2017-01-30 13:46:33	 <<< 	ZerataX (~ZerataX@p57B377BF.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-01-30 13:46:34	 >>> 	gozhev (~gozhev@broadband-46-242-8-221.moscow.rt.ru) has joined #archlinux-unregistered
+2017-01-30 13:52:48	 - 	apollo11w__ is now known as apollo11w
+2017-01-30 13:53:41	 <<< 	apollo11w (~apollo11w@99.196.50.113) has quit (Changing host)
+2017-01-30 13:53:41	 >>> 	apollo11w (~apollo11w@unaffiliated/apollo11w) has joined #archlinux-unregistered
+2017-01-30 13:53:41	@evilgrawity	apollo11w: You can /join #archlinux now.
+2017-01-30 13:53:49	 <<< 	apollo11w (~apollo11w@unaffiliated/apollo11w) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-30 13:55:32	 <<< 	t0mmy (~tprrt@217.114.201.133) has quit (Quit: leaving)
+2017-01-30 13:55:49	 >>> 	t0mmy (~tprrt@217.114.201.133) has joined #archlinux-unregistered
+2017-01-30 13:56:41	 >>> 	Bakerboy (~gordy@185.216.7.51.dyn.plus.net) has joined #archlinux-unregistered
+2017-01-30 13:57:34	@evilgrawity	Bakerboy: You can /join #archlinux now.
+2017-01-30 13:57:49	 >>> 	mlux (~mlux@45.63.119.154) has joined #archlinux-unregistered
+2017-01-30 13:57:49	 <<< 	Bakerboy (~gordy@185.216.7.51.dyn.plus.net) has left #archlinux-unregistered
+2017-01-30 13:58:24	 <<< 	mlux (~mlux@45.63.119.154) has quit (Client Quit)
+2017-01-30 14:03:28	 <<< 	vakka (vakka@gateway/shell/panicbnc/x-anttvdrnorpsnseh) has quit (Ping timeout: 256 seconds)
+2017-01-30 14:05:53	 >>> 	medber (~medber@196.84.176.106) has joined #archlinux-unregistered
+2017-01-30 14:06:04	 >>> 	vharish (~harish@111.93.158.250) has joined #archlinux-unregistered
+2017-01-30 14:06:35	 <<< 	t0mmy (~tprrt@217.114.201.133) has quit (Ping timeout: 240 seconds)
+2017-01-30 14:12:32	 >>> 	HElldoom (~windy@49.204.226.221) has joined #archlinux-unregistered
+2017-01-30 14:12:42	 <<< 	ihato (~ihato@5.134.110.61) has quit (Quit: leaving)
+2017-01-30 14:12:59	 >>> 	P_C (~Thunderbi@156.17.224.212) has joined #archlinux-unregistered
+2017-01-30 14:13:26	 >>> 	t0mmy (~tprrt@217.114.201.133) has joined #archlinux-unregistered
+2017-01-30 14:15:02	 >>> 	gabix (~gabix@79.113.245.21) has joined #archlinux-unregistered
+2017-01-30 14:15:38	 <<< 	HElldoom (~windy@49.204.226.221) has quit (Client Quit)
+2017-01-30 14:16:51	 >>> 	SakiiR (~sakiir@163.5.220.31) has joined #archlinux-unregistered
+2017-01-30 14:20:46	 <<< 	gabix (~gabix@79.113.245.21) has left #archlinux-unregistered
+2017-01-30 14:22:10	 <<< 	zerol0g1k (~unlogicka@unaffiliated/zerol0g1k) has quit (Ping timeout: 256 seconds)
+2017-01-30 14:22:18	 >>> 	zdh (~zdh@95.109.98.16) has joined #archlinux-unregistered
+2017-01-30 14:22:43	 >>> 	zerol0g1k (~unlogicka@50.106.168.191) has joined #archlinux-unregistered
+2017-01-30 14:22:44	 <<< 	zerol0g1k (~unlogicka@50.106.168.191) has quit (Changing host)
+2017-01-30 14:22:44	 >>> 	zerol0g1k (~unlogicka@unaffiliated/zerol0g1k) has joined #archlinux-unregistered
+2017-01-30 14:23:08	@evilgrawity	zdh: You can /join #archlinux now.
+2017-01-30 14:24:21	 <<< 	zdh (~zdh@95.109.98.16) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-30 14:24:24	@evilgrawity	svenson: You can /join #archlinux now.
+2017-01-30 14:24:26	 <<< 	sinetek (~quassel@sinet3k.com) has quit (Ping timeout: 245 seconds)
+2017-01-30 14:24:32	 <<< 	svenson (~svenson@p200300556B33A907AF51E18783B841FD.dip0.t-ipconnect.de) has left #archlinux-unregistered
+2017-01-30 14:29:34	 >>> 	secmonk (~secmonk@ip68-105-130-190.tc.ph.cox.net) has joined #archlinux-unregistered
+2017-01-30 14:37:22	 >>> 	Nd-478-m (~nndvc@109.72.55.176) has joined #archlinux-unregistered
+2017-01-30 14:38:58	 >>> 	timofonic_ (~timofonic@6.118.20.95.dynamic.jazztel.es) has joined #archlinux-unregistered
+2017-01-30 14:40:34	 <<< 	maturain (~maturain@37.59.214.137) has left #archlinux-unregistered
+2017-01-30 14:41:40	 >>> 	zeroDi (~zeroDivis@87-198-58-105.ptr.magnet.ie) has joined #archlinux-unregistered
+2017-01-30 14:41:40	 <<< 	shpew12 (~shpew12@71-88-60-246.static.nwtn.ct.charter.com) has quit (Read error: Connection reset by peer)
+2017-01-30 14:41:53	 >>> 	shpew12 (~shpew12@71-88-60-246.static.nwtn.ct.charter.com) has joined #archlinux-unregistered
+2017-01-30 14:44:26	 >>> 	Guest75671 (~Human_G33@62.147.242.8) has joined #archlinux-unregistered
+2017-01-30 14:46:04	 <<< 	timofonic_ (~timofonic@6.118.20.95.dynamic.jazztel.es) has quit (Quit: ZNC 1.7.x-git-716-14e68299 - http://znc.in)
+2017-01-30 14:46:19	 >>> 	timofonic_ (~timofonic@6.118.20.95.dynamic.jazztel.es) has joined #archlinux-unregistered
+2017-01-30 14:46:50	 <<< 	Guest93432 (~Human_G33@62.147.242.8) has quit (Ping timeout: 255 seconds)
+2017-01-30 14:47:13	 <<< 	zeroDi (~zeroDivis@87-198-58-105.ptr.magnet.ie) has quit (Read error: Connection reset by peer)
+2017-01-30 14:47:24	 >>> 	zeroDi (~zeroDivis@87-198-58-105.ptr.magnet.ie) has joined #archlinux-unregistered
+2017-01-30 14:48:07	 >>> 	killian99 (~killian99@jol13-4-78-235-25-248.fbx.proxad.net) has joined #archlinux-unregistered
+2017-01-30 14:48:09	 <<< 	kyau (kyau@dark.kyau.net) has quit (*.net *.split)
+2017-01-30 14:48:17	 <<< 	killian99 (~killian99@jol13-4-78-235-25-248.fbx.proxad.net) has left #archlinux-unregistered
+2017-01-30 14:48:32	 >>> 	kyau (kyau@dark.kyau.net) has joined #archlinux-unregistered
+2017-01-30 14:53:53	 <<< 	gozhev (~gozhev@broadband-46-242-8-221.moscow.rt.ru) has left #archlinux-unregistered
+2017-01-30 14:54:29	 <<< 	P_C (~Thunderbi@156.17.224.212) has quit (Ping timeout: 255 seconds)
+2017-01-30 15:09:22	 - 	irc: disconnected from server
+2017-01-30 15:11:07	 >>> 	inabsentia (~inabsenti@130.225.94.70) has joined #archlinux-unregistered
+2017-01-30 15:11:07	 - 	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2017-01-30 15:11:07	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-01-30 15:11:07	 - 	Channel #archlinux-unregistered: 507 nicks (5 ops, 0 voices, 502 normals)
+2017-01-30 15:11:07	 - 	Channel created on  
+2017-01-30 15:11:51	 >>> 	pxfgod (~pxfgod@60.162.254.39) has joined #archlinux-unregistered
+2017-01-30 15:13:30	 <<< 	pxfgod (~pxfgod@60.162.254.39) has quit (Quit: Leaving)
+2017-01-30 15:13:49	 >>> 	bocard_ (~bocard@37.48.80.165) has joined #archlinux-unregistered
+2017-01-30 15:16:01	 <<< 	vharish (~harish@111.93.158.250) has quit (Ping timeout: 256 seconds)
+2017-01-30 15:16:30	 <<< 	mihok (~mihok@63.250.107.210) has quit (Quit: Leaving)
+2017-01-30 15:16:36	@evilgrawity	jstoone: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+2017-01-30 15:16:40	 <<< 	jstoone (~jstoone@n9pks9.static.netgroup.dk) has left #archlinux-unregistered
+2017-01-30 15:16:45	 >>> 	mihok (~mihok@63.250.107.210) has joined #archlinux-unregistered
+2017-01-30 15:17:15	 >>> 	waaf (~waaf@ADijon-553-1-48-48.w92-161.abo.wanadoo.fr) has joined #archlinux-unregistered
+2017-01-30 15:17:16	 >>> 	GodGinrai (~msterritt@c-76-20-199-125.hsd1.ga.comcast.net) has joined #archlinux-unregistered
+2017-01-30 15:17:36	 <<< 	mihok (~mihok@63.250.107.210) has quit (Remote host closed the connection)
+2017-01-30 15:17:52	 >>> 	mihok (~mihok@CPE00180a0f3f8a-CMbc14012f6b10.cpe.net.cable.rogers.com) has joined #archlinux-unregistered
+2017-01-30 15:18:00	 <<< 	GodGinrai (~msterritt@c-76-20-199-125.hsd1.ga.comcast.net) has quit (Changing host)
+2017-01-30 15:18:00	 >>> 	GodGinrai (~msterritt@unaffiliated/godginrai) has joined #archlinux-unregistered
+2017-01-30 15:18:00	@evilgrawity	GodGinrai: You can /join #archlinux now.
+2017-01-30 15:18:13	 <<< 	GodGinrai (~msterritt@unaffiliated/godginrai) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-30 15:19:02	 <<< 	timofonic_ (~timofonic@6.118.20.95.dynamic.jazztel.es) has quit (Quit: ZNC 1.7.x-git-716-14e68299 - http://znc.in)
+2017-01-30 15:25:05	 <<< 	t0mmy (~tprrt@217.114.201.133) has quit (Ping timeout: 255 seconds)
+2017-01-30 15:26:56	 >>> 	t0mmy (~tprrt@217.114.201.133) has joined #archlinux-unregistered
+2017-01-30 15:27:04	 >>> 	Tristan-Speccy (~tristan@213.163.67.18) has joined #archlinux-unregistered
+2017-01-30 15:27:27	 - 	Tristan-Speccy is now known as Guest37057
+2017-01-30 15:28:00	 <<< 	Guest59295 (~krompus@104.192.121.114) has quit (Ping timeout: 240 seconds)
+2017-01-30 15:29:30	 <<< 	bocard_ (~bocard@37.48.80.165) has quit (Ping timeout: 240 seconds)
+2017-01-30 15:30:27	 >>> 	gabix (~gabix@79.113.245.21) has joined #archlinux-unregistered
+2017-01-30 15:33:45	 >>> 	possum[m] (possummatr@gateway/shell/matrix.org/x-bxubuprlagxjjlio) has joined #archlinux-unregistered
+2017-01-30 15:34:28	 >>> 	krompus (~krompus@104.192.121.114) has joined #archlinux-unregistered
+2017-01-30 15:34:51	 - 	krompus is now known as Guest98532
+2017-01-30 15:35:10	 >>> 	vharish (~harish@111.93.158.250) has joined #archlinux-unregistered
+2017-01-30 15:36:41	 >>> 	FruitieX (~FruitieX@213-243-147-96.bb.dnainternet.fi) has joined #archlinux-unregistered
+2017-01-30 15:38:46	 <<< 	FruitieX (~FruitieX@213-243-147-96.bb.dnainternet.fi) has quit (Client Quit)
+2017-01-30 15:39:50	 >>> 	FruitieX (~FruitieX@213-243-147-96.bb.dnainternet.fi) has joined #archlinux-unregistered
+2017-01-30 15:39:51	 <<< 	Guest89004 (~bleurgh@41.113.119.221) has quit (Ping timeout: 245 seconds)
+2017-01-30 15:41:57	 <<< 	djb-irc (~djb-irc@129.13.154.138) has quit (Quit: Leaving)
+2017-01-30 15:42:08	 >>> 	dromedarCase (~dromedarC@2a02:2450:102d:5b:99c:d406:d777:6fa) has joined #archlinux-unregistered
+2017-01-30 15:42:49	 >>> 	ndk (~ndk@cpc68331-cdif16-2-0-cust239.5-1.cable.virginm.net) has joined #archlinux-unregistered
+2017-01-30 15:46:07	 <<< 	vharish (~harish@111.93.158.250) has quit (Ping timeout: 240 seconds)
+2017-01-30 15:49:25	 >>> 	djb-irc (~djb-irc@129.13.154.138) has joined #archlinux-unregistered
+2017-01-30 15:54:52	 <<< 	mihok (~mihok@CPE00180a0f3f8a-CMbc14012f6b10.cpe.net.cable.rogers.com) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-30 15:55:54	 <<< 	djb-irc (~djb-irc@129.13.154.138) has quit (Ping timeout: 260 seconds)
+2017-01-30 15:56:00	 >>> 	drome (~dromedarC@2a02:2450:102d:5b:99c:d406:d777:6fa) has joined #archlinux-unregistered
+2017-01-30 15:56:04	 <<< 	dromedarCase (~dromedarC@2a02:2450:102d:5b:99c:d406:d777:6fa) has quit (Read error: No route to host)
+2017-01-30 16:00:27	 >>> 	aleex440 (~alex@92.83.159.105) has joined #archlinux-unregistered
+2017-01-30 16:03:15	@evilgrawity	aleex440: You can /join #archlinux now.
+2017-01-30 16:07:50	 <<< 	aleex440 (~alex@92.83.159.105) has left #archlinux-unregistered
+2017-01-30 16:08:07	 >>> 	djb-irc (~djb-irc@129.13.154.138) has joined #archlinux-unregistered
+2017-01-30 16:18:43	 >>> 	predes0 (~predes0@2a02:c7f:120b:d800:120b:a9ff:feb1:98b4) has joined #archlinux-unregistered
+2017-01-30 16:20:26	 >>> 	salexan (~quassel@erm104.goemobile.de) has joined #archlinux-unregistered
+2017-01-30 16:26:54	 >>> 	Th3R0b (~bobby@a838.ip20.netikka.fi) has joined #archlinux-unregistered
+2017-01-30 16:28:53	 >>> 	kotto` (~user@200-101-11-134.cbace700.dsl.brasiltelecom.net.br) has joined #archlinux-unregistered
+2017-01-30 16:28:54	 <<< 	kotto` (~user@200-101-11-134.cbace700.dsl.brasiltelecom.net.br) has quit (Remote host closed the connection)
+2017-01-30 16:29:14	 >>> 	salexan_ (~quassel@134.76.218.252) has joined #archlinux-unregistered
+2017-01-30 16:29:23	 <<< 	salexan_ (~quassel@134.76.218.252) has quit (Remote host closed the connection)
+2017-01-30 16:29:25	 >>> 	manjaroi3 (~manjaro-i@a89-183-118-140.net-htp.de) has joined #archlinux-unregistered
+2017-01-30 16:29:41	 <<< 	salexan (~quassel@erm104.goemobile.de) has quit (Ping timeout: 256 seconds)
+2017-01-30 16:30:12	@evilgrawity	Th3R0b: You can /join #archlinux now.
+2017-01-30 16:30:15	 <<< 	Th3R0b (~bobby@a838.ip20.netikka.fi) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-30 16:33:34	 >>> 	Satyam2345 (~satyam@49.202.49.80) has joined #archlinux-unregistered
+2017-01-30 16:33:53	 <<< 	nighty (~nighty@s229123.ppp.asahi-net.or.jp) has quit (Remote host closed the connection)
+2017-01-30 16:33:56	 <<< 	Satyam2345 (~satyam@49.202.49.80) has left #archlinux-unregistered
+2017-01-30 16:36:27	 >>> 	nighty (~nighty@s229123.ppp.asahi-net.or.jp) has joined #archlinux-unregistered
+2017-01-30 16:38:20	 >>> 	apollo11w_ (~apollo11w@99.196.50.113) has joined #archlinux-unregistered
+2017-01-30 16:42:10	 <<< 	donguston (~AdamPC@cpc12-sprt2-2-0-cust478.17-2.cable.virginm.net) has quit (Quit: Leaving)
+2017-01-30 16:44:07	 <<< 	xharx (~xharx@p5B34C72E.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-01-30 16:44:21	 <<< 	HamRadio (~elijah@67.148.122.154) has quit (Quit: Konversation terminated!)
+2017-01-30 16:44:59	 <<< 	waaf (~waaf@ADijon-553-1-48-48.w92-161.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2017-01-30 16:45:54	 >>> 	jirido (~jirido@mobile-access-5d6aed-197.dhcp.inet.fi) has joined #archlinux-unregistered
+2017-01-30 16:46:44	@evilgrawity	predes0: You can /join #archlinux now.
+2017-01-30 16:46:53	 <<< 	predes0 (~predes0@2a02:c7f:120b:d800:120b:a9ff:feb1:98b4) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-30 16:47:11	 >>> 	Ejlx (~Ejlx@ADijon-553-1-48-48.w92-161.abo.wanadoo.fr) has joined #archlinux-unregistered
+2017-01-30 16:51:21	 - 	angerctl is now known as Namarrgon
+2017-01-30 16:51:27	 <<< 	Ejlx (~Ejlx@ADijon-553-1-48-48.w92-161.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2017-01-31 14:12:01	 >>> 	inabsentia (~inabsenti@2001:878:200:1043:9eb6:d0ff:fed3:1095) has joined #archlinux-unregistered
+2017-01-31 14:12:01	 - 	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2017-01-31 14:12:01	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-01-31 14:12:01	 - 	Channel #archlinux-unregistered: 523 nicks (5 ops, 0 voices, 518 normals)
+2017-01-31 14:12:01	 - 	Channel created on  
+2017-01-31 14:13:40	 >>> 	Azazell (~Azazel@2a02:a03f:2828:6d00:9564:53a8:4fcc:ec37) has joined #archlinux-unregistered
+2017-01-31 14:17:41	 <<< 	Guest11060 (~msg@88.236.116.143) has quit (Quit: Leaving)
+2017-01-31 14:17:54	 >>> 	Guest11060 (~msg@88.236.116.143) has joined #archlinux-unregistered
+2017-01-31 14:19:56	 - 	turinhorse is now known as omshantiom
+2017-01-31 14:19:56	 <<< 	shpew12 (~shpew12@71-88-60-246.static.nwtn.ct.charter.com) has quit (Read error: Connection reset by peer)
+2017-01-31 14:20:04	 >>> 	shpew12 (~shpew12@71-88-60-246.static.nwtn.ct.charter.com) has joined #archlinux-unregistered
+2017-01-31 14:21:15	 <<< 	omshantiom (~trooper@120.89.75.40) has quit (Quit: Leaving)
+2017-01-31 14:21:28	@evilgrawity	anonzadas: You can /join #archlinux now.
+2017-01-31 14:21:31	 <<< 	anonzadas (~anonzadas@32.226.54.77.rev.vodafone.pt) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 14:22:18	 >>> 	mihok (~mihok@63.250.107.210) has joined #archlinux-unregistered
+2017-01-31 14:26:11	 <<< 	Guest11060 (~msg@88.236.116.143) has quit (Quit: Leaving)
+2017-01-31 14:26:23	 >>> 	Anarky85 (~quassel@190.39.117.97) has joined #archlinux-unregistered
+2017-01-31 14:27:14	 <<< 	ostkind (~ostkind@vpn26b.hotsplots.net) has quit (Ping timeout: 240 seconds)
+2017-01-31 14:33:20	 >>> 	vharish (~harish@111.93.158.250) has joined #archlinux-unregistered
+2017-01-31 14:34:55	 >>> 	Spherical (~Spherical@pool-165-230-225-192.nat.rutgers.edu) has joined #archlinux-unregistered
+2017-01-31 14:38:12	 <<< 	vharish (~harish@111.93.158.250) has quit (Ping timeout: 240 seconds)
+2017-01-31 14:38:45	 >>> 	GodGinrai (~msterritt@76.97.181.115) has joined #archlinux-unregistered
+2017-01-31 14:39:53	 >>> 	vharish (~harish@111.93.158.250) has joined #archlinux-unregistered
+2017-01-31 14:43:14	 <<< 	Jettis (~h0h0@91-157-231-255.elisa-laajakaista.fi) has quit (Ping timeout: 260 seconds)
+2017-01-31 14:44:36	 >>> 	x68 (~jens@191.23.6.16) has joined #archlinux-unregistered
+2017-01-31 14:45:00	 <<< 	vharish (~harish@111.93.158.250) has quit (Ping timeout: 248 seconds)
+2017-01-31 14:45:05	 >>> 	nivag (~gavin@121.99.202.67) has joined #archlinux-unregistered
+2017-01-31 14:45:24	 <<< 	ROB34T_MU37734 (bren@silenceisdefeat.com) has quit (Ping timeout: 258 seconds)
+2017-01-31 14:45:51	@evilgrawity	x68: You can /join #archlinux now.
+2017-01-31 14:46:15	 >>> 	ROB34T_MU37734 (bren@silenceisdefeat.com) has joined #archlinux-unregistered
+2017-01-31 14:49:12	 >>> 	SuperficialyLost (~Superfici@120.18.2.142) has joined #archlinux-unregistered
+2017-01-31 14:49:26	 <<< 	SuperficialyLost (~Superfici@120.18.2.142) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 14:50:52	 <<< 	wonderworld (~ww@ip-176-198-197-145.hsi05.unitymediagroup.de) has quit (Remote host closed the connection)
+2017-01-31 14:50:57	 <<< 	jirido (~jirido@mobile-access-5d6aa9-20.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2017-01-31 14:51:17	 >>> 	jirido (~jirido@mobile-access-5d6aa9-20.dhcp.inet.fi) has joined #archlinux-unregistered
+2017-01-31 14:52:13	 >>> 	Jettis (~h0h0@91-157-231-255.elisa-laajakaista.fi) has joined #archlinux-unregistered
+2017-01-31 14:54:14	@evilgrawity	smakked: You can /join #archlinux now.
+2017-01-31 14:54:22	 <<< 	smakked (~ado@2405:7f00:8a00:364:ff7d:de13:b637:ce5e) has left #archlinux-unregistered
+2017-01-31 14:55:29	 >>> 	DarkPsydeLord (~quassel@187.216.140.83) has joined #archlinux-unregistered
+2017-01-31 14:56:09	 <<< 	DarkPsydeLord (~quassel@187.216.140.83) has quit (Remote host closed the connection)
+2017-01-31 14:57:10	 >>> 	shadowiota (~quassel@151.61.39.159) has joined #archlinux-unregistered
+2017-01-31 14:58:15	 >>> 	aqjrk (me@jar.bz) has joined #archlinux-unregistered
+2017-01-31 14:58:55	 >>> 	DarkPsydeLord (~quassel@189-211-207-228.static.axtel.net) has joined #archlinux-unregistered
+2017-01-31 14:59:39	 <<< 	DarkPsydeLord (~quassel@189-211-207-228.static.axtel.net) has left #archlinux-unregistered
+2017-01-31 14:59:46	 >>> 	ttyserial (~Junior@nat-208-66-188-116.pinebelt.net) has joined #archlinux-unregistered
+2017-01-31 15:00:12	 <<< 	shadowiota (~quassel@151.61.39.159) has quit (Client Quit)
+2017-01-31 15:00:33	 >>> 	shadowiota (~quassel@151.61.39.159) has joined #archlinux-unregistered
+2017-01-31 15:01:09	 >>> 	rpifan (~rpi@73.106.75.138) has joined #archlinux-unregistered
+2017-01-31 15:02:34	 >>> 	KenOokamiHoro (~horo@172.106.32.157) has joined #archlinux-unregistered
+2017-01-31 15:03:37	@evilgrawity	KenOokamiHoro: You can /join #archlinux now.
+2017-01-31 15:03:50	 <<< 	KenOokamiHoro (~horo@172.106.32.157) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 15:04:27	 <<< 	Jakra (~quassel@2001:44b8:6129:700:ba27:ebff:fe88:42a0) has quit (Ping timeout: 245 seconds)
+2017-01-31 15:05:12	 <<< 	rpifan (~rpi@73.106.75.138) has quit (Ping timeout: 240 seconds)
+2017-01-31 15:05:38	 >>> 	Jakra (~quassel@2001:44b8:6129:700:ba27:ebff:fe88:42a0) has joined #archlinux-unregistered
+2017-01-31 15:07:35	 >>> 	john (~Superfici@120.18.2.142) has joined #archlinux-unregistered
+2017-01-31 15:07:58	 - 	john is now known as Guest42659
+2017-01-31 15:08:09	 - 	Guest42659 is now known as SuperficialyLost
+2017-01-31 15:08:22	@evilgrawity	SuperficialyLost: You can /join #archlinux now.
+2017-01-31 15:08:24	 <<< 	SuperficialyLost (~Superfici@120.18.2.142) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 15:08:26	 <<< 	alex__ (~aleex440@92.83.128.138) has quit (Quit: Leaving)
+2017-01-31 15:08:50	 >>> 	alex__ (~aleex440@92.83.128.138) has joined #archlinux-unregistered
+2017-01-31 15:08:56	 <<< 	murphy_ (~murphy@cpe-104-162-110-106.nyc.res.rr.com) has quit (Read error: Connection reset by peer)
+2017-01-31 15:09:38	 >>> 	rpifan (~rpi@73.106.75.138) has joined #archlinux-unregistered
+2017-01-31 15:09:42	 >>> 	murphy_ (~murphy@cpe-104-162-110-106.nyc.res.rr.com) has joined #archlinux-unregistered
+2017-01-31 15:09:50	 >>> 	astronaut_1 (~astronaut@c83-254-147-193.bredband.comhem.se) has joined #archlinux-unregistered
+2017-01-31 15:10:07	 <<< 	alex__ (~aleex440@92.83.128.138) has quit (Client Quit)
+2017-01-31 15:10:17	 >>> 	aleex4400 (~aleex440@92.83.128.138) has joined #archlinux-unregistered
+2017-01-31 15:10:33	 <<< 	aleex4400 (~aleex440@92.83.128.138) has quit (Client Quit)
+2017-01-31 15:10:51	 >>> 	aleex440 (~aleex440@92.83.128.138) has joined #archlinux-unregistered
+2017-01-31 15:11:06	 >>> 	kirecek (~kirecek@gw-hq.vnet.sk) has joined #archlinux-unregistered
+2017-01-31 15:12:19	 >>> 	ram19890 (~quassel@112.133.237.58) has joined #archlinux-unregistered
+2017-01-31 15:12:20	@evilgrawity	kirecek: You can /join #archlinux now.
+2017-01-31 15:12:43	 <<< 	kirecek (~kirecek@gw-hq.vnet.sk) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 15:13:00	 >>> 	endiruna (~endiendir@poisson.phc.dm.unipi.it) has joined #archlinux-unregistered
+2017-01-31 15:13:13	 <<< 	ram19890 (~quassel@112.133.237.58) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 15:14:35	 <<< 	flix (~flix@unaffiliated/flix) has quit (Quit: ZNC 1.6.3 - http://znc.in)
+2017-01-31 15:16:26	 >>> 	medber (~medber@160.168.179.17) has joined #archlinux-unregistered
+2017-01-31 15:16:45	 <<< 	shadowiota (~quassel@151.61.39.159) has left #archlinux-unregistered
+2017-01-31 15:18:07	 <<< 	x68 (~jens@191.23.6.16) has left #archlinux-unregistered
+2017-01-31 15:21:44	 <<< 	pstanko (pstanko@unaffiliated/pstanko) has quit (Ping timeout: 260 seconds)
+2017-01-31 15:23:14	 <<< 	Guest25943 (~test@npi747c52.uni-duisburg.de) has quit (Ping timeout: 240 seconds)
+2017-01-31 15:23:21	 <<< 	Guest31296 (~krompus@104.192.121.114) has quit (Ping timeout: 258 seconds)
+2017-01-31 15:27:05	 <<< 	rpifan (~rpi@73.106.75.138) has quit (Remote host closed the connection)
+2017-01-31 15:27:16	 <<< 	astronaut_1 (~astronaut@c83-254-147-193.bredband.comhem.se) has quit (Quit: Leaving)
+2017-01-31 15:27:27	 <<< 	ttyserial (~Junior@nat-208-66-188-116.pinebelt.net) has left #archlinux-unregistered
+2017-01-31 15:27:45	 <<< 	am0nrahx (~quassel@unaffiliated/am0nrahx) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 15:28:37	 >>> 	krompus (~krompus@104.192.121.114) has joined #archlinux-unregistered
+2017-01-31 15:29:00	 - 	krompus is now known as Guest74451
+2017-01-31 15:29:20	 >>> 	SuperficialyLost (~Superfici@120.18.2.142) has joined #archlinux-unregistered
+2017-01-31 15:29:23	 >>> 	prtScSysRq (~skyfindin@36.70.131.62) has joined #archlinux-unregistered
+2017-01-31 15:29:53	@evilgrawity	SuperficialyLost: You can /join #archlinux now.
+2017-01-31 15:29:57	 <<< 	SuperficialyLost (~Superfici@120.18.2.142) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 15:32:37	 >>> 	Eonblue (~latera1us@190.106.100.58) has joined #archlinux-unregistered
+2017-01-31 15:35:05	 >>> 	strelox (~user@p200300754F2FF3000359014A35E6E247.dip0.t-ipconnect.de) has joined #archlinux-unregistered
+2017-01-31 15:36:04	 >>> 	kotto` (~user@201-88-46-240.cbace700.dsl.brasiltelecom.net.br) has joined #archlinux-unregistered
+2017-01-31 15:38:36	 >>> 	solyarist (~navras@120.89.75.40) has joined #archlinux-unregistered
+2017-01-31 15:40:13	 <<< 	Goatman (~Fat@84.200.17.80) has quit (Remote host closed the connection)
+2017-01-31 15:41:37	 >>> 	b4ff3r (~patrick@179.7.213.158) has joined #archlinux-unregistered
+2017-01-31 15:43:04	 >>> 	Goatman (~Fat@84.200.17.80) has joined #archlinux-unregistered
+2017-01-31 15:45:40	 >>> 	xiva (~shiva@a95-94-196-241.cpe.netcabo.pt) has joined #archlinux-unregistered
+2017-01-31 15:45:46	 <<< 	xiva (~shiva@a95-94-196-241.cpe.netcabo.pt) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 15:56:30	 - 	irc: disconnected from server
+2017-01-31 15:56:56	 >>> 	inabsentia (~inabsenti@2001:878:200:1043:9eb6:d0ff:fed3:1095) has joined #archlinux-unregistered
+2017-01-31 15:56:56	 - 	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2017-01-31 15:56:56	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-01-31 15:56:56	 - 	Channel #archlinux-unregistered: 528 nicks (5 ops, 0 voices, 523 normals)
+2017-01-31 15:56:56	 - 	Channel created on  
+2017-01-31 15:57:06	 <<< 	solyarist (~navras@120.89.75.40) has quit (Ping timeout: 240 seconds)
+2017-01-31 16:01:30	 <<< 	WoodLeg (~WoodLeg@81.180.208.43) has quit (Ping timeout: 240 seconds)
+2017-01-31 16:02:37	 <<< 	dsokolov (~user@ns1.apelsin.net) has quit (Ping timeout: 276 seconds)
+2017-01-31 16:02:39	 >>> 	SolarAquarion (SolarAquar@the.feds.nullrouted.us) has joined #archlinux-unregistered
+2017-01-31 16:02:51	 >>> 	dsokolov (~user@ns1.apelsin.net) has joined #archlinux-unregistered
+2017-01-31 16:04:29	 >>> 	Paul-S_ (~paul@host-92-26-149-39.as13285.net) has joined #archlinux-unregistered
+2017-01-31 16:07:27	 >>> 	nZac (~Kingino@96-3-175-226-dynamic.midco.net) has joined #archlinux-unregistered
+2017-01-31 16:07:32	 >>> 	SakiiR (~sakiir@163.5.220.17) has joined #archlinux-unregistered
+2017-01-31 16:08:32	 >>> 	Swankey (~Swankey@206.223.184.2) has joined #archlinux-unregistered
+2017-01-31 16:09:38	 >>> 	mike_103131 (~mike_1031@cpe-76-167-119-117.san.res.rr.com) has joined #archlinux-unregistered
+2017-01-31 16:10:07	 >>> 	oozbooz (~ocherno@96-68-1-210-static.hfc.comcastbusiness.net) has joined #archlinux-unregistered
+2017-01-31 16:10:29	 <<< 	oozbooz (~ocherno@96-68-1-210-static.hfc.comcastbusiness.net) has left #archlinux-unregistered
+2017-01-31 16:11:31	 <<< 	mike_103131 (~mike_1031@cpe-76-167-119-117.san.res.rr.com) has quit (Quit: Leaving)
+2017-01-31 16:15:42	 <<< 	ThOughTs (~tomas@189.59.207.183) has quit (Quit: leaving)
+2017-01-31 16:16:04	 <<< 	unlaudable (~bleurgh@169-0-124-223.ip.afrihost.co.za) has quit (Ping timeout: 252 seconds)
+2017-01-31 16:16:04	 <<< 	Guest89004 (~bleurgh@169-0-124-223.ip.afrihost.co.za) has quit (Ping timeout: 252 seconds)
+2017-01-31 16:16:04	 >>> 	Rabbitnightmare (~quassel@2600:8806:a002:4b00:a80e:68ff:efc5:2620) has joined #archlinux-unregistered
+2017-01-31 16:16:15	 >>> 	predes0 (~predes0@2a02:c7f:120b:d800:120b:a9ff:feb1:98b4) has joined #archlinux-unregistered
+2017-01-31 16:16:34	 <<< 	matoro (~matoro@129.62.119.133) has quit (Ping timeout: 260 seconds)
+2017-01-31 16:16:47	@evilgrawity	predes0: You can /join #archlinux now.
+2017-01-31 16:16:53	 <<< 	predes0 (~predes0@2a02:c7f:120b:d800:120b:a9ff:feb1:98b4) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 16:19:00	 >>> 	jathan (~jathan@arcmty01.izabc.com) has joined #archlinux-unregistered
+2017-01-31 16:19:01	 - 	garphy is now known as garphy`aw
+2017-01-31 16:19:57	 <<< 	prtScSysRq (~skyfindin@36.70.131.62) has quit (Remote host closed the connection)
+2017-01-31 16:23:49	 >>> 	WoodLeg (~WoodLeg@81.180.208.43) has joined #archlinux-unregistered
+2017-01-31 16:24:02	 >>> 	spencerb (~quassel@c-98-192-29-75.hsd1.ga.comcast.net) has joined #archlinux-unregistered
+2017-01-31 16:24:03	 <<< 	spencerb (~quassel@c-98-192-29-75.hsd1.ga.comcast.net) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 16:24:46	 >>> 	wonderworld (~ww@ip-176-198-197-145.hsi05.unitymediagroup.de) has joined #archlinux-unregistered
+2017-01-31 16:25:10	 >>> 	shinnya (~shinnya@97.47.138.58.dy.bbexcite.jp) has joined #archlinux-unregistered
+2017-01-31 16:34:42	 <<< 	Rabbitnightmare (~quassel@2600:8806:a002:4b00:a80e:68ff:efc5:2620) has quit (Remote host closed the connection)
+2017-01-31 16:38:27	 <<< 	spoonm (spoonm@162.250.191.42) has quit (Quit: Don't look behind you!)
+2017-01-31 16:38:28	 >>> 	bantone (~sword@162.242.216.132) has joined #archlinux-unregistered
+2017-01-31 16:39:58	 <<< 	TerNer (TerNer@162.250.191.42) has quit (Quit: Good bye guys o/)
+2017-01-31 16:40:00	 >>> 	ram19890 (~quassel@112.133.237.58) has joined #archlinux-unregistered
+2017-01-31 16:40:25	 <<< 	ram19890 (~quassel@112.133.237.58) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 16:41:19	 >>> 	`Mazaev` (~meh@ool-3f8fc469.dyn.optonline.net) has joined #archlinux-unregistered
+2017-01-31 16:42:51	 <<< 	norii (~noriego@104.152.209.247) has quit (Ping timeout: 248 seconds)
+2017-01-31 16:43:37	 >>> 	ostkind (~ostkind@x59cc8b74.dyn.telefonica.de) has joined #archlinux-unregistered
+2017-01-31 16:44:57	 >>> 	norii (~noriego@104.152.209.247) has joined #archlinux-unregistered
+2017-01-31 16:45:43	 >>> 	panostimos (~ptim@athedsl-4437050.home.otenet.gr) has joined #archlinux-unregistered
+2017-01-31 16:45:49	 <<< 	panostimos (~ptim@athedsl-4437050.home.otenet.gr) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-01-31 16:46:06	 <<< 	`Mazaev` (~meh@ool-3f8fc469.dyn.optonline.net) has quit (Ping timeout: 255 seconds)
+2017-01-31 16:47:25	 <<< 	djb-irc (~djb-irc@129.13.154.138) has quit (Quit: Leaving)
+2017-01-31 16:48:18	 <<< 	shinnya (~shinnya@97.47.138.58.dy.bbexcite.jp) has quit (Ping timeout: 255 seconds)
+2017-01-31 16:48:21	 <<< 	WoodLeg (~WoodLeg@81.180.208.43) has quit (Ping timeout: 255 seconds)
+2017-01-31 16:50:33	 <<< 	norii (~noriego@104.152.209.247) has quit (Ping timeout: 255 seconds)
+2017-01-31 16:50:49	 >>> 	ram19890_ (~quassel@2405:204:5284:8a1a:9ce7:9c80:16ca:86cc) has joined #archlinux-unregistered
+2017-02-02 10:01:02	 >>> 	inabsentia (~inabsenti@2001:878:200:1043:9eb6:d0ff:fed3:1095) has joined #archlinux-unregistered
+2017-02-02 10:01:02	 - 	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2017-02-02 10:01:02	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-02-02 10:01:02	 - 	Channel #archlinux-unregistered: 519 nicks (4 ops, 0 voices, 515 normals)
+2017-02-02 10:01:02	 - 	Channel created on  
+2017-02-02 10:01:54	 <<< 	mladoux (~mark@2601:446:8201:1620:e84b:c804:3b3a:d4bb) has quit (Ping timeout: 255 seconds)
+2017-02-02 10:02:41	 >>> 	mladoux (~mark@2601:446:8201:1620:e84b:c804:3b3a:d4bb) has joined #archlinux-unregistered
+2017-02-02 10:02:44	 <<< 	vharish (~harish@111.93.158.250) has quit (Ping timeout: 258 seconds)
+2017-02-02 10:04:47	 <<< 	SteveDeF1 (~SteveDeFa@185.9.19.107) has quit (Read error: Connection reset by peer)
+2017-02-02 10:07:33	 <<< 	HamRadio (~elijah@67.148.122.154) has quit (Remote host closed the connection)
+2017-02-02 10:07:51	 >>> 	HamRadio (~elijah@67.148.122.154) has joined #archlinux-unregistered
+2017-02-02 10:08:34	 >>> 	devd (~devd@171-50.resnet.smu.edu) has joined #archlinux-unregistered
+2017-02-02 10:08:43	 <<< 	devd (~devd@171-50.resnet.smu.edu) has quit (Client Quit)
+2017-02-02 10:10:20	 >>> 	devd (~devd@171-50.resnet.smu.edu) has joined #archlinux-unregistered
+2017-02-02 10:10:27	 <<< 	devd (~devd@171-50.resnet.smu.edu) has quit (Client Quit)
+2017-02-02 10:11:02	 >>> 	donguston (~AdamPC@cpc12-sprt2-2-0-cust478.17-2.cable.virginm.net) has joined #archlinux-unregistered
+2017-02-02 10:12:08	 >>> 	panostimos (~ptim@athedsl-4437050.home.otenet.gr) has joined #archlinux-unregistered
+2017-02-02 10:12:11	 <<< 	panostimos (~ptim@athedsl-4437050.home.otenet.gr) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-02-02 10:12:22	 <<< 	bcc (~bcc@linaro/bcc) has left #archlinux-unregistered
+2017-02-02 10:15:35	 <<< 	e1z0 (u571@88.216.80.57) has quit (Changing host)
+2017-02-02 10:15:35	 >>> 	e1z0 (u571@netlinux/founder/e1z0) has joined #archlinux-unregistered
+2017-02-02 10:15:35	@evilgrawity	e1z0: You can /join #archlinux now.
+2017-02-02 10:15:43	 <<< 	e1z0 (u571@netlinux/founder/e1z0) has left #archlinux-unregistered
+2017-02-02 12:17:27	 >>> 	inabsentia (~inabsenti@2001:878:200:1041:9eb6:d0ff:fed3:1095) has joined #archlinux-unregistered
+2017-02-02 12:17:27	 - 	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2017-02-02 12:17:27	 - 	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on  
+2017-02-02 12:17:27	 - 	Channel #archlinux-unregistered: 526 nicks (4 ops, 0 voices, 522 normals)
+2017-02-02 12:17:27	 - 	Channel created on  
+2017-02-02 12:18:40	@evilgrawity	Eonblue: You can /join #archlinux now.
+2017-02-02 12:21:47	 <<< 	diego3 (~diego@179.184.164.67.static.gvt.net.br) has quit (Changing host)
+2017-02-02 12:21:47	 >>> 	diego3 (~diego@unaffiliated/diegoviola) has joined #archlinux-unregistered
+2017-02-02 12:21:47	@evilgrawity	diego3: You can /join #archlinux now.
+2017-02-02 12:21:49	 - 	diego3 is now known as dviola
+2017-02-02 12:21:53	 >>> 	fetter_oml (~oml@ppp-46-244-239-158.dynamic.mnet-online.de) has joined #archlinux-unregistered
+2017-02-02 12:21:58	 <<< 	dviola (~diego@unaffiliated/diegoviola) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-02-02 12:22:25	 <<< 	dromedarCase (~dromedarC@2a02:2450:102d:5b:99c:d406:d777:6fa) has quit (Ping timeout: 255 seconds)
+2017-02-02 12:23:17	 <<< 	nirvanko_ (~pihpah@dynamic-vpdn-93-125-16-142.telecom.by) has quit (Quit: Lost terminal)
+2017-02-02 12:23:33	 >>> 	dromedarCase (~dromedarC@37.120.47.188) has joined #archlinux-unregistered
+2017-02-02 12:28:52	 >>> 	traxo-xx (~traxo-xx@static.21.81.9.5.clients.your-server.de) has joined #archlinux-unregistered
+2017-02-02 12:28:57	 >>> 	ndkV (~ndk@cpc68331-cdif16-2-0-cust239.5-1.cable.virginm.net) has joined #archlinux-unregistered
+2017-02-02 12:29:02	 <<< 	ndk (~ndk@cpc68331-cdif16-2-0-cust239.5-1.cable.virginm.net) has quit (Ping timeout: 255 seconds)
+2017-02-02 12:29:02	 - 	ndkV is now known as ndk
+2017-02-02 12:29:10	 <<< 	vharish (~harish@111.93.158.250) has quit (Ping timeout: 255 seconds)
+2017-02-02 12:33:45	 >>> 	giaur (~quassel@public-gprs377903.centertel.pl) has joined #archlinux-unregistered
+2017-02-02 12:39:33	 >>> 	GodGinrai (~msterritt@76.97.181.115) has joined #archlinux-unregistered
+2017-02-02 12:40:04	 >>> 	vharish (~harish@111.93.158.250) has joined #archlinux-unregistered
+2017-02-02 12:40:21	 <<< 	Unb0rn (~unb0rn@88.87.69.78) has quit (Quit: Unb0rn)
+2017-02-02 12:42:26	 >>> 	Guest33122 (~hal@5.147.132.78) has joined #archlinux-unregistered
+2017-02-02 12:43:52	 <<< 	Guest33122 (~hal@5.147.132.78) has quit (Quit: Leaving)
+2017-02-02 12:44:15	 >>> 	hal5000 (~hal@5.147.132.78) has joined #archlinux-unregistered
+2017-02-02 12:44:29	 <<< 	GodGinrai (~msterritt@76.97.181.115) has quit (Ping timeout: 245 seconds)
+2017-02-02 12:45:04	 >>> 	maturain (~maturain@37.59.214.137) has joined #archlinux-unregistered
+2017-02-02 12:46:12	 <<< 	hal5000 (~hal@5.147.132.78) has quit (Client Quit)
+2017-02-02 12:48:11	 >>> 	hal5000 (~hal@5.147.132.78) has joined #archlinux-unregistered
+2017-02-02 12:48:44	 <<< 	hal5000 (~hal@5.147.132.78) has quit (Client Quit)
+2017-02-02 12:49:10	 >>> 	rollniak (~rollniak@2a02:578:f1c:1:5ee0:c5ff:fed3:3254) has joined #archlinux-unregistered
+2017-02-02 12:49:22	 >>> 	hal5000 (~hal@5.147.132.78) has joined #archlinux-unregistered
+2017-02-02 12:49:29	 <<< 	hal5000 (~hal@5.147.132.78) has quit (Client Quit)
+2017-02-02 12:49:55	 >>> 	hal5000 (~hal@5.147.132.78) has joined #archlinux-unregistered
+2017-02-02 12:50:28	@evilgrawity	hal5000: You can /join #archlinux now.
+2017-02-02 12:50:53	 <<< 	hal5000 (~hal@5.147.132.78) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-02-02 12:52:45	 >>> 	z4kst4r (~z4kst4r@157.50.39.1) has joined #archlinux-unregistered
+2017-02-02 12:53:07	 <<< 	Wotac (~Wotac@dsl-espbrasgw1-54fa71-79.dhcp.inet.fi) has quit (Changing host)
+2017-02-02 12:53:07	 >>> 	Wotac (~Wotac@unaffiliated/wotac) has joined #archlinux-unregistered
+2017-02-02 12:53:07	@evilgrawity	Wotac: You can /join #archlinux now.
+2017-02-02 12:53:15	 <<< 	maturain (~maturain@37.59.214.137) has left #archlinux-unregistered
+2017-02-02 12:53:16	 <<< 	Wotac (~Wotac@unaffiliated/wotac) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-02-02 12:53:58	@evilgrawity	sebsch: You can /join #archlinux now.
+2017-02-02 12:54:02	 <<< 	sebsch (~sebsch@ip5f5bd539.dynamic.kabel-deutschland.de) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-02-02 12:54:18	 >>> 	Th3R0b (~bobby@a838.ip20.netikka.fi) has joined #archlinux-unregistered
+2017-02-02 12:55:05	@evilgrawity	Th3R0b: You can /join #archlinux now.
+2017-02-02 12:55:08	 <<< 	Th3R0b (~bobby@a838.ip20.netikka.fi) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2017-02-02 12:57:47	 <<< 	poisond (~poison@HSI-KBW-109-192-184-222.hsi6.kabel-badenwuerttemberg.de) has left #archlinux-unregistered
