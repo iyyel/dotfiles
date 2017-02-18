@@ -9,7 +9,7 @@ Xft.lcdfilter:                  lcddefault
 Xft.rgba:                       rgb
 
 URxvt*termName:                 rxvt-256color
-URxvt*font:                     xft:Envy Code R for Powerline:pixelsize=13
+URxvt*font:                     xft:Envy Code R for Powerline:pixelsize=16
 URxvt.depth:                    32
 URxvt*lineSpace:                1
 URxvt.letterSpace:              0

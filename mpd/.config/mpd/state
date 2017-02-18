@@ -1,9 +1,7 @@
 sw_volume: 100
 audio_device_state:1:PCH
 audio_device_state:1:my_fifo
-state: pause
-current: 4
-time: 6.989000
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -12,36 +10,4 @@ crossfade: 3
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Monstercat 029 - Havoc/Jauz x San Holo - Monstercat 029 - Havoc - 1 OK!.flac
-1:Monstercat 029 - Havoc/Seven Lions & Echos - Monstercat 029 - Havoc - 2 Cold Skin.flac
-2:Monstercat 029 - Havoc/Nervo - Monstercat 029 - Havoc - 3 Anywhere You Go (feat. Timmy Trumpet).flac
-3:Monstercat 029 - Havoc/Koven - Monstercat 029 - Havoc - 4 Breathing Me In.flac
-4:Monstercat 029 - Havoc/Tokyo Machine - Monstercat 029 - Havoc - 5 Fight.flac
-5:Monstercat 029 - Havoc/Dirty Audio - Monstercat 029 - Havoc - 6 Gorilla Glue.flac
-6:Monstercat 029 - Havoc/Aero Chord x Fractal - Monstercat 029 - Havoc - 7 Until The End (feat. Q'AILA).flac
-7:Monstercat 029 - Havoc/Grant - Monstercat 029 - Havoc - 8 Wake Up (feat. Jessi Mason).flac
-8:Monstercat 029 - Havoc/Pegboard Nerds - Monstercat 029 - Havoc - 9 BAMF.flac
-9:Monstercat 029 - Havoc/Puppet & Murtagh - Monstercat 029 - Havoc - 10 Killing Giants (feat. Richard Caddock).flac
-10:Monstercat 029 - Havoc/KUURO - Monstercat 029 - Havoc - 11 Aamon.flac
-11:Monstercat 029 - Havoc/Dion Timmer - Monstercat 029 - Havoc - 12 Panic.flac
-12:Monstercat 029 - Havoc/Karma Fields - Monstercat 029 - Havoc - 13 Sweat.flac
-13:Monstercat 029 - Havoc/Feint - Monstercat 029 - Havoc - 14 Words (feat. Laura Brehm).flac
-14:Monstercat 029 - Havoc/DROELOE - Monstercat 029 - Havoc - 15 Bon Voyage.flac
-15:Monstercat 029 - Havoc/Going Quantum x Psychic Type - Monstercat 029 - Havoc - 16 Rare.flac
-16:Monstercat 029 - Havoc/Rogue - Monstercat 029 - Havoc - 17 Nemesis.flac
-17:Monstercat 029 - Havoc/SMLE - Monstercat 029 - Havoc - 18 Halo (feat. Helen Tess).flac
-18:Monstercat 029 - Havoc/Subtact - Monstercat 029 - Havoc - 19 Tunnel Vision.flac
-19:Monstercat 029 - Havoc/Notaker - Monstercat 029 - Havoc - 20 Gems.flac
-20:Monstercat 029 - Havoc/Rootkit - Monstercat 029 - Havoc - 21 Wildfire.flac
-21:Monstercat 029 - Havoc/Stephen Walking - Monstercat 029 - Havoc - 22 Hey.flac
-22:Monstercat 029 - Havoc/Stonebank - Monstercat 029 - Havoc - 23 The Only One (feat. Ben Clark).flac
-23:Monstercat 029 - Havoc/Soupandreas - Monstercat 029 - Havoc - 24 Over You.flac
-24:Monstercat 029 - Havoc/Aero Chord - Monstercat 029 - Havoc - 25 The 90s.flac
-25:Monstercat 029 - Havoc/Direct, Mr FijiWiji, & Holly Drummond - Monstercat 029 - Havoc - 26 Trust In Me .flac
-26:Monstercat 029 - Havoc/Candyland & Ricci - Monstercat 029 - Havoc - 27 Touch Me.flac
-27:Monstercat 029 - Havoc/Koven - Monstercat 029 - Havoc - 28 Silence.flac
-28:Monstercat 029 - Havoc/Puppet - Monstercat 029 - Havoc - 29 To Be Alive (feat. Aaron Richards).flac
-29:Monstercat 029 - Havoc/Varien - Monstercat 029 - Havoc - 30 TEVA833.flac
-30:Monstercat 029 - Havoc/Monstercat - Monstercat 029 - Havoc - 31 Fury (Album Mix).flac
-31:Monstercat 029 - Havoc/Monstercat - Monstercat 029 - Havoc - 32 Retribution (Album Mix).flac
 playlist_end

@@ -6,8 +6,8 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
-SW=3440
-bary=1403
+SW=2560
+bary=2
 barh=30
 
 txtw -s 10 "$1" > /tmp/.popup

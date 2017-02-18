@@ -49,8 +49,8 @@ bspc config presel_feedback_color       "#783E57"
 bspc monitor -d      
 
 bspc rule -a qutebrowser desktop=^5 follow=on
-bspc rule -a Steam desktop=^4 follow=on
-bspc rule -a Keepassx2 desktop=^3 follow=on
+bspc rule -a Steam desktop=^4 state=floating follow=on
+bspc rule -a Keepassx2 desktop=^3 state=floating follow=on
 bspc rule -a URxvt:ncmpcpp desktop=^1 follow=on
 bspc rule -a URxvt:htop desktop=^1 follow=on
 bspc rule -a URxvt:weechat desktop=^1 follow=on
@@ -60,4 +60,4 @@ bspc rule -a URxvt:updates state=floating
 bspc rule -a URxvt:listupg state=floating
 
 # Start xautolock (This requires xautolock and i3lock packages)
-xautolock -time 15 -locker '~/bin/lock'
+xautolock -time 10 -locker '~/bin/lock'

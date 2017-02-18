@@ -1,9 +1,9 @@
-#
-# ~/.termcolors/synthwave
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+! 
+! ~/.termcolors/synthwave
+!
+! Authors:
+!  InAbsencia <github.com/inabsencia>
+! 
 
 #define bg    [97]#312E39
 #define blk   #33303B
