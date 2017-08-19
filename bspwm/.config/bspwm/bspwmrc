@@ -6,23 +6,23 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
-# Set display resolution
-xrandr --output VIRTUAL1 --off --output eDP1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP1 --off --output HDMI2 --off --output HDMI1 --off --output DP2 --off &
+# Start sxhkd
+sxhkd &
 
 # Set wallpaper
-hsetroot -center ~/personal/wallpapers/01.png &
+hsetroot -full ~/Downloads/wallpaper.jpg &
 
 # Start compton
-compton --config ~/.config/compton/config &
+# compton --config ~/.config/compton/config &
 
 # mpd daemon start (if no other user instance exists)
-[ ! -s ~/.config/mpd/mpd.pid ] && mpd &>/dev/null &
+# [ ! -s ~/.config/mpd/mpd.pid ] && mpd &>/dev/null &
 
 # Start dunst
-dunst &
+# dunst &
 
 # Start polybar
-~/bin/launch-polybar &
+# ~/bin/launch-polybar &
 
 # bspwm configuration
 bspc config border_width                1
@@ -46,7 +46,7 @@ bspc config normal_border_color         "#131313"
 bspc config focused_border_color        "#783E57"
 bspc config presel_feedback_color       "#783E57"
 
-bspc monitor -d      
+bspc monitor -d 1 2 3 4 5 6 
 
 bspc rule -a qutebrowser desktop=^5 follow=on
 bspc rule -a Steam desktop=^4 state=floating follow=on
@@ -60,4 +60,4 @@ bspc rule -a URxvt:updates state=floating
 bspc rule -a URxvt:listupg state=floating
 
 # Start xautolock (This requires xautolock and i3lock packages)
-xautolock -time 10 -locker '~/bin/lock'
+# xautolock -time 10 -locker '~/bin/lock'

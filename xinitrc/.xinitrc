@@ -6,14 +6,11 @@
 #  InAbsentia <github.com/inabsencia>
 #
 
-# Screen calibration
-xcalib -gc 1.08 -co 97 ~/x230.icm &
-
 # Set Root window
 xsetroot -name background
 
 # Cursor (stop X11 default 'X' cursor.)
-xsetroot -xcf /usr/share/icons/pixelfun3/cursors/left_ptr 16
+xsetroot -cursor_name left_ptr
 
 # Key repeat rate
 xset r rate 200 50
@@ -22,16 +19,10 @@ xset r rate 200 50
 setxkbmap -option caps:escape
 
 # set xkeymap
-setxkbmap dk
-
-# set font path (WHAT IS -DPMS?)
-xset +fp ~/.fonts
-xset fp rehash
-xset +dpms
+setxkbmap us
 
 # Load ~/.Xresources
 [[ -f ~/.Xresources ]] && xrdb -load ~/.Xresources
 
 # Start sxhkd & bspwm
-sxhkd &
 exec bspwm
