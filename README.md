@@ -20,3 +20,6 @@ This is a snapshot of my [(@InAbsentia)](https://github.com/inabsencia) dotfiles
 4. `git clone https://github.com/inabsencia/bin`
 5. `cd dotfiles`
 6. `./install.sh`
+
+## License 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
