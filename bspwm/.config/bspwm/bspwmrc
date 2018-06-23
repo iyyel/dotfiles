@@ -1,0 +1,60 @@
+#!/usr/bin/env zsh
+#
+# ~/.config/bspwm/bspwmrc
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
+
+# Start sxhkd
+sxhkd &
+
+# Set wallpaper
+hsetroot -full ~/Downloads/redrain.jpg &
+
+# Start compton
+compton --config ~/.config/compton/config &
+
+# mpd daemon start (if no other user instance exists)
+[ ! -s ~/.config/mpd/mpd.pid ] && mpd &>/dev/null &
+
+# Start dunst
+# dunst &
+
+# Start polybar
+~/.bin/launch-polybar &
+
+# bspwm configuration
+bspc config border_width                1
+bspc config window_gap                  30
+bspc config top_padding                 0
+bspc config left_padding                8
+bspc config right_padding               8
+bspc config bottom_padding              20
+
+bspc config split_ratio          	    0.50
+bspc config borderless_monocle   	    true
+bspc config gapless_monocle      	    true
+bspc config center_pseudo_tiled         true
+bspc config click_to_focus 			    false
+bspc config adaptive raise 			    true
+
+bspc config normal_border_color         "#131313"
+bspc config focused_border_color        "#783E57"
+bspc config presel_feedback_color       "#783E57"
+
+bspc monitor -d 1 2 3 4 5
+
+bspc rule -a qutebrowser desktop=^5 follow=on
+bspc rule -a Steam desktop=^4 state=floating follow=on
+bspc rule -a Keepassx2 desktop=^3 state=floating follow=on
+bspc rule -a URxvt:ncmpcpp desktop=^1 follow=on
+bspc rule -a URxvt:htop desktop=^1 follow=on
+bspc rule -a URxvt:weechat desktop=^1 follow=on
+bspc rule -a URxvt:vpn desktop=^1 follow=on
+
+bspc rule -a URxvt:updates state=floating
+bspc rule -a URxvt:listupg state=floating
+
+# Start xautolock (This requires xautolock and i3lock packages)
+# xautolock -time 10 -locker '~/bin/lock'

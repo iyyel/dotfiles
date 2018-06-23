@@ -1,0 +1,3 @@
+Jun 23 22:25 : avahi: Failed to create client: Daemon not running
+Jun 23 22:25 : exception: Failed to access /home/inabsentia/personal/music: No such file or directory
+Jun 23 22:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
