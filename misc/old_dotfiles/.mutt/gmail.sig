@@ -1,2 +1,0 @@
-
-   ..oO    Dean Thomson    Oo..
