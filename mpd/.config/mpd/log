@@ -1,3 +1,25 @@
 Jun 23 22:25 : avahi: Failed to create client: Daemon not running
 Jun 23 22:25 : exception: Failed to access /home/inabsentia/personal/music: No such file or directory
 Jun 23 22:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 25 00:42 : avahi: Failed to create client: Daemon not running
+Jun 25 00:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 21:25 : avahi: Failed to create client: Daemon not running
+Jun 26 21:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 21:29 : avahi: Failed to create client: Daemon not running
+Jun 26 21:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 21:33 : avahi: Failed to create client: Daemon not running
+Jun 26 21:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 23:56 : avahi: Failed to create client: Daemon not running
+Jun 26 23:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 23:58 : avahi: Failed to create client: Daemon not running
+Jun 26 23:58 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 27 12:18 : avahi: Failed to create client: Daemon not running
+Jun 27 12:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 27 14:10 : avahi: Failed to create client: Daemon not running
+Jun 27 14:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 27 14:28 : avahi: Failed to create client: Daemon not running
+Jun 27 14:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 27 14:38 : avahi: Failed to create client: Daemon not running
+Jun 27 14:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 27 15:00 : avahi: Failed to create client: Daemon not running
+Jun 27 15:00 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

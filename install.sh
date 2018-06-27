@@ -1,26 +1,26 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 #
 # ~/dotfiles/install.sh
 #
 # Authors:
-#  InAbsentia <github.com/inabsencia>
+#  Iyyel <github.com/iyyel>
 #
 
+# clone bin 
+git clone https://github.com/iyyel/bin.git ~/bin
+
 # stow all files into ~/
+stow git
 stow bin
 stow bspwm
 stow compton
-stow dircolors
-stow dunst
 stow fonts
 stow gtkrc
 stow htop
 stow mpd
 stow mpv
-stow mutt
 stow ncmpcpp
 stow neofetch
-stow newsbeuter
 stow nvim
 stow polybar
 stow qutebrowser
@@ -31,7 +31,6 @@ stow themes
 stow tmux
 stow weechat
 stow wego
-stow x230
 stow xinitrc
 stow xresources
 stow zsh

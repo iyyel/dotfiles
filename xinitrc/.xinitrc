@@ -24,8 +24,8 @@ setxkbmap us
 # Set Brightness
 xbacklight -set 100%
 
-# Load ~/.Xresoures
-xrdb -load ~/.Xresources
+# Merge ~/.Xresoures
+[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 
 # Start sxhkd & bspwm
 exec bspwm

@@ -6,7 +6,7 @@ URxvt.scrollBar: false
 ! XTerm*background: #272822
 
 ! font
-URxvt*font: xft:Envy Code R for Powerline:pixelsize=16:antialias=true:hinting=true
+URxvt*font: xft:Tamzen For Powerline:pixelsize=16:antialias=true:hinting=true
 
 ! DroidSansMono Nerd Font
 URxvt.letterSpace: -1
