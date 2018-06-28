@@ -3,26 +3,8 @@
 # ~/.config/bspwm/bspwmrc
 #
 # Authors:
-#  InAbsentia <github.com/inabsencia>
+# Iyyel <github.com/iyyel>
 #
-
-# Start sxhkd
-sxhkd &
-
-# Set wallpaper
-hsetroot -full ~/Downloads/redrain.jpg &
-
-# Start compton
-compton --config ~/.config/compton/config &
-
-# mpd daemon start (if no other user instance exists)
-[ ! -s ~/.config/mpd/mpd.pid ] && mpd &>/dev/null &
-
-# Start dunst
-# dunst &
-
-# Start polybar
-~/.bin/launch-polybar &
 
 # bspwm configuration
 bspc config border_width                1
@@ -36,7 +18,7 @@ bspc config split_ratio          	    0.50
 bspc config borderless_monocle   	    true
 bspc config gapless_monocle      	    true
 bspc config center_pseudo_tiled         true
-bspc config click_to_focus 			    false
+#bspc config click_to_focus 			    false
 bspc config adaptive raise 			    true
 
 bspc config normal_border_color         "#131313"
@@ -55,6 +37,3 @@ bspc rule -a URxvt:vpn desktop=^1 follow=on
 
 bspc rule -a URxvt:updates state=floating
 bspc rule -a URxvt:listupg state=floating
-
-# Start xautolock (This requires xautolock and i3lock packages)
-# xautolock -time 10 -locker '~/bin/lock'

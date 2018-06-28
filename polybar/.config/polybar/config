@@ -1,193 +1,323 @@
-#
-# ~/.config/polybar/config
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+[colors]
+bg = ${xrdb:color0}
+fg = ${xrdb:color7}
 
-[bar/bottom]
-wm-name = mybar
-bottom = true
+blk = ${xrdb:color0}
+red = ${xrdb:color1}
+grn = ${xrdb:color2}
+ylw = ${xrdb:color3}
+blu = ${xrdb:color4}
+mag = ${xrdb:color5}
+cyn = ${xrdb:color6}
+wht = ${xrdb:color7}
+
+bblk = ${xrdb:color8}
+bred = ${xrdb:color9}
+bgrn = ${xrdb:color10}
+bylw = ${xrdb:color11}
+bblu = ${xrdb:color12}
+bmag = ${xrdb:color13}
+bcyn = ${xrdb:color14}
+bwht = ${xrdb:color15}
+
+[global/wm]
+margin-top        = 0
+margin-bottom     = 0
 override-redirect = true
-width = 100%
-height = 30
-offset-y = 9
-background = #00312E39
-foreground = #E5CEC2
-underline-color = #A45476
 
-spacing = 1
-underline-size = 3
-locale = en_US.UTF-8
-padding-left = 0
-padding-right = 0
-module-margin-left = 1
+[bar/base]
+monitor = ${env:MONITOR:eDP1}
+width    = 100%
+height   = 25
+offset-x = 0
+offset-y = 0
+
+background = ${colors.bblk}
+foreground = ${colors.fg}
+border-color = ${colors.bblk}
+
+font-0 = Iosevka:size=10;2
+font-1 = FontAwesome:size=9;1
+
+modules-left   = bspwm cpu cputemp ram
+modules-center = previous playpause next mpd
+modules-right  = volume backlight wifi signal battery clock
+
+border-size = 6
+padding-left        = 0
+padding-right       = 0
+module-margin-left  = 1
 module-margin-right = 0
 
-font-0 = Envy Code R:size=10;0
-font-1 = FontAwesome:size=9;-1
+bottom = false
 
-modules-center = bspwm cpu cputemp memory backlight volume network battery clock
 
-[module/cpu]
-type = internal/cpu
-label = ": %percentage%%"
-interval = 2
-
-format-background = #783E57
-format-underline = #A45476
-
-format-padding = 2
-
-[module/cputemp]
-type = internal/temperature
-label = ": %temperature%"
-interval = 2
-
-thermal-zone = 0
-
-format-background = #783E57
-format-underline = #A45476
-
-format-padding = 2
-
-[module/memory]
-type = internal/memory
-label = ": %gb_used%"
-interval = 2
-
-format-background = #783E57
-format-underline = #A45476
-
-format-padding = 2
-
-[module/clock]
-type = internal/date
-date = %d-%m-%Y %H:%M
-interval = 2
-
-format-background = #783E57
-format-underline = #A45476
-
-format-padding = 2
 
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = 0; 
-ws-icon-1 = 1; 
-ws-icon-2 = 2; 
-ws-icon-3 = 3; 
-ws-icon-4 = 4; 
-ws-icon-default = 
+pin-workspaces = true
+inline-mode = false
+enable-click = true
+enable-scroll = false
+reverse-scroll = false
+fuzzy-match = false
 
-label-focused = %icon%
-label-focused-underline = #A45476
-label-focused-background = #783E57
+format-padding = 0
 
-label-occupied = %icon%
-label-occupied-underline = #8A4763
-label-occupied-background = #783E57
-
-label-urgent = %icon%
-label-urgent-underline = #E85B97
-label-urgent-background = #783E57
-
-label-empty = %icon%
-label-empty-background = #783E57
-
-wm-restack = bspwm
-throttle-ms = 10
-throttle-limit = 5
-
+label-focused = ""
+label-focused-background = ${colors.bg}
+label-focused-foreground = ${colors.bwht}
 label-focused-padding = 2
+
+label-occupied = ""
+label-occupied-background = ${colors.bg}
+label-occupied-foreground = ${colors.bblk}
 label-occupied-padding = 2
+
+label-urgent = ""
+label-urgent-background = ${colors.bg}
+label-urgent-foreground = ${colors.bred}
+label-urgent-padding = 2
+
+label-empty = ""
+label-empty-background = ${colors.bg}
+label-empty-foreground = ${colors.bcyn}
 label-empty-padding = 2
 
-[module/battery]
-type = internal/battery
-battery = BAT1
-adapter = AC
-full-at = 99
+
+
+[module/cpu]
+type                     = internal/cpu
+label                    = "%percentage:2:2:2%%"
+label-padding            = 0
+format-padding           = 2
+format-prefix            = " "
+
+format-background = ${colors.grn}
+format-foreground = ${colors.bg}
+
+
+
+[module/cputemp]
+type = internal/temperature
+label = " %temperature%"
 interval = 2
 
-format-charging-prefix = ": "
-format-charging-prefix-foregroud = #E5CEC2
-format-charging-background = #783E57
-format-charging-underline = #A45476
+thermal-zone = 0
 
-format-discharging-prefix = ": "
-format-discharging-prefix-foreground = #E5CEC2
-format-discharging-background = #783E57
-format-discharging-underline = #A45476
+format-background = ${colors.blu}
+format-foreground = ${colors.bg}
 
-format-full-prefix = ": "
-format-full-prefix-foreground = #E5CEC2
-format-full-background = #783E57
-format-full-underline = #A45476
+format-padding = 2
 
-format-charging-padding = 2
-format-discharging-padding = 2
-format-full-padding = 2
+
+
+[module/ram]
+type     = internal/memory
+interval = 2
+
+format           = <label>
+format-padding   = 2
+label            = "%percentage_used:2:2:2%%"
+
+format-prefix = " "
+format-background = ${colors.red}
+format-foreground = ${colors.bg}
+
+
+
+[module/title]
+type = internal/xwindow
+label-maxlen = 50
+format-padding = 2
+
+
+
+[module/previous]
+type = custom/text
+
+content = ""
+content-background = ${colors.blu}
+content-foreground = ${colors.bg}
+content-padding = 2
+
+click-left = mpc prev
+
+
+
+[module/playpause]
+type = custom/text
+
+# exec = sh ~/.config/polybar/playpause.sh
+
+interval = 1
+content = ""
+label = ""
+content-foreground = ${colors.bg}
+content-background = ${colors.blu}
+content-padding = 2
+label-background = ${colors.blu}
+label-foreground = ${colors.bg}
+label-padding = 0
+
+click-left = mpc toggle
+
+
+
+[module/next]
+type = custom/text
+
+content = ""
+
+content-background = ${colors.blu}
+content-foreground = ${colors.bg}
+content-padding = 2
+
+click-left = mpc next
+
+
+
+[module/mpd]
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+
+interval = 2
+
+format-online = <label-song>
+format-online-padding = 0
+
+label-song = " %title% - %artist%"
+label-song-background = ${colors.grn}
+label-song-foreground = ${colors.bg}
+label-song-maxlen = 50
+label-song-padding = 2
+
+
 
 [module/volume]
 type = internal/volume
-interval = 2
 
 format-volume = <label-volume>
-format-volume-prefix = ": "
-format-volume-foreground = #E5CEC2
-format-volume-background = #783E57
-format-volume-underline = #A45476
+format-muted = <label-muted>
 
-format-muted-prefix = ": "
 label-muted = muted
-format-muted-foreground = #E5CEC2
-format-muted-background = #783E57
-format-muted-underline = #A45476
+label-muted-padding = 1
+
+format-volume-prefix = " "
+format-muted-prefix  = " "
 
 format-volume-padding = 2
 format-muted-padding = 2
 
+format-volume-background = ${colors.mag}
+format-muted-background  = ${colors.mag}
+
+format-volume-foreground = ${colors.bg}
+format-muted-foreground  = ${colors.bg}
+
+
+
 [module/backlight]
 type = internal/backlight
-interval = 2
-
 card = intel_backlight
-label = ": %percentage%%"
+enable-scroll = false
 
-format-background = #783E57
-format-underline = #A45476
+format = <label>
+format-prefix = ""
+format-padding = 1
 
-format-padding = 2
+label = "%percentage%%"
+label-padding = 1
 
-[module/mpd]
-type = internal/mpd
-host = 127.0.0.1
-port = 6600
-password = mypassword
-interval = 2
+format-background = ${colors.ylw}
+format-foreground = ${colors.bg}
 
-label-song = "%artist% - %title%"
-label-offline = "MPD offline"
 
-format-padding = 2
 
-[module/network]
+[module/wifi]
 type = internal/network
 interface = wlp3s0
 interval = 2
 
-label-connected = ": %essid% : %signal%"
-format-connected-background = #783E57
-format-connected-underline = #A4576
-
-label-disconnected = ": Disconnected"
-format-disconnected-background = #783E57
-format-disconnected-underline = #A4576
-
-format-mounted-underline = #A45476
+label-connected = "%essid%"
+format-connected-prefix = " "
+format-connected-prefix-padding = 0
+format-connected-prefix-foreground = ${colors.bg}
+format-connected-foreground = ${colors.bg}
+format-connected-background = ${colors.cyn}
 format-connected-padding = 2
-format-disconnected-padding = 2
 
-; vim:ft=dosini
+label-disconnected = "Disconnected"
+format-disconnected-prefix = " "
+format-disconnected-prefix-padding = 0
+format-disconnected-prefix-foreground = ${colors.bg}
+format-disconnected-foreground = ${colors.bg}
+format-disconnected-background = ${colors.red}
+label-disconnected-padding = 2
+
+
+
+[module/signal]
+type = internal/network
+interface = wlp3s0
+interval = 2
+
+label-connected = "%signal%%"
+format-connected-prefix = " "
+format-connected-prefix-padding = 0
+format-connected-prefix-foreground = ${colors.bg}
+format-connected-foreground = ${colors.bg}
+format-connected-background = ${colors.grn}
+format-connected-padding = 2
+
+label-disconnected = "0"
+format-disconnected-prefix = " "
+format-disconnected-prefix-padding = 0
+format-disconnected-prefix-foreground = ${colors.bg}
+format-disconnected-foreground = ${colors.bg}
+format-disconnected-background = ${colors.red}
+label-disconnected-padding = 2
+
+
+
+[module/battery]
+type          = internal/battery
+full-at       = 99
+battery       = BAT1
+adapter       = AC0
+poll-interval = 5
+
+format-charging-prefix      = " "
+format-discharging-prefix   = " "
+format-full-prefix          = " "
+
+label-charging      = "%percentage%%"
+label-discharging   = "%percentage%%"
+label-full          = "%percentage%%"
+
+format-charging-padding = 2
+format-discharging-padding = 2
+format-full-padding  = 2
+
+format-charging-background = ${colors.grn}
+format-discharging-background = ${colors.red}
+format-full-background = ${colors.ylw}
+
+format-charging-foreground = ${colors.bg}
+format-discharging-foreground = ${colors.bg}
+format-full-foreground = ${colors.bg}
+
+
+
+[module/clock]
+type                     = internal/date
+interval                 = 1
+date                     = " %a %d/%m/%y %H:%M"
+format-prefix            = ""
+format-padding           = 2
+
+format-background        = ${colors.fg}
+format-foreground        = ${colors.bg}

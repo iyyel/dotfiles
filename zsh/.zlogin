@@ -3,8 +3,10 @@
 # ~/.zlogin
 #
 # Authors:
-#  InAbsentia <github.com/inabsencia>
+#  Iyyel <github.com/iyyel>
+#
+# Make things execute at shell login.
 #
 
-# Start xorg-server
+# Start x-server
 exec startx

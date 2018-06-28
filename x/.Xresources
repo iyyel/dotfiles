@@ -1,0 +1,104 @@
+!
+! ~/.Xresources
+! 
+! Authors:
+!  Iyyel <github.com/iyyel>
+!
+! Terminal color scheme, urxvt and
+! related settings.
+!
+
+! Color scheme
+#define bg    #252A32
+#define blk   #272C34
+#define bblk  #3B434F
+#define fg    #BAB7b5
+#define red   #876058
+#define grn   #6F7F71
+#define ylw   #B39580
+#define blu   #546780
+#define mag   #84787D
+#define cyn   #556F86
+#define wht   #BAB7B5
+#define bred  #876058
+#define bgrn  #6F7F71
+#define bylw  #B39580
+#define bblu  #546780
+#define bmag  #84787D
+#define bcyn  #556F86
+#define bwht  #DFDEDD
+
+*color0:       blk
+*color1:       red
+*color2:       grn
+*color3:       ylw
+*color4:       blu
+*color5:       mag
+*color6:       cyn
+*color7:       wht
+
+*color8:       bblk
+*color9:       bred
+*color10:      bgrn
+*color11:      bylw
+*color12:      bblu
+*color13:      bmag
+*color14:      bcyn
+*color15:      bwht
+
+! Terminal colors
+*foreground:   fg
+*background:   bg
+*cursorColor:  fg
+
+! Xft settings
+Xft.dpi       : 96
+Xft.antialias : true
+Xft.rgba      : rgb
+Xft.hinting   : true
+Xft.hintstyle : hintfull
+Xft.autohint  : false
+Xft.lcdfilter : lcddefault
+
+! Urxvt settings
+URxvt*font:xft:Iosevka:pixelsize=16
+URxvt*boldFont:xft:Iosevka:pixelsize=16
+URxvt*depth               : 32
+URxvt.lineSpace           : 2
+URxvt.scrollBar           : false
+URxvt.internalBorder      : 40
+URxvt.cursorUnderline     : false
+URxvt.geometry            : 60x16
+URxvt.thickness           : 5
+URxvt.titleBar            : false
+URxvt.intensityStyles     : false
+URxvt.cursorBlink         : 1
+
+URxvt*visualBell          : false
+URxvt*audioBell           : false
+
+! Perl extensions
+URxvt.perl-ext            : default,clipboard,url-select
+URxvt.keysym.M-u          : perl:url-select:select_next
+URxvt.url-select.launcher : /usr/bin/xdg-open
+URxvt.url-select.underline: true
+URxvt.url-select.autocopy : true
+URxvt.url-select.button   : 2
+
+! keyboard-select
+URxvt.keysym.M-s: perl:keyboard-select:activate
+URxvt.keysym.M-r: perl:keyboard-select:search
+
+! CopyPaste Keys
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+URxvt.clipboard.autocopy: true
+
+! Disable the ctrl+shift 'feature'
+URxvt.iso14755:            false
+URxvt.iso14755_52:         false
+
+! Rofi colors
+!                   bg  fg  bgalt   hlbg    hlfg
+rofi.color-window:  bg, bg, bg
+rofi.color-normal:  bg, fg, bg,     bg,     blu
