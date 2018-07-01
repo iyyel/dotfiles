@@ -17,9 +17,8 @@ This is a snapshot of my [(@Iyyel)](https://github.com/iyyel) dotfiles. I use GN
 1. Install `stow`
 2. `cd ~`
 3. `git clone https://github.com/iyyel/dotfiles`
-4. `git clone https://github.com/iyyel/bin`
-5. `cd dotfiles`
-6. `./install.sh`
+4. `cd dotfiles`
+5. `./install.sh`
 
 ## License 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)

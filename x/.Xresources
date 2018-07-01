@@ -1,11 +1,10 @@
 !
 ! ~/.Xresources
-! 
+!
 ! Authors:
 !  Iyyel <github.com/iyyel>
 !
-! Terminal color scheme, urxvt and
-! related settings.
+! Terminal color scheme, urxvt and related settings.
 !
 
 ! Color scheme
@@ -28,28 +27,28 @@
 #define bcyn  #556F86
 #define bwht  #DFDEDD
 
-*color0:       blk
-*color1:       red
-*color2:       grn
-*color3:       ylw
-*color4:       blu
-*color5:       mag
-*color6:       cyn
-*color7:       wht
+*color0:      blk
+*color1:      red
+*color2:      grn
+*color3:      ylw
+*color4:      blu
+*color5:      mag
+*color6:      cyn
+*color7:      wht
 
-*color8:       bblk
-*color9:       bred
-*color10:      bgrn
-*color11:      bylw
-*color12:      bblu
-*color13:      bmag
-*color14:      bcyn
-*color15:      bwht
+*color8:      bblk
+*color9:      bred
+*color10:     bgrn
+*color11:     bylw
+*color12:     bblu
+*color13:     bmag
+*color14:     bcyn
+*color15:     bwht
 
 ! Terminal colors
-*foreground:   fg
-*background:   bg
-*cursorColor:  fg
+*foreground:  fg
+*background:  bg
+*cursorColor: fg
 
 ! Xft settings
 Xft.dpi       : 96
@@ -61,8 +60,8 @@ Xft.autohint  : false
 Xft.lcdfilter : lcddefault
 
 ! Urxvt settings
-URxvt*font:xft:Iosevka:pixelsize=16
-URxvt*boldFont:xft:Iosevka:pixelsize=16
+URxvt*font:xft:Fira Mono:style=bold:pixelsize=14
+URxvt*boldFont:xft:Fira Mono:style=bold:pixelsize=14
 URxvt*depth               : 32
 URxvt.lineSpace           : 2
 URxvt.scrollBar           : false
@@ -90,15 +89,15 @@ URxvt.keysym.M-s: perl:keyboard-select:activate
 URxvt.keysym.M-r: perl:keyboard-select:search
 
 ! CopyPaste Keys
-URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
-URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
-URxvt.clipboard.autocopy: true
+URxvt.keysym.Shift-Control-V : perl:clipboard:paste
+URxvt.keysym.Shift-Control-C : perl:clipboard:copy
+URxvt.clipboard.autocopy     : true
 
 ! Disable the ctrl+shift 'feature'
-URxvt.iso14755:            false
-URxvt.iso14755_52:         false
+URxvt.iso14755               : false
+URxvt.iso14755_52            : false
 
 ! Rofi colors
-!                   bg  fg  bgalt   hlbg    hlfg
+!                   bg  fg  bgalt  hlbg  hlfg
 rofi.color-window:  bg, bg, bg
-rofi.color-normal:  bg, fg, bg,     bg,     blu
+rofi.color-normal:  bg, fg, bg,    bg,   blu

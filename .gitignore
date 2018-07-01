@@ -2,7 +2,9 @@
 # ~/dotfiles/.gitignore
 #
 # Authors:
-#  InAbsentia <github.com/inabsencia>
+#  Iyyel <github.com/iyyel>
+#
+# .gitignore for dotfiles.
 #
 
 .config/ncmpcpp/lyrics

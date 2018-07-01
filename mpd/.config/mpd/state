@@ -1,7 +1,9 @@
 sw_volume: 100
 audio_device_state:1:PCH
 audio_device_state:1:my_fifo
-state: stop
+state: pause
+current: 6
+time: 101.378000
 random: 0
 repeat: 0
 single: 0
@@ -10,4 +12,21 @@ crossfade: 3
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Halsey - Discography/Badlands/01 - Castle.flac
+1:Halsey - Discography/Badlands/02 - Hold Me Down.flac
+2:Halsey - Discography/Badlands/03 - New Americana.flac
+3:Halsey - Discography/Badlands/04 - Drive.flac
+4:Halsey - Discography/Badlands/05 - Hurricane.flac
+5:Halsey - Discography/Badlands/06 - Roman Holiday.flac
+6:Halsey - Discography/Badlands/07 - Ghost.flac
+7:Halsey - Discography/Badlands/08 - Colors.flac
+8:Halsey - Discography/Badlands/09 - Colors pt. II.flac
+9:Halsey - Discography/Badlands/10 - Strange Love.flac
+10:Halsey - Discography/Badlands/11 - Coming Down.flac
+11:Halsey - Discography/Badlands/12 - Haunting.flac
+12:Halsey - Discography/Badlands/13 - Gasoline.flac
+13:Halsey - Discography/Badlands/14 - Control.flac
+14:Halsey - Discography/Badlands/15 - Young God.flac
+15:Halsey - Discography/Badlands/16 - I Walk The Line.flac
+16:Halsey - Discography/Singles/The Chainsmokers Ft. Hasley - Closer.mp3
 playlist_end

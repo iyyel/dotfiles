@@ -1,4 +1,3 @@
-#!/usr/bin/env zsh
 #
 # ~/.zlogin
 #
@@ -8,5 +7,8 @@
 # Make things execute at shell login.
 #
 
-# Start x-server
+## Initialize zim framework
+[[ -s ${ZIM_HOME}/login_init.zsh ]] && source ${ZIM_HOME}/login_init.zsh
+
+## Start x-server
 exec startx

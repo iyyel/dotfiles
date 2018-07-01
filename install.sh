@@ -5,34 +5,32 @@
 # Authors:
 #  Iyyel <github.com/iyyel>
 #
+# Dotfile installation script.
+#
 
-# clone bin 
-git clone https://github.com/iyyel/bin.git ~/bin
+# clone bin repository into ~/bin
+git clone https://github.com/iyyel/bin.git ~/.bin
 
 # stow all files into ~/
-stow git
-stow bin
-stow bspwm
-stow compton
-stow fonts
-stow gtkrc
-stow htop
-stow mpd
-stow mpv
-stow ncmpcpp
-stow neofetch
-stow nvim
-stow polybar
-stow qutebrowser
-stow ranger
-stow sxhkd
-stow termcolors
-stow themes
-stow tmux
-stow weechat
-stow wego
-stow xinitrc
-stow xresources
-stow zsh
-
-# install steam skin too maybe? what about powertop and all the other files in the old_dotfiles?
+xstow bspwm
+xstow cava
+xstow compton
+xstow dunst
+xstow fonts
+xstow git
+xstow gtkrc
+xstow htop
+xstow mpd
+xstow mpv
+xstow ncmpcpp
+xstow neofetch
+xstow nvim
+xstow polybar
+# xstow qutebrowser
+xstow ranger
+xstow rofi
+xstow sxhkd
+xstow tmux
+xstow weechat
+xstow x
+xstow zsh

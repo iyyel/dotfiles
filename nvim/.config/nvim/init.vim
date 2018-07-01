@@ -2,66 +2,41 @@
 " ~/.config/nvim/init.vim
 "
 " Authors:
-"  InAbsentia <github.com/inabsencia>
+"  Iyyel <github.com/iyyel>
 "
-
-" Default configuration file
+" neovim configuration file.
+"
 
 " Vundle Configuration
 set nocompatible
-filetype off
-
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle/')
-" Plugins start
-
-" Vundle
-Plugin 'VundleVim/Vundle.vim'
-
-" NERDTree 
-Plugin 'scrooloose/nerdtree'
-
-" ctrlp
-Plugin 'ctrlpvim/ctrlp.vim'
-
-" Syntastic
-Plugin 'scrooloose/syntastic'
-
-" vim-fugitive
-Plugin 'tpope/vim-fugitive'
-
-" deoplete  
-Plugin 'Shougo/deoplete.nvim'
-
-" delimitMate
-Plugin 'Raimondi/delimitMate'
-
-" Plugins end
-call vundle#end()       
-filetype plugin indent on
-
-" Plugin Settings
-
-" deoplete
-let g:deoplete#enable_at_startup=1
-
-" Syntastic
-set shortmess=atTiOI
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Python3 plugins
-call remote#host#RegisterPlugin('python3', '/home/iyyel/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete', [
-      \ {'sync': v:true, 'name': '_deoplete', 'type': 'function', 'opts': {}},
-     \ ])
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""" Neovim Settings """"""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""
+
+""""" vim-plug
+call plug#begin('~/.config/nvim/pluginz')
+
+" NERDTree
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" ctrlp
+Plug 'ctrlpvim/ctrlp.vim'
+
+" syntastic
+Plug 'scrooloose/syntastic'
+
+" vim-fugitive
+Plug 'tpope/vim-fugitive'
+
+" deoplete
+Plug 'Shougo/deoplete.nvim'
+
+" delimitMate
+Plug 'Raimondi/delimitMate'
+
+call plug#end()
+"""""
 
 " Colors
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -69,8 +44,6 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 set background=dark
 
 syntax enable
-
-colorscheme synthwave
 
 " encoding
 set encoding=UTF-8
