@@ -7,9 +7,10 @@
 # .gitignore for dotfiles.
 #
 
-.config/ncmpcpp/lyrics
-.config/ncmpcpp/error.log
-.config/nvim/.netrwhist
-.config/mpd/log
-.weechat/logs
-.weechat/weechat.log
+ncmpcpp/.config/ncmpcpp/lyrics
+ncmpcpp/.config/ncmpcpp/error.log
+nvim/.config/nvim/.netrwhist
+nvim/.config/nvim/pluginz
+mpd/.config/mpd/log
+weechat/.config/weechat/logs
+weechat/.config/weechat/weechat.log
