@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 #
-# ~/dotfiles/install.sh
+# ~/.dotfiles/install.sh
 #
 # Authors:
 #  Iyyel <github.com/iyyel>

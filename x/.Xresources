@@ -47,7 +47,8 @@
 
 ! Terminal colors
 *foreground:  fg
-*background:  bg
+! *background:  bg
+*background: rgba:3333/3333/3333/EFEF
 *cursorColor: fg
 
 ! Xft settings

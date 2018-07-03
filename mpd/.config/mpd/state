@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:PCH
 audio_device_state:1:my_fifo
 state: pause
-current: 6
-time: 101.378000
+current: 17
+time: 2.218000
 random: 0
 repeat: 0
 single: 0
@@ -12,21 +12,100 @@ crossfade: 3
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Halsey - Discography/Badlands/01 - Castle.flac
-1:Halsey - Discography/Badlands/02 - Hold Me Down.flac
-2:Halsey - Discography/Badlands/03 - New Americana.flac
-3:Halsey - Discography/Badlands/04 - Drive.flac
-4:Halsey - Discography/Badlands/05 - Hurricane.flac
-5:Halsey - Discography/Badlands/06 - Roman Holiday.flac
-6:Halsey - Discography/Badlands/07 - Ghost.flac
-7:Halsey - Discography/Badlands/08 - Colors.flac
-8:Halsey - Discography/Badlands/09 - Colors pt. II.flac
-9:Halsey - Discography/Badlands/10 - Strange Love.flac
-10:Halsey - Discography/Badlands/11 - Coming Down.flac
-11:Halsey - Discography/Badlands/12 - Haunting.flac
-12:Halsey - Discography/Badlands/13 - Gasoline.flac
-13:Halsey - Discography/Badlands/14 - Control.flac
-14:Halsey - Discography/Badlands/15 - Young God.flac
-15:Halsey - Discography/Badlands/16 - I Walk The Line.flac
-16:Halsey - Discography/Singles/The Chainsmokers Ft. Hasley - Closer.mp3
+0:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/1. Been to Hell.mp3
+1:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/2. Apologize.mp3
+2:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/3. Comin' In Hot.mp3
+3:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/4. My Town.mp3
+4:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/5. I Don't Wanna Die.mp3
+5:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/6. Hear Me Now.mp3
+6:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/7. Gangsta Sexy.mp3
+7:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/8. Glory.mp3
+8:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/9. Lights Out.mp3
+9:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/10. Coming Back Down.mp3
+10:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/11. Bullet.mp3
+11:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/12. Levitate.mp3
+12:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/13. Pour Me.mp3
+13:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/14. Tendencies.mp3
+14:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/15. Mother Murder.mp3
+15:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/16. Lump Your Head.mp3
+16:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/17. Le Deux.mp3
+17:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/18. S.C.A.V.A..mp3
+18:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/19. Street Dreams (iTunes Bonus Track).mp3
+19:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/20. Apologize (Instrumental) [iTunes Pre-Order Exclusive Bonus Track].mp3
+20:Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/21. Comin In Hot (Instrumental).mp3
+21:Hollywood Undead - Discography/Christmas In Hollywood - Single/1. Christmas Time In Hollywood.mp3
+22:Hollywood Undead - Discography/Day Of The Dead/Deluxe Edition/13 Guzzle,Guzzle.mp3
+23:Hollywood Undead - Discography/Day Of The Dead/Deluxe Edition/14 I'll Be There.mp3
+24:Hollywood Undead - Discography/Day Of The Dead/Deluxe Edition/15 Let Go.mp3
+25:Hollywood Undead - Discography/Day Of The Dead/Normal/12 Save Me.mp3
+26:Hollywood Undead - Discography/Day Of The Dead/Normal/01 Usual Suspects.mp3
+27:Hollywood Undead - Discography/Day Of The Dead/Normal/03 Day Of The Dead.mp3
+28:Hollywood Undead - Discography/Day Of The Dead/Normal/02 How We Roll.mp3
+29:Hollywood Undead - Discography/Day Of The Dead/Normal/04 War Child.mp3
+30:Hollywood Undead - Discography/Day Of The Dead/Normal/06 Take Me Home.mp3
+31:Hollywood Undead - Discography/Day Of The Dead/Normal/07 Gravity.mp3
+32:Hollywood Undead - Discography/Day Of The Dead/Normal/08 Does Everybody In The World Have To Die.mp3
+33:Hollywood Undead - Discography/Day Of The Dead/Normal/09 Disease.mp3
+34:Hollywood Undead - Discography/Day Of The Dead/Normal/10 Party By Myself.mp3
+35:Hollywood Undead - Discography/Day Of The Dead/Normal/11 Live Forever.mp3
+36:Hollywood Undead - Discography/Day Of The Dead/Normal/05 Dark Places.mp3
+37:Hollywood Undead - Discography/Desperate Measures/1. Dove And Grenade.mp3
+38:Hollywood Undead - Discography/Desperate Measures/2. Tear It Up.mp3
+39:Hollywood Undead - Discography/Desperate Measures/3. Shout At The Devil [Motley Crew Cover].mp3
+40:Hollywood Undead - Discography/Desperate Measures/4. Immigrant Song [Led Zepling Cover].mp3
+41:Hollywood Undead - Discography/Desperate Measures/5. Bad Town [Operation Ivy Cover].mp3
+42:Hollywood Undead - Discography/Desperate Measures/6. El Urgencia.mp3
+43:Hollywood Undead - Discography/Desperate Measures/7. Everwhere I Go [Castle  Renholder Remix].mp3
+44:Hollywood Undead - Discography/Desperate Measures/8. Undead [Live].mp3
+45:Hollywood Undead - Discography/Desperate Measures/9. Sell You Soul [Live].mp3
+46:Hollywood Undead - Discography/Desperate Measures/10. California [Live].mp3
+47:Hollywood Undead - Discography/Desperate Measures/11. Black Dahlia [Live].mp3
+48:Hollywood Undead - Discography/Desperate Measures/12. Everywhere I Go [Live].mp3
+49:Hollywood Undead - Discography/Desperate Measures/13. No. 5 [Live].mp3
+50:Hollywood Undead - Discography/Desperate Measures/14. City [Live].mp3
+51:Hollywood Undead - Discography/Hollywood Undead/1. Turn Off The Lights [Feat Jeffree Star].mp3
+52:Hollywood Undead - Discography/Hollywood Undead/2. Dead In Ditches [Original].mp3
+53:Hollywood Undead - Discography/Hollywood Undead/3. Scene For Dummies.mp3
+54:Hollywood Undead - Discography/Hollywood Undead/4. Dead In Ditched [Remastered].mp3
+55:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/1. Dead Bite.mp3
+56:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/2. From The Ground.mp3
+57:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/3. Another Way Out.mp3
+58:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/4. Lion.mp3
+59:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/5. We Are.mp3
+60:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/6. Pigskin.mp3
+61:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/7. Rain.mp3
+62:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/8. Kill Everyone.mp3
+63:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/9. Believe.mp3
+64:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/10. Up In Smoke.mp3
+65:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/11. Outside.mp3
+66:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/12. Medicine.mp3
+67:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/13. One More Bottle.mp3
+68:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/14. Delish.mp3
+69:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/15. New Day.mp3
+70:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/16. We Are (J-Dog & Killtron Remix).mp3
+71:Hollywood Undead - Discography/Notes From The Underground [Deluxe Edition]/17. Another Way Out (Griffin Boice Remix).mp3
+72:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/1. Undead.mp3
+73:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/2. Sell Your Soul.mp3
+74:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/3. Everywhere I Go.mp3
+75:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/4. No Other Place.mp3
+76:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/5. No. 5.mp3
+77:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/6. Young.mp3
+78:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/7. Black Dahlia.mp3
+79:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/8. This Love, This Hate.mp3
+80:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/9. Bottle And A Gun.mp3
+81:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/10. California.mp3
+82:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/11. City.mp3
+83:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/12. The Diary.mp3
+84:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/13. Pimpin'.mp3
+85:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/14. Paradise Lost.mp3
+86:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/15. Pain (Bonus Track).mp3
+87:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/16. Knife Called Lust (Bonus Track).mp3
+88:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/17. The Loss (Bonus Track).mp3
+89:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/18. The Natives (Bonus Track).mp3
+90:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/19. Bitches.mp3
+91:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/20. The Kids.mp3
+92:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/21. Circles.mp3
+93:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/22. Black Dahlia (Buffalo Bill Remix).mp3
+94:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/23. Black Dahlia (Lo Fidelity Allstar.mp3
+95:Hollywood Undead - Discography/Swan Songs [Collector's Edition]/24. Black Dahlia (The Pharmacy Remix).mp3
 playlist_end

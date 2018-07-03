@@ -51,14 +51,14 @@ border-color = ${colors.bblk}
 font-0 = Fira Mono:style=bold:size=10;2
 font-1 = FontAwesome:size=9;1
 
-modules-left   = bspwm cpu cputemp ram
+modules-left   = bspwm cpu cputemp ram downspeed upspeed
 modules-center = previous play pause next mpd
 modules-right  = volume backlight wifi signal battery clock
 
-border-size         = 6
+border-size         = 0
 padding-left        = 0
 padding-right       = 0
-module-margin-left  = 1
+module-margin-left  = 0
 module-margin-right = 0
 
 bottom = false
@@ -74,27 +74,27 @@ enable-scroll  = false
 reverse-scroll = false
 fuzzy-match    = false
 
-format-padding = 0
+format-padding = 2
 
 label-focused            = ""
-label-focused-background = ${colors.bg}
-label-focused-foreground = ${colors.bwht}
-label-focused-padding    = 2
+label-focused-background = ${colors.bblk}
+label-focused-foreground = ${colors.blk}
+label-focused-padding    = 1
 
 label-occupied            = ""
-label-occupied-background = ${colors.bg}
-label-occupied-foreground = ${colors.bblk}
-label-occupied-padding    = 2
+label-occupied-background = ${colors.bblk}
+label-occupied-foreground = ${colors.mag}
+label-occupied-padding    = 1
 
 label-urgent            = ""
-label-urgent-background = ${colors.bg}
-label-urgent-foreground = ${colors.bred}
-label-urgent-padding    = 2
+label-urgent-background = ${colors.bblk}
+label-urgent-foreground = ${colors.red}
+label-urgent-padding    = 1
 
 label-empty            = ""
-label-empty-background = ${colors.bg}
-label-empty-foreground = ${colors.bcyn}
-label-empty-padding    = 2
+label-empty-background = ${colors.bblk}
+label-empty-foreground = ${colors.wht}
+label-empty-padding    = 1
 
 ## CPU load in percentage
 [module/cpu]
@@ -102,10 +102,11 @@ type     = internal/cpu
 label    = "%percentage:2:2:2%%"
 internal = 2
 
-format-prefix     = " "
-format-background = ${colors.grn}
-format-foreground = ${colors.bg}
-format-padding    = 2
+format-prefix            = " "
+format-prefix-foreground = ${colors.wht}
+format-background        = ${colors.bblk}
+format-foreground        = ${colors.wht}
+format-padding           = 2
 
 ## CPU temperature
 [module/cputemp]
@@ -114,10 +115,11 @@ label        = "%temperature%"
 interval     = 2
 thermal-zone = 0
 
-format-prefix     = " "
-format-background = ${colors.blu}
-format-foreground = ${colors.bg}
-format-padding    = 2
+format-prefix            = " "
+format-prefix-foreground = ${colors.wht}
+format-background        = ${colors.bblk}
+format-foreground        = ${colors.wht}
+format-padding           = 2
 
 ## RAM used in %
 [module/ram]
@@ -125,11 +127,52 @@ type     = internal/memory
 label    = "%percentage_used:2:2:2%%"
 interval = 2
 
-format            = <label>
-format-prefix     = " "
-format-background = ${colors.red}
-format-foreground = ${colors.bg}
-format-padding    = 2
+format                   = <label>
+format-prefix            = " "
+format-prefix-foreground = ${colors.wht}
+format-background        = ${colors.bblk}
+format-foreground        = ${colors.wht}
+format-padding           = 2
+
+## WiFi download speed
+[module/downspeed]
+type      = internal/network
+interface = wlp3s0
+interval  = 2
+
+label-connected                    = "%downspeed%"
+format-connected-prefix            = " "
+format-connected-prefix-foreground = ${colors.wht}
+format-connected-foreground        = ${colors.wht}
+format-connected-background        = ${colors.bblk}
+format-connected-padding           = 2
+
+label-disconnected                    = "0"
+format-disconnected-prefix            = " "
+format-disconnected-prefix-foreground = ${colors.wht}
+format-disconnected-foreground        = ${colors.wht}
+format-disconnected-background        = ${colors.bblk}
+format-disconnected-padding           = 2
+
+## WiFi upload speed
+[module/upspeed]
+type      = internal/network
+interface = wlp3s0
+interval  = 2
+
+label-connected                    = "%upspeed%"
+format-connected-prefix            = " "
+format-connected-prefix-foreground = ${colors.wht}
+format-connected-foreground        = ${colors.wht}
+format-connected-background        = ${colors.bblk}
+format-connected-padding           = 2
+
+label-disconnected                    = "0"
+format-disconnected-prefix            = " "
+format-disconnected-prefix-foreground = ${colors.wht}
+format-disconnected-foreground        = ${colors.wht}
+format-disconnected-background        = ${colors.bblk}
+format-disconnected-padding           = 2
 
 ## Previous button for mpd
 [module/previous]
@@ -139,9 +182,32 @@ port      = 6600
 icon-prev = ""
 
 format-online            = <icon-prev>
-format-online-background = ${colors.blu}
-format-online-foreground = ${colors.bg}
+format-online-background = ${colors.bblk}
+format-online-foreground = ${colors.wht}
 format-online-padding    = 2
+
+## filesystem storage in %
+[module/filesystem]
+type         = internal/fs
+mount-0      = /
+mount-1      = /home
+interval     = 10
+fixed-values = true
+
+format-mounted   = <label-mounted>
+format-unmounted = <label-unmounted>
+
+label-mounted   = " %mountpoint% %percentage_used%%"
+label-unmounted = "Not Mounted"
+
+label-mounted-foreground = ${colors.wht}
+label-mounted-background = ${colors.bblk}
+
+label-unmounted-foreground = ${colors.wht}
+label-unmounted-background = ${colors.bblk}
+
+spacing               = 0
+label-mounted-padding = 2
 
 ## Play button for mpd
 [module/play]
@@ -151,8 +217,8 @@ port      = 6600
 icon-play = ""
 
 format-online            = <icon-play>
-format-online-background = ${colors.blu}
-format-online-foreground = ${colors.bg}
+format-online-background = ${colors.bblk}
+format-online-foreground = ${colors.wht}
 format-online-padding    = 2
 
 ## Pause button for mpd
@@ -163,8 +229,8 @@ port       = 6600
 icon-pause = ""
 
 format-online            = <icon-pause>
-format-online-background = ${colors.blu}
-format-online-foreground = ${colors.bg}
+format-online-background = ${colors.bblk}
+format-online-foreground = ${colors.wht}
 format-online-padding    = 2
 
 ## Next button for mpd
@@ -175,8 +241,8 @@ port      = 6600
 icon-next = ""
 
 format-online            = <icon-next>
-format-online-background = ${colors.blu}
-format-online-foreground = ${colors.bg}
+format-online-background = ${colors.bblk}
+format-online-foreground = ${colors.wht}
 format-online-padding    = 2
 
 ## Show current artist and song title
@@ -191,8 +257,8 @@ format-online-padding = 0
 
 label-song            = " %artist% - %title%"
 label-song-maxlen     = 50
-label-song-background = ${colors.grn}
-label-song-foreground = ${colors.bg}
+label-song-background = ${colors.bblk}
+label-song-foreground = ${colors.wht}
 label-song-padding    = 2
 
 ## Show volume in percentage
@@ -202,15 +268,15 @@ type = internal/volume
 label-volume             = "%percentage%%"
 format-volume            = <label-volume>
 format-volume-prefix     = " "
-format-volume-background = ${colors.mag}
-format-volume-foreground = ${colors.bg}
+format-volume-background = ${colors.bblk}
+format-volume-foreground = ${colors.wht}
 format-volume-padding    = 2
 
 label-muted             = "Muted"
 format-muted            = <label-muted>
 format-muted-prefix     = " "
-format-muted-background = ${colors.mag}
-format-muted-foreground = ${colors.bg}
+format-muted-background = ${colors.bblk}
+format-muted-foreground = ${colors.wht}
 format-muted-padding    = 2
 
 ## Backlight in percentage
@@ -221,9 +287,9 @@ card          = intel_backlight
 enable-scroll = false
 
 format            = <label>
-format-prefix     = " "
-format-background = ${colors.ylw}
-format-foreground = ${colors.bg}
+format-prefix     = " "
+format-background = ${colors.bblk}
+format-foreground = ${colors.wht}
 format-padding    = 2
 
 ## Show the connected WiFi network
@@ -234,16 +300,16 @@ interval  = 2
 
 label-connected                    = "%essid%"
 format-connected-prefix            = " "
-format-connected-prefix-foreground = ${colors.bg}
-format-connected-foreground        = ${colors.bg}
-format-connected-background        = ${colors.cyn}
+format-connected-prefix-foreground = ${colors.wht}
+format-connected-foreground        = ${colors.wht}
+format-connected-background        = ${colors.bblk}
 format-connected-padding           = 2
 
 label-disconnected                    = "Disconnected"
 format-disconnected-prefix            = " "
-format-disconnected-prefix-foreground = ${colors.bg}
-format-disconnected-background        = ${colors.red}
-format-disconnected-foreground        = ${colors.bg}
+format-disconnected-prefix-foreground = ${colors.wht}
+format-disconnected-foreground        = ${colors.wht}
+format-disconnected-background        = ${colors.bblk}
 format-disconnected-padding           = 2
 
 ## Shows the signal for the WiFi currently connected
@@ -254,16 +320,16 @@ interval  = 2
 
 label-connected                    = "%signal%%"
 format-connected-prefix            = " "
-format-connected-prefix-foreground = ${colors.bg}
-format-connected-foreground        = ${colors.bg}
-format-connected-background        = ${colors.grn}
+format-connected-prefix-foreground = ${colors.wht}
+format-connected-foreground        = ${colors.wht}
+format-connected-background        = ${colors.bblk}
 format-connected-padding           = 2
 
 label-disconnected                    = "0%"
 format-disconnected-prefix            = " "
-format-disconnected-prefix-foreground = ${colors.bg}
-format-disconnected-background        = ${colors.red}
-format-disconnected-foreground        = ${colors.bg}
+format-disconnected-prefix-foreground = ${colors.wht}
+format-disconnected-foreground        = ${colors.wht}
+format-disconnected-background        = ${colors.bblk}
 format-disconnected-padding           = 2
 
 ## Show battery percentage
@@ -276,20 +342,20 @@ poll-interval = 5
 
 format-charging-prefix     = " "
 label-charging             = "%percentage%%"
-format-charging-background = ${colors.grn}
-format-charging-foreground = ${colors.bg}
+format-charging-background = ${colors.bblk}
+format-charging-foreground = ${colors.wht}
 format-charging-padding    = 2
 
 format-discharging-prefix     = " "
 label-discharging             = "%percentage%%"
-format-discharging-background = ${colors.red}
-format-discharging-foreground = ${colors.bg}
+format-discharging-background = ${colors.bblk}
+format-discharging-foreground = ${colors.wht}
 format-discharging-padding    = 2
 
 format-full-prefix     = " "
 label-full             = "%percentage%%"
-format-full-background = ${colors.ylw}
-format-full-foreground = ${colors.bg}
+format-full-background = ${colors.bblk}
+format-full-foreground = ${colors.wht}
 format-full-padding    = 2
 
 ## Show current date and time
@@ -299,6 +365,6 @@ date     = "%a %d/%m/%y %H:%M"
 interval = 1
 
 format-prefix     = " "
-format-background = ${colors.fg}
-format-foreground = ${colors.bg}
+format-background = ${colors.bblk}
+format-foreground = ${colors.wht}
 format-padding    = 2

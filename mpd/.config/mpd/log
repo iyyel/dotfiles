@@ -24252,3 +24252,1748 @@ Jul 02 01:50 : client: [16] opened from 127.0.0.1:58792
 Jul 02 01:50 : client: [17] opened from 127.0.0.1:58794
 Jul 02 01:50 : client: [18] opened from 127.0.0.1:58796
 Jul 02 01:50 : client: [19] opened from 127.0.0.1:58798
+Jul 02 01:56 : avahi: Client Disconnected, will reconnect shortly
+Jul 02 01:56 : avahi: Could not reconnect: Daemon not running
+Jul 02 01:56 : client: [19] closed
+Jul 02 01:56 : client: [18] closed
+Jul 02 01:56 : client: [17] closed
+Jul 02 01:56 : client: [15] closed
+Jul 02 01:56 : client: [16] closed
+Jul 02 01:56 : player: played "Halsey - Discography/Badlands/07 - Ghost.flac"
+Jul 02 18:00 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 02 18:00 : client: [0] opened from 127.0.0.1:58096
+Jul 02 18:00 : client: [1] opened from 127.0.0.1:58098
+Jul 02 18:00 : client: [2] opened from 127.0.0.1:58100
+Jul 02 18:00 : client: [3] opened from 127.0.0.1:58102
+Jul 02 18:00 : client: [4] opened from 127.0.0.1:58104
+Jul 02 18:19 : avahi: Client Disconnected, will reconnect shortly
+Jul 02 18:19 : avahi: Could not reconnect: Daemon not running
+Jul 02 18:19 : client: [4] closed
+Jul 02 18:19 : client: [2] closed
+Jul 02 18:19 : client: [3] closed
+Jul 02 18:19 : client: [1] closed
+Jul 02 18:19 : client: [0] closed
+Jul 02 18:19 : player: played "Halsey - Discography/Badlands/07 - Ghost.flac"
+Jul 02 18:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 02 18:19 : client: [0] opened from 127.0.0.1:34656
+Jul 02 18:19 : client: [1] opened from 127.0.0.1:34658
+Jul 02 18:19 : client: [2] opened from 127.0.0.1:34660
+Jul 02 18:19 : client: [3] opened from 127.0.0.1:34662
+Jul 02 18:19 : client: [4] opened from 127.0.0.1:34664
+Jul 02 21:05 : avahi: Client Disconnected, will reconnect shortly
+Jul 02 21:05 : avahi: Could not reconnect: Daemon not running
+Jul 02 21:05 : client: [4] closed
+Jul 02 21:05 : client: [3] closed
+Jul 02 21:05 : client: [2] closed
+Jul 02 21:05 : client: [1] closed
+Jul 02 21:05 : client: [0] closed
+Jul 02 21:05 : player: played "Halsey - Discography/Badlands/07 - Ghost.flac"
+Jul 03 15:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 15:25 : client: [0] opened from 127.0.0.1:51242
+Jul 03 15:25 : client: [1] opened from 127.0.0.1:51244
+Jul 03 15:25 : client: [2] opened from 127.0.0.1:51246
+Jul 03 15:25 : client: [3] opened from 127.0.0.1:51248
+Jul 03 15:25 : client: [4] opened from 127.0.0.1:51250
+Jul 03 15:28 : avahi: Client Disconnected, will reconnect shortly
+Jul 03 15:28 : avahi: Could not reconnect: Daemon not running
+Jul 03 15:28 : client: [4] closed
+Jul 03 15:28 : client: [3] closed
+Jul 03 15:28 : client: [2] closed
+Jul 03 15:28 : client: [1] closed
+Jul 03 15:28 : client: [0] closed
+Jul 03 15:28 : player: played "Halsey - Discography/Badlands/07 - Ghost.flac"
+Jul 03 15:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 15:31 : client: [0] opened from 127.0.0.1:37402
+Jul 03 15:31 : client: [1] opened from 127.0.0.1:37404
+Jul 03 15:31 : client: [2] opened from 127.0.0.1:37406
+Jul 03 15:31 : client: [3] opened from 127.0.0.1:37408
+Jul 03 15:31 : client: [4] opened from 127.0.0.1:37410
+Jul 03 15:34 : client: [4] closed
+Jul 03 15:34 : client: [0] closed
+Jul 03 15:34 : client: [1] closed
+Jul 03 15:34 : client: [2] closed
+Jul 03 15:34 : client: [3] closed
+Jul 03 15:34 : client: [5] opened from 127.0.0.1:37422
+Jul 03 15:34 : client: [6] opened from 127.0.0.1:37424
+Jul 03 15:34 : client: [7] opened from 127.0.0.1:37426
+Jul 03 15:34 : client: [8] opened from 127.0.0.1:37428
+Jul 03 15:34 : client: [9] opened from 127.0.0.1:37430
+Jul 03 15:35 : client: [5] closed
+Jul 03 15:35 : client: [6] closed
+Jul 03 15:35 : client: [7] closed
+Jul 03 15:35 : client: [8] closed
+Jul 03 15:35 : client: [9] closed
+Jul 03 15:35 : client: [10] opened from 127.0.0.1:37432
+Jul 03 15:35 : client: [11] opened from 127.0.0.1:37434
+Jul 03 15:35 : client: [12] opened from 127.0.0.1:37436
+Jul 03 15:35 : client: [13] opened from 127.0.0.1:37438
+Jul 03 15:35 : client: [14] opened from 127.0.0.1:37440
+Jul 03 15:36 : client: [10] closed
+Jul 03 15:36 : client: [11] closed
+Jul 03 15:36 : client: [12] closed
+Jul 03 15:36 : client: [13] closed
+Jul 03 15:36 : client: [14] closed
+Jul 03 15:36 : client: [15] opened from 127.0.0.1:37442
+Jul 03 15:36 : client: [16] opened from 127.0.0.1:37444
+Jul 03 15:36 : client: [17] opened from 127.0.0.1:37446
+Jul 03 15:36 : client: [18] opened from 127.0.0.1:37448
+Jul 03 15:36 : client: [19] opened from 127.0.0.1:37450
+Jul 03 15:37 : client: [15] closed
+Jul 03 15:37 : client: [16] closed
+Jul 03 15:37 : client: [17] closed
+Jul 03 15:37 : client: [18] closed
+Jul 03 15:37 : client: [19] closed
+Jul 03 15:37 : client: [20] opened from 127.0.0.1:37452
+Jul 03 15:37 : client: [21] opened from 127.0.0.1:37454
+Jul 03 15:37 : client: [22] opened from 127.0.0.1:37456
+Jul 03 15:37 : client: [23] opened from 127.0.0.1:37458
+Jul 03 15:37 : client: [24] opened from 127.0.0.1:37460
+Jul 03 15:37 : client: [25] opened from 127.0.0.1:37462
+Jul 03 15:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 15:37 : client: [25] closed
+Jul 03 15:37 : client: [26] opened from 127.0.0.1:37464
+Jul 03 15:37 : client: [26] closed
+Jul 03 15:37 : client: [27] opened from 127.0.0.1:37466
+Jul 03 15:37 : client: [27] closed
+Jul 03 15:37 : client: [28] opened from 127.0.0.1:37468
+Jul 03 15:37 : client: [28] closed
+Jul 03 15:37 : client: [29] opened from 127.0.0.1:37470
+Jul 03 15:37 : client: [29] closed
+Jul 03 15:37 : client: [30] opened from 127.0.0.1:37472
+Jul 03 15:37 : client: [30] closed
+Jul 03 15:37 : client: [31] opened from 127.0.0.1:37474
+Jul 03 15:37 : client: [31] closed
+Jul 03 15:37 : client: [32] opened from 127.0.0.1:37476
+Jul 03 15:37 : client: [32] closed
+Jul 03 15:37 : client: [33] opened from 127.0.0.1:37478
+Jul 03 15:37 : client: [33] closed
+Jul 03 15:37 : client: [34] opened from 127.0.0.1:37480
+Jul 03 15:37 : client: [34] closed
+Jul 03 15:38 : client: [20] closed
+Jul 03 15:38 : client: [21] closed
+Jul 03 15:38 : client: [22] closed
+Jul 03 15:38 : client: [23] closed
+Jul 03 15:38 : client: [24] closed
+Jul 03 15:38 : client: [35] opened from 127.0.0.1:37482
+Jul 03 15:38 : client: [36] opened from 127.0.0.1:37484
+Jul 03 15:38 : client: [37] opened from 127.0.0.1:37486
+Jul 03 15:38 : client: [38] opened from 127.0.0.1:37488
+Jul 03 15:38 : client: [39] opened from 127.0.0.1:37490
+Jul 03 15:38 : client: [35] closed
+Jul 03 15:38 : client: [36] closed
+Jul 03 15:38 : client: [37] closed
+Jul 03 15:38 : client: [38] closed
+Jul 03 15:38 : client: [39] closed
+Jul 03 15:38 : client: [40] opened from 127.0.0.1:37492
+Jul 03 15:38 : client: [41] opened from 127.0.0.1:37494
+Jul 03 15:38 : client: [42] opened from 127.0.0.1:37496
+Jul 03 15:38 : client: [43] opened from 127.0.0.1:37498
+Jul 03 15:38 : client: [44] opened from 127.0.0.1:37500
+Jul 03 15:38 : client: [40] closed
+Jul 03 15:38 : client: [41] closed
+Jul 03 15:38 : client: [42] closed
+Jul 03 15:38 : client: [43] closed
+Jul 03 15:38 : client: [44] closed
+Jul 03 15:38 : client: [45] opened from 127.0.0.1:37502
+Jul 03 15:38 : client: [46] opened from 127.0.0.1:37504
+Jul 03 15:38 : client: [47] opened from 127.0.0.1:37506
+Jul 03 15:38 : client: [48] opened from 127.0.0.1:37508
+Jul 03 15:38 : client: [49] opened from 127.0.0.1:37510
+Jul 03 15:38 : client: [45] closed
+Jul 03 15:38 : client: [46] closed
+Jul 03 15:38 : client: [47] closed
+Jul 03 15:38 : client: [48] closed
+Jul 03 15:38 : client: [49] closed
+Jul 03 15:38 : client: [50] opened from 127.0.0.1:37512
+Jul 03 15:38 : client: [51] opened from 127.0.0.1:37514
+Jul 03 15:38 : client: [52] opened from 127.0.0.1:37516
+Jul 03 15:38 : client: [53] opened from 127.0.0.1:37518
+Jul 03 15:38 : client: [54] opened from 127.0.0.1:37520
+Jul 03 15:38 : client: [50] closed
+Jul 03 15:38 : client: [51] closed
+Jul 03 15:38 : client: [52] closed
+Jul 03 15:38 : client: [53] closed
+Jul 03 15:38 : client: [54] closed
+Jul 03 15:38 : client: [55] opened from 127.0.0.1:37522
+Jul 03 15:38 : client: [56] opened from 127.0.0.1:37524
+Jul 03 15:38 : client: [57] opened from 127.0.0.1:37526
+Jul 03 15:38 : client: [58] opened from 127.0.0.1:37528
+Jul 03 15:38 : client: [59] opened from 127.0.0.1:37530
+Jul 03 15:38 : client: [55] closed
+Jul 03 15:38 : client: [56] closed
+Jul 03 15:38 : client: [57] closed
+Jul 03 15:38 : client: [58] closed
+Jul 03 15:38 : client: [59] closed
+Jul 03 15:38 : client: [60] opened from 127.0.0.1:37532
+Jul 03 15:38 : client: [61] opened from 127.0.0.1:37534
+Jul 03 15:38 : client: [62] opened from 127.0.0.1:37536
+Jul 03 15:38 : client: [63] opened from 127.0.0.1:37538
+Jul 03 15:38 : client: [64] opened from 127.0.0.1:37540
+Jul 03 15:38 : client: [60] closed
+Jul 03 15:38 : client: [61] closed
+Jul 03 15:38 : client: [62] closed
+Jul 03 15:38 : client: [63] closed
+Jul 03 15:38 : client: [64] closed
+Jul 03 15:38 : client: [65] opened from 127.0.0.1:37542
+Jul 03 15:38 : client: [66] opened from 127.0.0.1:37544
+Jul 03 15:38 : client: [67] opened from 127.0.0.1:37546
+Jul 03 15:38 : client: [68] opened from 127.0.0.1:37548
+Jul 03 15:38 : client: [69] opened from 127.0.0.1:37550
+Jul 03 15:38 : client: [65] closed
+Jul 03 15:38 : client: [66] closed
+Jul 03 15:38 : client: [67] closed
+Jul 03 15:38 : client: [68] closed
+Jul 03 15:38 : client: [69] closed
+Jul 03 15:38 : client: [70] opened from 127.0.0.1:37552
+Jul 03 15:38 : client: [71] opened from 127.0.0.1:37554
+Jul 03 15:38 : client: [72] opened from 127.0.0.1:37556
+Jul 03 15:38 : client: [73] opened from 127.0.0.1:37558
+Jul 03 15:38 : client: [74] opened from 127.0.0.1:37560
+Jul 03 15:39 : client: [70] closed
+Jul 03 15:39 : client: [71] closed
+Jul 03 15:39 : client: [72] closed
+Jul 03 15:39 : client: [73] closed
+Jul 03 15:39 : client: [74] closed
+Jul 03 15:39 : client: [75] opened from 127.0.0.1:37562
+Jul 03 15:39 : client: [76] opened from 127.0.0.1:37564
+Jul 03 15:39 : client: [77] opened from 127.0.0.1:37566
+Jul 03 15:39 : client: [78] opened from 127.0.0.1:37568
+Jul 03 15:39 : client: [79] opened from 127.0.0.1:37570
+Jul 03 15:39 : client: [75] closed
+Jul 03 15:39 : client: [76] closed
+Jul 03 15:39 : client: [77] closed
+Jul 03 15:39 : client: [78] closed
+Jul 03 15:39 : client: [79] closed
+Jul 03 15:39 : client: [80] opened from 127.0.0.1:37572
+Jul 03 15:39 : client: [81] opened from 127.0.0.1:37574
+Jul 03 15:39 : client: [82] opened from 127.0.0.1:37576
+Jul 03 15:39 : client: [83] opened from 127.0.0.1:37578
+Jul 03 15:39 : client: [84] opened from 127.0.0.1:37580
+Jul 03 15:39 : client: [80] closed
+Jul 03 15:39 : client: [81] closed
+Jul 03 15:39 : client: [82] closed
+Jul 03 15:39 : client: [83] closed
+Jul 03 15:39 : client: [84] closed
+Jul 03 15:39 : client: [85] opened from 127.0.0.1:37582
+Jul 03 15:39 : client: [86] opened from 127.0.0.1:37584
+Jul 03 15:39 : client: [87] opened from 127.0.0.1:37586
+Jul 03 15:39 : client: [88] opened from 127.0.0.1:37588
+Jul 03 15:39 : client: [89] opened from 127.0.0.1:37590
+Jul 03 15:39 : client: [85] closed
+Jul 03 15:39 : client: [86] closed
+Jul 03 15:39 : client: [87] closed
+Jul 03 15:39 : client: [88] closed
+Jul 03 15:39 : client: [89] closed
+Jul 03 15:39 : client: [90] opened from 127.0.0.1:37592
+Jul 03 15:39 : client: [91] opened from 127.0.0.1:37594
+Jul 03 15:39 : client: [92] opened from 127.0.0.1:37596
+Jul 03 15:39 : client: [93] opened from 127.0.0.1:37598
+Jul 03 15:39 : client: [94] opened from 127.0.0.1:37600
+Jul 03 15:39 : client: [90] closed
+Jul 03 15:39 : client: [91] closed
+Jul 03 15:39 : client: [92] closed
+Jul 03 15:39 : client: [93] closed
+Jul 03 15:39 : client: [94] closed
+Jul 03 15:39 : client: [95] opened from 127.0.0.1:37602
+Jul 03 15:39 : client: [96] opened from 127.0.0.1:37604
+Jul 03 15:39 : client: [97] opened from 127.0.0.1:37606
+Jul 03 15:39 : client: [98] opened from 127.0.0.1:37608
+Jul 03 15:39 : client: [99] opened from 127.0.0.1:37610
+Jul 03 15:41 : client: [95] closed
+Jul 03 15:41 : client: [96] closed
+Jul 03 15:41 : client: [97] closed
+Jul 03 15:41 : client: [98] closed
+Jul 03 15:41 : client: [99] closed
+Jul 03 15:41 : client: [100] opened from 127.0.0.1:37612
+Jul 03 15:41 : client: [101] opened from 127.0.0.1:37614
+Jul 03 15:41 : client: [102] opened from 127.0.0.1:37616
+Jul 03 15:41 : client: [103] opened from 127.0.0.1:37618
+Jul 03 15:41 : client: [104] opened from 127.0.0.1:37620
+Jul 03 15:41 : client: [100] closed
+Jul 03 15:41 : client: [101] closed
+Jul 03 15:41 : client: [102] closed
+Jul 03 15:41 : client: [103] closed
+Jul 03 15:41 : client: [104] closed
+Jul 03 15:41 : client: [105] opened from 127.0.0.1:37622
+Jul 03 15:41 : client: [106] opened from 127.0.0.1:37624
+Jul 03 15:41 : client: [107] opened from 127.0.0.1:37626
+Jul 03 15:41 : client: [108] opened from 127.0.0.1:37628
+Jul 03 15:41 : client: [109] opened from 127.0.0.1:37630
+Jul 03 15:41 : client: [105] closed
+Jul 03 15:41 : client: [106] closed
+Jul 03 15:41 : client: [107] closed
+Jul 03 15:41 : client: [108] closed
+Jul 03 15:41 : client: [109] closed
+Jul 03 15:41 : client: [110] opened from 127.0.0.1:37632
+Jul 03 15:41 : client: [111] opened from 127.0.0.1:37634
+Jul 03 15:41 : client: [112] opened from 127.0.0.1:37636
+Jul 03 15:41 : client: [113] opened from 127.0.0.1:37638
+Jul 03 15:41 : client: [114] opened from 127.0.0.1:37640
+Jul 03 15:41 : client: [110] closed
+Jul 03 15:41 : client: [111] closed
+Jul 03 15:41 : client: [112] closed
+Jul 03 15:41 : client: [113] closed
+Jul 03 15:41 : client: [114] closed
+Jul 03 15:41 : client: [115] opened from 127.0.0.1:37642
+Jul 03 15:41 : client: [116] opened from 127.0.0.1:37644
+Jul 03 15:41 : client: [117] opened from 127.0.0.1:37646
+Jul 03 15:41 : client: [118] opened from 127.0.0.1:37648
+Jul 03 15:41 : client: [119] opened from 127.0.0.1:37650
+Jul 03 15:42 : client: [115] closed
+Jul 03 15:42 : client: [116] closed
+Jul 03 15:42 : client: [117] closed
+Jul 03 15:42 : client: [118] closed
+Jul 03 15:42 : client: [119] closed
+Jul 03 15:42 : client: [120] opened from 127.0.0.1:37652
+Jul 03 15:42 : client: [121] opened from 127.0.0.1:37654
+Jul 03 15:42 : client: [122] opened from 127.0.0.1:37656
+Jul 03 15:42 : client: [123] opened from 127.0.0.1:37658
+Jul 03 15:42 : client: [124] opened from 127.0.0.1:37660
+Jul 03 15:42 : client: [120] closed
+Jul 03 15:42 : client: [121] closed
+Jul 03 15:42 : client: [122] closed
+Jul 03 15:42 : client: [123] closed
+Jul 03 15:42 : client: [124] closed
+Jul 03 15:42 : client: [125] opened from 127.0.0.1:37662
+Jul 03 15:42 : client: [126] opened from 127.0.0.1:37664
+Jul 03 15:42 : client: [127] opened from 127.0.0.1:37666
+Jul 03 15:42 : client: [128] opened from 127.0.0.1:37668
+Jul 03 15:42 : client: [129] opened from 127.0.0.1:37670
+Jul 03 15:42 : client: [125] closed
+Jul 03 15:42 : client: [126] closed
+Jul 03 15:42 : client: [127] closed
+Jul 03 15:42 : client: [128] closed
+Jul 03 15:42 : client: [129] closed
+Jul 03 15:42 : client: [130] opened from 127.0.0.1:37672
+Jul 03 15:42 : client: [131] opened from 127.0.0.1:37674
+Jul 03 15:42 : client: [132] opened from 127.0.0.1:37676
+Jul 03 15:42 : client: [133] opened from 127.0.0.1:37678
+Jul 03 15:42 : client: [134] opened from 127.0.0.1:37680
+Jul 03 15:43 : client: [130] closed
+Jul 03 15:43 : client: [131] closed
+Jul 03 15:43 : client: [132] closed
+Jul 03 15:43 : client: [133] closed
+Jul 03 15:43 : client: [134] closed
+Jul 03 15:43 : client: [135] opened from 127.0.0.1:37682
+Jul 03 15:43 : client: [136] opened from 127.0.0.1:37684
+Jul 03 15:43 : client: [137] opened from 127.0.0.1:37686
+Jul 03 15:43 : client: [138] opened from 127.0.0.1:37688
+Jul 03 15:43 : client: [139] opened from 127.0.0.1:37690
+Jul 03 15:43 : client: [135] closed
+Jul 03 15:43 : client: [136] closed
+Jul 03 15:43 : client: [137] closed
+Jul 03 15:43 : client: [138] closed
+Jul 03 15:43 : client: [139] closed
+Jul 03 15:43 : client: [140] opened from 127.0.0.1:37692
+Jul 03 15:43 : client: [141] opened from 127.0.0.1:37694
+Jul 03 15:43 : client: [142] opened from 127.0.0.1:37696
+Jul 03 15:43 : client: [143] opened from 127.0.0.1:37698
+Jul 03 15:43 : client: [144] opened from 127.0.0.1:37700
+Jul 03 15:43 : client: [140] closed
+Jul 03 15:43 : client: [141] closed
+Jul 03 15:43 : client: [142] closed
+Jul 03 15:43 : client: [143] closed
+Jul 03 15:43 : client: [144] closed
+Jul 03 15:44 : client: [145] opened from 127.0.0.1:37702
+Jul 03 15:44 : client: [146] opened from 127.0.0.1:37704
+Jul 03 15:44 : client: [147] opened from 127.0.0.1:37706
+Jul 03 15:44 : client: [148] opened from 127.0.0.1:37708
+Jul 03 15:44 : client: [149] opened from 127.0.0.1:37710
+Jul 03 15:44 : client: [145] closed
+Jul 03 15:44 : client: [146] closed
+Jul 03 15:44 : client: [147] closed
+Jul 03 15:44 : client: [148] closed
+Jul 03 15:44 : client: [149] closed
+Jul 03 15:44 : client: [150] opened from 127.0.0.1:37712
+Jul 03 15:44 : client: [151] opened from 127.0.0.1:37714
+Jul 03 15:44 : client: [152] opened from 127.0.0.1:37716
+Jul 03 15:44 : client: [153] opened from 127.0.0.1:37718
+Jul 03 15:44 : client: [154] opened from 127.0.0.1:37720
+Jul 03 15:44 : client: [150] closed
+Jul 03 15:44 : client: [151] closed
+Jul 03 15:44 : client: [152] closed
+Jul 03 15:44 : client: [153] closed
+Jul 03 15:44 : client: [154] closed
+Jul 03 15:44 : client: [155] opened from 127.0.0.1:37722
+Jul 03 15:44 : client: [156] opened from 127.0.0.1:37724
+Jul 03 15:44 : client: [157] opened from 127.0.0.1:37726
+Jul 03 15:44 : client: [158] opened from 127.0.0.1:37728
+Jul 03 15:44 : client: [159] opened from 127.0.0.1:37730
+Jul 03 15:44 : client: [155] closed
+Jul 03 15:44 : client: [156] closed
+Jul 03 15:44 : client: [157] closed
+Jul 03 15:44 : client: [158] closed
+Jul 03 15:44 : client: [159] closed
+Jul 03 15:44 : client: [160] opened from 127.0.0.1:37732
+Jul 03 15:44 : client: [161] opened from 127.0.0.1:37734
+Jul 03 15:44 : client: [162] opened from 127.0.0.1:37736
+Jul 03 15:44 : client: [163] opened from 127.0.0.1:37738
+Jul 03 15:44 : client: [164] opened from 127.0.0.1:37740
+Jul 03 15:44 : client: [160] closed
+Jul 03 15:44 : client: [161] closed
+Jul 03 15:44 : client: [162] closed
+Jul 03 15:44 : client: [163] closed
+Jul 03 15:44 : client: [164] closed
+Jul 03 15:44 : client: [165] opened from 127.0.0.1:37742
+Jul 03 15:44 : client: [166] opened from 127.0.0.1:37744
+Jul 03 15:44 : client: [167] opened from 127.0.0.1:37746
+Jul 03 15:44 : client: [168] opened from 127.0.0.1:37748
+Jul 03 15:44 : client: [169] opened from 127.0.0.1:37750
+Jul 03 15:45 : client: [165] closed
+Jul 03 15:45 : client: [166] closed
+Jul 03 15:45 : client: [167] closed
+Jul 03 15:45 : client: [168] closed
+Jul 03 15:45 : client: [169] closed
+Jul 03 15:45 : client: [170] opened from 127.0.0.1:37752
+Jul 03 15:45 : client: [171] opened from 127.0.0.1:37754
+Jul 03 15:45 : client: [172] opened from 127.0.0.1:37756
+Jul 03 15:45 : client: [173] opened from 127.0.0.1:37758
+Jul 03 15:45 : client: [174] opened from 127.0.0.1:37760
+Jul 03 15:45 : client: [170] closed
+Jul 03 15:45 : client: [171] closed
+Jul 03 15:45 : client: [172] closed
+Jul 03 15:45 : client: [173] closed
+Jul 03 15:45 : client: [174] closed
+Jul 03 15:45 : client: [175] opened from 127.0.0.1:37762
+Jul 03 15:45 : client: [176] opened from 127.0.0.1:37764
+Jul 03 15:45 : client: [177] opened from 127.0.0.1:37766
+Jul 03 15:45 : client: [178] opened from 127.0.0.1:37768
+Jul 03 15:45 : client: [179] opened from 127.0.0.1:37770
+Jul 03 15:45 : client: [175] closed
+Jul 03 15:45 : client: [176] closed
+Jul 03 15:45 : client: [177] closed
+Jul 03 15:45 : client: [178] closed
+Jul 03 15:45 : client: [179] closed
+Jul 03 15:45 : client: [180] opened from 127.0.0.1:37772
+Jul 03 15:45 : client: [181] opened from 127.0.0.1:37774
+Jul 03 15:45 : client: [182] opened from 127.0.0.1:37776
+Jul 03 15:45 : client: [183] opened from 127.0.0.1:37778
+Jul 03 15:45 : client: [184] opened from 127.0.0.1:37780
+Jul 03 15:46 : client: [180] closed
+Jul 03 15:46 : client: [181] closed
+Jul 03 15:46 : client: [182] closed
+Jul 03 15:46 : client: [183] closed
+Jul 03 15:46 : client: [184] closed
+Jul 03 15:46 : client: [185] opened from 127.0.0.1:37782
+Jul 03 15:46 : client: [186] opened from 127.0.0.1:37784
+Jul 03 15:46 : client: [187] opened from 127.0.0.1:37786
+Jul 03 15:46 : client: [188] opened from 127.0.0.1:37788
+Jul 03 15:46 : client: [189] opened from 127.0.0.1:37790
+Jul 03 15:46 : client: [185] closed
+Jul 03 15:46 : client: [186] closed
+Jul 03 15:46 : client: [187] closed
+Jul 03 15:46 : client: [188] closed
+Jul 03 15:46 : client: [189] closed
+Jul 03 15:46 : client: [190] opened from 127.0.0.1:37792
+Jul 03 15:46 : client: [191] opened from 127.0.0.1:37794
+Jul 03 15:46 : client: [192] opened from 127.0.0.1:37796
+Jul 03 15:46 : client: [193] opened from 127.0.0.1:37798
+Jul 03 15:46 : client: [194] opened from 127.0.0.1:37800
+Jul 03 15:46 : client: [190] closed
+Jul 03 15:46 : client: [191] closed
+Jul 03 15:46 : client: [192] closed
+Jul 03 15:46 : client: [193] closed
+Jul 03 15:46 : client: [194] closed
+Jul 03 15:46 : client: [195] opened from 127.0.0.1:37802
+Jul 03 15:46 : client: [196] opened from 127.0.0.1:37804
+Jul 03 15:46 : client: [197] opened from 127.0.0.1:37806
+Jul 03 15:46 : client: [198] opened from 127.0.0.1:37808
+Jul 03 15:46 : client: [199] opened from 127.0.0.1:37810
+Jul 03 15:46 : client: [195] closed
+Jul 03 15:46 : client: [196] closed
+Jul 03 15:46 : client: [197] closed
+Jul 03 15:46 : client: [198] closed
+Jul 03 15:46 : client: [199] closed
+Jul 03 15:47 : client: [200] opened from 127.0.0.1:37812
+Jul 03 15:47 : client: [201] opened from 127.0.0.1:37814
+Jul 03 15:47 : client: [202] opened from 127.0.0.1:37816
+Jul 03 15:47 : client: [203] opened from 127.0.0.1:37818
+Jul 03 15:47 : client: [204] opened from 127.0.0.1:37820
+Jul 03 15:47 : client: [200] closed
+Jul 03 15:47 : client: [201] closed
+Jul 03 15:47 : client: [202] closed
+Jul 03 15:47 : client: [203] closed
+Jul 03 15:47 : client: [204] closed
+Jul 03 15:47 : client: [205] opened from 127.0.0.1:37822
+Jul 03 15:47 : client: [206] opened from 127.0.0.1:37824
+Jul 03 15:47 : client: [207] opened from 127.0.0.1:37826
+Jul 03 15:47 : client: [208] opened from 127.0.0.1:37828
+Jul 03 15:47 : client: [209] opened from 127.0.0.1:37830
+Jul 03 15:47 : client: [205] closed
+Jul 03 15:47 : client: [206] closed
+Jul 03 15:47 : client: [207] closed
+Jul 03 15:47 : client: [208] closed
+Jul 03 15:47 : client: [209] closed
+Jul 03 15:47 : client: [210] opened from 127.0.0.1:37832
+Jul 03 15:47 : client: [211] opened from 127.0.0.1:37834
+Jul 03 15:47 : client: [212] opened from 127.0.0.1:37836
+Jul 03 15:47 : client: [213] opened from 127.0.0.1:37838
+Jul 03 15:47 : client: [214] opened from 127.0.0.1:37840
+Jul 03 15:47 : client: [210] closed
+Jul 03 15:47 : client: [211] closed
+Jul 03 15:47 : client: [212] closed
+Jul 03 15:47 : client: [213] closed
+Jul 03 15:47 : client: [214] closed
+Jul 03 15:47 : client: [215] opened from 127.0.0.1:37842
+Jul 03 15:47 : client: [216] opened from 127.0.0.1:37844
+Jul 03 15:47 : client: [217] opened from 127.0.0.1:37846
+Jul 03 15:47 : client: [218] opened from 127.0.0.1:37848
+Jul 03 15:47 : client: [219] opened from 127.0.0.1:37850
+Jul 03 15:47 : client: [215] closed
+Jul 03 15:47 : client: [216] closed
+Jul 03 15:47 : client: [217] closed
+Jul 03 15:47 : client: [218] closed
+Jul 03 15:47 : client: [219] closed
+Jul 03 15:47 : client: [220] opened from 127.0.0.1:37852
+Jul 03 15:47 : client: [221] opened from 127.0.0.1:37854
+Jul 03 15:47 : client: [222] opened from 127.0.0.1:37856
+Jul 03 15:47 : client: [223] opened from 127.0.0.1:37858
+Jul 03 15:47 : client: [224] opened from 127.0.0.1:37860
+Jul 03 15:48 : client: [220] closed
+Jul 03 15:48 : client: [221] closed
+Jul 03 15:48 : client: [222] closed
+Jul 03 15:48 : client: [223] closed
+Jul 03 15:48 : client: [224] closed
+Jul 03 15:48 : client: [225] opened from 127.0.0.1:37862
+Jul 03 15:48 : client: [226] opened from 127.0.0.1:37864
+Jul 03 15:48 : client: [227] opened from 127.0.0.1:37866
+Jul 03 15:48 : client: [228] opened from 127.0.0.1:37868
+Jul 03 15:48 : client: [229] opened from 127.0.0.1:37870
+Jul 03 15:50 : client: [225] closed
+Jul 03 15:50 : client: [226] closed
+Jul 03 15:50 : client: [227] closed
+Jul 03 15:50 : client: [228] closed
+Jul 03 15:50 : client: [229] closed
+Jul 03 15:50 : client: [230] opened from 127.0.0.1:37872
+Jul 03 15:50 : client: [231] opened from 127.0.0.1:37874
+Jul 03 15:50 : client: [232] opened from 127.0.0.1:37876
+Jul 03 15:50 : client: [233] opened from 127.0.0.1:37878
+Jul 03 15:50 : client: [234] opened from 127.0.0.1:37880
+Jul 03 15:50 : client: [230] closed
+Jul 03 15:50 : client: [231] closed
+Jul 03 15:50 : client: [232] closed
+Jul 03 15:50 : client: [233] closed
+Jul 03 15:50 : client: [234] closed
+Jul 03 15:50 : client: [235] opened from 127.0.0.1:37882
+Jul 03 15:50 : client: [236] opened from 127.0.0.1:37884
+Jul 03 15:50 : client: [237] opened from 127.0.0.1:37886
+Jul 03 15:50 : client: [238] opened from 127.0.0.1:37888
+Jul 03 15:50 : client: [239] opened from 127.0.0.1:37890
+Jul 03 15:50 : client: [235] closed
+Jul 03 15:50 : client: [236] closed
+Jul 03 15:50 : client: [237] closed
+Jul 03 15:50 : client: [238] closed
+Jul 03 15:50 : client: [239] closed
+Jul 03 15:50 : client: [240] opened from 127.0.0.1:37892
+Jul 03 15:50 : client: [241] opened from 127.0.0.1:37894
+Jul 03 15:50 : client: [242] opened from 127.0.0.1:37896
+Jul 03 15:50 : client: [243] opened from 127.0.0.1:37898
+Jul 03 15:50 : client: [244] opened from 127.0.0.1:37900
+Jul 03 15:50 : client: [240] closed
+Jul 03 15:50 : client: [241] closed
+Jul 03 15:50 : client: [242] closed
+Jul 03 15:50 : client: [243] closed
+Jul 03 15:50 : client: [244] closed
+Jul 03 15:50 : client: [245] opened from 127.0.0.1:37902
+Jul 03 15:50 : client: [246] opened from 127.0.0.1:37904
+Jul 03 15:50 : client: [247] opened from 127.0.0.1:37906
+Jul 03 15:50 : client: [248] opened from 127.0.0.1:37908
+Jul 03 15:50 : client: [249] opened from 127.0.0.1:37910
+Jul 03 15:50 : client: [245] closed
+Jul 03 15:50 : client: [246] closed
+Jul 03 15:50 : client: [247] closed
+Jul 03 15:50 : client: [248] closed
+Jul 03 15:50 : client: [249] closed
+Jul 03 15:50 : client: [250] opened from 127.0.0.1:37912
+Jul 03 15:50 : client: [251] opened from 127.0.0.1:37914
+Jul 03 15:50 : client: [252] opened from 127.0.0.1:37916
+Jul 03 15:50 : client: [253] opened from 127.0.0.1:37918
+Jul 03 15:50 : client: [254] opened from 127.0.0.1:37920
+Jul 03 15:58 : client: [250] closed
+Jul 03 15:58 : client: [251] closed
+Jul 03 15:58 : client: [252] closed
+Jul 03 15:58 : client: [253] closed
+Jul 03 15:58 : client: [254] closed
+Jul 03 15:58 : client: [255] opened from 127.0.0.1:38034
+Jul 03 15:58 : client: [256] opened from 127.0.0.1:38036
+Jul 03 15:58 : client: [257] opened from 127.0.0.1:38038
+Jul 03 15:58 : client: [258] opened from 127.0.0.1:38040
+Jul 03 15:58 : client: [259] opened from 127.0.0.1:38042
+Jul 03 15:58 : client: [255] closed
+Jul 03 15:58 : client: [256] closed
+Jul 03 15:58 : client: [257] closed
+Jul 03 15:58 : client: [258] closed
+Jul 03 15:58 : client: [259] closed
+Jul 03 15:58 : client: [260] opened from 127.0.0.1:38044
+Jul 03 15:58 : client: [261] opened from 127.0.0.1:38046
+Jul 03 15:58 : client: [262] opened from 127.0.0.1:38048
+Jul 03 15:58 : client: [263] opened from 127.0.0.1:38050
+Jul 03 15:58 : client: [264] opened from 127.0.0.1:38052
+Jul 03 15:58 : client: [260] closed
+Jul 03 15:58 : client: [261] closed
+Jul 03 15:58 : client: [262] closed
+Jul 03 15:58 : client: [263] closed
+Jul 03 15:58 : client: [264] closed
+Jul 03 15:58 : client: [265] opened from 127.0.0.1:38054
+Jul 03 15:58 : client: [266] opened from 127.0.0.1:38056
+Jul 03 15:58 : client: [267] opened from 127.0.0.1:38058
+Jul 03 15:58 : client: [268] opened from 127.0.0.1:38060
+Jul 03 15:58 : client: [269] opened from 127.0.0.1:38062
+Jul 03 15:58 : client: [265] closed
+Jul 03 15:58 : client: [266] closed
+Jul 03 15:58 : client: [267] closed
+Jul 03 15:58 : client: [268] closed
+Jul 03 15:58 : client: [269] closed
+Jul 03 15:58 : client: [270] opened from 127.0.0.1:38064
+Jul 03 15:58 : client: [271] opened from 127.0.0.1:38066
+Jul 03 15:58 : client: [272] opened from 127.0.0.1:38068
+Jul 03 15:58 : client: [273] opened from 127.0.0.1:38070
+Jul 03 15:58 : client: [274] opened from 127.0.0.1:38072
+Jul 03 15:58 : client: [270] closed
+Jul 03 15:58 : client: [271] closed
+Jul 03 15:58 : client: [272] closed
+Jul 03 15:58 : client: [273] closed
+Jul 03 15:58 : client: [274] closed
+Jul 03 15:58 : client: [275] opened from 127.0.0.1:38074
+Jul 03 15:58 : client: [276] opened from 127.0.0.1:38076
+Jul 03 15:58 : client: [277] opened from 127.0.0.1:38078
+Jul 03 15:58 : client: [278] opened from 127.0.0.1:38080
+Jul 03 15:58 : client: [279] opened from 127.0.0.1:38082
+Jul 03 15:59 : client: [275] closed
+Jul 03 15:59 : client: [276] closed
+Jul 03 15:59 : client: [277] closed
+Jul 03 15:59 : client: [278] closed
+Jul 03 15:59 : client: [279] closed
+Jul 03 15:59 : client: [280] opened from 127.0.0.1:38084
+Jul 03 15:59 : client: [281] opened from 127.0.0.1:38086
+Jul 03 15:59 : client: [282] opened from 127.0.0.1:38088
+Jul 03 15:59 : client: [283] opened from 127.0.0.1:38090
+Jul 03 15:59 : client: [284] opened from 127.0.0.1:38092
+Jul 03 15:59 : client: [280] closed
+Jul 03 15:59 : client: [281] closed
+Jul 03 15:59 : client: [282] closed
+Jul 03 15:59 : client: [283] closed
+Jul 03 15:59 : client: [284] closed
+Jul 03 15:59 : client: [285] opened from 127.0.0.1:38094
+Jul 03 15:59 : client: [286] opened from 127.0.0.1:38096
+Jul 03 15:59 : client: [287] opened from 127.0.0.1:38098
+Jul 03 15:59 : client: [288] opened from 127.0.0.1:38100
+Jul 03 15:59 : client: [289] opened from 127.0.0.1:38102
+Jul 03 16:01 : client: [285] closed
+Jul 03 16:01 : client: [286] closed
+Jul 03 16:01 : client: [287] closed
+Jul 03 16:01 : client: [288] closed
+Jul 03 16:01 : client: [289] closed
+Jul 03 16:01 : client: [290] opened from 127.0.0.1:38104
+Jul 03 16:01 : client: [291] opened from 127.0.0.1:38106
+Jul 03 16:01 : client: [292] opened from 127.0.0.1:38108
+Jul 03 16:01 : client: [293] opened from 127.0.0.1:38110
+Jul 03 16:01 : client: [294] opened from 127.0.0.1:38112
+Jul 03 16:01 : client: [290] closed
+Jul 03 16:01 : client: [291] closed
+Jul 03 16:01 : client: [292] closed
+Jul 03 16:01 : client: [293] closed
+Jul 03 16:01 : client: [294] closed
+Jul 03 16:01 : client: [295] opened from 127.0.0.1:38114
+Jul 03 16:01 : client: [296] opened from 127.0.0.1:38116
+Jul 03 16:01 : client: [297] opened from 127.0.0.1:38118
+Jul 03 16:01 : client: [298] opened from 127.0.0.1:38120
+Jul 03 16:01 : client: [299] opened from 127.0.0.1:38122
+Jul 03 16:01 : client: [295] closed
+Jul 03 16:01 : client: [296] closed
+Jul 03 16:01 : client: [297] closed
+Jul 03 16:01 : client: [298] closed
+Jul 03 16:01 : client: [299] closed
+Jul 03 16:01 : client: [300] opened from 127.0.0.1:38124
+Jul 03 16:01 : client: [301] opened from 127.0.0.1:38126
+Jul 03 16:01 : client: [302] opened from 127.0.0.1:38128
+Jul 03 16:01 : client: [303] opened from 127.0.0.1:38130
+Jul 03 16:01 : client: [304] opened from 127.0.0.1:38132
+Jul 03 16:01 : client: [300] closed
+Jul 03 16:01 : client: [301] closed
+Jul 03 16:01 : client: [302] closed
+Jul 03 16:01 : client: [303] closed
+Jul 03 16:01 : client: [304] closed
+Jul 03 16:01 : client: [305] opened from 127.0.0.1:38134
+Jul 03 16:01 : client: [306] opened from 127.0.0.1:38136
+Jul 03 16:01 : client: [307] opened from 127.0.0.1:38138
+Jul 03 16:01 : client: [308] opened from 127.0.0.1:38140
+Jul 03 16:01 : client: [309] opened from 127.0.0.1:38142
+Jul 03 16:01 : client: [305] closed
+Jul 03 16:01 : client: [306] closed
+Jul 03 16:01 : client: [307] closed
+Jul 03 16:01 : client: [308] closed
+Jul 03 16:01 : client: [309] closed
+Jul 03 16:01 : client: [310] opened from 127.0.0.1:38144
+Jul 03 16:01 : client: [311] opened from 127.0.0.1:38146
+Jul 03 16:01 : client: [312] opened from 127.0.0.1:38148
+Jul 03 16:01 : client: [313] opened from 127.0.0.1:38150
+Jul 03 16:01 : client: [314] opened from 127.0.0.1:38152
+Jul 03 16:01 : client: [310] closed
+Jul 03 16:01 : client: [311] closed
+Jul 03 16:01 : client: [312] closed
+Jul 03 16:01 : client: [313] closed
+Jul 03 16:01 : client: [314] closed
+Jul 03 16:01 : client: [315] opened from 127.0.0.1:38154
+Jul 03 16:01 : client: [316] opened from 127.0.0.1:38156
+Jul 03 16:01 : client: [317] opened from 127.0.0.1:38158
+Jul 03 16:01 : client: [318] opened from 127.0.0.1:38160
+Jul 03 16:01 : client: [319] opened from 127.0.0.1:38162
+Jul 03 16:01 : client: [315] closed
+Jul 03 16:01 : client: [316] closed
+Jul 03 16:01 : client: [317] closed
+Jul 03 16:01 : client: [318] closed
+Jul 03 16:01 : client: [319] closed
+Jul 03 16:01 : client: [320] opened from 127.0.0.1:38164
+Jul 03 16:01 : client: [321] opened from 127.0.0.1:38166
+Jul 03 16:01 : client: [322] opened from 127.0.0.1:38168
+Jul 03 16:01 : client: [323] opened from 127.0.0.1:38170
+Jul 03 16:01 : client: [324] opened from 127.0.0.1:38172
+Jul 03 16:01 : client: [320] closed
+Jul 03 16:01 : client: [321] closed
+Jul 03 16:01 : client: [322] closed
+Jul 03 16:01 : client: [323] closed
+Jul 03 16:01 : client: [324] closed
+Jul 03 16:01 : client: [325] opened from 127.0.0.1:38174
+Jul 03 16:01 : client: [326] opened from 127.0.0.1:38176
+Jul 03 16:01 : client: [327] opened from 127.0.0.1:38178
+Jul 03 16:01 : client: [328] opened from 127.0.0.1:38180
+Jul 03 16:01 : client: [329] opened from 127.0.0.1:38182
+Jul 03 16:02 : client: [325] closed
+Jul 03 16:02 : client: [326] closed
+Jul 03 16:02 : client: [327] closed
+Jul 03 16:02 : client: [328] closed
+Jul 03 16:02 : client: [329] closed
+Jul 03 16:02 : client: [330] opened from 127.0.0.1:38184
+Jul 03 16:02 : client: [331] opened from 127.0.0.1:38186
+Jul 03 16:02 : client: [332] opened from 127.0.0.1:38188
+Jul 03 16:02 : client: [333] opened from 127.0.0.1:38190
+Jul 03 16:02 : client: [334] opened from 127.0.0.1:38192
+Jul 03 16:02 : client: [330] closed
+Jul 03 16:02 : client: [331] closed
+Jul 03 16:02 : client: [332] closed
+Jul 03 16:02 : client: [333] closed
+Jul 03 16:02 : client: [334] closed
+Jul 03 16:02 : client: [335] opened from 127.0.0.1:38194
+Jul 03 16:02 : client: [336] opened from 127.0.0.1:38196
+Jul 03 16:02 : client: [337] opened from 127.0.0.1:38198
+Jul 03 16:02 : client: [338] opened from 127.0.0.1:38200
+Jul 03 16:02 : client: [339] opened from 127.0.0.1:38202
+Jul 03 16:03 : client: [335] closed
+Jul 03 16:03 : client: [336] closed
+Jul 03 16:03 : client: [337] closed
+Jul 03 16:03 : client: [338] closed
+Jul 03 16:03 : client: [339] closed
+Jul 03 16:03 : client: [340] opened from 127.0.0.1:38204
+Jul 03 16:03 : client: [341] opened from 127.0.0.1:38206
+Jul 03 16:03 : client: [342] opened from 127.0.0.1:38208
+Jul 03 16:03 : client: [343] opened from 127.0.0.1:38210
+Jul 03 16:03 : client: [344] opened from 127.0.0.1:38212
+Jul 03 16:03 : client: [340] closed
+Jul 03 16:03 : client: [341] closed
+Jul 03 16:03 : client: [342] closed
+Jul 03 16:03 : client: [343] closed
+Jul 03 16:03 : client: [344] closed
+Jul 03 16:03 : client: [345] opened from 127.0.0.1:38214
+Jul 03 16:03 : client: [346] opened from 127.0.0.1:38216
+Jul 03 16:03 : client: [347] opened from 127.0.0.1:38218
+Jul 03 16:03 : client: [348] opened from 127.0.0.1:38220
+Jul 03 16:03 : client: [349] opened from 127.0.0.1:38222
+Jul 03 16:09 : client: [345] closed
+Jul 03 16:09 : client: [346] closed
+Jul 03 16:09 : client: [347] closed
+Jul 03 16:09 : client: [348] closed
+Jul 03 16:09 : client: [349] closed
+Jul 03 16:09 : client: [350] opened from 127.0.0.1:38224
+Jul 03 16:09 : client: [351] opened from 127.0.0.1:38226
+Jul 03 16:09 : client: [352] opened from 127.0.0.1:38228
+Jul 03 16:09 : client: [353] opened from 127.0.0.1:38230
+Jul 03 16:09 : client: [354] opened from 127.0.0.1:38232
+Jul 03 16:09 : client: [350] closed
+Jul 03 16:09 : client: [351] closed
+Jul 03 16:09 : client: [352] closed
+Jul 03 16:09 : client: [353] closed
+Jul 03 16:09 : client: [354] closed
+Jul 03 16:09 : client: [355] opened from 127.0.0.1:38234
+Jul 03 16:09 : client: [356] opened from 127.0.0.1:38236
+Jul 03 16:09 : client: [357] opened from 127.0.0.1:38238
+Jul 03 16:09 : client: [358] opened from 127.0.0.1:38240
+Jul 03 16:09 : client: [359] opened from 127.0.0.1:38242
+Jul 03 16:09 : client: [355] closed
+Jul 03 16:09 : client: [356] closed
+Jul 03 16:09 : client: [357] closed
+Jul 03 16:09 : client: [358] closed
+Jul 03 16:09 : client: [359] closed
+Jul 03 16:09 : client: [360] opened from 127.0.0.1:38244
+Jul 03 16:09 : client: [361] opened from 127.0.0.1:38246
+Jul 03 16:09 : client: [362] opened from 127.0.0.1:38248
+Jul 03 16:09 : client: [363] opened from 127.0.0.1:38250
+Jul 03 16:09 : client: [364] opened from 127.0.0.1:38252
+Jul 03 16:09 : client: [360] closed
+Jul 03 16:09 : client: [361] closed
+Jul 03 16:09 : client: [362] closed
+Jul 03 16:09 : client: [363] closed
+Jul 03 16:09 : client: [364] closed
+Jul 03 16:09 : client: [365] opened from 127.0.0.1:38254
+Jul 03 16:09 : client: [366] opened from 127.0.0.1:38256
+Jul 03 16:09 : client: [367] opened from 127.0.0.1:38258
+Jul 03 16:09 : client: [368] opened from 127.0.0.1:38260
+Jul 03 16:09 : client: [369] opened from 127.0.0.1:38262
+Jul 03 16:09 : client: [365] closed
+Jul 03 16:09 : client: [366] closed
+Jul 03 16:09 : client: [367] closed
+Jul 03 16:09 : client: [368] closed
+Jul 03 16:09 : client: [369] closed
+Jul 03 16:09 : client: [370] opened from 127.0.0.1:38264
+Jul 03 16:09 : client: [371] opened from 127.0.0.1:38266
+Jul 03 16:09 : client: [372] opened from 127.0.0.1:38268
+Jul 03 16:09 : client: [373] opened from 127.0.0.1:38270
+Jul 03 16:09 : client: [374] opened from 127.0.0.1:38272
+Jul 03 16:10 : client: [370] closed
+Jul 03 16:10 : client: [371] closed
+Jul 03 16:10 : client: [372] closed
+Jul 03 16:10 : client: [373] closed
+Jul 03 16:10 : client: [374] closed
+Jul 03 16:10 : client: [375] opened from 127.0.0.1:38274
+Jul 03 16:10 : client: [376] opened from 127.0.0.1:38276
+Jul 03 16:10 : client: [377] opened from 127.0.0.1:38278
+Jul 03 16:10 : client: [378] opened from 127.0.0.1:38280
+Jul 03 16:10 : client: [379] opened from 127.0.0.1:38282
+Jul 03 16:10 : client: [375] closed
+Jul 03 16:10 : client: [376] closed
+Jul 03 16:10 : client: [377] closed
+Jul 03 16:10 : client: [378] closed
+Jul 03 16:10 : client: [379] closed
+Jul 03 16:10 : client: [380] opened from 127.0.0.1:38284
+Jul 03 16:10 : client: [381] opened from 127.0.0.1:38286
+Jul 03 16:10 : client: [382] opened from 127.0.0.1:38288
+Jul 03 16:10 : client: [383] opened from 127.0.0.1:38290
+Jul 03 16:10 : client: [384] opened from 127.0.0.1:38292
+Jul 03 16:10 : client: [380] closed
+Jul 03 16:10 : client: [381] closed
+Jul 03 16:10 : client: [382] closed
+Jul 03 16:10 : client: [383] closed
+Jul 03 16:10 : client: [384] closed
+Jul 03 16:10 : client: [385] opened from 127.0.0.1:38294
+Jul 03 16:10 : client: [386] opened from 127.0.0.1:38296
+Jul 03 16:10 : client: [387] opened from 127.0.0.1:38298
+Jul 03 16:10 : client: [388] opened from 127.0.0.1:38300
+Jul 03 16:10 : client: [389] opened from 127.0.0.1:38302
+Jul 03 16:10 : client: [385] closed
+Jul 03 16:10 : client: [386] closed
+Jul 03 16:10 : client: [387] closed
+Jul 03 16:10 : client: [388] closed
+Jul 03 16:10 : client: [389] closed
+Jul 03 16:10 : client: [390] opened from 127.0.0.1:38304
+Jul 03 16:10 : client: [391] opened from 127.0.0.1:38306
+Jul 03 16:10 : client: [392] opened from 127.0.0.1:38308
+Jul 03 16:10 : client: [393] opened from 127.0.0.1:38310
+Jul 03 16:10 : client: [394] opened from 127.0.0.1:38312
+Jul 03 16:11 : client: [390] closed
+Jul 03 16:11 : client: [391] closed
+Jul 03 16:11 : client: [392] closed
+Jul 03 16:11 : client: [393] closed
+Jul 03 16:11 : client: [394] closed
+Jul 03 16:11 : client: [395] opened from 127.0.0.1:38314
+Jul 03 16:11 : client: [396] opened from 127.0.0.1:38316
+Jul 03 16:11 : client: [397] opened from 127.0.0.1:38318
+Jul 03 16:11 : client: [398] opened from 127.0.0.1:38320
+Jul 03 16:11 : client: [399] opened from 127.0.0.1:38322
+Jul 03 16:12 : client: [395] closed
+Jul 03 16:12 : client: [396] closed
+Jul 03 16:12 : client: [397] closed
+Jul 03 16:12 : client: [398] closed
+Jul 03 16:12 : client: [399] closed
+Jul 03 16:12 : client: [400] opened from 127.0.0.1:38324
+Jul 03 16:12 : client: [401] opened from 127.0.0.1:38326
+Jul 03 16:12 : client: [402] opened from 127.0.0.1:38328
+Jul 03 16:12 : client: [403] opened from 127.0.0.1:38330
+Jul 03 16:12 : client: [404] opened from 127.0.0.1:38332
+Jul 03 16:12 : client: [400] closed
+Jul 03 16:12 : client: [401] closed
+Jul 03 16:12 : client: [402] closed
+Jul 03 16:12 : client: [403] closed
+Jul 03 16:12 : client: [404] closed
+Jul 03 16:12 : client: [405] opened from 127.0.0.1:38334
+Jul 03 16:12 : client: [406] opened from 127.0.0.1:38336
+Jul 03 16:12 : client: [407] opened from 127.0.0.1:38338
+Jul 03 16:12 : client: [408] opened from 127.0.0.1:38340
+Jul 03 16:12 : client: [409] opened from 127.0.0.1:38342
+Jul 03 16:12 : client: [405] closed
+Jul 03 16:12 : client: [406] closed
+Jul 03 16:12 : client: [407] closed
+Jul 03 16:12 : client: [408] closed
+Jul 03 16:12 : client: [409] closed
+Jul 03 16:12 : client: [410] opened from 127.0.0.1:38344
+Jul 03 16:12 : client: [411] opened from 127.0.0.1:38346
+Jul 03 16:12 : client: [412] opened from 127.0.0.1:38348
+Jul 03 16:12 : client: [413] opened from 127.0.0.1:38350
+Jul 03 16:12 : client: [414] opened from 127.0.0.1:38352
+Jul 03 16:13 : client: [410] closed
+Jul 03 16:13 : client: [411] closed
+Jul 03 16:13 : client: [412] closed
+Jul 03 16:13 : client: [413] closed
+Jul 03 16:13 : client: [414] closed
+Jul 03 16:13 : client: [415] opened from 127.0.0.1:38354
+Jul 03 16:13 : client: [416] opened from 127.0.0.1:38356
+Jul 03 16:13 : client: [417] opened from 127.0.0.1:38358
+Jul 03 16:13 : client: [418] opened from 127.0.0.1:38360
+Jul 03 16:13 : client: [419] opened from 127.0.0.1:38362
+Jul 03 16:13 : client: [415] closed
+Jul 03 16:13 : client: [416] closed
+Jul 03 16:13 : client: [417] closed
+Jul 03 16:13 : client: [418] closed
+Jul 03 16:13 : client: [419] closed
+Jul 03 16:13 : client: [420] opened from 127.0.0.1:38364
+Jul 03 16:13 : client: [421] opened from 127.0.0.1:38366
+Jul 03 16:13 : client: [422] opened from 127.0.0.1:38368
+Jul 03 16:13 : client: [423] opened from 127.0.0.1:38370
+Jul 03 16:13 : client: [424] opened from 127.0.0.1:38372
+Jul 03 16:13 : client: [420] closed
+Jul 03 16:13 : client: [421] closed
+Jul 03 16:13 : client: [422] closed
+Jul 03 16:13 : client: [423] closed
+Jul 03 16:13 : client: [424] closed
+Jul 03 16:13 : client: [425] opened from 127.0.0.1:38374
+Jul 03 16:13 : client: [426] opened from 127.0.0.1:38376
+Jul 03 16:13 : client: [427] opened from 127.0.0.1:38378
+Jul 03 16:13 : client: [428] opened from 127.0.0.1:38380
+Jul 03 16:13 : client: [429] opened from 127.0.0.1:38382
+Jul 03 16:13 : client: [425] closed
+Jul 03 16:13 : client: [426] closed
+Jul 03 16:13 : client: [427] closed
+Jul 03 16:13 : client: [428] closed
+Jul 03 16:13 : client: [429] closed
+Jul 03 16:13 : client: [430] opened from 127.0.0.1:38384
+Jul 03 16:13 : client: [431] opened from 127.0.0.1:38386
+Jul 03 16:13 : client: [432] opened from 127.0.0.1:38388
+Jul 03 16:13 : client: [433] opened from 127.0.0.1:38390
+Jul 03 16:13 : client: [434] opened from 127.0.0.1:38392
+Jul 03 16:33 : client: [430] closed
+Jul 03 16:33 : client: [431] closed
+Jul 03 16:33 : client: [432] closed
+Jul 03 16:33 : client: [433] closed
+Jul 03 16:33 : client: [434] closed
+Jul 03 16:33 : client: [435] opened from 127.0.0.1:38482
+Jul 03 16:33 : client: [436] opened from 127.0.0.1:38484
+Jul 03 16:33 : client: [437] opened from 127.0.0.1:38486
+Jul 03 16:33 : client: [438] opened from 127.0.0.1:38488
+Jul 03 16:33 : client: [439] opened from 127.0.0.1:38490
+Jul 03 16:34 : avahi: Client Disconnected, will reconnect shortly
+Jul 03 16:34 : avahi: Could not reconnect: Daemon not running
+Jul 03 16:34 : client: [439] closed
+Jul 03 16:34 : client: [438] closed
+Jul 03 16:34 : client: [437] closed
+Jul 03 16:34 : client: [436] closed
+Jul 03 16:34 : client: [435] closed
+Jul 03 16:34 : player: played "Halsey - Discography/Badlands/01 - Castle.flac"
+Jul 03 17:07 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 17:07 : client: [0] opened from 127.0.0.1:59964
+Jul 03 17:07 : client: [1] opened from 127.0.0.1:59966
+Jul 03 17:07 : client: [2] opened from 127.0.0.1:59968
+Jul 03 17:07 : client: [3] opened from 127.0.0.1:59970
+Jul 03 17:07 : client: [4] opened from 127.0.0.1:59972
+Jul 03 17:08 : client: [4] closed
+Jul 03 17:08 : client: [3] closed
+Jul 03 17:08 : client: [2] closed
+Jul 03 17:08 : client: [1] closed
+Jul 03 17:08 : client: [0] closed
+Jul 03 17:08 : client: [5] opened from 127.0.0.1:59974
+Jul 03 17:08 : client: [6] opened from 127.0.0.1:59976
+Jul 03 17:08 : client: [7] opened from 127.0.0.1:59978
+Jul 03 17:08 : client: [8] opened from 127.0.0.1:59980
+Jul 03 17:08 : client: [9] opened from 127.0.0.1:59982
+Jul 03 18:25 : avahi: Client Disconnected, will reconnect shortly
+Jul 03 18:25 : avahi: Could not reconnect: Daemon not running
+Jul 03 18:25 : client: [9] closed
+Jul 03 18:25 : client: [8] closed
+Jul 03 18:25 : client: [7] closed
+Jul 03 18:25 : client: [6] closed
+Jul 03 18:25 : client: [5] closed
+Jul 03 18:25 : player: played "Halsey - Discography/Badlands/01 - Castle.flac"
+Jul 03 18:26 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 18:26 : client: [0] opened from 127.0.0.1:39076
+Jul 03 18:26 : client: [1] opened from 127.0.0.1:39078
+Jul 03 18:26 : client: [2] opened from 127.0.0.1:39080
+Jul 03 18:26 : client: [3] opened from 127.0.0.1:39082
+Jul 03 18:26 : client: [4] opened from 127.0.0.1:39084
+Jul 03 18:41 : client: [3] closed
+Jul 03 18:41 : client: [4] closed
+Jul 03 18:41 : client: [2] closed
+Jul 03 18:41 : client: [1] closed
+Jul 03 18:41 : client: [0] closed
+Jul 03 18:41 : client: [5] opened from 127.0.0.1:39086
+Jul 03 18:41 : client: [6] opened from 127.0.0.1:39088
+Jul 03 18:41 : client: [7] opened from 127.0.0.1:39090
+Jul 03 18:41 : client: [8] opened from 127.0.0.1:39092
+Jul 03 18:41 : client: [9] opened from 127.0.0.1:39094
+Jul 03 18:44 : client: [5] closed
+Jul 03 18:44 : client: [6] closed
+Jul 03 18:44 : client: [7] closed
+Jul 03 18:44 : client: [8] closed
+Jul 03 18:44 : client: [9] closed
+Jul 03 18:44 : client: [10] opened from 127.0.0.1:39096
+Jul 03 18:44 : client: [11] opened from 127.0.0.1:39098
+Jul 03 18:44 : client: [12] opened from 127.0.0.1:39100
+Jul 03 18:44 : client: [13] opened from 127.0.0.1:39102
+Jul 03 18:44 : client: [14] opened from 127.0.0.1:39104
+Jul 03 18:44 : client: [10] closed
+Jul 03 18:44 : client: [11] closed
+Jul 03 18:44 : client: [12] closed
+Jul 03 18:44 : client: [13] closed
+Jul 03 18:44 : client: [14] closed
+Jul 03 18:44 : client: [15] opened from 127.0.0.1:39106
+Jul 03 18:44 : client: [16] opened from 127.0.0.1:39108
+Jul 03 18:44 : client: [17] opened from 127.0.0.1:39110
+Jul 03 18:44 : client: [18] opened from 127.0.0.1:39112
+Jul 03 18:44 : client: [19] opened from 127.0.0.1:39114
+Jul 03 18:46 : client: [15] closed
+Jul 03 18:46 : client: [16] closed
+Jul 03 18:46 : client: [17] closed
+Jul 03 18:46 : client: [18] closed
+Jul 03 18:46 : client: [19] closed
+Jul 03 18:46 : client: [20] opened from 127.0.0.1:39316
+Jul 03 18:46 : client: [21] opened from 127.0.0.1:39318
+Jul 03 18:46 : client: [22] opened from 127.0.0.1:39320
+Jul 03 18:46 : client: [23] opened from 127.0.0.1:39322
+Jul 03 18:46 : client: [24] opened from 127.0.0.1:39324
+Jul 03 18:46 : client: [20] closed
+Jul 03 18:46 : client: [21] closed
+Jul 03 18:46 : client: [22] closed
+Jul 03 18:46 : client: [23] closed
+Jul 03 18:46 : client: [24] closed
+Jul 03 18:46 : client: [25] opened from 127.0.0.1:39326
+Jul 03 18:46 : client: [26] opened from 127.0.0.1:39328
+Jul 03 18:46 : client: [27] opened from 127.0.0.1:39330
+Jul 03 18:46 : client: [28] opened from 127.0.0.1:39332
+Jul 03 18:46 : client: [29] opened from 127.0.0.1:39334
+Jul 03 18:47 : client: [25] closed
+Jul 03 18:47 : client: [26] closed
+Jul 03 18:47 : client: [27] closed
+Jul 03 18:47 : client: [28] closed
+Jul 03 18:47 : client: [29] closed
+Jul 03 18:47 : client: [30] opened from 127.0.0.1:39336
+Jul 03 18:47 : client: [31] opened from 127.0.0.1:39338
+Jul 03 18:47 : client: [32] opened from 127.0.0.1:39340
+Jul 03 18:47 : client: [33] opened from 127.0.0.1:39342
+Jul 03 18:47 : client: [34] opened from 127.0.0.1:39344
+Jul 03 18:50 : client: [30] closed
+Jul 03 18:50 : client: [31] closed
+Jul 03 18:50 : client: [32] closed
+Jul 03 18:50 : client: [33] closed
+Jul 03 18:50 : client: [34] closed
+Jul 03 18:50 : client: [35] opened from 127.0.0.1:39446
+Jul 03 18:50 : client: [36] opened from 127.0.0.1:39448
+Jul 03 18:50 : client: [37] opened from 127.0.0.1:39450
+Jul 03 18:50 : client: [38] opened from 127.0.0.1:39452
+Jul 03 18:50 : client: [39] opened from 127.0.0.1:39454
+Jul 03 18:50 : client: [35] closed
+Jul 03 18:50 : client: [36] closed
+Jul 03 18:50 : client: [37] closed
+Jul 03 18:50 : client: [38] closed
+Jul 03 18:50 : client: [39] closed
+Jul 03 18:50 : client: [40] opened from 127.0.0.1:39456
+Jul 03 18:50 : client: [41] opened from 127.0.0.1:39458
+Jul 03 18:50 : client: [42] opened from 127.0.0.1:39460
+Jul 03 18:50 : client: [43] opened from 127.0.0.1:39462
+Jul 03 18:50 : client: [44] opened from 127.0.0.1:39464
+Jul 03 18:52 : client: [40] closed
+Jul 03 18:52 : client: [41] closed
+Jul 03 18:52 : client: [42] closed
+Jul 03 18:52 : client: [43] closed
+Jul 03 18:52 : client: [44] closed
+Jul 03 18:52 : client: [45] opened from 127.0.0.1:39466
+Jul 03 18:52 : client: [46] opened from 127.0.0.1:39468
+Jul 03 18:52 : client: [47] opened from 127.0.0.1:39470
+Jul 03 18:52 : client: [48] opened from 127.0.0.1:39472
+Jul 03 18:52 : client: [49] opened from 127.0.0.1:39474
+Jul 03 18:52 : client: [45] closed
+Jul 03 18:52 : client: [46] closed
+Jul 03 18:52 : client: [47] closed
+Jul 03 18:52 : client: [48] closed
+Jul 03 18:52 : client: [49] closed
+Jul 03 18:52 : client: [50] opened from 127.0.0.1:39476
+Jul 03 18:52 : client: [51] opened from 127.0.0.1:39478
+Jul 03 18:52 : client: [52] opened from 127.0.0.1:39480
+Jul 03 18:52 : client: [53] opened from 127.0.0.1:39482
+Jul 03 18:52 : client: [54] opened from 127.0.0.1:39484
+Jul 03 18:52 : client: [50] closed
+Jul 03 18:52 : client: [51] closed
+Jul 03 18:52 : client: [52] closed
+Jul 03 18:52 : client: [53] closed
+Jul 03 18:52 : client: [54] closed
+Jul 03 18:52 : client: [55] opened from 127.0.0.1:39486
+Jul 03 18:52 : client: [56] opened from 127.0.0.1:39488
+Jul 03 18:52 : client: [57] opened from 127.0.0.1:39490
+Jul 03 18:52 : client: [58] opened from 127.0.0.1:39492
+Jul 03 18:52 : client: [59] opened from 127.0.0.1:39494
+Jul 03 18:53 : client: [55] closed
+Jul 03 18:53 : client: [56] closed
+Jul 03 18:53 : client: [57] closed
+Jul 03 18:53 : client: [58] closed
+Jul 03 18:53 : client: [59] closed
+Jul 03 18:53 : client: [60] opened from 127.0.0.1:39496
+Jul 03 18:53 : client: [61] opened from 127.0.0.1:39498
+Jul 03 18:53 : client: [62] opened from 127.0.0.1:39500
+Jul 03 18:53 : client: [63] opened from 127.0.0.1:39502
+Jul 03 18:53 : client: [64] opened from 127.0.0.1:39504
+Jul 03 18:56 : avahi: Client Disconnected, will reconnect shortly
+Jul 03 18:56 : avahi: Could not reconnect: Daemon not running
+Jul 03 18:56 : client: [64] closed
+Jul 03 18:56 : client: [63] closed
+Jul 03 18:56 : client: [62] closed
+Jul 03 18:56 : client: [61] closed
+Jul 03 18:56 : client: [60] closed
+Jul 03 18:56 : player: played "Halsey - Discography/Badlands/01 - Castle.flac"
+Jul 03 18:57 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 18:57 : client: [0] opened from 127.0.0.1:39058
+Jul 03 18:57 : client: [1] opened from 127.0.0.1:39060
+Jul 03 18:57 : client: [2] opened from 127.0.0.1:39062
+Jul 03 18:57 : client: [3] opened from 127.0.0.1:39064
+Jul 03 18:57 : client: [4] opened from 127.0.0.1:39066
+Jul 03 19:00 : client: [2] closed
+Jul 03 19:00 : client: [3] closed
+Jul 03 19:00 : client: [4] closed
+Jul 03 19:00 : client: [0] closed
+Jul 03 19:00 : client: [1] closed
+Jul 03 19:00 : client: [5] opened from 127.0.0.1:39230
+Jul 03 19:00 : client: [6] opened from 127.0.0.1:39232
+Jul 03 19:00 : client: [7] opened from 127.0.0.1:39234
+Jul 03 19:00 : client: [8] opened from 127.0.0.1:39236
+Jul 03 19:00 : client: [9] opened from 127.0.0.1:39238
+Jul 03 19:00 : client: [5] closed
+Jul 03 19:00 : client: [6] closed
+Jul 03 19:00 : client: [7] closed
+Jul 03 19:00 : client: [8] closed
+Jul 03 19:00 : client: [9] closed
+Jul 03 19:00 : client: [10] opened from 127.0.0.1:39240
+Jul 03 19:00 : client: [11] opened from 127.0.0.1:39242
+Jul 03 19:00 : client: [12] opened from 127.0.0.1:39244
+Jul 03 19:00 : client: [13] opened from 127.0.0.1:39246
+Jul 03 19:00 : client: [14] opened from 127.0.0.1:39248
+Jul 03 19:00 : client: [10] closed
+Jul 03 19:00 : client: [11] closed
+Jul 03 19:00 : client: [12] closed
+Jul 03 19:00 : client: [13] closed
+Jul 03 19:00 : client: [14] closed
+Jul 03 19:00 : client: [15] opened from 127.0.0.1:39250
+Jul 03 19:00 : client: [16] opened from 127.0.0.1:39252
+Jul 03 19:00 : client: [17] opened from 127.0.0.1:39254
+Jul 03 19:00 : client: [18] opened from 127.0.0.1:39256
+Jul 03 19:00 : client: [19] opened from 127.0.0.1:39258
+Jul 03 19:01 : client: [15] closed
+Jul 03 19:01 : client: [16] closed
+Jul 03 19:01 : client: [17] closed
+Jul 03 19:01 : client: [18] closed
+Jul 03 19:01 : client: [19] closed
+Jul 03 19:01 : client: [20] opened from 127.0.0.1:39260
+Jul 03 19:01 : client: [21] opened from 127.0.0.1:39262
+Jul 03 19:01 : client: [22] opened from 127.0.0.1:39264
+Jul 03 19:01 : client: [23] opened from 127.0.0.1:39266
+Jul 03 19:01 : client: [24] opened from 127.0.0.1:39268
+Jul 03 19:01 : client: [20] closed
+Jul 03 19:01 : client: [21] closed
+Jul 03 19:01 : client: [22] closed
+Jul 03 19:01 : client: [23] closed
+Jul 03 19:01 : client: [24] closed
+Jul 03 19:01 : client: [25] opened from 127.0.0.1:39270
+Jul 03 19:01 : client: [26] opened from 127.0.0.1:39272
+Jul 03 19:01 : client: [27] opened from 127.0.0.1:39274
+Jul 03 19:01 : client: [28] opened from 127.0.0.1:39276
+Jul 03 19:01 : client: [29] opened from 127.0.0.1:39278
+Jul 03 19:02 : client: [25] closed
+Jul 03 19:02 : client: [26] closed
+Jul 03 19:02 : client: [27] closed
+Jul 03 19:02 : client: [28] closed
+Jul 03 19:02 : client: [29] closed
+Jul 03 19:02 : client: [30] opened from 127.0.0.1:39280
+Jul 03 19:02 : client: [31] opened from 127.0.0.1:39282
+Jul 03 19:02 : client: [32] opened from 127.0.0.1:39284
+Jul 03 19:02 : client: [33] opened from 127.0.0.1:39286
+Jul 03 19:02 : client: [34] opened from 127.0.0.1:39288
+Jul 03 19:02 : client: [30] closed
+Jul 03 19:02 : client: [31] closed
+Jul 03 19:02 : client: [32] closed
+Jul 03 19:02 : client: [33] closed
+Jul 03 19:02 : client: [34] closed
+Jul 03 19:02 : client: [35] opened from 127.0.0.1:39290
+Jul 03 19:02 : client: [36] opened from 127.0.0.1:39292
+Jul 03 19:02 : client: [37] opened from 127.0.0.1:39294
+Jul 03 19:02 : client: [38] opened from 127.0.0.1:39296
+Jul 03 19:02 : client: [39] opened from 127.0.0.1:39298
+Jul 03 19:02 : client: [35] closed
+Jul 03 19:02 : client: [36] closed
+Jul 03 19:02 : client: [37] closed
+Jul 03 19:02 : client: [38] closed
+Jul 03 19:02 : client: [39] closed
+Jul 03 19:02 : client: [40] opened from 127.0.0.1:39300
+Jul 03 19:02 : client: [41] opened from 127.0.0.1:39302
+Jul 03 19:02 : client: [42] opened from 127.0.0.1:39304
+Jul 03 19:02 : client: [43] opened from 127.0.0.1:39306
+Jul 03 19:02 : client: [44] opened from 127.0.0.1:39308
+Jul 03 19:02 : client: [40] closed
+Jul 03 19:02 : client: [41] closed
+Jul 03 19:02 : client: [42] closed
+Jul 03 19:02 : client: [43] closed
+Jul 03 19:02 : client: [44] closed
+Jul 03 19:02 : client: [45] opened from 127.0.0.1:39310
+Jul 03 19:02 : client: [46] opened from 127.0.0.1:39312
+Jul 03 19:02 : client: [47] opened from 127.0.0.1:39314
+Jul 03 19:02 : client: [48] opened from 127.0.0.1:39316
+Jul 03 19:02 : client: [49] opened from 127.0.0.1:39318
+Jul 03 19:03 : client: [45] closed
+Jul 03 19:03 : client: [46] closed
+Jul 03 19:03 : client: [47] closed
+Jul 03 19:03 : client: [48] closed
+Jul 03 19:03 : client: [49] closed
+Jul 03 19:03 : client: [50] opened from 127.0.0.1:39320
+Jul 03 19:03 : client: [51] opened from 127.0.0.1:39322
+Jul 03 19:03 : client: [52] opened from 127.0.0.1:39324
+Jul 03 19:03 : client: [53] opened from 127.0.0.1:39326
+Jul 03 19:03 : client: [54] opened from 127.0.0.1:39328
+Jul 03 19:03 : client: [50] closed
+Jul 03 19:03 : client: [51] closed
+Jul 03 19:03 : client: [52] closed
+Jul 03 19:03 : client: [53] closed
+Jul 03 19:03 : client: [54] closed
+Jul 03 19:03 : client: [55] opened from 127.0.0.1:39330
+Jul 03 19:03 : client: [56] opened from 127.0.0.1:39332
+Jul 03 19:03 : client: [57] opened from 127.0.0.1:39334
+Jul 03 19:03 : client: [58] opened from 127.0.0.1:39336
+Jul 03 19:03 : client: [59] opened from 127.0.0.1:39338
+Jul 03 19:03 : client: [55] closed
+Jul 03 19:03 : client: [56] closed
+Jul 03 19:03 : client: [57] closed
+Jul 03 19:03 : client: [58] closed
+Jul 03 19:03 : client: [59] closed
+Jul 03 19:03 : client: [60] opened from 127.0.0.1:39340
+Jul 03 19:03 : client: [61] opened from 127.0.0.1:39342
+Jul 03 19:03 : client: [62] opened from 127.0.0.1:39344
+Jul 03 19:03 : client: [63] opened from 127.0.0.1:39346
+Jul 03 19:03 : client: [64] opened from 127.0.0.1:39348
+Jul 03 19:03 : client: [60] closed
+Jul 03 19:03 : client: [61] closed
+Jul 03 19:03 : client: [62] closed
+Jul 03 19:03 : client: [63] closed
+Jul 03 19:03 : client: [64] closed
+Jul 03 19:03 : client: [65] opened from 127.0.0.1:39350
+Jul 03 19:03 : client: [66] opened from 127.0.0.1:39352
+Jul 03 19:03 : client: [67] opened from 127.0.0.1:39354
+Jul 03 19:03 : client: [68] opened from 127.0.0.1:39356
+Jul 03 19:03 : client: [69] opened from 127.0.0.1:39358
+Jul 03 19:03 : client: [65] closed
+Jul 03 19:03 : client: [66] closed
+Jul 03 19:03 : client: [67] closed
+Jul 03 19:03 : client: [68] closed
+Jul 03 19:03 : client: [69] closed
+Jul 03 19:03 : client: [70] opened from 127.0.0.1:39360
+Jul 03 19:03 : client: [71] opened from 127.0.0.1:39362
+Jul 03 19:03 : client: [72] opened from 127.0.0.1:39364
+Jul 03 19:03 : client: [73] opened from 127.0.0.1:39366
+Jul 03 19:03 : client: [74] opened from 127.0.0.1:39368
+Jul 03 19:03 : client: [70] closed
+Jul 03 19:03 : client: [71] closed
+Jul 03 19:03 : client: [72] closed
+Jul 03 19:03 : client: [73] closed
+Jul 03 19:03 : client: [74] closed
+Jul 03 19:03 : client: [75] opened from 127.0.0.1:39370
+Jul 03 19:03 : client: [76] opened from 127.0.0.1:39372
+Jul 03 19:03 : client: [77] opened from 127.0.0.1:39374
+Jul 03 19:03 : client: [78] opened from 127.0.0.1:39376
+Jul 03 19:03 : client: [79] opened from 127.0.0.1:39378
+Jul 03 19:03 : client: [75] closed
+Jul 03 19:03 : client: [76] closed
+Jul 03 19:03 : client: [77] closed
+Jul 03 19:03 : client: [78] closed
+Jul 03 19:03 : client: [79] closed
+Jul 03 19:03 : client: [80] opened from 127.0.0.1:39380
+Jul 03 19:03 : client: [81] opened from 127.0.0.1:39382
+Jul 03 19:03 : client: [82] opened from 127.0.0.1:39384
+Jul 03 19:03 : client: [83] opened from 127.0.0.1:39386
+Jul 03 19:03 : client: [84] opened from 127.0.0.1:39388
+Jul 03 19:04 : client: [80] closed
+Jul 03 19:04 : client: [81] closed
+Jul 03 19:04 : client: [82] closed
+Jul 03 19:04 : client: [83] closed
+Jul 03 19:04 : client: [84] closed
+Jul 03 19:04 : client: [85] opened from 127.0.0.1:39390
+Jul 03 19:04 : client: [86] opened from 127.0.0.1:39392
+Jul 03 19:04 : client: [87] opened from 127.0.0.1:39394
+Jul 03 19:04 : client: [88] opened from 127.0.0.1:39396
+Jul 03 19:04 : client: [89] opened from 127.0.0.1:39398
+Jul 03 19:04 : client: [85] closed
+Jul 03 19:04 : client: [86] closed
+Jul 03 19:04 : client: [87] closed
+Jul 03 19:04 : client: [88] closed
+Jul 03 19:04 : client: [89] closed
+Jul 03 19:04 : client: [90] opened from 127.0.0.1:39400
+Jul 03 19:04 : client: [91] opened from 127.0.0.1:39402
+Jul 03 19:04 : client: [92] opened from 127.0.0.1:39404
+Jul 03 19:04 : client: [93] opened from 127.0.0.1:39406
+Jul 03 19:04 : client: [94] opened from 127.0.0.1:39408
+Jul 03 19:07 : client: [90] closed
+Jul 03 19:07 : client: [91] closed
+Jul 03 19:07 : client: [92] closed
+Jul 03 19:07 : client: [93] closed
+Jul 03 19:07 : client: [94] closed
+Jul 03 19:07 : client: [95] opened from 127.0.0.1:39410
+Jul 03 19:07 : client: [96] opened from 127.0.0.1:39412
+Jul 03 19:07 : client: [97] opened from 127.0.0.1:39414
+Jul 03 19:07 : client: [98] opened from 127.0.0.1:39416
+Jul 03 19:07 : client: [99] opened from 127.0.0.1:39418
+Jul 03 19:08 : client: [95] closed
+Jul 03 19:08 : client: [96] closed
+Jul 03 19:08 : client: [97] closed
+Jul 03 19:08 : client: [98] closed
+Jul 03 19:08 : client: [99] closed
+Jul 03 19:08 : client: [100] opened from 127.0.0.1:39420
+Jul 03 19:08 : client: [101] opened from 127.0.0.1:39422
+Jul 03 19:08 : client: [102] opened from 127.0.0.1:39424
+Jul 03 19:08 : client: [103] opened from 127.0.0.1:39426
+Jul 03 19:08 : client: [104] opened from 127.0.0.1:39428
+Jul 03 19:08 : client: [100] closed
+Jul 03 19:08 : client: [101] closed
+Jul 03 19:08 : client: [102] closed
+Jul 03 19:08 : client: [103] closed
+Jul 03 19:08 : client: [104] closed
+Jul 03 19:08 : client: [105] opened from 127.0.0.1:39430
+Jul 03 19:08 : client: [106] opened from 127.0.0.1:39432
+Jul 03 19:08 : client: [107] opened from 127.0.0.1:39434
+Jul 03 19:08 : client: [108] opened from 127.0.0.1:39436
+Jul 03 19:08 : client: [109] opened from 127.0.0.1:39438
+Jul 03 19:08 : client: [105] closed
+Jul 03 19:08 : client: [106] closed
+Jul 03 19:08 : client: [107] closed
+Jul 03 19:08 : client: [108] closed
+Jul 03 19:08 : client: [109] closed
+Jul 03 19:08 : client: [110] opened from 127.0.0.1:39440
+Jul 03 19:08 : client: [111] opened from 127.0.0.1:39442
+Jul 03 19:08 : client: [112] opened from 127.0.0.1:39444
+Jul 03 19:08 : client: [113] opened from 127.0.0.1:39446
+Jul 03 19:08 : client: [114] opened from 127.0.0.1:39448
+Jul 03 19:10 : client: [110] closed
+Jul 03 19:10 : client: [111] closed
+Jul 03 19:10 : client: [112] closed
+Jul 03 19:10 : client: [113] closed
+Jul 03 19:10 : client: [114] closed
+Jul 03 19:10 : client: [115] opened from 127.0.0.1:39450
+Jul 03 19:10 : client: [116] opened from 127.0.0.1:39452
+Jul 03 19:10 : client: [117] opened from 127.0.0.1:39454
+Jul 03 19:10 : client: [118] opened from 127.0.0.1:39456
+Jul 03 19:10 : client: [119] opened from 127.0.0.1:39458
+Jul 03 19:11 : client: [115] closed
+Jul 03 19:11 : client: [116] closed
+Jul 03 19:11 : client: [117] closed
+Jul 03 19:11 : client: [118] closed
+Jul 03 19:11 : client: [119] closed
+Jul 03 19:11 : client: [120] opened from 127.0.0.1:39460
+Jul 03 19:11 : client: [121] opened from 127.0.0.1:39462
+Jul 03 19:11 : client: [122] opened from 127.0.0.1:39464
+Jul 03 19:11 : client: [123] opened from 127.0.0.1:39466
+Jul 03 19:11 : client: [124] opened from 127.0.0.1:39468
+Jul 03 19:11 : client: [120] closed
+Jul 03 19:11 : client: [121] closed
+Jul 03 19:11 : client: [122] closed
+Jul 03 19:11 : client: [123] closed
+Jul 03 19:11 : client: [124] closed
+Jul 03 19:11 : client: [125] opened from 127.0.0.1:39470
+Jul 03 19:11 : client: [126] opened from 127.0.0.1:39472
+Jul 03 19:11 : client: [127] opened from 127.0.0.1:39474
+Jul 03 19:11 : client: [128] opened from 127.0.0.1:39476
+Jul 03 19:11 : client: [129] opened from 127.0.0.1:39478
+Jul 03 19:12 : client: [125] closed
+Jul 03 19:12 : client: [126] closed
+Jul 03 19:12 : client: [127] closed
+Jul 03 19:12 : client: [128] closed
+Jul 03 19:12 : client: [129] closed
+Jul 03 19:12 : client: [130] opened from 127.0.0.1:39480
+Jul 03 19:12 : client: [131] opened from 127.0.0.1:39482
+Jul 03 19:12 : client: [132] opened from 127.0.0.1:39484
+Jul 03 19:12 : client: [133] opened from 127.0.0.1:39486
+Jul 03 19:12 : client: [134] opened from 127.0.0.1:39488
+Jul 03 19:12 : client: [130] closed
+Jul 03 19:12 : client: [131] closed
+Jul 03 19:12 : client: [132] closed
+Jul 03 19:12 : client: [133] closed
+Jul 03 19:12 : client: [134] closed
+Jul 03 19:12 : client: [135] opened from 127.0.0.1:39490
+Jul 03 19:12 : client: [136] opened from 127.0.0.1:39492
+Jul 03 19:12 : client: [137] opened from 127.0.0.1:39494
+Jul 03 19:12 : client: [138] opened from 127.0.0.1:39496
+Jul 03 19:12 : client: [139] opened from 127.0.0.1:39498
+Jul 03 19:12 : client: [135] closed
+Jul 03 19:12 : client: [136] closed
+Jul 03 19:12 : client: [137] closed
+Jul 03 19:12 : client: [138] closed
+Jul 03 19:12 : client: [139] closed
+Jul 03 19:12 : client: [140] opened from 127.0.0.1:39500
+Jul 03 19:12 : client: [141] opened from 127.0.0.1:39502
+Jul 03 19:12 : client: [142] opened from 127.0.0.1:39504
+Jul 03 19:12 : client: [143] opened from 127.0.0.1:39506
+Jul 03 19:12 : client: [144] opened from 127.0.0.1:39508
+Jul 03 19:12 : client: [140] closed
+Jul 03 19:12 : client: [141] closed
+Jul 03 19:12 : client: [142] closed
+Jul 03 19:12 : client: [143] closed
+Jul 03 19:12 : client: [144] closed
+Jul 03 19:12 : client: [145] opened from 127.0.0.1:39510
+Jul 03 19:12 : client: [146] opened from 127.0.0.1:39512
+Jul 03 19:12 : client: [147] opened from 127.0.0.1:39514
+Jul 03 19:12 : client: [148] opened from 127.0.0.1:39516
+Jul 03 19:12 : client: [149] opened from 127.0.0.1:39518
+Jul 03 19:13 : client: [145] closed
+Jul 03 19:13 : client: [146] closed
+Jul 03 19:13 : client: [147] closed
+Jul 03 19:13 : client: [148] closed
+Jul 03 19:13 : client: [149] closed
+Jul 03 19:13 : client: [150] opened from 127.0.0.1:39520
+Jul 03 19:13 : client: [151] opened from 127.0.0.1:39522
+Jul 03 19:13 : client: [152] opened from 127.0.0.1:39524
+Jul 03 19:13 : client: [153] opened from 127.0.0.1:39526
+Jul 03 19:13 : client: [154] opened from 127.0.0.1:39528
+Jul 03 19:14 : client: [150] closed
+Jul 03 19:14 : client: [151] closed
+Jul 03 19:14 : client: [152] closed
+Jul 03 19:14 : client: [153] closed
+Jul 03 19:14 : client: [154] closed
+Jul 03 19:14 : client: [155] opened from 127.0.0.1:39530
+Jul 03 19:14 : client: [156] opened from 127.0.0.1:39532
+Jul 03 19:14 : client: [157] opened from 127.0.0.1:39534
+Jul 03 19:14 : client: [158] opened from 127.0.0.1:39536
+Jul 03 19:14 : client: [159] opened from 127.0.0.1:39538
+Jul 03 19:14 : client: [155] closed
+Jul 03 19:14 : client: [156] closed
+Jul 03 19:14 : client: [157] closed
+Jul 03 19:14 : client: [158] closed
+Jul 03 19:14 : client: [159] closed
+Jul 03 19:14 : client: [160] opened from 127.0.0.1:39540
+Jul 03 19:14 : client: [161] opened from 127.0.0.1:39542
+Jul 03 19:14 : client: [162] opened from 127.0.0.1:39544
+Jul 03 19:14 : client: [163] opened from 127.0.0.1:39546
+Jul 03 19:14 : client: [164] opened from 127.0.0.1:39548
+Jul 03 19:16 : client: [160] closed
+Jul 03 19:16 : client: [161] closed
+Jul 03 19:16 : client: [162] closed
+Jul 03 19:16 : client: [163] closed
+Jul 03 19:16 : client: [164] closed
+Jul 03 19:18 : client: [165] opened from 127.0.0.1:39616
+Jul 03 19:18 : client: [166] opened from 127.0.0.1:39618
+Jul 03 19:18 : client: [167] opened from 127.0.0.1:39620
+Jul 03 19:18 : client: [168] opened from 127.0.0.1:39622
+Jul 03 19:18 : client: [169] opened from 127.0.0.1:39624
+Jul 03 19:18 : client: [165] closed
+Jul 03 19:18 : client: [166] closed
+Jul 03 19:18 : client: [167] closed
+Jul 03 19:18 : client: [168] closed
+Jul 03 19:18 : client: [169] closed
+Jul 03 19:18 : client: [170] opened from 127.0.0.1:39626
+Jul 03 19:18 : client: [171] opened from 127.0.0.1:39628
+Jul 03 19:18 : client: [172] opened from 127.0.0.1:39630
+Jul 03 19:18 : client: [173] opened from 127.0.0.1:39632
+Jul 03 19:18 : client: [174] opened from 127.0.0.1:39634
+Jul 03 19:18 : client: [170] closed
+Jul 03 19:18 : client: [171] closed
+Jul 03 19:18 : client: [172] closed
+Jul 03 19:18 : client: [173] closed
+Jul 03 19:18 : client: [174] closed
+Jul 03 19:18 : client: [175] opened from 127.0.0.1:39636
+Jul 03 19:18 : client: [176] opened from 127.0.0.1:39638
+Jul 03 19:18 : client: [177] opened from 127.0.0.1:39640
+Jul 03 19:18 : client: [178] opened from 127.0.0.1:39642
+Jul 03 19:18 : client: [179] opened from 127.0.0.1:39644
+Jul 03 19:19 : client: [175] closed
+Jul 03 19:19 : client: [176] closed
+Jul 03 19:19 : client: [177] closed
+Jul 03 19:19 : client: [178] closed
+Jul 03 19:19 : client: [179] closed
+Jul 03 19:19 : client: [180] opened from 127.0.0.1:39646
+Jul 03 19:19 : client: [181] opened from 127.0.0.1:39648
+Jul 03 19:19 : client: [182] opened from 127.0.0.1:39650
+Jul 03 19:19 : client: [183] opened from 127.0.0.1:39652
+Jul 03 19:19 : client: [184] opened from 127.0.0.1:39654
+Jul 03 19:19 : client: [180] closed
+Jul 03 19:19 : client: [181] closed
+Jul 03 19:19 : client: [182] closed
+Jul 03 19:19 : client: [183] closed
+Jul 03 19:19 : client: [184] closed
+Jul 03 19:19 : client: [185] opened from 127.0.0.1:39656
+Jul 03 19:19 : client: [186] opened from 127.0.0.1:39658
+Jul 03 19:19 : client: [187] opened from 127.0.0.1:39660
+Jul 03 19:19 : client: [188] opened from 127.0.0.1:39662
+Jul 03 19:19 : client: [189] opened from 127.0.0.1:39664
+Jul 03 19:20 : client: [185] closed
+Jul 03 19:20 : client: [186] closed
+Jul 03 19:20 : client: [187] closed
+Jul 03 19:20 : client: [188] closed
+Jul 03 19:20 : client: [189] closed
+Jul 03 19:20 : client: [190] opened from 127.0.0.1:39666
+Jul 03 19:20 : client: [191] opened from 127.0.0.1:39668
+Jul 03 19:20 : client: [192] opened from 127.0.0.1:39670
+Jul 03 19:20 : client: [193] opened from 127.0.0.1:39672
+Jul 03 19:20 : client: [194] opened from 127.0.0.1:39674
+Jul 03 19:20 : client: [190] closed
+Jul 03 19:20 : client: [191] closed
+Jul 03 19:20 : client: [192] closed
+Jul 03 19:20 : client: [193] closed
+Jul 03 19:20 : client: [194] closed
+Jul 03 19:20 : client: [195] opened from 127.0.0.1:39676
+Jul 03 19:20 : client: [196] opened from 127.0.0.1:39678
+Jul 03 19:20 : client: [197] opened from 127.0.0.1:39680
+Jul 03 19:20 : client: [198] opened from 127.0.0.1:39682
+Jul 03 19:20 : client: [199] opened from 127.0.0.1:39684
+Jul 03 19:21 : client: [195] closed
+Jul 03 19:21 : client: [196] closed
+Jul 03 19:21 : client: [197] closed
+Jul 03 19:21 : client: [198] closed
+Jul 03 19:21 : client: [199] closed
+Jul 03 19:21 : client: [200] opened from 127.0.0.1:39686
+Jul 03 19:21 : client: [201] opened from 127.0.0.1:39688
+Jul 03 19:21 : client: [202] opened from 127.0.0.1:39690
+Jul 03 19:21 : client: [203] opened from 127.0.0.1:39692
+Jul 03 19:21 : client: [204] opened from 127.0.0.1:39694
+Jul 03 19:21 : client: [200] closed
+Jul 03 19:21 : client: [201] closed
+Jul 03 19:21 : client: [202] closed
+Jul 03 19:21 : client: [203] closed
+Jul 03 19:21 : client: [204] closed
+Jul 03 19:21 : client: [205] opened from 127.0.0.1:39696
+Jul 03 19:21 : client: [206] opened from 127.0.0.1:39698
+Jul 03 19:21 : client: [207] opened from 127.0.0.1:39700
+Jul 03 19:21 : client: [208] opened from 127.0.0.1:39702
+Jul 03 19:21 : client: [209] opened from 127.0.0.1:39704
+Jul 03 19:21 : client: [205] closed
+Jul 03 19:21 : client: [206] closed
+Jul 03 19:21 : client: [207] closed
+Jul 03 19:21 : client: [208] closed
+Jul 03 19:21 : client: [209] closed
+Jul 03 19:21 : client: [210] opened from 127.0.0.1:39706
+Jul 03 19:21 : client: [211] opened from 127.0.0.1:39708
+Jul 03 19:21 : client: [212] opened from 127.0.0.1:39710
+Jul 03 19:21 : client: [213] opened from 127.0.0.1:39712
+Jul 03 19:21 : client: [214] opened from 127.0.0.1:39714
+Jul 03 19:21 : client: [210] closed
+Jul 03 19:21 : client: [211] closed
+Jul 03 19:21 : client: [212] closed
+Jul 03 19:21 : client: [213] closed
+Jul 03 19:21 : client: [214] closed
+Jul 03 19:22 : client: [215] opened from 127.0.0.1:39716
+Jul 03 19:22 : client: [216] opened from 127.0.0.1:39718
+Jul 03 19:22 : client: [217] opened from 127.0.0.1:39720
+Jul 03 19:22 : client: [218] opened from 127.0.0.1:39722
+Jul 03 19:22 : client: [219] opened from 127.0.0.1:39724
+Jul 03 19:22 : client: [220] opened from 127.0.0.1:39726
+Jul 03 19:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 19:22 : client: [220] closed
+Jul 03 19:22 : client: [221] opened from 127.0.0.1:39728
+Jul 03 19:22 : client: [221] closed
+Jul 03 19:22 : client: [222] opened from 127.0.0.1:39730
+Jul 03 19:22 : client: [222] closed
+Jul 03 19:22 : client: [223] opened from [::1]:55410
+Jul 03 19:22 : client: [223] closed
+Jul 03 19:22 : client: [224] opened from [::1]:55412
+Jul 03 19:22 : player: played "Halsey - Discography/Badlands/04 - Drive.flac"
+Jul 03 19:22 : client: [224] closed
+Jul 03 19:22 : client: [225] opened from [::1]:55414
+Jul 03 19:22 : client: [225] closed
+Jul 03 19:22 : client: [215] closed
+Jul 03 19:22 : client: [216] closed
+Jul 03 19:22 : client: [217] closed
+Jul 03 19:22 : client: [218] closed
+Jul 03 19:22 : client: [219] closed
+Jul 03 19:22 : client: [226] opened from 127.0.0.1:39738
+Jul 03 19:22 : client: [227] opened from 127.0.0.1:39740
+Jul 03 19:22 : client: [228] opened from 127.0.0.1:39742
+Jul 03 19:22 : client: [229] opened from 127.0.0.1:39744
+Jul 03 19:22 : client: [230] opened from 127.0.0.1:39746
+Jul 03 19:22 : client: [226] closed
+Jul 03 19:22 : client: [227] closed
+Jul 03 19:22 : client: [228] closed
+Jul 03 19:22 : client: [229] closed
+Jul 03 19:22 : client: [230] closed
+Jul 03 19:23 : client: [231] opened from 127.0.0.1:39748
+Jul 03 19:23 : client: [232] opened from 127.0.0.1:39750
+Jul 03 19:23 : client: [233] opened from 127.0.0.1:39752
+Jul 03 19:23 : client: [234] opened from 127.0.0.1:39754
+Jul 03 19:23 : client: [235] opened from 127.0.0.1:39756
+Jul 03 19:23 : client: [231] closed
+Jul 03 19:23 : client: [232] closed
+Jul 03 19:23 : client: [233] closed
+Jul 03 19:23 : client: [234] closed
+Jul 03 19:23 : client: [235] closed
+Jul 03 19:23 : client: [236] opened from 127.0.0.1:39760
+Jul 03 19:23 : client: [237] opened from 127.0.0.1:39762
+Jul 03 19:23 : client: [238] opened from 127.0.0.1:39764
+Jul 03 19:23 : client: [239] opened from 127.0.0.1:39766
+Jul 03 19:23 : client: [240] opened from 127.0.0.1:39768
+Jul 03 19:23 : client: [241] opened from [::1]:55448
+Jul 03 19:25 : client: [236] closed
+Jul 03 19:25 : client: [237] closed
+Jul 03 19:25 : client: [238] closed
+Jul 03 19:25 : client: [239] closed
+Jul 03 19:25 : client: [240] closed
+Jul 03 19:25 : client: [242] opened from 127.0.0.1:39778
+Jul 03 19:25 : client: [243] opened from 127.0.0.1:39780
+Jul 03 19:25 : client: [244] opened from 127.0.0.1:39782
+Jul 03 19:25 : client: [245] opened from 127.0.0.1:39784
+Jul 03 19:25 : client: [246] opened from 127.0.0.1:39786
+Jul 03 19:25 : client: [242] closed
+Jul 03 19:25 : client: [243] closed
+Jul 03 19:25 : client: [244] closed
+Jul 03 19:25 : client: [245] closed
+Jul 03 19:25 : client: [246] closed
+Jul 03 19:25 : client: [247] opened from 127.0.0.1:39790
+Jul 03 19:25 : client: [248] opened from 127.0.0.1:39792
+Jul 03 19:25 : client: [249] opened from 127.0.0.1:39794
+Jul 03 19:25 : client: [250] opened from 127.0.0.1:39796
+Jul 03 19:25 : client: [251] opened from 127.0.0.1:39798
+Jul 03 19:25 : client: [241] closed
+Jul 03 19:25 : client: [252] opened from 127.0.0.1:39800
+Jul 03 19:25 : client: [252] closed
+Jul 03 19:26 : client: [253] opened from 127.0.0.1:39802
+Jul 03 19:26 : client: [253] closed
+Jul 03 19:26 : client: [254] opened from 127.0.0.1:39804
+Jul 03 19:26 : client: [254] closed
+Jul 03 19:27 : client: [247] closed
+Jul 03 19:27 : client: [248] closed
+Jul 03 19:27 : client: [249] closed
+Jul 03 19:27 : client: [250] closed
+Jul 03 19:27 : client: [251] closed
+Jul 03 19:27 : client: [255] opened from 127.0.0.1:39806
+Jul 03 19:27 : client: [256] opened from 127.0.0.1:39808
+Jul 03 19:27 : client: [257] opened from 127.0.0.1:39810
+Jul 03 19:27 : client: [258] opened from 127.0.0.1:39812
+Jul 03 19:27 : client: [259] opened from 127.0.0.1:39814
+Jul 03 19:28 : client: [255] closed
+Jul 03 19:28 : client: [256] closed
+Jul 03 19:28 : client: [257] closed
+Jul 03 19:28 : client: [258] closed
+Jul 03 19:28 : client: [259] closed
+Jul 03 19:28 : client: [260] opened from 127.0.0.1:40136
+Jul 03 19:28 : client: [261] opened from 127.0.0.1:40138
+Jul 03 19:28 : client: [262] opened from 127.0.0.1:40140
+Jul 03 19:28 : client: [263] opened from 127.0.0.1:40142
+Jul 03 19:28 : client: [264] opened from 127.0.0.1:40144
+Jul 03 19:31 : client: [260] closed
+Jul 03 19:31 : client: [261] closed
+Jul 03 19:31 : client: [262] closed
+Jul 03 19:31 : client: [263] closed
+Jul 03 19:31 : client: [264] closed
+Jul 03 19:31 : client: [265] opened from 127.0.0.1:40146
+Jul 03 19:31 : client: [266] opened from 127.0.0.1:40148
+Jul 03 19:31 : client: [267] opened from 127.0.0.1:40150
+Jul 03 19:31 : client: [268] opened from 127.0.0.1:40152
+Jul 03 19:31 : client: [269] opened from 127.0.0.1:40154
+Jul 03 19:31 : client: [265] closed
+Jul 03 19:31 : client: [266] closed
+Jul 03 19:31 : client: [267] closed
+Jul 03 19:31 : client: [268] closed
+Jul 03 19:31 : client: [269] closed
+Jul 03 19:31 : client: [270] opened from 127.0.0.1:40156
+Jul 03 19:31 : client: [271] opened from 127.0.0.1:40158
+Jul 03 19:31 : client: [272] opened from 127.0.0.1:40160
+Jul 03 19:31 : client: [273] opened from 127.0.0.1:40162
+Jul 03 19:31 : client: [274] opened from 127.0.0.1:40164
+Jul 03 19:31 : client: [270] closed
+Jul 03 19:31 : client: [271] closed
+Jul 03 19:31 : client: [272] closed
+Jul 03 19:31 : client: [273] closed
+Jul 03 19:31 : client: [274] closed
+Jul 03 19:31 : client: [275] opened from 127.0.0.1:40166
+Jul 03 19:31 : client: [276] opened from 127.0.0.1:40168
+Jul 03 19:31 : client: [277] opened from 127.0.0.1:40170
+Jul 03 19:31 : client: [278] opened from 127.0.0.1:40172
+Jul 03 19:31 : client: [279] opened from 127.0.0.1:40174
+Jul 03 19:32 : client: [275] closed
+Jul 03 19:32 : client: [276] closed
+Jul 03 19:32 : client: [277] closed
+Jul 03 19:32 : client: [278] closed
+Jul 03 19:32 : client: [279] closed
+Jul 03 19:32 : client: [280] opened from 127.0.0.1:40176
+Jul 03 19:32 : client: [281] opened from 127.0.0.1:40178
+Jul 03 19:32 : client: [282] opened from 127.0.0.1:40180
+Jul 03 19:32 : client: [283] opened from 127.0.0.1:40182
+Jul 03 19:32 : client: [284] opened from 127.0.0.1:40184
+Jul 03 19:32 : client: [280] closed
+Jul 03 19:32 : client: [281] closed
+Jul 03 19:32 : client: [282] closed
+Jul 03 19:32 : client: [283] closed
+Jul 03 19:32 : client: [284] closed
+Jul 03 19:32 : client: [285] opened from 127.0.0.1:40186
+Jul 03 19:32 : client: [286] opened from 127.0.0.1:40188
+Jul 03 19:32 : client: [287] opened from 127.0.0.1:40190
+Jul 03 19:32 : client: [288] opened from 127.0.0.1:40192
+Jul 03 19:32 : client: [289] opened from 127.0.0.1:40194
+Jul 03 19:32 : client: [285] closed
+Jul 03 19:32 : client: [286] closed
+Jul 03 19:32 : client: [287] closed
+Jul 03 19:32 : client: [288] closed
+Jul 03 19:32 : client: [289] closed
+Jul 03 19:32 : client: [290] opened from 127.0.0.1:40196
+Jul 03 19:32 : client: [291] opened from 127.0.0.1:40198
+Jul 03 19:32 : client: [292] opened from 127.0.0.1:40200
+Jul 03 19:32 : client: [293] opened from 127.0.0.1:40202
+Jul 03 19:32 : client: [294] opened from 127.0.0.1:40204
+Jul 03 19:33 : client: [290] closed
+Jul 03 19:33 : client: [291] closed
+Jul 03 19:33 : client: [292] closed
+Jul 03 19:33 : client: [293] closed
+Jul 03 19:33 : client: [294] closed
+Jul 03 19:33 : client: [295] opened from 127.0.0.1:40206
+Jul 03 19:33 : client: [296] opened from 127.0.0.1:40208
+Jul 03 19:33 : client: [297] opened from 127.0.0.1:40210
+Jul 03 19:33 : client: [298] opened from 127.0.0.1:40212
+Jul 03 19:33 : client: [299] opened from 127.0.0.1:40214
+Jul 03 19:33 : client: [295] closed
+Jul 03 19:33 : client: [296] closed
+Jul 03 19:33 : client: [297] closed
+Jul 03 19:33 : client: [298] closed
+Jul 03 19:33 : client: [299] closed
+Jul 03 19:33 : client: [300] opened from 127.0.0.1:40216
+Jul 03 19:33 : client: [301] opened from 127.0.0.1:40218
+Jul 03 19:33 : client: [302] opened from 127.0.0.1:40220
+Jul 03 19:33 : client: [303] opened from 127.0.0.1:40222
+Jul 03 19:33 : client: [304] opened from 127.0.0.1:40224
+Jul 03 19:33 : client: [300] closed
+Jul 03 19:33 : client: [301] closed
+Jul 03 19:33 : client: [302] closed
+Jul 03 19:33 : client: [303] closed
+Jul 03 19:33 : client: [304] closed
+Jul 03 19:33 : client: [305] opened from 127.0.0.1:40226
+Jul 03 19:33 : client: [306] opened from 127.0.0.1:40228
+Jul 03 19:33 : client: [307] opened from 127.0.0.1:40230
+Jul 03 19:33 : client: [308] opened from 127.0.0.1:40232
+Jul 03 19:33 : client: [309] opened from 127.0.0.1:40234
+Jul 03 19:34 : client: [305] closed
+Jul 03 19:34 : client: [306] closed
+Jul 03 19:34 : client: [307] closed
+Jul 03 19:34 : client: [308] closed
+Jul 03 19:34 : client: [309] closed
+Jul 03 19:34 : client: [310] opened from 127.0.0.1:40236
+Jul 03 19:34 : client: [311] opened from 127.0.0.1:40238
+Jul 03 19:34 : client: [312] opened from 127.0.0.1:40240
+Jul 03 19:34 : client: [313] opened from 127.0.0.1:40242
+Jul 03 19:34 : client: [314] opened from 127.0.0.1:40244
+Jul 03 19:35 : client: [314] closed
+Jul 03 19:35 : client: [313] closed
+Jul 03 19:35 : client: [312] closed
+Jul 03 19:35 : client: [311] closed
+Jul 03 19:35 : client: [310] closed
+Jul 03 19:35 : avahi: Client Disconnected, will reconnect shortly
+Jul 03 19:35 : avahi: Could not reconnect: Daemon not running
+Jul 03 19:35 : player: played "Hollywood Undead - Discography/American Tragedy [Deluxe Edition]/18. S.C.A.V.A..mp3"
+Jul 03 19:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 19:36 : client: [0] opened from 127.0.0.1:49884
+Jul 03 19:36 : client: [1] opened from 127.0.0.1:49886
+Jul 03 19:36 : client: [2] opened from 127.0.0.1:49888
+Jul 03 19:36 : client: [3] opened from 127.0.0.1:49890
+Jul 03 19:36 : client: [4] opened from 127.0.0.1:49892
+Jul 03 19:37 : client: [4] closed
+Jul 03 19:37 : client: [3] closed
+Jul 03 19:37 : client: [2] closed
+Jul 03 19:37 : client: [1] closed
+Jul 03 19:37 : client: [0] closed
+Jul 03 19:37 : client: [5] opened from 127.0.0.1:49894
+Jul 03 19:37 : client: [6] opened from 127.0.0.1:49896
+Jul 03 19:37 : client: [7] opened from 127.0.0.1:49898
+Jul 03 19:37 : client: [8] opened from 127.0.0.1:49900
+Jul 03 19:37 : client: [9] opened from 127.0.0.1:49902
