@@ -1,57 +1,56 @@
-!
-! ~/.Xresources
-!
-! Authors:
-!  Iyyel <github.com/iyyel>
-!
-! Terminal color scheme, urxvt and related settings.
-!
+!!
+!! ~/.Xresources
+!!
+!! Authors:
+!!  Iyyel <github.com/iyyel>
+!!
+!! Terminal color scheme, urxvt and related settings.
+!!
 
-! Color scheme
-#define bg    #252A32
-#define blk   #272C34
-#define bblk  #3B434F
-#define fg    #BAB7b5
-#define red   #876058
-#define grn   #6F7F71
-#define ylw   #B39580
-#define blu   #546780
-#define mag   #84787D
-#define cyn   #556F86
-#define wht   #BAB7B5
-#define bred  #876058
-#define bgrn  #6F7F71
-#define bylw  #B39580
-#define bblu  #546780
-#define bmag  #84787D
-#define bcyn  #556F86
-#define bwht  #DFDEDD
+!! Color scheme (Nord)
+#define bg     #2E3440
+#define fg     #D8DEE9
+#define nord0  #2E3440
+#define nord1  #3B4252
+#define nord2  #434C5E
+#define nord3  #4C566A
+#define nord4  #D8DEE9
+#define nord5  #E5E9F0
+#define nord6  #ECEFF4
+#define nord7  #8FBCBB
+#define nord8  #88C0D0
+#define nord9  #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-*color0:      blk
-*color1:      red
-*color2:      grn
-*color3:      ylw
-*color4:      blu
-*color5:      mag
-*color6:      cyn
-*color7:      wht
+*color0 : nord1
+*color1 : nord11
+*color2 : nord14
+*color3 : nord13
+*color4 : nord9
+*color5 : nord15
+*color6 : nord8
+*color7 : nord5
+*color8 : nord3
+*color9 : nord11
+*color10: nord14
+*color11: nord13
+*color12: nord9
+*color13: nord15
+*color14: nord7
+*color15: nord6
 
-*color8:      bblk
-*color9:      bred
-*color10:     bgrn
-*color11:     bylw
-*color12:     bblu
-*color13:     bmag
-*color14:     bcyn
-*color15:     bwht
+!! Terminal colors
+*foreground  : fg
+*background  : bg
+*cursorColor : fg
+*fading      : 0
 
-! Terminal colors
-*foreground:  fg
-! *background:  bg
-*background: rgba:3333/3333/3333/EFEF
-*cursorColor: fg
-
-! Xft settings
+!! Xft settings
 Xft.dpi       : 96
 Xft.antialias : true
 Xft.rgba      : rgb
@@ -60,13 +59,13 @@ Xft.hintstyle : hintfull
 Xft.autohint  : false
 Xft.lcdfilter : lcddefault
 
-! Urxvt settings
-URxvt*font:xft:Fira Mono:style=bold:pixelsize=14
-URxvt*boldFont:xft:Fira Mono:style=bold:pixelsize=14
+!! Urxvt settings
+URxvt*font:xft:Fira Mono For Powerline:style=bold:pixelsize=14
+URxvt*boldFont:xft:Fira Mono For Powerline:style=bold:pixelsize=14
 URxvt*depth               : 32
 URxvt.lineSpace           : 2
 URxvt.scrollBar           : false
-URxvt.internalBorder      : 40
+URxvt.internalBorder      : 20
 URxvt.cursorUnderline     : false
 URxvt.geometry            : 60x16
 URxvt.thickness           : 5
@@ -77,7 +76,7 @@ URxvt.cursorBlink         : 1
 URxvt*visualBell          : false
 URxvt*audioBell           : false
 
-! Perl extensions
+!! Perl extensions
 URxvt.perl-ext            : default,clipboard,url-select
 URxvt.keysym.M-u          : perl:url-select:select_next
 URxvt.url-select.launcher : /usr/bin/xdg-open
@@ -85,20 +84,20 @@ URxvt.url-select.underline: true
 URxvt.url-select.autocopy : true
 URxvt.url-select.button   : 2
 
-! keyboard-select
+!! Keyboard-select
 URxvt.keysym.M-s: perl:keyboard-select:activate
 URxvt.keysym.M-r: perl:keyboard-select:search
 
-! CopyPaste Keys
+!! CopyPaste Keys
 URxvt.keysym.Shift-Control-V : perl:clipboard:paste
 URxvt.keysym.Shift-Control-C : perl:clipboard:copy
 URxvt.clipboard.autocopy     : true
 
-! Disable the ctrl+shift 'feature'
+!! Disable the ctrl+shift 'feature'
 URxvt.iso14755               : false
 URxvt.iso14755_52            : false
 
-! Rofi colors
-!                   bg  fg  bgalt  hlbg  hlfg
+!! Rofi colors
+!!                  bg  fg  bgalt  hlbg  hlfg
 rofi.color-window:  bg, bg, bg
-rofi.color-normal:  bg, fg, bg,    bg,   blu
+rofi.color-normal:  bg, fg, bg,    bg,   fg

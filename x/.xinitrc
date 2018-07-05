@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
-#
-# ~/.xinitrc
-#
-# Authors:
-#  Iyyel <github.com/iyyel>
-#
-# Configure x-settings and start daemons
-# and other things required at startup.
-#
+##
+## ~/.xinitrc
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Configure x-settings and start daemons
+## and other things required at startup.
+##
 
 ## Set root window
 xsetroot -name background
@@ -28,7 +28,7 @@ setxkbmap -option caps:escape
 setxkbmap us
 
 ## Set Brightness
-xbacklight -set 100%
+xbacklight -set 80%
 
 ## Mute at startup
 amixer set Master 0% > /dev/null
@@ -42,16 +42,16 @@ xset +fp ~/.local/share/fonts
 xset fp rehash
 
 ## Set wallpaper
-hsetroot -solid '#6F7F71' &
+hsetroot -solid "$(get_xres color0)" &
 
 ## Start compton
-compton --config ~/.config/compton/config &
+compton --xrender-sync --xrender-sync-fence --config ~/.config/compton/config &
 
 ## Start dunst
-dunst &
+dunst -config ~/.config/dunst/dunstrc > /dev/null &
 
 ## Start polybar
-~/.bin/toggle_polybar
+[ -d ~/.bin ] && ~/.bin/toggle_polybar
 
 ## Start mpd
 [ ! -s ~/.config/mpd/mpd.pid ] && mpd &> /dev/null &

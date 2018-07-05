@@ -1,70 +1,4 @@
-676
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-adobe-standard
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-ascii-0
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-ibm-cp850
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-ibm-cp852
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-ibm-cp866
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso10646-1
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-1
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-10
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-13
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-15
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-16
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-2
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-3
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-4
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-5
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-iso8859-9
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-koi8-e
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-koi8-r
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-koi8-ru
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-koi8-u
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-koi8-uni
-FiraMono-Bold.ttf -misc-fira mono-bold-r-normal--0-0-0-0-m-0-microsoft-cp1252
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-adobe-standard
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-ascii-0
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-ibm-cp850
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-ibm-cp852
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-ibm-cp866
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso10646-1
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-1
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-10
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-13
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-15
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-16
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-2
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-3
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-4
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-5
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-iso8859-9
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-koi8-e
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-koi8-r
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-koi8-ru
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-koi8-u
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-koi8-uni
-FiraMono-Medium.ttf -misc-fira mono medium-medium-r-normal--0-0-0-0-m-0-microsoft-cp1252
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-adobe-standard
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-ascii-0
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-ibm-cp850
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-ibm-cp852
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-ibm-cp866
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso10646-1
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-1
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-10
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-13
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-15
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-16
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-2
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-3
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-4
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-5
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-iso8859-9
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-koi8-e
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-koi8-r
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-koi8-ru
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-koi8-u
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-koi8-uni
-FiraMono-Regular.ttf -misc-fira mono-medium-r-normal--0-0-0-0-m-0-microsoft-cp1252
+654
 FiraSans-Bold.ttf -misc-fira sans-bold-r-normal--0-0-0-0-p-0-adobe-standard
 FiraSans-Bold.ttf -misc-fira sans-bold-r-normal--0-0-0-0-p-0-ascii-0
 FiraSans-Bold.ttf -misc-fira sans-bold-r-normal--0-0-0-0-p-0-iso10646-1
@@ -673,5 +607,49 @@ FiraSans-UltraLightItalic.ttf -misc-fira sans ultralight-extralight-i-normal--0-
 FiraSans-UltraLightItalic.ttf -misc-fira sans ultralight-extralight-i-normal--0-0-0-0-p-0-koi8-u
 FiraSans-UltraLightItalic.ttf -misc-fira sans ultralight-extralight-i-normal--0-0-0-0-p-0-koi8-uni
 FiraSans-UltraLightItalic.ttf -misc-fira sans ultralight-extralight-i-normal--0-0-0-0-p-0-microsoft-cp1252
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-adobe-standard
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-ascii-0
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-ibm-cp850
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-ibm-cp852
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-ibm-cp866
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso10646-1
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-1
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-10
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-13
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-15
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-16
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-2
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-3
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-4
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-5
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-iso8859-9
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-koi8-e
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-koi8-r
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-koi8-ru
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-koi8-u
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-koi8-uni
+FuraMono-Bold Powerline.otf -misc-fira mono for powerline-bold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-adobe-standard
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-ascii-0
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-ibm-cp850
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-ibm-cp852
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-ibm-cp866
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso10646-1
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-1
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-10
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-13
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-15
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-16
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-2
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-3
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-4
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-5
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-9
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-koi8-e
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-koi8-r
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-koi8-ru
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-koi8-u
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-koi8-uni
+FuraMono-Medium Powerline.otf -misc-fira mono for powerline-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
 fontawesome-webfont.ttf -misc-fontawesome-medium-r-normal--0-0-0-0-p-0-iso10646-1
 materialdesignicons-webfont.ttf -misc-material design icons-medium-r-normal--0-0-0-0-p-0-iso10646-1

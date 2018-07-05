@@ -1,64 +1,59 @@
-"
-" ~/.config/nvim/init.vim
-"
-" Authors:
-"  Iyyel <github.com/iyyel>
-"
-" neovim configuration file.
-"
+""
+"" ~/.config/nvim/init.vim
+""
+"" Authors:
+""  Iyyel <github.com/iyyel>
+""
+"" neovim configuration file.
+""
 
-" Vundle Configuration
-set nocompatible
-
-""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""" Neovim Settings """"""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-""""" vim-plug
+"" ====================================================================
+""           Vim-Plug Settings               
+"" ====================================================================
 call plug#begin('~/.config/nvim/pluginz')
 
-" NERDTree
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
-" ctrlp
-Plug 'ctrlpvim/ctrlp.vim'
-
-" syntastic
-Plug 'scrooloose/syntastic'
-
-" vim-fugitive
-Plug 'tpope/vim-fugitive'
-
-" deoplete
-Plug 'Shougo/deoplete.nvim'
-
-" delimitMate
-Plug 'Raimondi/delimitMate'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }     " NERDTree
+Plug 'ctrlpvim/ctrlp.vim'                                  " ctrlp
+Plug 'scrooloose/syntastic'                                " syntastic
+Plug 'tpope/vim-fugitive'                                  " vim-fugitive
+Plug 'Shougo/deoplete.nvim'                                " deoplete
+Plug 'Raimondi/delimitMate'                                " delimitMate
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }   " Nord theme 
+Plug 'junegunn/goyo.vim'                                   " distraction free writing
+Plug 'junegunn/limelight.vim'                              " hyperfocused writing
+Plug 'reedes/vim-pencil'                                   " improved writing experience
+Plug 'itchyny/lightline.vim'                               " a really cool status bar
+Plug 'mgee/lightline-bufferline'                           " Show buffers in tabline
+Plug 'nelstrom/vim-markdown-folding'                       " Fold markdown files by headings
+Plug 'machakann/vim-sandwich'                              " Surround text objects easily
 
 call plug#end()
-"""""
 
-" Colors
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-set background=dark
+"" ====================================================================
+""           Vim Color Configuration             
+"" ====================================================================
 
-syntax enable
+let g:nord_italic = 1               " Enable italics
+let g:nord_comment_brightness = 10  " Better comment contrast
+colorscheme nord                    " color scheme selection
 
-" encoding
+" ====================================================================
+"           Vim Core Configuration              
+" ====================================================================
+
+set spell                       " Enable spell-checking
+set scrolloff=7                 " Show 7 lines around the cursorline
+let g:netrw_banner = 0          " Hide banner shown in the file explorer
+let g:netrw_liststyle = 3       " Use tree view in file explorer
+set number relativenumber       " Enable line numbers
+set hidden                      " allow buffer switching without saving
+set cursorline                  " Show cursor line
+set showtabline =2              " Show tabline always
+set guicursor=                  " Status bar shows mode; cursor needn't 
 set encoding=UTF-8
-
-" shell
 set shell=/usr/bin/zsh
-
-" disable mouse
 set mouse=
-
-" stop wrapping
 set nowrap
-
-" line numbers
-"set number
 
 " indentation
 set smarttab
@@ -89,23 +84,73 @@ set noswapfile
 :nnoremap <A-k> <C-w>k
 :nnoremap <A-l> <C-w>l
 
-" hide statusline
-let s:hidden_all = 0
-function! ToggleHiddenAll()
-    if s:hidden_all  == 0
-        let s:hidden_all = 1
-        set noshowmode
-        set noruler
-        set laststatus=0
-        set noshowcmd
-    else
-        let s:hidden_all = 0
-        set showmode
-        set ruler
-        set laststatus=2
-        set showcmd
-    endif
+" ====================================================================
+"           Plugin Configuration            
+" ====================================================================
+
+" Set nested folding as the default fold style for vim-markdown-folding
+let g:markdown_fold_style = 'nested'
+
+" Configuration for Pencil
+let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd,vimwiki call pencil#init()
+ autocmd FileType text         call pencil#init({'wrap': 'hard'})
+augroup END
+
+" Lightline 
+set noshowmode              " Hide mode because Lightline handles it 
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'filetype' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ 'separator': {
+      \   'left': '', 
+      \   'right':''
+      \ },
+      \ 'subseparator': {
+      \   'left': '',
+      \   'right': ''
+      \ }
+      \ }
+
+"" Integrate lightline-bufferline with lightline
+let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type   = {'buffers': 'tabsel'}
+
+"" Lightline settings
+let g:limelight_conceal_ctermfg = 008
+
+"" Goyo settings
+"" Disable cursorline highlight, center cursorline and let cursor show mode
+function! s:goyo_enter()
+  set nocursorline  
+  set scrolloff=999
+  set guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20
 endfunction
 
-:call ToggleHiddenAll()
-nnoremap <S-h> :call ToggleHiddenAll()<CR>
+function! s:goyo_leave()
+  set cursorline    
+  set scrolloff=7
+  set guicursor=
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+"" Don't use colors for spelling errors
+highlight clear SpellBad
+highlight clear SpellCap
+highlight clear SpellLocal
+highlight clear SpellRare
