@@ -8,26 +8,21 @@
 ##
 
 ## Export
-export TERM='rxvt-unicode'
-export TERMINAL='rxvt-unicode'
+#export TERM='kitty'
+export TERMINAL='kitty'
 
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+export LANG=en_DK.UTF-8
+export LC_ALL=en_DK.UTF-8
 
 export EDITOR=nvim
 export VISUAL=nvim
-export BROWSER=w3m
+export BROWSER=firefox
 
-export QT_STYLE_OVERRIDE='gtk2'
-export QT_QPA_PLATFORMTHEME='gtk2'
-
-export PATH="$PATH:$HOME/.bin"
-export JAVA_HOME="/usr/lib/jvm/oracle-jdk"
+export PATH="$PATH:$HOME/bin"
 
 ## Aliases
 alias remove='rm -irv'
 alias nf='neofetch'
-alias mp='ncmpcpp'
 alias irc='weechat -d ~/.config/weechat/'
 alias weechat='weechat -d ~/.config/weechat/'
 
@@ -65,9 +60,6 @@ ZSH_HIGHLIGHT_STYLES[redirection]='fg=white,bold'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=white,bold'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=white,bold'
 
-## wmname to fix blank screen of Java applications
-wmname LG3D
-
 ## Vi bindings
 bindkey -v
 
@@ -76,6 +68,3 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 ## Start zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
-
-## :)
-fortune | cowsay -f small

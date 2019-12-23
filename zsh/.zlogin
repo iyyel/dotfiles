@@ -1,14 +1,11 @@
 #
-# ~/.zlogin
-#
-# Authors:
-#  Iyyel <github.com/iyyel>
-#
-# Make things execute at shell login.
+# User configuration sourced by login shells
 #
 
-## Initialize zim framework
+# Initialize zim
 [[ -s ${ZIM_HOME}/login_init.zsh ]] && source ${ZIM_HOME}/login_init.zsh
 
-## Start x-server
-exec startx
+# start sway
+if [ "$(tty)" = "/dev/tty1"  ]; then
+    exec sway
+fi

@@ -35,7 +35,7 @@ call plug#end()
 
 let g:nord_italic = 1               " Enable italics
 let g:nord_comment_brightness = 10  " Better comment contrast
-colorscheme nord                    " color scheme selection
+""colorscheme nord                    " color scheme selection
 
 " ====================================================================
 "           Vim Core Configuration              
