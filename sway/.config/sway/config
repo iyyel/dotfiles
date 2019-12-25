@@ -40,10 +40,10 @@ set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%
 set $screenclip slurp | grim -g - ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 # Wallpaper
-set $wallpaper ~/vault/media/wallpapers/wallpaper_029.jpg
+set $wallpaper ~/vault/media/wallpapers/wallpaper_031.png
 
 # colors
-set $cl_high #009ddc
+set $cl_high #6dc1b8
 set $cl_indi #d9d8d8
 set $cl_back #231f20
 set $cl_fore #d9d8d8

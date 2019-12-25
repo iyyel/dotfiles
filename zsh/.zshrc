@@ -8,6 +8,12 @@
 ##
 
 ## Export
+
+## dotnet core
+export DOTNET=$HOME/.local/bin/dotnet
+export DOTNET_ROOT=$HOME/.local/bin/dotnet
+export PATH=$PATH:$HOME/.local/bin/dotnet
+
 #export TERM='kitty'
 export TERMINAL='kitty'
 
