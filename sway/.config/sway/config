@@ -26,7 +26,7 @@ set $term kitty
 # Note: it's recommended that you pass the final command to sway
 #set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused) | index(true)') -show drun -run-command 'swaymsg exec -- {cmd}'
 
-set $menu rofi -show drun -run-command 'swaymsg exec -- {cmd}'
+set $menu bemenu-run -i -p 'swaymsg exec -- {cmd}'
 
 # workspaces
 set $ws1 1:1
@@ -241,5 +241,7 @@ bindsym $mod+r mode "resize"
 #
 
 exec_always ~/.config/waybar/waybar.sh
+
+xwayland enabled
 
 include /etc/sway/config.d/*
