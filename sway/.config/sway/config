@@ -1,95 +1,105 @@
-#
-# sway config
-#
-#
-
-## exec script
+##### startup
 
 exec ~/.config/sway/startup.sh
 
 
+
 ##### Variables
 
-# Logo key. Use Mod1 for Alt.
+# Mod key
 set $mod Mod4
 
-# Home row direction keys, like vim
+# Terminal
+set $term kitty
+
+# Lockscreen
+set $lock swaylock -e -c 181818
+
+# Application launcher
+set $menu bemenu-run -i -p 'swaymsg exec -- {cmd}'
+
+# Home row direction keys
 set $left h
 set $down j
 set $up k
 set $right l
 
-# Your preferred terminal emulator
-set $term kitty
-
-# Your preferred application launcher
-# Note: it's recommended that you pass the final command to sway
-#set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused) | index(true)') -show drun -run-command 'swaymsg exec -- {cmd}'
-
-set $menu bemenu-run -i -p 'swaymsg exec -- {cmd}'
-
-# workspaces
+# Workspaces
 set $ws1 1:1
 set $ws2 2:2
 set $ws3 3:3
 set $ws4 4:4
 set $ws5 5:5
+set $ws6 6:6
+set $ws7 7:7
+set $ws8 8:8
+set $ws9 9:9
 
-# grim (screenshot)
-set $screenshot grim ~/vault/media/screenshots/shot-$(date +"%Y-%m-%d-%H-%M-%S").png
+# Screenshot and screenclip
+set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
+set $screenclip slurp | grim -g - ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
 
-# wallpaper
-set $wallpaper ~/vault/media/wallpapers/wallpaper_028.jpg
+# Wallpaper
+set $wallpaper ~/vault/media/wallpapers/wallpaper_029.jpg
 
-# font
-font pango:Sans 12
+# colors
+set $cl_high #009ddc
+set $cl_indi #d9d8d8
+set $cl_back #231f20
+set $cl_fore #d9d8d8
+set $cl_urge #ee2e24
+
+# Colors                border   bg       text     indi     childborder
+client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high      
+client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
+client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
+client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
+
+
+
+##### Misc config
+
+# Font
+font pango:Fira Code Retina 12
 
 
 # Window borders
-smart_borders on
-default_border none # removes all borders
+default_border pixel 1
+default_floating_border normal
+hide_edge_borders smart
 
+# Gaps
 smart_gaps on
 gaps inner 10
-gaps outer 10
+
 
 
 ##### Output configuration
 
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+# Set wallpaper as backgroun
 output * bg $wallpaper fill
 
-# screens
+# Configure monitors
 output HDMI-A-1 scale 1.2 res 2560x1440 pos 2560,0
 output eDP-1 scale 1.2 res 2560x1440 pos 2560,1200
 
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' \
-#               resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+
+
+##### Idle configuration
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+# 
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * dpms off"' \
+              resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 000000'
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
+
+
+##### Input configuration
 
 input * {
 	xkb_layout "dk"
@@ -100,7 +110,7 @@ input * {
 
 
 
-### Key bindings
+##### Key bindings
 
 # Start a terminal
 bindsym $mod+Return exec $term
@@ -108,7 +118,7 @@ bindsym $mod+Return exec $term
 # Kill focused window
 bindsym $mod+Shift+q kill
 
-# Start your launcher
+# Start application launcher
 bindsym $mod+d exec $menu
 
 # Drag floating windows by holding down $mod and left mouse button.
@@ -121,6 +131,10 @@ floating_modifier $mod normal
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 
+# screenshot and screenclip
+bindsym $mod+Print exec $screenshot
+bindsym $mod+Shift+Print exec $screenclip
+
 # Media buttons
 bindsym XF86AudioMute exec amixer sset Master toggle
 bindsym XF86AudioRaiseVolume exec amixer sset Master 2%+
@@ -132,37 +146,19 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 #bindsym XF86WLAN
 #bindsym XF86Tools
 #bindsym XF86Bluetooth
-#bindsym XF86Favorites
-
-bindsym $mod+Print exec $screenshot
-#bindsym $mod+l exec $lock
-
-
-
-# Exit sway (logs you out of your Wayland session)
-bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -b 'Yes' 'swaymsg exit'
+#bindsym XF86Favorites 
 
 # Move your focus around
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
-# Or use $mod+[up|down|left|right]
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
 
 # Move the focused window with the same, but add Shift
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
-# Ditto, with arrow keys
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # Switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -170,13 +166,23 @@ bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
 
+# Split
 bindsym $mod+b splith
 bindsym $mod+v splitv
 
@@ -199,22 +205,21 @@ bindsym $mod+a focus parent
 
 
 
-#
-# Scratchpad:
-#
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
+##### Scratchpad
 
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+# Move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
 
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
-#
-# Resizing containers:
-#
-mode "resize" {
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+
+
+##### Resize mode
+mode "Resize" {
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
@@ -224,24 +229,37 @@ mode "resize" {
     bindsym $up resize shrink height 10px
     bindsym $right resize grow width 10px
 
-    # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
-
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+r mode "Resize"
 
-#
-# Status Bar:
-#
+
+
+##### System mode
+set $system_mode System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown
+mode "$system_mode" {
+    bindsym l exec $lock, mode "default"
+    bindsym e exec "swaymsg exit"
+    
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "$system_mode"
+
+
+
+##### Waybar
 
 exec_always ~/.config/waybar/waybar.sh
 
-xwayland enabled
+
+
+##### Misc options
+
+# disable xwayland
+#xwayland disable
 
 include /etc/sway/config.d/*
