@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+#
+# ~/bin/popup
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
+
+SW=2560
+bary=2
+barh=30
+
+txtw -s 10 "$1" > /tmp/.popup
+barw=$(cat /tmp/.popup | awk '{for (i=1;i<=NF;++i) total += $i; print total}')
+barw=$((barw + 80))
+
+SW=$((SW/2))
+barx=$((SW - barw / 2))
+
+bar_bg='#783E57'
+bar_fg='#E5CEC2'
+
+bar_font='Envy-8'
+
+baropt="-g ${barw}x${barh}+${barx}+${bary} -B${bar_bg} -F${bar_fg} -f ${bar_font}"
+
+duration=$2
+
+(echo "%{c}$1"; sleep ${duration}) | lemonbar -d ${baropt}

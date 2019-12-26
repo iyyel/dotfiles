@@ -29,7 +29,7 @@ zmodules=(environment git git-info history input utility custom \
 ## Prompt
 
 # Set your desired prompt here
-zprompt_theme='magicmace'
+zprompt_theme='gitster'
 
 ## Completion
 

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# ~/.bin/get_xres
+#
+# Authors:
+#  Iyyel <github.com/iyyel>
+#
+
+xrdb -query | grep -w $1 | awk '{print $2}'

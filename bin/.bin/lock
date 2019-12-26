@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# ~/bin/lock
+#
+# Authors:
+#  InAbsentia <github.com/inabsencia>
+#
+
+tmpbg='/tmp/screenlock.png'
+
+(( $# ))
+
+scrot "$tmpbg"
+mogrify "$tmpbg" -blur 0x7 "$tmpbg"
+i3lock -u -i "$tmpbg"
+rm -f /tmp/screenlock.png

@@ -40,12 +40,12 @@ set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%
 set $screenclip slurp | grim -g - ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 # Wallpaper
-set $wallpaper ~/vault/media/wallpapers/wallpaper_031.png
+set $wallpaper ~/vault/media/wallpapers/wallpaper_028.jpg
 
 # colors
-set $cl_high #6dc1b8
+set $cl_high #505050
 set $cl_indi #d9d8d8
-set $cl_back #231f20
+set $cl_back #303030
 set $cl_fore #d9d8d8
 set $cl_urge #ee2e24
 
@@ -64,7 +64,7 @@ font pango:Fira Code Retina 12
 
 
 # Window borders
-default_border pixel 1
+default_border pixel 3
 default_floating_border normal
 hide_edge_borders smart
 
