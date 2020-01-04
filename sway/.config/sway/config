@@ -13,7 +13,7 @@ set $mod Mod4
 set $term kitty
 
 # Lockscreen
-set $lock swaylock -e -c 181818
+set $lock ~/.bin/lock
 
 # Application launcher
 set $menu bemenu-run -i -p 'swaymsg exec -- {cmd}'
@@ -40,44 +40,96 @@ set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%
 set $screenclip slurp | grim -g - ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 # Wallpaper
-set $wallpaper ~/vault/media/wallpapers/wallpaper_028.jpg
+set $edp-1_wallpaper ~/.wallpaper/eDP-1.wallpaper.png
+set $edp-1_lock_wallpaper ~/.wallpaper/eDP-1.lock.wallpaper.png
+set $hdmi-a-1_wallpaper ~/.wallpaper/HDMI-A-1.wallpaper.png
+set $hdmi-a-1_lock_wallpaper ~/.wallpaper/HDMI-A-1.lock.wallpaper.png
 
 # colors
+
+# Background and foreground
+set $col_bg  #2E3440
+set $col_fg  #D8DEE9
+
+# Dark colors 0-7, bright colors 8-15
+# Black
+set $color0  #3B4252
+set $color8  #4C566A
+
+# Red
+set $color1  #BF616A
+set $color9  #BF616A
+
+# Green
+set $color2  #A3BE8C
+set $color10 #A3BE8C
+
+# Yellow
+set $color3  #EBCB8B
+set $color11 #EBCB8B
+
+# Blue
+set $color4  #81A1C1
+set $color12 #81A1C1
+
+# Magenta
+set $color5  #B48EAD
+set $color13 #B48EAD
+
+# Cyan
+set $color6  #88C0D0
+set $color14 #8FBCBB
+    
+# White
+set $color7  #E5E9F0
+set $color15 #ECEFF4
+
+# Special colors (base colors with transparency)
+set $col_bg_alpha  #2E344077
+set $color14_alpha #8FBCBB99
+set $color1_alpha  #BF616A99
+
+
 set $cl_high #505050
 set $cl_indi #d9d8d8
 set $cl_back #303030
 set $cl_fore #d9d8d8
 set $cl_urge #ee2e24
 
-# Colors                border   bg       text     indi     childborder
-client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high      
-client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
-client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
-client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
+# Defines the color style for each window.
+# <class>               <border>        <background>    <text>  <indicator>     <child_border>
+client.unfocused	$col_bg		$col_bg		$col_fg	$col_bg_alpha	$col_bg_alpha
+client.focused_inactive	$col_bg		$col_bg		$col_fg	$col_bg_alpha	$col_bg_alpha
+client.focused		$color14_alpha	$color14_alpha	$col_fg	$color14_alpha	$color14_alpha
+client.urgent		$color1_alpha	$color1_alpha	$col_fg $color1_alpha	$color1_alpha
 
 
 
 ##### Misc config
 
 # Font
-font pango:Fira Code Retina 12
+font pango: Fira Code Retina 12
 
 
 # Window borders
-default_border pixel 3
-default_floating_border normal
-hide_edge_borders smart
+default_border          pixel 4
+default_floating_border pixel 4
+titlebar_border_thickness    4
+hide_edge_borders none
+smart_borders off
 
 # Gaps
-smart_gaps on
-gaps inner 10
+smart_gaps off
+gaps outer 0
+gaps inner 12
 
 
 
 ##### Output configuration
 
-# Set wallpaper as backgroun
-output * bg $wallpaper fill
+# Set wallpaper as background
+output HDMI-A-1 bg $hdmi-a-1_wallpaper fill
+output eDP-1 bg $edp-1_wallpaper fill
 
 # Configure monitors
 output HDMI-A-1 scale 1.2 res 2560x1440 pos 2560,0
@@ -91,12 +143,7 @@ output eDP-1 scale 1.2 res 2560x1440 pos 2560,1200
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 # 
-exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
-         timeout 600 'swaymsg "output * dpms off"' \
-              resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000'
-
+exec swayidle -w timeout 1200 $lock before-sleep $lock lock $lock
 
 
 ##### Input configuration
@@ -204,7 +251,6 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 
-
 ##### Scratchpad
 
 # Sway has a "scratchpad", which is a bag of holding for windows.
@@ -242,8 +288,7 @@ bindsym $mod+Shift+r mode "$mode_resize"
 set $mode_system System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown
 mode "$mode_system" {
     bindsym l exec $lock, mode "default"
-    bindsym e exec "swaymsg exit"
-    
+    bindsym e exec "swaymsg exit" 
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"

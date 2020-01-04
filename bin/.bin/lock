@@ -1,16 +1,39 @@
-#!/usr/bin/env bash
-#
-# ~/bin/lock
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+#!/bin/bash
 
-tmpbg='/tmp/screenlock.png'
 
-(( $# ))
-
-scrot "$tmpbg"
-mogrify "$tmpbg" -blur 0x7 "$tmpbg"
-i3lock -u -i "$tmpbg"
-rm -f /tmp/screenlock.png
+swaylock -f \
+	--image ~/.wallpaper/eDP-1.lock.wallpaper.png		\
+	--scaling fill						\
+	--ring-color			2E3440AA	\
+	--separator-color		00000000		\
+	--indicator-radius		60			\
+	--indicator-thickness		12			\
+	--inside-color			4C566AAA	\
+	--layout-border-color		00000000		\
+	--line-color			00000000		\
+	--bs-hl-color			ECEFF4AA	\
+	--caps-lock-bs-hl-color		ECEFF4AA	\
+	--caps-lock-key-hl-color	8FBCBBAA	\
+	--key-hl-color			8FBCBBAA	\
+	--font Ubuntu						\
+	--inside-clear-color		4C566AAA	\
+	--inside-caps-lock-color	4C566AAA	\
+	--inside-ver-color		4C566AAA	\
+	--inside-wrong-color		4C566AAA	\
+	--layout-bg-color		00000000		\
+	--layout-text-color		D8DEE9	\
+	--line-color			00000000		\
+	--line-clear-color		00000000		\
+	--line-caps-lock-color		00000000		\
+	--line-ver-color		00000000		\
+	--line-wrong-color		00000000		\
+	--ring-clear-color		ECEFF4AA	\
+	--ring-caps-lock-color		2E3440AA	\
+	--ring-ver-color		8FBCBBAA	\
+	--ring-wrong-color		BF616AAA	\
+	--text-color			D8DEE9	\
+	--text-clear-color		D8DEE9	\
+	--text-caps-lock-color		D8DEE9	\
+	--text-ver-color		D8DEE9	\
+	--text-wrong-color		D8DEE9
+	
