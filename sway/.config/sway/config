@@ -219,7 +219,8 @@ bindsym $mod+minus scratchpad show
 
 
 ##### Resize mode
-mode "Resize" {
+set $mode_resize Resize window
+mode "$mode_resize" {
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
@@ -233,13 +234,13 @@ mode "Resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Shift+r mode "Resize"
+bindsym $mod+Shift+r mode "$mode_resize"
 
 
 
 ##### System mode
-set $system_mode System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown
-mode "$system_mode" {
+set $mode_system System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown
+mode "$mode_system" {
     bindsym l exec $lock, mode "default"
     bindsym e exec "swaymsg exit"
     
@@ -247,7 +248,51 @@ mode "$system_mode" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Shift+e mode "$system_mode"
+bindsym $mod+Shift+e mode "$mode_system"
+
+
+
+
+
+set $mode_gaps Gaps: (o) outer, (i) inner, (d) default
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+	bindsym d      gaps inner all set 10
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_outer" {
+        bindsym plus  exec swaymsg "gaps outer current plus 5"
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  exec swaymsg "gaps outer all plus 5"
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
 
 
 
