@@ -1,71 +1,92 @@
 * {
-    border:        none;
+    border: none;
     border-radius: 0;
-    font-family:   "Roboto", "Font Awesome 5 Free";
-    font-size:     15px;
-    box-shadow:    none;
-    text-shadow:   none;
-    transition-duration: 0s;
+    font-family: "Roboto", "Font Awesome 5 Free";
+    min-height: 0;
+    font-size: 12.5px;
+    opacity: 1;
+    font-weight: bold;
 }
 
-window {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(32, 32, 32, 1);
+window#waybar
+{
+    background: none;
+    padding-bottom: 0px;
 }
 
-window#waybar.solo {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(35, 31, 32, 0.85);
+
+
+#workspaces, #mode, #custom-spotify, #custom-weather, 
+#temperature, #cpu, #memory, #disk, #custom-storage,
+#backlight, #custom-alsa, #network, #battery, #clock, #tray
+{
+    padding: 0 10px;
+    margin-bottom: 2px;
+    color: #2E3440;
+    background-color: #8FBCBB;
 }
 
-#workspaces {
-    margin: 0 5px;
+#tray
+{
+    padding: 0 12px;
+    margin-bottom: 2px;
+    color: #2E3440;
+    background-color: #4C566A;
 }
 
 #workspaces button {
-    padding:    0 5px;
-    color:      rgba(217, 216, 216, 0.4);
+    padding: 0 5px;
+    background: #8FBCBB;
+    color: #2E3440;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#workspaces button:hover {
+    padding: 0 5px;
+    background: #8FBCBB;
+    color: #2E3440;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: bold;
 }
 
 #workspaces button.visible {
-    color:      rgba(217, 216, 216, 1);
+    background-color: #8FBCBB;
+    color: #2E3440;
+    padding: 0 10px;
+    font-weight: bold;
 }
 
 #workspaces button.focused {
-    border-top: 3px solid rgba(217, 216, 216, 1);
-    border-bottom: 3px solid rgba(217, 216, 216, 0);
+    background-color: #8FBCBB;
+    color: #2E3440;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #workspaces button.urgent {
-    color:      rgba(238, 46, 36, 1);
+    background-color: #BF616A;
+    color: #2E3440;
+    padding: 0 10px;
+    font-weight: bold;
 }
 
-#workspaces, #mode, #custom-spotify, #custom-weather, #temperature, #cpu, #memory, #disk, #custom-storage, #backlight, #custom-alsa, #network, #battery, #clock, #tray {
-    margin:     0px 6px 0px 10px;
-    min-width:  70px;
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+    }
 }
 
-#clock {
-    margin:     0px 16px 0px 10px;
-    min-width:  140px;
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-#battery.warning {
-   color:       rgba(255, 210, 4, 1);
-}
-
-#battery.critical {
-    color:      rgba(238, 46, 36, 1);
-}
-
-#battery.charging {
-    color:      rgba(217, 216, 216, 1);
-}
-
-#custom-storage.warning {
-    color:      rgba(255, 210, 4, 1);
-}
-
-#custom-storage.critical {
-    color:      rgba(238, 46, 36, 1);
+#temperature.critical {
+    background-color: #BF616A;
 }
