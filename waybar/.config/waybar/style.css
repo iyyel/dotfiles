@@ -10,7 +10,7 @@
 
 window {
     color:      #D8D8D8;
-    background: #1D1F21;
+    background: #171717;
 }
 
 window#waybar.solo {
@@ -32,8 +32,8 @@ window#waybar.solo {
 }
 
 #workspaces button.focused {
-    border-top: 3px solid #D8D8D8;
-    border-bottom: 3px solid #1D1F21;
+    border-top:    3px solid #E63C23;
+    border-bottom: 3px solid #171717;
 }
 
 #workspaces button.urgent {

@@ -2,7 +2,7 @@
 
 
 swaylock -f \
-	--image ~/.wallpaper/eDP-1.lock.wallpaper.png		\
+	--image ~/.wallpaper/eDP-1.lock.wallpaper		\
 	--scaling fill						\
 	--ring-color			2E3440AA	\
 	--separator-color		00000000		\

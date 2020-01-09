@@ -25,15 +25,17 @@ set $up k
 set $right l
 
 # Workspaces
-set $ws1 1:1
-set $ws2 2:2
-set $ws3 3:3
-set $ws4 4:4
-set $ws5 5:5
-set $ws6 6:6
-set $ws7 7:7
-set $ws8 8:8
-set $ws9 9:9
+
+set $ws1  "1:1"
+set $ws2  "2:2"
+set $ws3  "3:3"
+set $ws4  "4:4"
+set $ws5  "5:5"
+set $ws6  "6:6"
+set $ws7  "7:7"
+set $ws8  "8:8"
+set $ws9  "9:9"
+set $ws10 "10:10"
 
 # Screenshot and screenclip
 set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
@@ -44,13 +46,18 @@ set $edp-1_wallpaper ~/.wallpaper/eDP-1.wallpaper
 set $edp-1_lock_wallpaper ~/.wallpaper/eDP-1.lock.wallpaper
 set $hdmi-a-1_wallpaper ~/.wallpaper/HDMI-A-1.wallpaper
 set $hdmi-a-1_lock_wallpaper ~/.wallpaper/HDMI-A-1.lock.wallpaper
+set $wallpaper ~/vault/media/wallpapers/wallpaper_040.png
 
 # colors
-set $cl_high #404040
-set $cl_indi #D8D8D8
-set $cl_back #303030
+set $cl_high #0D0D0D
+set $cl_indi #E63C23
+set $cl_back #141414
 set $cl_fore #D8D8D8
 set $cl_urge #EE2E24
+
+# monitors
+set $mon1 eDP-1
+set $mon2 HDMI-A-1
 
 # Colors                border   bg       text     indi     childborder
 client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high      
@@ -82,14 +89,24 @@ gaps inner 12
 ##### Output configuration
 
 # Set wallpaper as background
-output HDMI-A-1 bg $hdmi-a-1_wallpaper fill
-output eDP-1 bg $edp-1_wallpaper fill
+output $mon2 bg $wallpaper fill
+output $mon1 bg $wallpaper fill
 
 # Configure monitors
-output HDMI-A-1 scale 1.2 res 2560x1440 pos 2560,0
-output eDP-1 scale 1.2 res 2560x1440 pos 2560,1200
+output $mon2 scale 1.2 res 2560x1440 pos 2560,0
+output $mon1 scale 1.2 res 2560x1440 pos 2560,1200
 
+workspace $ws1 output $mon1
+workspace $ws2 output $mon1
+workspace $ws3 output $mon1
+workspace $ws4 output $mon1
+workspace $ws5 output $mon1
 
+workspace $ws6 output $mon2
+workspace $ws7 output $mon2
+workspace $ws8 output $mon2
+workspace $ws9 output $mon2
+workspace $ws10 output $mon2
 
 ##### Idle configuration
 #
@@ -138,8 +155,8 @@ bindsym $mod+Shift+Print exec $screenclip
 
 # Media buttons
 bindsym XF86AudioMute exec amixer sset Master toggle
-bindsym XF86AudioRaiseVolume exec amixer sset Master 2%+
-bindsym XF86AudioLowerVolume exec amixer sset Master 2%-
+bindsym XF86AudioRaiseVolume exec amixer sset PCM 2%+
+bindsym XF86AudioLowerVolume exec amixer sset PCM 2%-
 bindsym XF86AudioMicMute exec amixer sset Capture toggle
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
@@ -171,6 +188,7 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -182,6 +200,7 @@ bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Split
 bindsym $mod+b splith

@@ -3,8 +3,7 @@
     "position": "top",
     "height": 30,
 
-    "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-center": ["custom/spotify"],
+    "modules-left": ["sway/workspaces", "sway/mode", "custom/spotify"],
     "modules-right": ["custom/weather", "temperature", "cpu", "memory", "custom/storage", "custom/storage#home", "backlight", "custom/alsa", "network", "battery", "clock", "tray"],
     
     "sway/workspaces": {
