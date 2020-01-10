@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-#
-# ~/bin/pipesx
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/pipesx
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## pipesx script
+##
 
 VERSION=0.1.0
 

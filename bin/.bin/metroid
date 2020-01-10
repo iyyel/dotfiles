@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
-#
-# ~/bin/metroid
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/metroid
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## metroid script
+##
 
 usage() {
 printf "usage: `basename $0` \n\

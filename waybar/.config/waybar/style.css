@@ -1,3 +1,13 @@
+/*
+ * ~/.config/waybar/style.css
+ * 
+ * Authors:
+ *  Iyyel <github.com/iyyel>
+ *
+ * waybar stylesheet file
+ *
+ */
+
 * {
     border:              none;
     border-radius:       0;
@@ -42,7 +52,7 @@ window#waybar.solo {
 
 #workspaces, #mode, #custom-spotify, #custom-weather,
 #temperature, #cpu, #memory, #disk, #custom-storage,
-#backlight, #custom-alsa, #network, #battery, #clock, #tray {
+#backlight, #pulseaudio, #network, #battery, #clock, #tray {
     margin:     0px 6px 0px 10px;
     min-width:  70px;
 }

@@ -1,4 +1,11 @@
-
+"
+" ~/.config/nvim/init.vim
+"
+" Authors:
+"  Iyyel <github.com/iyyel>
+"
+" nvim config file
+"
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')

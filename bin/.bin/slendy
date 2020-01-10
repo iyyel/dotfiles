@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
-#
-# ~/bin/slendy
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/slendy
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## slendy script
+##
 
 initializeANSI()
 {

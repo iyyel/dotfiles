@@ -1,4 +1,12 @@
 #!/bin/bash
+##    
+## ~/.config/waybar/modules/weather.sh
+## 
+## Authors:
+##  Iyyel <github.com/iyyel>    
+##    
+## waybar weather module
+##   
 
 cachedir=~/.cache/weather
 cachefile=${0##*/}-$1

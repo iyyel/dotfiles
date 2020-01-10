@@ -1,4 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
+##
+## ~/dotfiles/dotstow.sh
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## dotfiles installation script
+##
 
 # This script will Stow all the dotfiles located in the ~/dotfiles folder.
 # The -R flag is used to force a 'restow' which will remove any existing symlinks before attempting to Stow.

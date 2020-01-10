@@ -1,4 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env zsh
+##    
+## ~/.config/waybar/modules/storage.sh
+## 
+## Authors:
+##  Iyyel <github.com/iyyel>    
+##    
+## waybar storage module   
+##   
 
 mount="$1"
 warning=20

@@ -1,8 +1,17 @@
 #!/usr/bin/env sh
+##
+## ~/.config/sway/startup.sh
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## sway startup script
+##
 
-# audio
-amixer sset PCM 0% > /dev/null
-amixer sset Master mute > /dev/null
-amixer sset Capture nocap > /dev/null
+# set audio
+pactl -- set-sink-volume 0 0% > /dev/null
+pactl -- set-sink-mute 0 1 > /dev/null
+pactl -- set-source-mute 0 0 > /dev/null
+
 # set brightness
 brightnessctl s 100%

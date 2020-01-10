@@ -4,8 +4,8 @@ This is a snapshot of my [(@Iyyel)](https://github.com/iyyel) dotfiles. I use GN
 
 ## Setup
 
-- Application Launcher: `bemenu`
-- Music Player: `spotify`
+- Application Launcher: `wofi`
+- Music Player: `spotify-tui`
 - Shell: `zsh`
 - Terminal Emulator: `kitty`
 - Text Editor: `nvim`
@@ -18,7 +18,7 @@ This is a snapshot of my [(@Iyyel)](https://github.com/iyyel) dotfiles. I use GN
 2. `cd ~`
 3. `git clone https://github.com/iyyel/dotfiles`
 4. `cd dotfiles`
-5. `./bin/.bin/dotstow`
+5. `./dotstow.sh`
 
 ## License 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)

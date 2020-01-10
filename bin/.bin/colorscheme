@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-#
-# ~/bin/colorscheme
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/colorscheme
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## colorscheme script
+##
 
 T='niX'
 

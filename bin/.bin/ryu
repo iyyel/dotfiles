@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-#
-# ~/bin/ryu
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/ryu
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## ryu script
+##
 
 cols=`tput cols`
 pad () {

@@ -1,4 +1,12 @@
 #!/bin/bash
+##
+## ~/.bin/lock
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## swaylock script
+##
 
 trap cleanup 0 1 2 3 6
  

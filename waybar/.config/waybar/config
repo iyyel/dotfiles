@@ -1,10 +1,19 @@
+//
+// ~/.config/waybar/config
+//
+// Authors:
+//  Iyyel <github.com/iyyel>
+//
+// waybar config file
+//
+
 {
     "layer": "bottom",
     "position": "top",
     "height": 30,
 
     "modules-left": ["sway/workspaces", "sway/mode", "custom/spotify"],
-    "modules-right": ["custom/weather", "temperature", "cpu", "memory", "custom/storage", "custom/storage#home", "backlight", "custom/alsa", "network", "battery", "clock", "tray"],
+    "modules-right": ["custom/weather", "temperature", "cpu", "memory", "custom/storage", "custom/storage#home", "backlight", "pulseaudio", "network", "battery", "clock", "tray"],
     
     "sway/workspaces": {
         "format": "{name}",
@@ -81,11 +90,19 @@
         "states": [0, 50],
         "format-icons": ["", ""]
     },
-    "custom/alsa": {
-	    "exec": "~/.config/waybar/modules/alsa.sh",
-	    "interval": 1,
-	    "format": " {}",
-	    "tooltip": false
+    "pulseaudio": {
+	"format": "{icon} {volume}%",
+	"format-muted": " Muted",
+	"format-icons": {
+        	"headphones": "",
+        	"handsfree": "",
+        	"headset": "",
+        	"phone": "",
+        	"portable": "",
+        	"car": "",
+        	"default": ["", ""]
+    	},
+	"tooltip": false
     },
     "network": {
         "format-wifi": " {essid} ({signalStrength}%)",

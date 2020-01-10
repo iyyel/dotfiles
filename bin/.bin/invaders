@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
-#
-# ~/bin/invaders
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/invaders
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## invaders script
+##
 
 initializeANSI()
 {

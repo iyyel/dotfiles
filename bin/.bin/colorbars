@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
-#
-# ~/bin/colorbars
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/colorbars
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## colorbars script
+##
 
 echo
 

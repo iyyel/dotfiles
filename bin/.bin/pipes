@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-#
-# ~/bin/pipes
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/pipes
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## pipes script
+##
 
 # options:
 # s = straight [5-15]

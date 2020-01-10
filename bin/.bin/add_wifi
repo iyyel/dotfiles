@@ -1,3 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env sh
+##
+## ~/.bin/add_wifi
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Void Linux add wifi script
+##
+
 sudo wpa_passphrase $1 $2 >> /etc/wpa_supplicant/wpa_supplicant.conf
 sudo sv restart dhcpcd

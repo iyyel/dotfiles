@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-#
-# ~/bin/dna
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/dna
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## dna script
+##
 
 f=3 b=4
 for j in f b; do

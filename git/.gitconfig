@@ -1,3 +1,12 @@
+##
+## ~/.gitconfig
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## .gitconfig file
+##
+
 [user]
 	email = i@iyyel.io
 	name = iyyel

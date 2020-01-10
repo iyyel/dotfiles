@@ -1,4 +1,12 @@
 #!/usr/bin/env sh
+##
+## ~/.config/waybar/waybar.sh
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## waybar start script
+##
 
 # Terminate already running bar instances
 killall -q waybar

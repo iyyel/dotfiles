@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-#
-# ~/bin/ghosts
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/ghosts
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## ghosts script
+##
 
 f=3 b=4
 for j in f b; do

@@ -1,4 +1,12 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
+##
+## ~/.config/waybar/modules/spotify.sh
+## 
+## Authors:
+##  Iyyel <github.com/iyyel>
+##  
+## waybar spotify module
+##
 
 class=$(playerctl metadata --player=spotify --format '{{lc(status)}}')
 icon=""

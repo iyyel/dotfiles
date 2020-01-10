@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-#
-# ~/bin/pacman-colors
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/pacman-colors
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## pacman_colors script
+##
 
 f=3 b=4
 for j in f b; do

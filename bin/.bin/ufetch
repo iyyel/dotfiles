@@ -1,6 +1,12 @@
-#!/bin/sh
-#
-# ufetch-void - tiny system info for void
+#!/usr/bin/env sh
+##
+## ~/.bin/ufetch
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## ufetch script
+##
 
 ## INFO
 

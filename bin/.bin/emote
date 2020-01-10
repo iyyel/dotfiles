@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
-#
-# ~/bin/emote
-#
-# Authors:
-#  InAbsentia <github.com/inabsencia>
-#
+##
+## ~/.bin/emote
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## emote script
+##
 
 usage() {
     echo "$(basename $0) <name>"
