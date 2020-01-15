@@ -10,8 +10,65 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')
 
+" colorscheme
+Plug 'git@github.com:yorickpeterse/happy_hacking.vim.git'
+
+" syntax highlighting for packages
+Plug 'sheerun/vim-polyglot'
+
+" nerdtree
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+
+set termguicolors
 set background=dark
+colorscheme happy_hacking
+
+" Override background of vim
+highlight Normal guibg=#171717
+
 set number
+
+set scrolloff=7                 " Show 7 lines around the cursorline
+let g:netrw_banner = 0          " Hide banner shown in the file explorer
+let g:netrw_liststyle = 3       " Use tree view in file explorer
+set hidden                      " allow buffer switching without saving
+set showtabline =2              " Show tabline always
+set guicursor=                  " Status bar shows mode; cursor needn't 
+set encoding=UTF-8
+set shell=/usr/bin/zsh
+set mouse=
+set nowrap
+
+" indentation
+set smarttab
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+
+" case sensitivity
+set ignorecase
+set smartcase
+
+" open new split panes naturally
+set splitbelow
+set splitright
+
+" disable swap
+set noswapfile
+
+" neovim terminal emulator
+:tnoremap <Esc> <C-\><C-n>
+:tnoremap <A-h> <C-\><C-n><C-w>h
+:tnoremap <A-j> <C-\><C-n><C-w>j
+:tnoremap <A-k> <C-\><C-n><C-w>k
+:tnoremap <A-l> <C-\><C-n><C-w>l
+:nnoremap <A-h> <C-w>h
+:nnoremap <A-j> <C-w>j
+:nnoremap <A-k> <C-w>k
+:nnoremap <A-l> <C-w>l

@@ -10,7 +10,7 @@
 ncmpcpp/.config/ncmpcpp/lyrics
 ncmpcpp/.config/ncmpcpp/error.log
 nvim/.config/nvim/.netrwhist
-nvim/.config/nvim/pluginz
+nvim/.config/nvim/plugged
 mpd/.config/mpd/log
 weechat/.config/weechat/logs
 weechat/.config/weechat/weechat.log

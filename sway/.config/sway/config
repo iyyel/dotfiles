@@ -132,6 +132,8 @@ input * {
 	xkb_layout "dk"
 	xkb_variant nodeadkeys
 	xkb_options caps:swapescape
+        repeat_delay 250
+        repeat_rate 25
 }
 
 

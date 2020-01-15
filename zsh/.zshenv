@@ -20,7 +20,16 @@ export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER=firefox
 
+#export JAVA_HOME="/usr/lib/jvm/oracle-jdk"
+
+# add .bin dir to path
 export PATH="$PATH:$HOME/.bin"
+
+# add java to path
+#export PATH="$PATH:$JAVA_HOME/bin"
+
+# flutter sdk
+export PATH="$PATH:$HOME/.local/bin/flutter/bin"
 
 # force wayland
 export MOZ_ENABLE_WAYLAND=1
