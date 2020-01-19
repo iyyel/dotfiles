@@ -51,11 +51,7 @@ set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%
 set $screenclip slurp | grim -g - ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 # Wallpaper
-set $edp-1_wallpaper ~/.wallpaper/eDP-1.wallpaper
-set $edp-1_lock_wallpaper ~/.wallpaper/eDP-1.lock.wallpaper
-set $hdmi-a-1_wallpaper ~/.wallpaper/HDMI-A-1.wallpaper
-set $hdmi-a-1_lock_wallpaper ~/.wallpaper/HDMI-A-1.lock.wallpaper
-set $wallpaper ~/vault/media/wallpapers/wallpaper_040.png
+set $wallpaper ~/vault/media/wallpapers/wallpaper_039.jpg
 
 # colors
 set $cl_high #0D0D0D
