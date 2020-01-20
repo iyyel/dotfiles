@@ -50,10 +50,9 @@ or clone it [from source](https://savannah.gnu.org/git/?group=stow) and [build i
 # How it works
 By default the stow command will create symlinks for files in the parent directory of where you execute the command, so my dotfiles setup assumes this repo is located in the root of your home directory `~/dotfiles` and all stow commands should be executed in that directory. Otherwise you'll need to use the `-d` flag with the repo directory location.
 
-To install most of my configs you execute the dotstow.sh script, which uses stow commands. Make sure to review and understand them before running the script.
+To install most of my configs you execute the `install.sh` script, which uses stow commands. Make sure to review and understand them before running the script. You might have to change `xstow` to `stow`.
 
-`./dotshow.sh`
-
+`sh install.sh`
 
 **note:** stow can only create a symlink if a config file does not already exist. If a default file was created upon program installation you must delete it first before you can install a new one with stow. This does not apply to directories, only files. The dotshow.sh script overwrites existing config files.
 
