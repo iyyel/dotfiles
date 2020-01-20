@@ -1,12 +1,7 @@
-#!/usr/bin/env sh
-##
-## ~/.bin/colorbars
-##
-## Authors:
-##  Iyyel <github.com/iyyel>
-##
-## colorbars script
-##
+#!/bin/sh
+#
+# colorbars - smpte color bars in sh
+# http://git.io/colorbars 
 
 echo
 
