@@ -11,7 +11,7 @@
   ▓▓▓▓▓▓▓▓▓▓
  ░▓ about  ▓ custom linux config files
  ░▓ author ▓ iyyel <i@iyyel.io>
- ░▓ code   ▓ http://github.com/iyyel/dotfiles
+ ░▓ code   ▓ https://github.com/iyyel/dotfiles
  ░▓▓▓▓▓▓▓▓▓▓
  ░░░░░░░░░░
 
