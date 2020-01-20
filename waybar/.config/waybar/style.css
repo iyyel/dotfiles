@@ -19,13 +19,13 @@
 }
 
 window {
-    color:      #FFCB83;
-    background: #171717;
+    color:      #66748E;
+    background: #2E3440;
 }
 
 window#waybar.solo {
-    color:      #FFCB83;
-    background: rgba(35, 31, 32, 0.85);
+    color:      #66748E;
+    background: rgba(46, 52, 64, 0.85);
 }
 
 #workspaces {
@@ -34,20 +34,23 @@ window#waybar.solo {
 
 #workspaces button {
     padding:    0 5px;
-    color:      rgba(255, 203, 131, 0.4);
+    color:      rgba(102, 116, 142, 0.4);
+    background: #2E3440;
 }
 
 #workspaces button.visible {
-    color: #FFCB83;
+    color:      #66748E;
+    background: #2E3440;
 }
 
 #workspaces button.focused {
-    border-top:    3px solid #E63C23;
-    border-bottom: 3px solid #171717;
+    border-top:    3px solid #66748E;
+    border-bottom: 3px solid #2E3440;
+    background:              #2E3440;
 }
 
 #workspaces button.urgent {
-    color:      rgba(238, 46, 36, 1);
+    color: #BF616A; 
 }
 
 #workspaces, #mode, #custom-spotify, #custom-weather,
@@ -62,22 +65,22 @@ window#waybar.solo {
     min-width:  140px;
 }
 
+#battery.charging {
+    color: #66748E;
+}
+
 #battery.warning {
-   color:       rgba(255, 210, 4, 1);
+    color: #BF616A;
 }
 
 #battery.critical {
-    color:      rgba(238, 46, 36, 1);
-}
-
-#battery.charging {
-    color:      #FFCB83;
+    color: #BF616A;
 }
 
 #custom-storage.warning {
-    color:      rgba(255, 210, 4, 1);
+    color: #BF616A;
 }
 
 #custom-storage.critical {
-    color:      rgba(238, 46, 36, 1);
+    color: #BF616A;
 }

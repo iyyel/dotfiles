@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ##
-## ~/dotfiles/dotstow.sh
+## ~/dotfiles/install.sh
 ##
 ## Authors:
 ##  Iyyel <github.com/iyyel>

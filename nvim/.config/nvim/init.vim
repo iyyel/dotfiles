@@ -11,7 +11,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " colorscheme
-Plug 'git@github.com:yorickpeterse/happy_hacking.vim.git'
+Plug 'arcticicestudio/nord-vim'
 
 " syntax highlighting for packages
 Plug 'sheerun/vim-polyglot'
@@ -25,10 +25,7 @@ call plug#end()
 
 set termguicolors
 set background=dark
-colorscheme happy_hacking
-
-" Override background of vim
-highlight Normal guibg=#171717
+colorscheme nord
 
 set number
 

@@ -51,14 +51,14 @@ set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%
 set $screenclip slurp | grim -g - ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 # Wallpaper
-set $wallpaper ~/vault/media/wallpapers/wallpaper_039.jpg
+set $wallpaper ~/vault/media/wallpapers/wallpaper_041.png
 
 # colors
-set $cl_high #0D0D0D
-set $cl_indi #E63C23
-set $cl_back #141414
-set $cl_fore #D8D8D8
-set $cl_urge #EE2E24
+set $cl_high #4C566A
+set $cl_indi #000000
+set $cl_back #434C5E
+set $cl_fore #66748E
+set $cl_urge #BF616A
 
 # monitors
 set $mon1 eDP-1
@@ -69,6 +69,9 @@ client.focused          $cl_high $cl_high $cl_fore $cl_high $cl_high
 client.focused_inactive $cl_back $cl_back $cl_fore $cl_high $cl_back
 client.unfocused        $cl_back $cl_back $cl_fore $cl_high $cl_back
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_high $cl_urge
+client.placeholder      #000000  #0c0c0c  #FFFFFF  #000000  #000000
+client.background       #2B2C2B
+
 
 
 ##### Misc config
@@ -78,11 +81,11 @@ font pango: Fira Code Retina 12
 
 
 # Window borders
-default_border          pixel 4
-default_floating_border pixel 4
-titlebar_border_thickness    4
-hide_edge_borders none
-smart_borders off
+default_border              pixel 2
+default_floating_border     pixel 2
+titlebar_border_thickness   2
+hide_edge_borders           none
+smart_borders               off
 
 # Gaps
 smart_gaps off
@@ -128,8 +131,8 @@ input * {
 	xkb_layout "dk"
 	xkb_variant nodeadkeys
 	xkb_options caps:swapescape
-        repeat_delay 250
-        repeat_rate 25
+    repeat_delay 250
+    repeat_rate 25
 }
 
 
