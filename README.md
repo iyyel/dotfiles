@@ -23,7 +23,7 @@
  - [Installing](#Installing)
  - [How it works](#How-it-works)
  - [tl;dr](#tldr)
- - [Previews](#Previews)
+ - [My setup](#My-setup)
  - [License](#License)
 
 # Introduction
@@ -54,30 +54,39 @@ To install most of my configs you execute the `install.sh` script, which uses st
 
 `sh install.sh`
 
-**note:** stow can only create a symlink if a config file does not already exist. If a default file was created upon program installation you must delete it first before you can install a new one with stow. This does not apply to directories, only files. The dotshow.sh script overwrites existing config files.
+**note:** stow can only create a symlink if a config file does not already exist. If a default file was created upon program installation you must delete it first before you can install a new one with stow. This does not apply to directories, only files. `install.sh` overwrites existing config files.
 
 # tl;dr
-navigate to your home directory
+Navigate to your home directory
 
 `cd ~`
 
-clone the repo:
+Clone the repo:
 
-`git clone http://git.xero.nu/dotfiles.git`
+`git clone http://github.com/iyyel/dotfiles`
 
-enter the dotfiles directory
+Enter the dotfiles directory:
 
 `cd dotfiles`
 
-execute dotshow.sh
+execute install script:
 
-`./dotshow.sh`
-
-
-# Previews
+`sh install.sh`
 
 
+# My setup
+
+- Application Launcher: `wofi`
+- Music Player: `spotify-tui`
+- Shell: `zsh`
+- Terminal Emulator: `kitty`
+- Text Editor: `nvim`
+- Web Browser: `firefox`
+- Window Manager: `sway`
+
+Pictures coming soon.
 
 
 # License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
