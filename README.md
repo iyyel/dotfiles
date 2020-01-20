@@ -29,7 +29,7 @@
 # Introduction
 In the unix world programs are commonly configured in two different ways, via shell arguments or text based configuration files. Programs with many options like window managers or text editors are configured on a per-user basis with files in your home directory `~`. In unix like operating systems any file or directory name that starts with a period or full stop character is considered hidden, and in a default view will not be displayed, thus the name dotfiles. 
 
-it's been said of every console user: 
+It's been said of every console user: 
 > _"you are your dotfiles"_.
 
 since they dictate how your system will look and function. To many users (see [ricers](http://unixporn.net) and [beaners](http://nixers.net)) these files are very important, and need to be backed up and shared. People who create custom themes have the added challenge of managing multiple versions of them. I have tried many organization techniques and just take my word for it when i say, keeping a git repo in the root of your home directory is a bad idea. I've written custom shell scripts for moving or symlinking files into place. There are even a few dotfile managers, but they all seem to have lots of dependencies. I knew there had to be a simple tool to help me.
