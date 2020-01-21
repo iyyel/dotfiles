@@ -19,12 +19,8 @@ for file in ~/dotfiles/*; do
     # Only run Stow on the directories in the dotfiles folder and not the individual files.
     # Using 'basename' strips the filepath from the directory name. 
     if [ -d ${file} ]; then
-        if [ "$(basename $file)" == *"etc"* ]; then
-            echo "Ignored 'etc' directory."
-        else
-            xstow -R $(basename $file)
-            echo "$(basename $file) stowed."; 
-        fi
+        xstow -R $(basename $file)
+        echo "$(basename $file) stowed."; 
     fi
 done
 
