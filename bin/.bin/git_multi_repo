@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+# cd into the repo before running this.
+
+git remote rename origin github
+
+git remote add gitea $2
+
+git remote add all $1
+
+git remote set-url --add --push all $1
+git remote set-url --add --push all $2
