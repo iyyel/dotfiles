@@ -19,12 +19,12 @@
 }
 
 window {
-    color:      #66748E;
+    color:      #88C0D0;
     background: #2E3440;
 }
 
 window#waybar.solo {
-    color:      #66748E;
+    color:      #88C0D0;
     background: rgba(46, 52, 64, 0.85);
 }
 
@@ -34,17 +34,17 @@ window#waybar.solo {
 
 #workspaces button {
     padding:    0 5px;
-    color:      rgba(102, 116, 142, 0.4);
+    color:      rgba(136, 192, 208, 0.4);
     background: #2E3440;
 }
 
 #workspaces button.visible {
-    color:      #66748E;
+    color:      #88C0D0;
     background: #2E3440;
 }
 
 #workspaces button.focused {
-    border-top:    3px solid #66748E;
+    border-top:    3px solid #88C0D0;
     border-bottom: 3px solid #2E3440;
     background:              #2E3440;
 }
@@ -66,7 +66,7 @@ window#waybar.solo {
 }
 
 #battery.charging {
-    color: #66748E;
+    color: #88C0D0;
 }
 
 #battery.warning {
