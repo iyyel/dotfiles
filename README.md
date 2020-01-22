@@ -55,7 +55,7 @@ To install most of my configs you execute the `install.sh` script, which uses st
 
 `sh install.sh`
 
-**note:** stow can only create a symlink if a config file does not already exist. If a default file was created upon program installation you must delete it first before you can install a new one with stow. This does not apply to directories, only files. `install.sh` overwrites existing config files.
+**note:** stow can only create a symlink if a config file does not already exist. If a default file was created upon program installation you must delete it first before you can install a new one with stow. This does not apply to directories, only files. `install.sh` overwrites existing config files by using the `-R` flag.
 
 # tl;dr
 Navigate to your home directory
