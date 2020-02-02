@@ -10,3 +10,5 @@ git remote add all $1
 
 git remote set-url --add --push all $1
 git remote set-url --add --push all $2
+
+git push -u all

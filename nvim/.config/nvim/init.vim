@@ -19,9 +19,19 @@ Plug 'sheerun/vim-polyglot'
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
+" markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+" disable markdown folding
+let g:vim_markdown_folding_disabled = 1
+
+set nocompatible
+filetype plugin on
+syntax on
 
 set termguicolors
 set background=dark
