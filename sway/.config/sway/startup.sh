@@ -14,4 +14,4 @@ pactl -- set-sink-mute 0 1 > /dev/null
 pactl -- set-source-mute 0 0 > /dev/null
 
 # set brightness
-brightnessctl s 100%
+brightnessctl s 100% > /dev/null

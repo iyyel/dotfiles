@@ -19,10 +19,10 @@ set $mod Mod4
 set $term kitty
 
 # Lockscreen
-set $lock ~/.bin/lock
+set $lock $HOME/.bin/lock
 
 # Application launcher
-set $menu exec wofi -c ~/.config/wofi/config --prompt "Search"
+set $menu exec wofi -c $HOME/.config/wofi/config --prompt "Search"
 
 # Home row direction keys
 set $left h
@@ -44,11 +44,11 @@ set $ws9  "9:9"
 set $ws10 "10:10"
 
 # Screenshot and screenclip
-set $screenshot grim ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
-set $screenclip slurp | grim -g - ~/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
+set $screenshot grim $HOME/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
+set $screenclip slurp | grim -g - $HOME/vault/media/screenshots/screenshot-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 # Wallpaper
-set $wallpaper ~/vault/media/wallpapers/wallpaper_042.jpg
+set $wallpaper $HOME/vault/media/wallpapers/wallpaper_045.jpg
 
 # colors
 set $cl_high #4C566A
@@ -320,11 +320,9 @@ mode "$mode_gaps_outer" {
 
 
 
-
 ##### Waybar
 
-exec_always ~/.config/waybar/waybar.sh
-
+exec_always $HOME/.config/waybar/waybar.sh
 
 
 
@@ -338,6 +336,5 @@ include /etc/sway/config.d/*
 
 
 ##### startup
-
-exec ~/.config/sway/startup.sh
+exec $HOME/.config/sway/startup.sh
 
