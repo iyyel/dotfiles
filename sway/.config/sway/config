@@ -7,9 +7,6 @@
 ## sway config file
 ##
 
-##### startup
-
-exec ~/.config/sway/startup.sh
 
 
 
@@ -330,9 +327,17 @@ exec_always ~/.config/waybar/waybar.sh
 
 
 
+
 ##### Misc options
 
 # disable xwayland
 #xwayland disable
 
 include /etc/sway/config.d/*
+
+
+
+##### startup
+
+exec ~/.config/sway/startup.sh
+
