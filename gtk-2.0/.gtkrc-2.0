@@ -10,7 +10,7 @@
 gtk-theme-name = "Nordic"
 gtk-font-name = "Roboto 12"
 gtk-icon-theme-name = "Adapta-Nokto"
-gtk-cursor-theme-name="Vanilla DMZ"
+gtk-cursor-theme-name="Breeze_Hacked"
 gtk-cursor-theme-size=24
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
