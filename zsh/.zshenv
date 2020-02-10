@@ -27,6 +27,9 @@ export PATH="$PATH:$HOME/.bin"
 export DOTNET_ROOT=$HOME/.local/bin/dotnet
 export PATH=$PATH:$HOME/.local/bin/dotnet
 
+# .local/bin
+export PATH=$PATH:$HOME/.local/bin
+
 # flutter sdk
 export PATH="$PATH:$HOME/.local/bin/flutter/bin"
 

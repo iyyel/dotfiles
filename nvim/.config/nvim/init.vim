@@ -23,6 +23,9 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
+" lint engine (ALE)
+Plug 'dense-analysis/ale'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
