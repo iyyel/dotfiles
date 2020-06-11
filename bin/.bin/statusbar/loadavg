@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+LOAD=`cat /proc/loadavg | cut -d ' ' -f 1 | sed -r 's/\./,/g'`
+printf " %.2f\n" $LOAD | sed -r 's/\,/./g'	

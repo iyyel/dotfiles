@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+df -h | awk 'NR==5 { printf " "$3"/"$2"\n"} ' | sed -r 's/\,/./g'

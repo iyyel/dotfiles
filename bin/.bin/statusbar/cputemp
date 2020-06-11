@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+TEMP=`sensors | awk '/^Core 1:/{ print $3 }' | sed "s/.*+//;s/\..*//"`
+echo " $TEMP°C"

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+##
+## ~/.config/waybar/modules/spotify.sh
+## 
+## Authors:
+##  Iyyel <github.com/iyyel>
+##  
+## waybar spotify module
+##
+
+class=`playerctl --player=spotifyd status 2>&1 > /dev/null`
+icon=""
+
+if [[ $class == "Playing" ]]; then
+  info=$(playerctl metadata --player=spotifyd --format '{{artist}} - {{title}}')
+  if [[ ${#info} > 40 ]]; then
+    info=$(echo $info | cut -c1-100)
+  fi
+  text=$icon" "$info
+elif [[ $class == "Paused" ]]; then
+  text="Paused"
+elif [[ $class == "Stopped" ]]; then
+  text="Stopped"
+else
+  text=""
+  icon=""
+fi
+
+echo -e "$text"

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+INTERFACE=$(ls /sys/class/net | grep "\bw.*")
+[ -z "$INTERFACE" ] && exit
+
+WCONNECTED=$(cat /sys/class/net/w*/operstate)
+if [ "$WCONNECTED" = 'down' ]; then
+  printf " Down"
+else
+  SSID=$(nmcli device show | grep "$INTERFACE" -m 1 -A 5 | grep GENERAL.CONNECTION: -m 1 | awk '{print $2}')
+  SIGNAL=$(grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
+  printf " %s %s%s" "$SSID" "$SIGNAL" "%%"
+fi
