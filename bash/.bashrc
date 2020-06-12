@@ -10,7 +10,7 @@ export LC_ALL=en_DK.UTF-8
 export EDITOR=nvim
 export VISUAL=nvim
 
-export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 
 ## Bash-It

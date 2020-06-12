@@ -2,6 +2,9 @@
 #
 # ~/.xinitrc
 
+## ....
+xsetroot -cursor_name left_ptr
+
 ## Screen power savings off
 xset s off -dpms -b
 
@@ -18,15 +21,15 @@ setxkbmap dk
 xbacklight -set 100%
 
 ## Mute at startup
-pactl set-sink-volume 0 0 > /dev/null
-pactl set-sink-mute 0 1 > /dev/null
+pactl set-sink-volume 0 0 &> /dev/null
+pactl set-sink-mute 0 1 &> /dev/null
 
 ## Set custom font directory
 #xset +fp ~/.local/share/fonts
 #xset fp rehash
 
 ## Set wallpaper
-hsetroot -solid '#6d7db6'
+hsetroot -fill ~/Downloads/void.png
 
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &
