@@ -1,24 +1,22 @@
 #!/usr/bin/env bash
+acpi=$(acpi)
 
-ACPI=$(acpi)
-
-if [[ "$ACPI" == *"Battery 1"* ]]; then
+if [[ "$acpi" == *"Battery 1"* ]]; then
     # Battery 1 is present, so we need to check 
     # which of Battery 1 or 0 that has a double digit %.
-    BAT0=$(echo "$ACPI" | grep "Battery 0" | tr " " "\n" | sed -n '4p')
-    BAT1=$(echo "$ACPI" | grep "Battery 1" | tr " " "\n" | sed -n '4p')
-    
-    if [[ "${#BAT0}" -lt "${#BAT1}" ]]; then
+    bat0=$(echo "$acpi" | grep "Battery 0" | tr " " "\n" | sed -n '4p')
+    bat1=$(echo "$acpi" | grep "Battery 1" | tr " " "\n" | sed -n '4p') 
+    if [[ "${#bat0}" -lt "${#bat1}" ]]; then
         # bat1 is correct
-        TXT=$(echo "$ACPI" | grep "Battery 1" |  sed "s/,//g" | awk '{if ($3 == "Discharging"){print " " $4; exit} else {print " " $4 }}' | tr -d "\n")
-        echo "$TXT"
+        txt=$(echo "$acpi" | grep "Battery 1" |  sed "s/,//g" | awk '{if ($3 == "Discharging"){print "󰂃 " $4; exit} else { print "󰁹 " $4 }}' | tr -d "\n")
+        echo "$txt"
     else
-        # bat0 is real
-        TXT=$(echo "$ACPI" | grep "Battery 0" |  sed "s/,//g" | awk '{if ($3 == "Discharging"){print " " $4; exit} else {print " " $4 }}' | tr -d "\n")
-        echo "$TXT"
+        # bat0 is correct
+        txt=$(echo "$acpi" | grep "Battery 0" |  sed "s/,//g" | awk '{if ($3 == "Discharging"){print "󰂃 " $4; exit} else { print "󰁹 " $4 }}' | tr -d "\n")
+        echo "$txt"
     fi      
 else
-    # If there is only one battery (0), just use that.
-    TXT=$(echo "$ACPI" | grep "Battery 0" |  sed "s/,//g" | awk '{if ($3 == "Discharging"){print " " $4; exit} else {print " " $4 }}' | tr -d "\n")
-    echo "$TXT"
+    # If Battery 1 is not present, just use Battery 0.
+    txt=$(echo "$acpi" | grep "Battery 0" |  sed "s/,//g" | awk '{if ($3 == "Discharging"){print "󰂃 " $4; exit} else { print "󰁹 " $4 }}' | tr -d "\n")
+    echo "$txt"
 fi

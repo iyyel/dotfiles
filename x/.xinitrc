@@ -2,7 +2,10 @@
 #
 # ~/.xinitrc
 
-## ....
+## Hide dwm's initial text in the bar
+xsetroot -name ' '
+
+## cursor stuff :)
 xsetroot -cursor_name left_ptr
 
 ## Screen power savings off
@@ -17,8 +20,8 @@ setxkbmap -option caps:escape
 ## Set xkeymap
 setxkbmap dk
 
-## Set backlight
-xbacklight -set 100%
+## Set startup backlight
+xbacklight -set 80%
 
 ## Mute at startup
 pactl set-sink-volume 0 0 &> /dev/null
@@ -29,7 +32,7 @@ pactl set-sink-mute 0 1 &> /dev/null
 #xset fp rehash
 
 ## Set wallpaper
-hsetroot -fill ~/Downloads/void.png
+hsetroot -solid "#111111"
 
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &

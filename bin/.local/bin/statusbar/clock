@@ -1,4 +1,2 @@
-#!/bin/sh
-date '+%a %d %b %H:%M:%S' | sed "s/^/ /;s/$/ /"
-
-
+#!/usr/bin/env sh
+echo "󰸗" `date '+%a %d %b %H:%M:%S'`

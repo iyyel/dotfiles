@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-xbacklight | awk '{ printf " %.0f%\n",$1 }'
+#!/usr/bin/env sh
+xbacklight | awk '{ printf "󰃠 %.0f%\n",$1 }'

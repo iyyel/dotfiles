@@ -8,22 +8,22 @@
 ## waybar spotify module
 ##
 
-class=`playerctl --player=spotifyd status 2>&1 > /dev/null`
-icon=""
+class=`playerctl --player=spotifyd status 2>&1`
+icon="󰝚 "
 
 if [[ $class == "Playing" ]]; then
-  info=$(playerctl metadata --player=spotifyd --format '{{artist}} - {{title}}')
-  if [[ ${#info} > 40 ]]; then
-    info=$(echo $info | cut -c1-100)
-  fi
-  text=$icon" "$info
+    info=`playerctl metadata --player=spotifyd --format '{{artist}} - {{title}}'`
+    if [[ ${#info} > 40 ]]; then
+        info=`echo $info | cut -c1-100`
+    fi
+    text=$icon" "$info
 elif [[ $class == "Paused" ]]; then
-  text="Paused"
+    text="Paused"
 elif [[ $class == "Stopped" ]]; then
-  text="Stopped"
+    text="Stopped"
 else
-  text=""
-  icon=""
+    text=""
+    icon=""
 fi
 
-echo -e "$text"
+echo "$text"

@@ -10,8 +10,11 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')
 
-" colorscheme
-Plug 'arcticicestudio/nord-vim'
+" gruvbox
+Plug 'morhetz/gruvbox'
+
+" color highlighting
+Plug 'lilydjwg/colorizer'
 
 " syntax highlighting for packages
 Plug 'sheerun/vim-polyglot'
@@ -38,7 +41,7 @@ syntax on
 
 set termguicolors
 set background=dark
-colorscheme nord
+colorscheme gruvbox
 
 set number
 

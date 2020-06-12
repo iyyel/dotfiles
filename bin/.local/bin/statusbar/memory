@@ -1,1 +1,2 @@
-free -h | awk '/^Mem/ { print " "$3"/"$2 }' | sed s/i//g | sed -r 's/\,/./g'
+#!/usr/bin/env sh
+free -h | awk '/^Mem/ { print "󰍛 "$3"/"$2 }' | sed s/i//g | sed -r 's/\,/./g'
