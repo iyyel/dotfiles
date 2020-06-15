@@ -27,12 +27,11 @@ xbacklight -set 80%
 pactl set-sink-volume 0 0 &> /dev/null
 pactl set-sink-mute 0 1 &> /dev/null
 
-## Set custom font directory
-#xset +fp ~/.local/share/fonts
-#xset fp rehash
-
 ## Set wallpaper
-hsetroot -solid "#111111"
+hsetroot -fill ~/vault/media/wallpapers/wallpaper_019.jpg
+
+## Load .Xresources
+xrdb ~/.Xresources
 
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &

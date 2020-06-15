@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+gov=`sudo cpupower frequency-info | awk 'NR==9 { print $3 }' | sed -r 's/\"//g'`
+
+if [[ "$gov" == "powersave" ]]; then
+    sudo cpupower frequency-set -g performance > /dev/null
+    echo "performance mode"
+else
+    sudo cpupower frequency-set -g powersave > /dev/null
+    echo "powersave mode"
+fi

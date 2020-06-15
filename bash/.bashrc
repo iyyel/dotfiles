@@ -10,7 +10,12 @@ export LC_ALL=en_DK.UTF-8
 export EDITOR=nvim
 export VISUAL=nvim
 
-export PATH="$PATH:$HOME/.local/bin"
+# .net
+export DOTNET_ROOT=$HOME/.local/bin/dotnet
+export PATH=$PATH:$HOME/.local/bin/dotnet
+
+# .local/dbin
+export PATH="$PATH:$HOME/.local/dbin"
 
 
 ## Bash-It

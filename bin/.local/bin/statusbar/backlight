@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-xbacklight | awk '{ printf "󰃠 %.0f%\n",$1 }'

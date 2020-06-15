@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+icon=󰋊
+ifg=^c#83A598^
+tfg=^d^
+
+if [[ "$1" == "root" ]]; then
+    nr=5
+elif [[ "$1" == "home" ]]; then
+    nr=7
+else
+    echo "must provide disk flag! \"root\" or \"home\""
+    exit
+fi
+
+disk=`df -h | awk -v nr="$nr" 'NR==nr { printf $3"/"$2} ' | sed -r 's/\,/./g'`
+echo "$ifg$icon $tfg$disk"

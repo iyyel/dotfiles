@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+bri=`xbacklight | awk '{ printf "%.0f",$1 }'`
+
+ramp1=󰃞
+ramp2=󰃟
+ramp3=󰃠
+
+ffg=^c#FABD2F^
+tfg=^d^
+
+if (( $bri < 33 )); then
+    echo "$ffg$ramp1 $tfg$bri%"
+elif (( $bri < 66 )); then
+    echo "$ffg$ramp2 $tfg$bri%"
+else
+    echo "$ffg$ramp3 $tfg$bri%"
+fi

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+icon=󰒓
+ifg=^c#8EC07C^
+tfg=^d^
+load=`cat /proc/loadavg | cut -d ' ' -f 1 | sed -r 's/\./,/g' | sed -r 's/\,/./g'`
+echo "$ifg$icon $tfg$load"

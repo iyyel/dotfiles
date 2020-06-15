@@ -1,4 +1,0 @@
-#!/bin/sh
-NAME=ss-$(date +%Y-%m-%d-%H-%M-%S).png
-maim -s | tee ~/$NAME | xclip -selection clipboard -t image/png
-notify-send "Screenclip: $NAME"
