@@ -73,13 +73,13 @@ execute install script:
 
 # My setup
 
-- Application Launcher: `wofi`
+- Application Launcher: `dmenu`
 - Music Player: `spotify-tui`
-- Shell: `zsh`
-- Terminal Emulator: `kitty`
+- Shell: `bash`
+- Terminal Emulator: `st`
 - Text Editor: `nvim`
-- Web Browser: `firefox`
-- Window Manager: `sway`
+- Web Browser: `qutebrowser`
+- Window Manager: `dwm`
 
 Pictures coming soon.
 
