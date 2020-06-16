@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-icon=󰍛
-ifg=^c#928374^
-tfg=^d^
-mem=`free -h | awk '/^Mem/ { print $3"/"$2 }' | sed s/i//g | sed -r 's/\,/./g'`
-echo "$ifg$icon $tfg$mem"

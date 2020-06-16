@@ -14,8 +14,8 @@ export VISUAL=nvim
 export DOTNET_ROOT=$HOME/.local/bin/dotnet
 export PATH=$PATH:$HOME/.local/bin/dotnet
 
-# .local/dbin
-export PATH="$PATH:$HOME/.local/dbin"
+# .local/bin/scripts
+export PATH="$PATH:$HOME/.local/bin/scripts"
 
 
 ## Bash-It
@@ -107,21 +107,3 @@ case $- in
   *i*) ;;
     *) return;;
 esac
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

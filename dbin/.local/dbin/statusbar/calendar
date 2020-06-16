@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-icon=󰸗
-ifg=^c#8EC07C^
-tfg=^d^
-cmd=`date '+%a %d %b'`
-echo "$ifg$icon $tfg$cmd"

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# activate the screensaver (i3lock)
+xset s activate
+sleep 1

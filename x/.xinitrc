@@ -24,11 +24,11 @@ setxkbmap dk
 xbacklight -set 80%
 
 ## Mute at startup
-pactl set-sink-volume 0 0 &> /dev/null
-pactl set-sink-mute 0 1 &> /dev/null
+pamixer --set-volume 0
+pamixer -m
 
 ## Set wallpaper
-hsetroot -fill ~/vault/media/wallpapers/wallpaper_019.jpg
+hsetroot -fill ~/vault/media/wallpapers/wallpaper_080.jpg
 
 ## Load .Xresources
 xrdb ~/.Xresources
@@ -36,8 +36,9 @@ xrdb ~/.Xresources
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &
 
-## Start xautolock
-# xautolock -time 10 -locker ~/.bin/lock &
+## Start xss-lock with i3lock
+xss-lock -- lock &
+xset s 1800 ## 1800 seconds (30 min)
 
 ## Start dwmblocks
 dwmblocks &
