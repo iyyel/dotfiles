@@ -1,2 +1,2 @@
-#!/bin/sh
-amixer -q set Master toggle
+#!/usr/bin/env sh
+pamixer -t

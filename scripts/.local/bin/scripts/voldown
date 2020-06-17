@@ -1,2 +1,2 @@
-#!/bin/sh
-amixer -q set Master 5%- unmute
+#!/usr/bin/env sh
+pamixer -u -d 5

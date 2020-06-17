@@ -4,4 +4,10 @@
 # (see /etc/runit/2).
 
 ## cpupower
+# Start the machine with the powersave CPU governor
 cpupower frequency-set -g powersave > /dev/null
+
+## microphone 
+# Mute the microphone at startup
+su iyyel -c 'amixer -q sset Capture nocap'
+amixer -q sset Capture nocap
