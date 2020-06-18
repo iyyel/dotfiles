@@ -16,28 +16,32 @@ Plug 'morhetz/gruvbox'
 " color highlighting
 Plug 'lilydjwg/colorizer'
 
-" syntax highlighting for packages
-Plug 'sheerun/vim-polyglot'
-
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
-" markdown
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 
 " lint engine (ALE)
 Plug 'dense-analysis/ale'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'sheerun/vim-polyglot'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-" disable markdown folding
-let g:vim_markdown_folding_disabled = 1
+let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
+let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
+let g:haskell_enable_arrowsyntax = 1      " to enable highlighting of `proc`
+let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
+let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
+let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
+let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
 
+set hidden
 set nocompatible
-filetype plugin on
 syntax on
+filetype plugin indent on
+set updatetime=300
 
 set termguicolors
 set background=dark
@@ -52,7 +56,7 @@ set hidden                      " allow buffer switching without saving
 set showtabline =2              " Show tabline always
 set guicursor=                  " Status bar shows mode; cursor needn't 
 set encoding=UTF-8
-set shell=/usr/bin/zsh
+set shell=/usr/bin/bash
 set mouse=
 set nowrap
 
@@ -74,14 +78,3 @@ set splitright
 
 " disable swap
 set noswapfile
-
-" neovim terminal emulator
-:tnoremap <Esc> <C-\><C-n>
-:tnoremap <A-h> <C-\><C-n><C-w>h
-:tnoremap <A-j> <C-\><C-n><C-w>j
-:tnoremap <A-k> <C-\><C-n><C-w>k
-:tnoremap <A-l> <C-\><C-n><C-w>l
-:nnoremap <A-h> <C-w>h
-:nnoremap <A-j> <C-w>j
-:nnoremap <A-k> <C-w>k
-:nnoremap <A-l> <C-w>l
