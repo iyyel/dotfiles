@@ -1,0 +1,181 @@
+@import "scrollbars.css";
+
+/* New Tab Flash */
+:root{
+	--newtab-textbox-background-color:var(--background);
+	--background: #282828;
+    --text: #FBF2C7;
+}
+
+#browser vbox#appcontent tabbrowser,
+#content, 
+#tabbrowser-tabpanels,
+browser[type=content-primary],
+browser[type=content] > html{
+    background: var(--background) !important
+}
+
+.tab-line {
+    display : none !important;
+}
+
+.tab-background{
+	background: var(--background) !important;
+}
+
+#titlebar-spacer, .titlebar-spacer{
+	display: none !important;
+    background: var(--background) !important;
+}
+
+#titlebar-buttonbox-container {
+	display: none !important;
+}
+
+.titlebar-min, .titlebar-max, .titlebar-close{
+	display: none !important;
+}
+
+/* Toolbar buttons */
+.toolbarbutton-1 {
+    fill: var(--text) !important;
+    background-color: var(--background) !important;
+}
+
+/* Remove border under navbar */
+#navigator-toolbox::after {
+    border-bottom: 0px !important;
+}
+
+/* remove some borders */
+#navigator-toolbox {
+    border: none !important;
+    background-color: var(--background) !important;
+}
+
+#titlebar {
+    border: none !important;
+}
+
+#tabbrowser-tabs {
+    background-color: var(--background) !important;
+    background: var(--background);
+    min-height: 40px !important
+}
+
+/*
+.tabbrowser-arrowscrollbox {
+  border: none !important;
+  min-width: 10;
+}
+
+.tab-drop-indicator-box {
+  border: none !important;
+  min-width: 10;
+}*/
+
+/* remove lines */
+#navigator-toolbox::after {
+  display: none !important;
+}
+
+#nav-bar, #TabsToolbar {
+  border: none !important;
+ /* max-height: 32px !important;*/
+  /*margin-top: -2px;*/
+}
+
+/*#PersonalToolbar {
+  border: none !important;
+}
+*/
+/*#content-deck {
+  border: none !important;
+}*/
+
+.tabbrowser-tab::before, 
+.tabbrowser-tab::after{
+  display: none !important;
+
+}
+tab
+{
+    background-color: var(--background) !important;
+    font-weight: thin !important;
+    color : var(--text) !important;
+}
+
+.tab-content[selected="true"]
+{
+    background-color: #98971A !important;
+    font-weight: bold !important;
+    color : #FBF2C7 !important;
+}
+
+#nav-bar-customization-target {
+	background-color: var(--background) !important;
+}
+
+.tabbrowser-tab{ opacity: 0.5 }
+.tabbrowser-tab:hover{ opacity: 0.75 }
+.tabbrowser-tab[selected]{ opacity: 1 }
+
+.urlbar  {
+	text-align: center !important;
+}
+
+#urlbar {
+	box-shadow: none !important;
+	background-color: var(--background) !important;
+	background: none !important;
+	border: none !important;
+	color : var(--text) !important;
+	font-weight: bold !important;
+	text-align: center !important;
+}
+
+#urlbar:hover{
+    box-shadow: none !important;
+    text-align: center !important;
+}
+
+#tracking-protection-icon-container,#pageActionSeparator{ border-inline-width: 0px !important; }
+.urlbar-icon,
+.urlbar-icon-wrapper,
+#tabbrowser-tabs toolbarbutton,
+toolbar toolbarbutton > .toolbarbutton-icon,
+toolbar toolbarbutton > .toolbarbutton-badge-stack,
+.titlebar-button,
+#identity-box,
+#tracking-protection-icon-container,
+.findbar-textbox~toolbarbutton,
+toolbarbutton.scrollbutton-up,
+toolbarbutton.scrollbutton-down{ background-color: transparent !important;}
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]){ background-color: transparent !important }
+
+/*Tabs below nav bar*/
+#nav-bar { 
+    -moz-box-ordinal-group: 1 !important;
+}
+
+#PersonalToolbar { 
+    -moz-box-ordinal-group: 2 !important;
+}
+
+#titlebar { 
+    -moz-box-ordinal-group: 3 !important;
+}
+
+#navigator-toolbox{ 
+    margin-top: 0px;
+    padding-top:0px !important; 
+}
+
+#toolbar-menubar{
+    position: fixed;
+    top: 0px;
+}
+
+#navigator-toolbox { 
+    --tabs-border-color: transparent !important; 
+}
