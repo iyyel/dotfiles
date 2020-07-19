@@ -1,2 +1,11 @@
+#
+# /etc/acpi/events/lenovo-mutemic
+#
+# Authors:
+#  Iyyel <github.com/iyyel>
+#
+# lenovo thinkpad microphone mute event
+#
+
 event=button/f20 F20 00000080 00000000 K
 action=/etc/acpi/events/lenovo-mutemic.sh

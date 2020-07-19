@@ -1,3 +1,12 @@
+#
+# ~/.bash_it/themes/lambda/lambda.theme.bash
+#
+# Authors:
+#  Iyyel <github.com/iyyel>
+#
+# lambda prompt theme
+#
+
 # git theming
 SCM_THEME_PROMPT_PREFIX="${bold_blue}(${yellow}"
 SCM_THEME_PROMPT_SUFFIX="${bold_blue})${reset_color} "

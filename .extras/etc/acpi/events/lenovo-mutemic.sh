@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+#
+# /etc/acpi/events/lenovo-mutemic.sh
+#
+# Authors:
+#  Iyyel <github.com/iyyel>
+#
+# lenovo thinkpad microphone mute script
+#
+
 INPUT_DEVICE="'Capture'"
 USER="iyyel"
 if amixer sget $INPUT_DEVICE,0 | grep '\[on\]' ; then

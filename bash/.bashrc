@@ -1,4 +1,11 @@
-# .bashrc
+#
+# ~/.bashrc
+#
+# Authors:
+#  Iyyel <github.com/iyyel>
+#
+# bash configuration file
+#
 
 ## Export
 export TERM='st-256color'
