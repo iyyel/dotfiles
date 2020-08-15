@@ -21,6 +21,9 @@ export VISUAL=nvim
 export DOTNET_ROOT=$HOME/.local/bin/dotnet
 export PATH=$PATH:$HOME/.local/bin/dotnet
 
+# Java (fixes blank screen problems in dwm)
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # .local/bin
 export PATH="$PATH:$HOME/.local/bin"
 

@@ -44,4 +44,4 @@ xset s 1800 ## 1800 seconds (30 min)
 dwmblocks &
 
 ## Start dwm
-exec dwm
+exec dbus-launch dwm
