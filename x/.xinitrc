@@ -28,7 +28,7 @@ pamixer --set-volume 0
 pamixer -m
 
 ## Set wallpaper
-hsetroot -fill ~/vault/media/wallpapers/wallpaper_080.jpg
+hsetroot -fill ~/vault/media/wallpapers/wallpaper_027.png
 
 ## Load .Xresources
 xrdb ~/.Xresources
