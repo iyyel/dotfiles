@@ -38,10 +38,10 @@ dunst -config ~/.config/dunst/dunstrc > /dev/null &
 
 ## Start xss-lock with i3lock
 xss-lock -- lock &
-xset s 1800 ## 1800 seconds (30 min)
+xset s 1800 # 1800 seconds (30 min)
 
 ## Start dwmblocks
 dwmblocks &
 
 ## Start dwm
-exec dbus-launch dwm
+exec dwm

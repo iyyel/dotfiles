@@ -17,18 +17,18 @@ export LC_ALL=en_DK.UTF-8
 export EDITOR=nvim
 export VISUAL=nvim
 
-# .net
-export DOTNET_ROOT=$HOME/.local/bin/dotnet
-export PATH=$PATH:$HOME/.local/bin/dotnet
+# dotnet
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT
 
 # Java (fixes blank screen problems in dwm)
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # .local/bin
-export PATH="$PATH:$HOME/.local/bin"
+export PATH=$PATH:$HOME/.local/bin
 
 # .local/bin/scripts
-export PATH="$PATH:$HOME/.local/bin/scripts"
+export PATH=$PATH:$HOME/.local/bin/scripts
 
 ## Bash-It
 
@@ -94,6 +94,11 @@ alias v='nvim'
 alias e='nvim'
 alias nano='nvim'
 
+# JetBrains toolbox
+alias toolbox='$HOME/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox'
+
+# temporary alias for school
+alias pcs_login='ssh s151641@login1.gbar.dtu.dk'
 
 ## Color man pages
 export LESS_TERMCAP_mb=$'\E[1;34m'     # begin bold

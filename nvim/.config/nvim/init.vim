@@ -19,6 +19,9 @@ Plug 'lilydjwg/colorizer'
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
+" markdown preview
+Plug 'skanehira/preview-markdown.vim'
+
 " lint engine (ALE)
 Plug 'dense-analysis/ale'
 
@@ -78,3 +81,14 @@ set splitright
 
 " disable swap
 set noswapfile
+
+" markdown-preview
+
+" vertical preview
+let g:preview_markdown_vertical=1
+
+" auto-update when saved
+let g:preview_markdown_auto_update=1
+
+" markdown parser
+let g:preview_markdown_parser="glow"
