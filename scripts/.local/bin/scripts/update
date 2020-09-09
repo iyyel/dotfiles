@@ -1,3 +1,3 @@
-sudo xbps-install -Syuv
+sudo xbps-install -Suv
 sudo xbps-remove -Oo
 sudo vkpurge rm all

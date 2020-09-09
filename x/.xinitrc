@@ -28,13 +28,16 @@ pamixer --set-volume 0
 pamixer -m
 
 ## Set wallpaper
-hsetroot -fill ~/vault/media/wallpapers/wallpaper_027.png
+hsetroot -fill ~/vault/media/wallpapers/wallpaper_059.png
 
 ## Load .Xresources
 xrdb ~/.Xresources
 
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &
+
+## Start udiskie
+udiskie &
 
 ## Start xss-lock with i3lock
 xss-lock -- lock &

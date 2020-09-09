@@ -8,7 +8,7 @@
 #
 
 [global]
-font = Iosevka Term 11
+font = Iosevka Term 12
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -79,7 +79,7 @@ hide_duplicates_count = yes
 # The width can be negative.  In this case the actual width is the
 # screen width minus the width defined in within the geometry option.
 #geometry = "250x50-40+40"
-geometry = "300x50-15+49"
+geometry = "300x50-10+33"
 
 # Shrink window if it's smaller than the width.  Will be ignored if
 # width is 0.
@@ -88,7 +88,7 @@ shrink = no
 # The transparency of the window.  Range: [0; 100].
 # This option will only work if a compositing windowmanager is
 # present (e.g. xcompmgr, compiz, etc.).
-transparency = 5
+transparency = 0
 
 # Don't remove messages, if the user is idle (no mouse or keyboard input)
 # for longer than idle_threshold seconds.
@@ -132,10 +132,10 @@ line_height = 3
 separator_height = 2
 
 # Padding between text and separator.
-padding = 6
+padding = 10
 
 # Horizontal padding.
-horizontal_padding = 6
+horizontal_padding = 10
 
 # Define a color for the separator.
 # possible values are:
@@ -163,8 +163,8 @@ max_icon_size = 80
 # Paths to default icons.
 icon_path = /usr/share/icons/Paper/16x16/mimetypes/:/usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/emblems/
 
-frame_width = 3
-frame_color = "#8EC07C"
+frame_width = 2
+frame_color = "#98971A"
 
 [shortcuts]
 
@@ -182,7 +182,7 @@ close_all = ctrl+shift+space
 # Redisplay last message(s).
 # On the US keyboard layout "grave" is normally above TAB and left
 # of "1".
-history = ctrl+grave
+history = ctrl+shift+m
 
 # Context menu.
 context = ctrl+shift+period
@@ -190,25 +190,22 @@ context = ctrl+shift+period
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-frame_color = "#3B7C87"
-foreground = "#3B7C87"
-background = "#191311"
-#background = "#2B313C"
-timeout = 4
+frame_color = "#689D6A"
+foreground  = "#FBF2C7"
+background  = "#282828"
+timeout     = 10
 
 [urgency_normal]
-frame_color = "#5B8234"
-foreground = "#5B8234"
-background = "#191311"
-#background = "#2B313C"
-timeout = 6
+frame_color = "#98971A"
+foreground  = "#FBF2C7"
+background  = "#282828"
+timeout     = 10
 
 [urgency_critical]
-frame_color = "#B7472A"
-foreground = "#B7472A"
-background = "#191311"
-#background = "#2B313C"
-timeout = 8
+frame_color = "#CC241D"
+foreground  = "#FBF2C7"
+background  = "#282828"
+timeout     = 15
 
 
 # Every section that isn't one of the above is interpreted as a rules to
