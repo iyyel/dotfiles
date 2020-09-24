@@ -18,7 +18,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 # dotnet
-export DOTNET_ROOT=$HOME/.dotnet
+export DOTNET_ROOT=$HOME/.local/bin/dotnet
 export PATH=$PATH:$DOTNET_ROOT
 
 # Java (fixes blank screen problems in dwm)
@@ -93,6 +93,8 @@ alias vi='nvim'
 alias v='nvim'
 alias e='nvim'
 alias nano='nvim'
+
+alias discord='/opt/Discord/Discord'
 
 # JetBrains toolbox
 alias toolbox='$HOME/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox'
