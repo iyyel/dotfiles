@@ -10,17 +10,14 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')
 
-" gruvbox
-Plug 'morhetz/gruvbox'
+" one-dark
+Plug 'joshdick/onedark.vim'
 
 " color highlighting
 Plug 'lilydjwg/colorizer'
 
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
-" markdown preview
-Plug 'skanehira/preview-markdown.vim'
 
 " lint engine (ALE)
 Plug 'dense-analysis/ale'
@@ -48,7 +45,7 @@ set updatetime=300
 
 set termguicolors
 set background=dark
-colorscheme gruvbox
+colorscheme onedark
 
 set number
 
@@ -81,14 +78,3 @@ set splitright
 
 " disable swap
 set noswapfile
-
-" markdown-preview
-
-" vertical preview
-let g:preview_markdown_vertical=1
-
-" auto-update when saved
-let g:preview_markdown_auto_update=1
-
-" markdown parser
-let g:preview_markdown_parser="glow"

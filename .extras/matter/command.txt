@@ -1,0 +1,1 @@
+sudo ./matter.py -i laptop _ _ _ -bg 191d27 -fg fefefa -ff ~/.local/share/fonts/iosevka-heavy.ttf -fn Iosevka Heavy -fs 32
