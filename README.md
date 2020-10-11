@@ -91,14 +91,14 @@ execute install script:
 
 # Preview
 
-## Cleas
-
+## Clean
+![Clean](.extras/img/preview_clean.png)
 
 ## Windows
-
+![Windows](.extras/img/preview_windows.png)
 
 ## Fake busy
-
+![Clean](.extras/img/preview_fake_busy.png)
 
 
 # License
