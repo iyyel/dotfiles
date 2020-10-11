@@ -1,5 +1,4 @@
-#!/usr/bin/env zsh
-
+#!/usr/bin/env bash
 # cd into the repo before running this.
 
 git remote rename origin github
