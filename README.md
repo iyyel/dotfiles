@@ -9,6 +9,7 @@
  ░▓ about  ▓ custom linux config files
  ░▓ author ▓ iyyel <i@iyyel.io>
  ░▓ code   ▓ https://github.com/iyyel/dotfiles
+ ░▓ mirror ▓ https://git.iyyel.io/iyyel/dotfiles
  ░▓▓▓▓▓▓▓▓▓▓
  ░░░░░░░░░░
 ```
