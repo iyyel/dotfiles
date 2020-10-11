@@ -10,3 +10,7 @@
 [user]
 	email = i@iyyel.io
 	name = iyyel
+[core]
+	autocrlf = input
+[gpg]
+	program = gpg2
