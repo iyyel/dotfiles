@@ -1,0 +1,175 @@
+@define-color ospower_fg_color #fcfcfc;
+@define-color ospower_bg_color #215d9c;
+@define-color ospower_normal @theme_fg_color;
+@define-color ospower_warning #f0c61c;
+@define-color ospower_critical red;
+
+.hb, .hb GtkLabel, .hb label {
+  border-width: 0;
+  border-style:none;
+  box-shadow:none;
+  outline-width:0;
+  border-image:none;
+  border:0;
+  text-shadow:none;
+  background-image: none;
+  background-color: @theme_bg_color;
+}
+.hb GtkButton, .hb button {
+  color: @theme_fg_color;
+  background-color: @theme_bg_color;
+}
+.hb-button {
+  /*border-color: transparent;*/
+}
+.hb-button:active {
+  border-color: transparent;
+}
+.sideitem, .sidesubmenu {
+  border-radius: 0;
+  border-style:none;
+  box-shadow:none;
+  outline-width:0;
+  border-image:none;
+  padding-left: 16px;
+  margin:0;
+  border:0;
+  text-shadow:none;
+  background-image: none;
+  background-color: transparent;
+}
+.sideitem {
+  /*color: #7f7f7f;*/
+  font-weight: normal;
+}
+.infolabel {
+  font-weight: normal;
+  font-style: italic;
+}
+.sidesubmenu {
+  font-weight: bold;
+  padding: 8px;
+}
+.sidesubmenu:checked {
+  color: @theme_fg_color;
+}
+.sideitem:hover, .sidesubmenu:hover, .slider-item:hover, .submenu *:hover {
+  color: @ospower_fg_color;
+  background-color: @ospower_bg_color;
+}
+.sidesection {
+  /*box-shadow: inset 0px 2px 4px rgba(0,0,0,0.6);*/
+  /*background-color: shade (@theme_bg_color, 0.9);*/
+}
+.warn {
+  color: orange;
+  font-weight: bold;
+}
+.warn:hover {
+  background-color: shade (red, 0.8);
+}
+.status {
+  color: @ospower_normal;
+  font-family: cpufreq;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: none;
+}
+.status-warning {
+  color: @ospower_warning;
+}
+.status-critical {
+  color: @ospower_critical;
+}
+.status-bar {
+  border-radius: 4px;
+  box-shadow: inset 0px 2px 3px rgba(0,0,0,0.6);
+  /*background-color: @ospower_normal;*/
+}
+.warning-bar {
+  background-color: @ospower_warning;
+}
+.critical-bar {
+  background-color: @ospower_critical;
+}
+
+GtkLevelBar, levelbar {
+  -GtkLevelBar-min-block-width: 34;
+  -GtkLevelBar-min-block-height: 5;
+  border-color: alpha(@theme_fg_color, 0.2);
+  border-radius: 6px;
+  background: none;
+  background-image: none;
+}
+levelbar.horizontal block {
+  border-radius: 4px;
+}
+.level-bar.fill-block, .level-bar.fill-block.level-low,
+levelbar block.low, levelbar block.high {
+  border: 0;
+  background-color: @ospower_normal;
+}
+.level-bar.fill-block.level-high, levelbar block.full {
+  border: 0;
+  background-color: alpha(@ospower_warning, 0.8);
+}
+.level-bar.fill-block.level-high, levelbar block {
+  border: 0;
+  background-color: alpha(@ospower_critical, 0.8);
+}
+.level-bar.fill-block.empty-fill-block, levelbar block.empty {
+  background: none;
+  background-image: none;
+  border-color: alpha(@theme_fg_color, 0.1);
+}
+.level-bar.fill-block.empty-fill-block:backdrop, levelbar block.empty:backdrop {
+  border-color: transparent;
+  background: none;
+}
+
+.info-widget {
+  /*box-shadow: inset 0px 2px 4px rgba(0,0,0,0.6);
+  color: @ospower_fg_color;
+  background-color: @ospower_bg_color;*/
+  /*border-left: 12px solid alpha(white, 0.47);*/
+  margin: 0;
+  padding: 2px;
+  /*font-weight: bold;
+  font-size: 92%;*/
+}
+.amd {
+  /*background-color: #bb0a1b;*/
+}
+.coreinfo {
+  font-family: cpufreq;
+  font-weight: normal;
+  font-stretch: condensed;
+  font-size: 90%;
+}
+
+.edit-button, .delete-button {
+  border-radius: 32px;
+  background-image: none;
+  border: none;
+  padding: 4px;
+}
+.edit-button:hover {
+  background-color: orange;
+  border: none;
+  padding: 4px;
+}
+.delete-button:hover {
+  background-color: #bb0a1b;
+  border: none;
+  padding: 4px;
+}
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+}
+.transparent {
+  background-image: none;
+  background-color: transparent;
+}
