@@ -10,6 +10,8 @@
 # Define zim location
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 
+[ -f "/home/iyyel/.ghcup/env" ] && source "/home/iyyel/.ghcup/env" # ghcup-env
+
 export TERM='xterm-256color'
 
 export LANG='en_DK.UTF-8'
@@ -49,3 +51,4 @@ export LESS_TERMCAP_so=$'\E[01;35m'    # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+source "$HOME/.cargo/env"

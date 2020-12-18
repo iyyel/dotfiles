@@ -10,8 +10,8 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')
 
-" one-dark
-Plug 'joshdick/onedark.vim'
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
+" Plug 'nvim-treesitter/nvim-treesitter'
 
 " color highlighting
 Plug 'lilydjwg/colorizer'
@@ -39,13 +39,20 @@ let g:haskell_backpack = 1                " to enable highlighting of backpack k
 
 set hidden
 set nocompatible
-syntax on
 filetype plugin indent on
 set updatetime=300
-
-set termguicolors
 set background=dark
-colorscheme onedark
+let g:nvcode_termcolors=256
+
+syntax on
+colorscheme nvcode " Or whatever colorscheme you make
+
+
+" checks if your terminal has 24-bit color support
+if (has("termguicolors"))
+    set termguicolors
+    hi LineNr ctermbg=NONE guibg=NONE
+endif
 
 set number
 
