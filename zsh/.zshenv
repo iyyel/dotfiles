@@ -7,12 +7,13 @@
 ## zsh env script
 ##
 
-# Define zim location
+# Define Zim location
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 
-[ -f "/home/iyyel/.ghcup/env" ] && source "/home/iyyel/.ghcup/env" # ghcup-env
+# rust
+source "$HOME/.cargo/env"
 
-export TERM='xterm-256color'
+export TERM='st-256color'
 
 export LANG='en_DK.UTF-8'
 export LC_ALL='en_DK.UTF-8'
@@ -22,11 +23,14 @@ export VISUAL='nvim'
 export BROWSER='firefox'
 
 # .local/bin/dotnet
-export DOTNET_ROOT=$HOME/.local/bin/dotnet
-export PATH=$PATH:$DOTNET_ROOT
+#export DOTNET_ROOT=$HOME/.local/bin/dotnet
+#export PATH=$PATH:$DOTNET_ROOT
 
 # .local/bin
 export PATH=$PATH:$HOME/.local/bin
+
+# starship
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # .local/bin/scripts
 export PATH=$PATH:$HOME/.local/bin/scripts
@@ -39,9 +43,6 @@ alias vi='nvim'
 alias v='nvim'
 alias e='nvim'
 alias nano='nvim'
-
-# temporary alias for school
-alias pcs_login='ssh s151641@login1.gbar.dtu.dk'
 
 ## Color man pages
 export LESS_TERMCAP_mb=$'\E[1;34m'     # begin bold

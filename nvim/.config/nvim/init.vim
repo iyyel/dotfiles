@@ -10,8 +10,8 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'christianchiarulli/nvcode-color-schemes.vim'
-" Plug 'nvim-treesitter/nvim-treesitter'
+" gruvbox
+Plug 'morhetz/gruvbox'
 
 " color highlighting
 Plug 'lilydjwg/colorizer'
@@ -19,33 +19,18 @@ Plug 'lilydjwg/colorizer'
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-" lint engine (ALE)
-Plug 'dense-analysis/ale'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'sheerun/vim-polyglot'
-
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
-let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
-let g:haskell_enable_arrowsyntax = 1      " to enable highlighting of `proc`
-let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
-let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
-let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
-let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
 
 set hidden
 set nocompatible
 filetype plugin indent on
 set updatetime=300
 set background=dark
-let g:nvcode_termcolors=256
 
 syntax on
-colorscheme nvcode " Or whatever colorscheme you make
+colorscheme gruvbox
 
 
 " checks if your terminal has 24-bit color support

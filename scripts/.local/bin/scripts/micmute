@@ -1,2 +1,7 @@
 #!/bin/sh
-amixer -q set Capture toggle
+
+# mute whatever source that controls the thinkpad led
+pamixer --source 4 -t
+
+# mute the actual mic
+pamixer --source 5 -t
