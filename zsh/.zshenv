@@ -22,9 +22,9 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='firefox'
 
-# .local/bin/dotnet
-#export DOTNET_ROOT=$HOME/.local/bin/dotnet
-#export PATH=$PATH:$DOTNET_ROOT
+# .local/share/dotnet
+export DOTNET_ROOT=$HOME/.local/share/dotnet
+export PATH=$PATH:$DOTNET_ROOT
 
 # .local/bin
 export PATH=$PATH:$HOME/.local/bin

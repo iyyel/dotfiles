@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+jabra=70:BF:92:C9:C4:52
+jbl=7C:96:D2:14:B4:66
+
+bluetoothctl power on
+bluetoothctl agent on
+bluetoothctl default-agent
+
+if [[ $1 == "jabra" ]]; then
+    bluetoothctl connect $jabra
+    pacmd set-card-profile 1 a2dp_sink
+elif [[ $1 == "jbl" ]]; then
+    bluetoothctl connect $jbl
+else
+    echo "Device not found!"
+fi

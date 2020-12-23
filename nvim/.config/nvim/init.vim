@@ -19,6 +19,9 @@ Plug 'lilydjwg/colorizer'
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
+" rust-lang
+Plug 'rust-lang/rust.vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -29,7 +32,7 @@ filetype plugin indent on
 set updatetime=300
 set background=dark
 
-syntax on
+syntax enable
 colorscheme gruvbox
 
 

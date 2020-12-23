@@ -118,3 +118,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # starship prompt :)
 eval "$(starship init zsh)"
+
+# Just for fun!
+ufetch
+fortune | cowsay -bd

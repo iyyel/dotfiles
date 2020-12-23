@@ -8,7 +8,7 @@
 #
 
 [global]
-font = Iosevka Term 12
+font = Fira Code Nerd Font 10
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -31,7 +31,7 @@ plain_text = no
 #   %I  iconname (without its path)
 #   %p  progress value if set ([  0%] to [100%]) or nothing
 # Markup is allowed
-format = "<b>%s</b>\n%b"
+format = "<b>%a</b>\n%s\n%b"
 
 # Sort messages by urgency.
 sort = no
@@ -79,7 +79,7 @@ hide_duplicates_count = yes
 # The width can be negative.  In this case the actual width is the
 # screen width minus the width defined in within the geometry option.
 #geometry = "250x50-40+40"
-geometry = "300x50-10+33"
+geometry = "300x50-10+30"
 
 # Shrink window if it's smaller than the width.  Will be ignored if
 # width is 0.

@@ -36,7 +36,8 @@ pamixer --set-volume 0
 pamixer -m
 
 ## Set wallpaper
-hsetroot -fill ~/Personal/Media/Wallpapers/wallpaper_027.png &
+#hsetroot -fill ~/Personal/Media/Wallpapers/wallpaper_057.jpg &
+hsetroot -solid "#222222" &
 
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &
