@@ -8,6 +8,12 @@
 ## Simple script to mute microphone
 ##
 
+# This script requires that both source 4 and 5 are
+# at the same state (i.e. both muted or unmuted)
+# else the script will cause unwanted behavior!
+# Currently, this is fixed by muting the mic
+# on start up in .xinitrc.
+
 # mute whatever source that controls the thinkpad led
 pamixer --source 4 -t
 

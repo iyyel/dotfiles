@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+##
+## ~/.local/bin/scripts/micup
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Simple script to increase pulseaudio microphone volume
+##
+
+pamixer --source 5 -u -i 5

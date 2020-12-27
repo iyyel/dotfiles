@@ -37,9 +37,14 @@ setxkbmap dk
 ## Set startup backlight (laptop screen)
 brightnessctl -q s 80%
 
-## Mute at startup
+## Mute volume at startup
 pamixer --set-volume 0
 pamixer -m
+
+## Mute microphone and set default volume at startup
+pamixer --source 4 -m               # keyboard led
+pamixer --source 5 -m               # actual mix
+pamixer --source 5 --set-volume 100 # set volume to 100%
 
 ## Set wallpaper
 hsetroot -fill ~/Personal/Media/Wallpapers/wallpaper_027.png &
