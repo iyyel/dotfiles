@@ -1,11 +1,11 @@
-#
-# ~/.config/dunst/dunstrc
-#
-# Authors:
-#  Iyyel <github.com/iyyel>
-#
-# dunst configuration file
-#
+##
+## ~/.config/dunst/dunstrc
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## dunst configuration file
+##
 
 [global]
 font = Fira Code Nerd Font 10

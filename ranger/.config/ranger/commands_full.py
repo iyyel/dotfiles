@@ -1,3 +1,12 @@
+##
+## ~/.config/ranger/commands_full.py
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## ranger commands_full.py script
+##
+
 # -*- coding: utf-8 -*-
 # This file is part of ranger, the console file manager.
 # This configuration file is licensed under the same terms as ranger.

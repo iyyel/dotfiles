@@ -1,6 +1,12 @@
 #!/bin/sh
-#
-# ~/.xinitrc
+##
+## ~/.xinitrc
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## xorg-server startup script
+##
 
 # screen resoultion etc
 hdmi=`xrandr | grep "HDMI-1 connected"`
@@ -36,14 +42,13 @@ pamixer --set-volume 0
 pamixer -m
 
 ## Set wallpaper
-#hsetroot -fill ~/Personal/Media/Wallpapers/wallpaper_057.jpg &
-hsetroot -solid "#222222" &
+hsetroot -fill ~/Personal/Media/Wallpapers/wallpaper_027.png &
 
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &
 
 ## Start picom
-picom --vsync --backend glx --config ~/.config/picom/picom.conf &
+picom --vsync --experimental-backends --config ~/.config/picom/picom.conf &
 
 ## Start xss-lock with i3lock
 xss-lock -- lock &

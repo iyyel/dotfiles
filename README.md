@@ -7,7 +7,7 @@
   \__,_|\___/ \__|_| |_|_|\___||___/
                                     
   ▓▓▓▓▓▓▓▓▓▓
- ░▓ about  ▓ linux configuration files
+ ░▓ about  ▓ linux configuration files (dotfiles)
  ░▓ author ▓ iyyel <i@iyyel.io>
  ░▓ code   ▓ https://github.com/iyyel/dotfiles
  ░▓ mirror ▓ https://git.iyyel.io/iyyel/dotfiles
@@ -103,5 +103,4 @@ execute install script:
 
 
 # License
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)

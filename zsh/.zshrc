@@ -1,3 +1,12 @@
+##
+## ~/.zshrc
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## zsh configuration file
+##
+
 # -----------------
 # Zsh configuration
 # -----------------
@@ -120,5 +129,4 @@ bindkey -M vicmd 'j' history-substring-search-down
 eval "$(starship init zsh)"
 
 # Just for fun!
-ufetch
-fortune | cowsay -bd
+crunchbang-mini

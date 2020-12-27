@@ -4,7 +4,7 @@
 ## Authors:
 ##  Iyyel <github.com/iyyel>
 ##
-## zsh env script
+## zsh environment script
 ##
 
 # Define Zim location

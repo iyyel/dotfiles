@@ -1,11 +1,11 @@
-#
-# ~/dotfiles/.gitignore
-#
-# Authors:
-#  Iyyel <github.com/iyyel>
-#
-# .gitignore for dotfiles
-#
+##
+## ~/dotfiles/.gitignore
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## .gitignore for dotfiles
+##
 
 ncmpcpp/.config/ncmpcpp/lyrics
 ncmpcpp/.config/ncmpcpp/error.log

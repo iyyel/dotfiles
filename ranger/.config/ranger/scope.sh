@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+##
+## ~/.config/ranger/scope.sh
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## ranger scope script
+##
 
 set -o noclobber -o noglob -o nounset -o pipefail
 IFS=$'\n'

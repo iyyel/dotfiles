@@ -1,4 +1,13 @@
-#!/bin/sh
-NAME=ss-$(date +%Y-%m-%d-%H-%M-%S).png
-maim -s | tee ~/Personal/Media/Screenshots/$NAME | xclip -selection clipboard -t image/png
-notify-send "Screenclip: $NAME"
+#!/usr/bin/env sh
+##
+## ~/.local/bin/scripts/screenclip
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Simple screenclip utility
+##
+
+name=ss-$(date +%Y-%m-%d-%H-%M-%S).png
+maim -s | tee ~/Personal/Media/Screenshots/$name | xclip -selection clipboard -t image/png
+notify-send -a "Screenshot" "$name"

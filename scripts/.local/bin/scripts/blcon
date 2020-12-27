@@ -1,4 +1,12 @@
 #!/usr/bin/env zsh
+##
+## ~/.local/bin/scripts/blcon
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Simple script to connect known bluetooth devices
+##
 
 jabra=70:BF:92:C9:C4:52
 jbl=7C:96:D2:14:B4:66

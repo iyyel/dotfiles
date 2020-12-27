@@ -1,2 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env sh
+##
+## ~/.local/bin/scripts/briup
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Simple script to increase backlight brightness
+##
+
 brightnessctl -q s +5%

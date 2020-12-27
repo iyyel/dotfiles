@@ -1,4 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env sh
+##
+## ~/.local/bin/scripts/micmute
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Simple script to mute microphone
+##
 
 # mute whatever source that controls the thinkpad led
 pamixer --source 4 -t

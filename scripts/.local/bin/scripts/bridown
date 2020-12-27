@@ -1,2 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env sh
+##
+## ~/.local/bin/scripts/bridown
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Simple script to decrease backlight brightness
+##
+
 brightnessctl -q s 5%-

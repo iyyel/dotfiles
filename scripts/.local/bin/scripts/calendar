@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-printf "\033c"
-cal $(date +%Y)

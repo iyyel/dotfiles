@@ -1,2 +1,11 @@
 #!/usr/bin/env sh
+##
+## ~/.local/bin/scripts/voldown
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## Simple script to decrease pulseaudio volume
+##
+
 pamixer -u -d 5

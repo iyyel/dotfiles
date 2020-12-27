@@ -1,1 +1,11 @@
+#!/usr/bin/env sh
+##
+## ~/.local/bin/scripts/weather
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## simple weather script
+##
+
 curl wttr.in
