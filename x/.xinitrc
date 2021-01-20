@@ -47,13 +47,13 @@ pamixer --source 5 -m               # actual mix
 pamixer --source 5 --set-volume 100 # set volume to 100%
 
 ## Set wallpaper
-hsetroot -fill ~/Personal/Media/Wallpapers/wallpaper_027.png &
+hsetroot -fill ~/Personal/Media/Wallpapers/wallpaper_011.jpg > /dev/null &
 
 ## Start dunst
 dunst -config ~/.config/dunst/dunstrc > /dev/null &
 
 ## Start picom
-picom --vsync --experimental-backends --config ~/.config/picom/picom.conf &
+picom -o 0 --vsync --backend glx --config ~/.config/picom/picom.conf > /dev/null &
 
 ## Start xss-lock with i3lock
 xss-lock -- lock &

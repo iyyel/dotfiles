@@ -35,6 +35,9 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 # .local/bin/scripts
 export PATH=$PATH:$HOME/.local/bin/scripts
 
+# dwm Java issues
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 ## Aliases
 alias remove='rm -irv'
 
@@ -43,6 +46,8 @@ alias vi='nvim'
 alias v='nvim'
 alias e='nvim'
 alias nano='nvim'
+
+alias connect_vm='ssh -i ~/Personal/School/02267_Stuff/g-11 s151641@g-11.compute.dtu.dk'
 
 ## Color man pages
 export LESS_TERMCAP_mb=$'\E[1;34m'     # begin bold

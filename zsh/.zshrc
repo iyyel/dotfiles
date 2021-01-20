@@ -23,7 +23,7 @@ setopt HIST_IGNORE_ALL_DUPS
 #
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
-bindkey -v
+bindkey -e
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT
@@ -127,6 +127,3 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # starship prompt :)
 eval "$(starship init zsh)"
-
-# Just for fun!
-crunchbang-mini
