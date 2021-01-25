@@ -10,8 +10,8 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')
 
-" gruvbox
-Plug 'morhetz/gruvbox'
+" onedark.vim theme
+Plug 'joshdick/onedark.vim'
 
 " color highlighting
 Plug 'lilydjwg/colorizer'
@@ -19,8 +19,6 @@ Plug 'lilydjwg/colorizer'
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-" rust-lang
-Plug 'rust-lang/rust.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -33,7 +31,7 @@ set updatetime=300
 set background=dark
 
 syntax enable
-colorscheme gruvbox
+colorscheme onedark
 
 
 " checks if your terminal has 24-bit color support
