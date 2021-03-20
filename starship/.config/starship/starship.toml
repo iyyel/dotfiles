@@ -1,0 +1,13 @@
+##
+## ~/.config/starship/starship.toml
+##
+## Authors:
+##  Iyyel <github.com/iyyel>
+##
+## starship prompt configuration file
+##
+
+add_newline = false
+
+[line_break]
+disabled = true
