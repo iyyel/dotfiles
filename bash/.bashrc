@@ -26,6 +26,13 @@ alias v='nvim'
 alias e='nvim'
 alias nano='nvim'
 
+alias electrum='~/.local/bin/electrum-4.0.9-x86_64.AppImage'
+
+# TEMPORARY FOR SCHOOL
+alias uppaal='sh ~/Documents/uppaal64-4.1.24/uppaal'
+
+
+
 ## Color man pages
 export LESS_TERMCAP_mb=$'\E[1;34m'     # begin bold
 export LESS_TERMCAP_md=$'\E[1;34m'     # begin blink
