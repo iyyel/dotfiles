@@ -26,6 +26,9 @@ export BROWSER='firefox'
 export DOTNET_ROOT=$HOME/.local/share/dotnet
 export PATH=$PATH:$DOTNET_ROOT
 
+# go
+export GOPATH=$HOME/go
+
 # .local/bin
 export PATH=$PATH:$HOME/.local/bin
 
@@ -44,11 +47,6 @@ alias v='nvim'
 alias e='nvim'
 alias nano='nvim'
 
-alias electrum='~/.local/bin/electrum-4.0.9-x86_64.AppImage'
-
-# TEMPORARY FOR SCHOOL
-alias uppaal='sh ~/Documents/uppaal64-4.1.24/uppaal'
-
 ## Color man pages
 export LESS_TERMCAP_mb=$'\E[1;34m'     # begin bold
 export LESS_TERMCAP_md=$'\E[1;34m'     # begin blink
@@ -57,4 +55,3 @@ export LESS_TERMCAP_so=$'\E[01;35m'    # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
-source "$HOME/.cargo/env"
