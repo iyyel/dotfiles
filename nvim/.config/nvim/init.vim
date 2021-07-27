@@ -10,8 +10,8 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/plugged')
 
-" onedark.vim theme
-Plug 'joshdick/onedark.vim'
+" monokai-pro theme
+Plug 'phanviet/vim-monokai-pro'
 
 " color highlighting
 Plug 'lilydjwg/colorizer'
@@ -31,7 +31,7 @@ set updatetime=300
 set background=dark
 
 syntax enable
-colorscheme onedark
+colorscheme monokai_pro
 
 
 " checks if your terminal has 24-bit color support

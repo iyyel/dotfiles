@@ -1,3 +1,12 @@
+# Start configuration added by Zim install {{{
+#
+# User configuration sourced by all invocations of the shell
+#
+
+# Define Zim location
+: ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
+# }}} End configuration added by Zim install
+
 ##
 ## ~/.zshenv
 ##
@@ -25,6 +34,9 @@ export BROWSER='firefox'
 # .local/share/dotnet
 export DOTNET_ROOT=$HOME/.local/share/dotnet
 export PATH=$PATH:$DOTNET_ROOT
+
+# cursor
+export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
 
 # go
 export GOPATH=$HOME/go
